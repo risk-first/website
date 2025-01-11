@@ -19,7 +19,7 @@ practice:
      reason: "Showcases the product to ensure it meets client expectations and needs."
    - tag: Communication Risk
      reason: "Facilitates clear communication of the product's features and benefits to stakeholders."
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Prototypes are a way of learning about a particular solution to a problem."
    - tag: Implementation Risk
      reason: "Demonstrations often highlight issues in implementations"   

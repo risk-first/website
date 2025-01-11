@@ -147,7 +147,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ### Specific Tactics
 
-1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Learning Curve Risk](/tags/Learning-Curve-Risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](/tags/Coordination-Risk) problem, such as concurrent writes or consistency.
+1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Internal Model Risk](/tags/Internal-Model-Risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](/tags/Coordination-Risk) problem, such as concurrent writes or consistency.
 
 2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Although, some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  Don't spend your life avoiding all risks.
 

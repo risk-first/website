@@ -10,11 +10,7 @@ slug: /risks/Communication-Risk
 tags:
  - Communication Risk
  - Risks
- - Learning Curve Risk
- - Channel Risk
- - Protocol Risk
  - Internal Model Risk
- - Invisibility Risk
  - Trust And Belief Risk
 tweet: yes
 part_of: Operational Risk
@@ -53,7 +49,7 @@ One of the chief concerns in Shannon's paper is the risk of error between **Tran
 
 But it's not just transmission.  [Communication Risk](/tags/Communication-Risk) exists at each of these steps.  Let's imagine a human example, where someone, **Alice** is trying to send a simple message to **Bob**.
 
-|Step                  |Potential Risk                                           |
+|Step                  |Potential Issue / Threat                                           |
 |----------------------|---------------------------------------------------------|
 |Motivation            | **Alice** might be **motivated** to send a message to tell **Bob** something, only to find out that _he already knew it_. |
 |Composition           | **Alice** might mess up the _intent_ of the message: instead of "Please buy chips" she might say, "Please buy chops". |

@@ -69,7 +69,7 @@ As we saw in [Communication Risk](/tags/Communication-Risk), whenever two compon
 
 **Threat**: As systems become more complex, and the connectedness increases, it becomes harder to manage the risk around versioning protocols.  This becomes especially true when operating beyond the edge of the compiler's domain. 
 
-Although type-checking helps mitigate [Protocol Risk](/tags/Protocol-Risk), when software systems grow large it becomes hard to communicate intent and keep connectivity low.  You  can end up with "The Big Ball Of Mud":
+Although type-checking helps mitigate [Communication Risk](/tags/Communication-Risk), when software systems grow large it becomes hard to communicate intent and keep connectivity low.  You  can end up with "The Big Ball Of Mud":
 
 > "A big ball of mud is a software system that lacks a perceivable architecture. Although undesirable from a software engineering point of view, such systems are common in practice due to business pressures, developer turnover and code entropy. " - [Big Ball Of Mud, _Wikipedia_](https://en.wikipedia.org/wiki/Big_ball_of_mud)
 

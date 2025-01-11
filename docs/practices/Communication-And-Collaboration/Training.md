@@ -13,7 +13,7 @@ practice:
    - "Instruction"
    - "Skill Development"
   mitigates:
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Provides necessary education to help team members get up to speed."
    - tag: Operational Risk
      reason: "Ensures that staff are well-trained in operational procedures and best practices."

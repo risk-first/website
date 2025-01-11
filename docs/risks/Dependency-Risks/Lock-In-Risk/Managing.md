@@ -15,7 +15,7 @@ I find, a lot of code I write is of this nature:  trying to write the _glue code
 
 As shown in the above diagram, mitigating [Lock-In Risk](/tags/Lock-In-Risk) involves taking on complexity.  The more [Protocol Complexity](/tags/Protocol-Risk) there is on either side of the two ecosystems, the more [complex](/tags/Complexity-Risk) the bridge will necessarily be.  The below table shows some examples of this.
 
-|Protocol Risk From A         |Protocol Risk From B        |Resulting Bridge Complexity  |Example                                                  |
+|Communication Risk From A         |Communication Risk From B        |Resulting Bridge Complexity  |Example                                                  |
 |-----------------------------|----------------------------|-----------------------------|---------------------------------------------------------|
 |Low                          |Low                         |Simple                       |Changing from one date format to another.                |
 |High                         |Low                         |Moderate                     |Status Dashboard.                                        |
@@ -23,7 +23,7 @@ As shown in the above diagram, mitigating [Lock-In Risk](/tags/Lock-In-Risk) inv
 
 <!--latex \pagebreak -->
 
-From examining the [Protocol Risk](/tags/Protocol-Risk) at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
+From examining the risk at each end of the bridge you are creating, you can get a rough idea of how complex the endeavour will be:
 
  - If it's low-risk at both ends, you're probably going to be able to knock it out easily.  Like translating a date, or converting one file format to another.
  - Where one of the protocols is _evolving_, you're definitely going to need to keep releasing new versions.   The functionality of a `Calculator` app on my phone remains the same, but new versions have to be released as the phone APIs change, screens change resolution and so on.

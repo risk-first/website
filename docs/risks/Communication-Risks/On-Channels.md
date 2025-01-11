@@ -1,11 +1,20 @@
- 
+---
+title: On Channels
+description: A discussion of the communication risks due threats due to the communication channel.  
 
- - **[Channels](https://en.wikipedia.org/wiki/Communication_channel)**: the medium via which the communication is happening.
-
+slug: /risks/On-Channels
+sidebar_position: 2
+tags:
+ - Communication Risk
+---
 
 There are lots of different types of media for communicating (e.g. TV, radio, talking, posters, books, phones, the Internet, etc. ) and they all have different characteristics.  When we communicate via a given medium, it's called a *channel*.  
 
 The channel _characteristics_ depend on the medium then.  Some obvious ones are cost, utilisation, number of people reached, simplex or duplex (parties can transmit and receive at the same time), persistence (a play vs a book, say), latency (how long messages take to arrive) and bandwidth (the amount of information that can be transmitted in a period of time).
+
+## Channel Characteristics As Threats
+
+Let's continue the example from [Communication Risk](/risks/Communication-Risk) of Alice and Bob wanting to share messages with each other.
 
 Channel characteristics are important:  in a high-bandwidth, low-latency situation, **Alice** and **Bob** can _check_ with each other that the meaning was transferred correctly.  They can discuss what to buy, they can agree that **Alice** wasn't lying or playing a joke.  
 

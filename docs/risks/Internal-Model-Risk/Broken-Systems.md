@@ -46,5 +46,3 @@ There are _lots_ of cognitive biases.  But let's just mention some that are rele
 - **Availability Heuristic**: people overestimate the importance of knowledge they have been exposed to. 
 - **The Ostrich Effect**:  which is where dangerous information is ignored or avoided because of the emotions it will evoke.
 - **Bandwagon Effect**:  people like to believe things that other people believe.  (Could this be a factor in the existence of the Hype Cycle?)
-
-## From Learning Curve Risk

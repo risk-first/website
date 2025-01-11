@@ -17,7 +17,7 @@ practice:
      reason: "Makes all aspects of the project transparent and accessible to the team."
    - tag: Communication Risk
      reason: "Provides clear guidelines and information, reducing misunderstandings."
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Detailed documentation helps manage and understand complex systems."
   attendant:
    - tag: Schedule Risk

@@ -1,33 +1,27 @@
 ---
 title: On Protocols
-description: Risks due to the failure of encoding or decoding messages between two parties in communication.  
+description: A discussion of communication risks due to the failure of encoding or decoding messages between two parties in communication.  
 
 slug: /risks/On-Protocols
-featured: 
-  class: c
-  element: '<risk class="protocol" />'
-sidebar_position: 3
+sidebar_position: 1
 tags:
  - Communication Risk
 ---
 
+In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](/tags/Abstraction), which is implicated over and over again in different types of risk we will be looking at. 
 
- - **[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
+**[Protocols](https://en.wikipedia.org/wiki/Communication_protocol)**:  the systems of rules that allow two or more entities of a communications system to transmit information.
 
 > "A communication protocol is a system of rules that allow two or more entities of a communications system to transmit information. " - [Communication Protocol, Wikipedia](https://en.wikipedia.org/wiki/Communication_protocol)
 
-In this section I want to examine the concept of [Communication Protocols](https://en.wikipedia.org/wiki/Communication_protocol) and how they relate to [Abstraction](/tags/Abstraction), which is implicated over and over again in different types of risk we will be looking at. 
-
-[Abstraction](/tags/Abstraction) means separating the _definition_ of something from the _use_ of something.  It's a widely applicable concept, but our example below will be specific to communication, and looking at the abstractions involved in loading a web page. 
-
-### Clients and Servers
+## Clients and Servers
 
 First we need to broaden our terminology.  Although so far we've talked about **senders** and **receivers**, we now need to talk from the point of view of who-depends-on-who.  That is, **clients** and **suppliers**.
 
  - If you're _depended on_, then you're a **"supplier"** (or a **"server"**, when we're talking about actual hardware).
  - If you require communication with something else, you're a **"client"**.   
 
-### A Stack of Protocols
+## A Stack of Protocols
 
 We're going to look at the example of a web browser (a **client**) loading a web-page from a **server**.  Specifically, we're going to examine how the web browser receives the **message** from the **server** via a **channel**.  That is - we're looking at the part of Shannon's diagram where we deal with _protocol_. 
  
@@ -99,7 +93,7 @@ Finally, the server gets to respond:
 
 In this case, the server is telling us that the web page has changed address.    The `301` is a status code meaning the page has moved:  instead of `http://google.com/preferences`, we want `http://www.google.com/preferences`.
 
-### Summary
+## Separation Of Concerns
 
 By having a stack of protocols we are able to apply [Separation Of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), each protocol handling just a few concerns:
 
@@ -113,11 +107,9 @@ By having a stack of protocols we are able to apply [Separation Of Concerns](htt
 
 `HTTP` "stands on the shoulders of giants":  not only does it get to use pre-existing protocols like `TCP` and `DNS` to make its life easier, it got `WiFi` "for free" when this came along and plugged into the existing `IP` protocol.<!-- tweet-end -->  This is the key value of **abstraction**:  you get to piggy-back on _existing_ patterns, and use them yourself. 
 
-### Protocol Risk
+## Communication Risks Due to Protocols
 
-![Communication Protocols Risks](/img/generated/risks/communication/communication_protocol_risks.svg)
-
-Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Protocol Risk](/tags/Protocol-Risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
+Hopefully, the above example gives an indication of the usefulness of protocols within software.  But for every protocol we use we have [Communication Risk](/tags/Communication-Risk).  While this is a problem in human communication protocols, it's really common in computer communication because we create protocols _all the time_ in software. 
 
 For example, as soon as we define a Javascript function (called **b** here), we are creating a protocol for other functions (**a** here) to use it: 
 
@@ -142,7 +134,7 @@ function b(a, b, c, d /* new parameter */) {
 
 Then, **a** will instantly have a problem calling it and there will be an error of some sort.
 
-[Protocol Risk](/tags/Protocol-Risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
+[Communication Risk](/tags/Communication-Risk) also occurs when we use [Data Types](https://en.wikipedia.org/wiki/Data_type):  whenever we change the data type, we need to correct the usages of that type.  Note above, I've given the `JavaScript` example, but I'm going to switch to `TypeScript` now:
 
 ```javascript
 interface BInput {
@@ -164,20 +156,20 @@ function a() {
 
 By using a [static type checker](https://en.wikipedia.org/wiki/Type_system#Static_type_checking), we can identify issues like this, but there is a trade-off:  
  
-- we mitigate [Protocol Risk](/tags/Protocol-Risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  
-- but the tradeoff is more _finger-typing_, which means [Codebase Risk](/tags/Codebase-Risk) in some circumstances. 
+- we mitigate [Communication Risk](/tags/Communication-Risk), because we define the protocols _once only_ in the program, and ensure that usages all match the specification.  
+- but the tradeoff is more _finger-typing_, which means [Complexity Risk](/tags/Complexity-Risk) in some circumstances. 
 
 Nevertheless, static type checking is so prevalent in software that clearly in most cases, the trade-off has been worth it: even languages like [Clojure](https://clojure.org) have been retro-fitted with [type checkers](https://github.com/clojure/core.typed).
 
-Let's look at some further types of [Protocol Risk](/tags/Protocol-Risk).
+Let's look at some specific protocol-related threats causing [Communication Risk](/tags/Communication-Risk).
  
-#### Protocol Incompatibility
+### 1. Protocol Incompatibility
 
 The people you find it _easiest_ to communicate with are your friends and family, those closest to you.  That's because you're all familiar with the same protocols.  Someone from a foreign country, speaking a different language and having a different culture, will essentially have a completely incompatible protocol for spoken communication to you.
 
 Within software there are also competing, incompatible protocols for the same things, which is maddening when your protocol isn't supported.   For example, although the world seems to be standardising, there used to be _hundreds_ of different image formats.  Photographs often use [TIFF](https://en.wikipedia.org/wiki/TIFF), [RAW](https://en.wikipedia.org/wiki/Raw_image_format) or [JPEG](https://en.wikipedia.org/wiki/JPEG), whilst we also have [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) for vector graphics, [GIF](https://en.wikipedia.org/wiki/GIF) for images and animations and [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) for other bitmap graphics.   
 
-#### Protocol Versioning
+### 2. Protocol Versioning
 
 Even when systems are talking the same protocol there can be problems!  
 
@@ -185,9 +177,9 @@ When we have multiple, different systems owned by different parties, on their ow
 
 There are various mitigating strategies for this.  We'll look at two now: **Backwards Compatibility** and **Forwards Compatibility**.
 
-#### Backward Compatibility
+### 3. Backward Compatibility
 
-Backwards Compatibility mitigates [Protocol Risk](/tags/Protocol-Risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
+Backwards Compatibility mitigates [Communication Risk](/tags/Communication-Risk).  This means supporting the old protocol until it falls out of use.  If a supplier is pushing for a change in protocol it either must ensure that it is Backwards Compatible with the clients it is communicating with, or make sure they are upgraded concurrently.  When building [web services](https://en.wikipedia.org/wiki/Web_service), for example, it's common practice to version all API's so that you can manage the migration.  Something like this:
 
  - Supplier publishes `/api/v1/something`.
  - Clients use `/api/v1/something`.
@@ -196,16 +188,16 @@ Backwards Compatibility mitigates [Protocol Risk](/tags/Protocol-Risk).  This me
  - Clients (eventually) stop using `/api/v1/something`.
  - Supplier retires `/api/v1/something` API. 
 
-#### Forward Compatibility
+### 4. Forward Compatibility
 
-`HTML` and `HTTP` provide "graceful failure" to mitigate [Protocol Risk](/tags/Protocol-Risk)<!-- tweet-end -->:  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
+`HTML` and `HTTP` provide "graceful failure" to mitigate [Communication Risk](/tags/Communication-Risk):  while it's expected that all clients can parse the syntax of `HTML` and `HTTP`, it's not necessary for them to be able to handle all of the tags, attributes and rules they see.  The specification for both these standards is that if you don't understand something, ignore it.  Designing with this in mind means that old clients can always at least cope with new features, but it's not always possible.  
 
 `JavaScript` _can't_ support this:  because the meaning of the next instruction will often depend on the result of the previous one.  
 
 Do human languages support forward compatibility?  To some extent!  New words are added to our languages all the time.  When we come across a new word, we can either ignore it, guess the meaning, ask or look it up.  In this way, human language has **Forward Compatibility** features built in.
 
-#### Protocol Implementation
+### 5. Protocol Implementation
 
-A second aspect of [Protocol Risk](/tags/Protocol-Risk) exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
+A further [Communication Risk](/tags/Communuication-Risk) threat exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
 
-To mitigate as much [Protocol Risk](/tags/Protocol-Risk) as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.
+To mitigate as much risk as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.

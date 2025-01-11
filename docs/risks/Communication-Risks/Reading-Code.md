@@ -1,9 +1,18 @@
+---
+title: On Code
+description: A discussion of communication risks in software code.  
 
-If the messages we are receiving force us to update our [Internal Model](/tags/Internal-Model) too much, we can suffer from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)", where the messages force us to adapt our [Internal Model](/tags/Internal-Model) too quickly for our brains to keep up.  
+slug: /risks/On-Code
+sidebar_position: 4
+tags:
+ - Communication Risk
+---
 
-Commonly, the easiest option is just to ignore the information channel completely in these cases.
+Have you ever suffered from the problem of "too steep a [Learning Curve](https://en.wikipedia.org/wiki/Learning_curve)" or "[Information Overload](https://en.wikipedia.org/wiki/Information_overload)"?   This is the problem where the information you're trying to absorb forces you to try to adapt your [Internal Model](/tags/Internal-Model) too quickly for our brains to keep up.  
 
-#### Reading Code
+Commonly, the easiest option is just to ignore the information completely in these cases!
+
+## Code and Information Overload
 
 It has often been said that code is _harder to read than to write_:  
 
@@ -13,6 +22,6 @@ By now it should be clear that it's going to be _both_ quite hard to read and wr
 
 But now we should be able to see the reason why it's harder to read than write too: 
  
- - When reading code, you are having to shift your [Internal Model](/tags/Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Learning Curve Risk](/tags/Learning-Curve-Risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
- - There is no [Feedback Loop](/tags/Feedback-Loop) between your [Internal Model](/tags/Internal-Model) and the [Reality](/tags/Meeting-Reality) of the code, opening you up to [misinterpretation](/risks/Message-Risk#misinterpretation).  When you write code, your compiler and tests give you this.
- - While reading code _takes less time_ than writing it, this also means the [Learning Curve](/tags/Learning-Curve-Risk) is steeper.
+ - When reading code, you are having to shift your [Internal Model](/tags/Internal-Model) to wherever the code is, accepting decisions that you might not agree with and accepting counter-intuitive logical leaps.  i.e. [Internal Model Risk](/tags/Internal-Model-Risk). _(cf. [Principle of Least Surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment))_
+ - There is no [Feedback Loop](/tags/Feedback-Loop) between your [Internal Model](/tags/Internal-Model) and the [Reality](/tags/Meeting-Reality) of the code, opening you up to [misinterpretation](/risks/On-Messages#2--misinterpretation).  When you write code, your compiler and tests give you this.
+ - While reading code _takes less time_ than writing it, this also means the learning curve is steeper.
