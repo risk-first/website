@@ -152,7 +152,7 @@ On the face of it, it's clear why the Sales Team might feel annoyed - there is a
 
 ![Fixing The Build, v2](/img/generated/estimating/planner/ci-impact-2.svg)
 
-The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](/tags/Staff-Risk), [Coordination Risk](/tags/Coordination-Risk) and [Funding Risk](/tags/Funding-Risk) for the whole business and therefore seems like it might have a better [Expected Return](/tags/Expected-Return).
+The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Agency Risk](/tags/Agency-Risk), [Coordination Risk](/tags/Coordination-Risk) and [Funding Risk](/tags/Funding-Risk) for the whole business and therefore seems like it might have a better [Expected Return](/tags/Expected-Return).
 
 ## Judgement
 

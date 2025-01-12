@@ -280,9 +280,9 @@ hide_table_of_contents: true
                 <img src="/img/presentations/AgileVsOpenSource/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
-                      <p>But there’s a big problem with that Open Feedback loop.  Because it doesn’t properly involve money, it’s not well-funded.   So, there’s a big worry in Open Source which is nicely explained by this XKCD comic.  The worry is Staff Risk - that you have some dependency on a piece of software that is maintained invisibly by some critical person.  </p>
+                      <p>But there’s a big problem with that Open Feedback loop.  Because it doesn’t properly involve money, it’s not well-funded.   So, there’s a big worry in Open Source which is nicely explained by this XKCD comic.  The worry is Agency Risk - that you have some dependency on a piece of software that is maintained invisibly by some critical person.  </p>
 
-      <p>A lot of Open Source is funded by that guy in Nebraska.  It’s a personal project, done for the love of it, or through personal necessity.  The problem with that is the Staff Risk - by depending on this piece of software -no matter how good it is- you are also depending on the team maintaining it, to a certain extent.</p>
+      <p>A lot of Open Source is funded by that guy in Nebraska.  It’s a personal project, done for the love of it, or through personal necessity.  The problem with that is the Agency Risk - by depending on this piece of software -no matter how good it is- you are also depending on the team maintaining it, to a certain extent.</p>
 
       <p>If there were more money in the system, there might be a bigger team of people involved in that one supporting project.</p>
 

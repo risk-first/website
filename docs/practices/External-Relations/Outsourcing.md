@@ -13,7 +13,7 @@ practice:
    - "External Hiring"
    - "Third-Party Development"
   mitigates:
-   - tag: Staff Risk
+   - tag: Agency Risk
      reason: "Accesses external resources and skills that may not be available internally."
    - tag: Funding Risk
      reason: "Can be cost-effective by leveraging economies of scale."

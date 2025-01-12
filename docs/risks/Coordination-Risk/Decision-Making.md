@@ -1,6 +1,8 @@
 ---
 title: Decision Making
 sidebar_position: 2
+tags:
+  - Coordination Risk
 ---
 
 Within a team, [Coordination Risk](/tags/Coordination-Risk) is at its core about resolving [Internal Model](/tags/Internal-Model) conflicts in order that everyone can agree on a [Goal](/tags/Goal) and cooperate on getting it done.  Therefore, [Coordination Risk](/tags/Coordination-Risk) is worse on projects with more members, and worse in organisations with more staff.  

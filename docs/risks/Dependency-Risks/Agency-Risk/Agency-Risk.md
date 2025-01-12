@@ -24,6 +24,11 @@ part_of: Dependency Risks
 
 Coordinating a team is difficult enough when everyone on the team has a single [Goal](/tags/Goal).  But other people and organisations you might be involved with have their own goals too.  Sometimes their goals harmlessly co-exist with yours, other times they don't.   Even the software systems we employ can often have goals that run counter to our own.
 
+In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](/tags/Agency-Risk) by employing us.  
+
+[Agency Risk](/tags/Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
+
+> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
 
 In this section, we are going to take a closer look at how [Agency Risk](/tags/Agency-Risk) arises, in particular we will:
 

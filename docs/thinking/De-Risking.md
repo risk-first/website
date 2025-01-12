@@ -193,7 +193,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 - **War** is a risk that is usually accepted by businesses.  You're unlikely to be able to buy insurance against this.
 
-- **Key Staff**: Having a super-star on the team is risky as they might leave.  But sometimes they are a risk worth accepting because of the value they bring.  This is covered in more detail in [Staff Risk](/tags/Staff-Risk).
+- **Key Staff**: Having a super-star on the team is risky as they might leave.  But sometimes they are a risk worth accepting because of the value they bring.  This is covered in more detail in [Agency Risk](/tags/Agency-Risk).
 
 ### Specific Tactics
 

@@ -22,7 +22,7 @@ practice:
      reason: "Provides a systematic approach to managing and addressing operational issues."
    - tag: Communication Risk
      reason: "Facilitates communication about issues and their status among team members."
-   - tag: Trust and Belief Risk
+   - tag: Reputational Risk
      reason: "Tracking and fixing bugs improves software reputation."
    - tag: Security Risk
      reason: "Track and Prioritise Security Issues and Incidents."

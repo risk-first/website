@@ -1,6 +1,8 @@
 ---
 title: CAP Theorem
 sidebar_position: 3
+tags:
+  - Coordination Risk
 ---
 
 Imagine talking to a distributed database, where your request (_read_ or _write_) can be handled by one of many agents.

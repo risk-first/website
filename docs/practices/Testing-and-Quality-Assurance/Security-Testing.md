@@ -12,6 +12,7 @@ practice:
    - "Penetration Testing"
    - "Vulnerability Testing"
    - "Security Assessment"
+   - "Security Hardening"
   mitigates:
    - tag: Security Risk
      reason: "Identifies and addresses vulnerabilities in the software."
@@ -19,13 +20,15 @@ practice:
      reason: "Ensures the software can withstand security threats and attacks."
    - tag: Contextual Risk
      reason: "Helps ensure compliance with security standards and regulations."
+   - tag: Agency Risk
+     reason: "Make sure that agents don't exercise unwarranted control over resources."
   attendant:
    - tag: Schedule Risk
      reason: "Security testing can be time-consuming, impacting schedules."
    - tag: Complexity Risk
      reason: "Requires specialized skills and tools, adding complexity."
-   - tag: Staff Risk
-     reason: "Requires security experts."
+   - tag: Agency Risk
+     reason: "Likely requires security experts with specialist skills."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Performance-Testing

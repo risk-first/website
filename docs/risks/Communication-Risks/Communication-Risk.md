@@ -11,7 +11,6 @@ tags:
  - Communication Risk
  - Risks
  - Internal Model Risk
- - Trust And Belief Risk
 tweet: yes
 part_of: Operational Risk
 ---

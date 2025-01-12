@@ -1,6 +1,8 @@
 ---
 title: A Model Of Coordination Risk
 sidebar_position: 1
+tags:
+  - Coordination Risk
 ---
 
 ## A Model Of Coordination Risk

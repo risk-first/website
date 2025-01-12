@@ -73,9 +73,9 @@ Let's look at an example of how that can happen in a step-wise way.
 
 1.  As the above diagram shows, there exists a group of people inside a company `C`, which need a certain something `A` in order to get their jobs done.  Because they are organising, providing and creating `A` to do their jobs, they are responsible for all the [Complexity Risk](/tags/Complexity-Risk) of `A`. 
 
-![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Staff Risk.](/img/generated/risks/process/step2.svg)
+![Step 2: team `B` doing `A` for clients `C`.  Complexity Risk is transferred to B, but C pick up Agency Risk.](/img/generated/risks/process/step2.svg)
 
-2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](/tags/Complexity-Risk), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](/tags/Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Staff Risk](/tags/Staff-Risk) for `C`.   
+2.  Because `A` is risky, a new team (`B`) is spun up to deal with the [Complexity Risk](/tags/Complexity-Risk), which might let `C` get on with their "proper" jobs.  As shown in the diagram above, this is really useful:  `C`'s is job much easier (reduced [Complexity Risk](/tags/Complexity-Risk)) as they have an easier path to `A` than before.  But the risk for `A` hasn't really gone - they're now just dependent on `B` instead.  When members of `B` fail to deliver, this is [Agency Risk](/tags/Agency-Risk) for `C`.   
 
 ![Step 3: team `B` formalises the dependency with a Process](/img/generated/risks/process/step3.svg)
 

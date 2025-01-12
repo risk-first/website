@@ -1,15 +1,9 @@
-
-
-## Agency In Software Development
-
-In software development, we're not lending each other money, but we _are_ being paid by the project sponsor, so they are assuming [Agency Risk](/tags/Agency-Risk) by employing us.  
-
-[Agency Risk](/tags/Agency-Risk) doesn't just apply to people: it can apply to _running software_ or _whole teams_  - anything which has agency over its actions.  
-
-> "Agency is the capacity of an actor to act in a given environment... Agency may either be classified as unconscious, involuntary behaviour, or purposeful, goal directed activity (intentional action). " - [Agency, _Wikipedia_](https://en.wikipedia.org/wiki/Agency_(philosophy)) 
-  
-
-## A Model For Agency Risk  
+---
+title: Agency Risk in People
+sidebar_position: 2
+tags:
+  - Agency Risk
+---
   
 ![Goal Hierarchy](/img/generated/risks/agency/hierarchy.svg)
 
@@ -20,12 +14,14 @@ The model above helps us explain the principal-agent problem:  when faced with t
  - will help their friends and colleagues every day, but perhaps fail to give to charities helping people in far worse conditions.
  - love their pets (who they consider in the _immediate family_ group) but eat other animals (somewhere off the bottom).
  - why people can be fiercely _nationalistic_ and tribal (supporting the goals of the third level) and also be against _immigration_ (helping people in the fourth level).
-
+ 
+## Agency Risk Threats
+ 
 [Agency Risk](/tags/Agency-Risk) clearly includes the behaviour of [Bad Actors](https://en.wiktionary.org/wiki/bad_actor) but is not limited to them:  there are various "shades of grey" involved.  We can often understand and sympathise with the decisions agents make based on an understanding of this hierarchy.   
 
 **NB:** Don't get hung up on the fact the diagram only has four levels.  You might want to add other levels in their depending on your personal circumstances.  The take-away is that there is a hierarchy at all, and that at the top, the people/things we care about _most_ are few in number.
 
-## Agency Risk In Software Development
+### 1. Crunches
 
 We shouldn't expect people on a project to sacrifice their personal lives for the success of the project, right?  Except that ["Crunch Time"](https://en.wikipedia.org/wiki/Video_game_developer#"Crunch_time") is exactly how some software companies work:
 
@@ -37,7 +33,7 @@ People taking time off, going to funerals, looking after sick relatives and so o
 
 Where an agent _excessively_ prioritises their own goals over the group we term this selfishness or perhaps nepotism.  Conversely, putting the tribe's or the team's needs over your own is _heroism_.
 
-### The Hero
+### 2. The Hero
 
 > "The one who stays later than the others is a hero. " - [Hero Culture, _Ward's Wiki_](https://wiki.c2.com/?HeroCulture)
 
@@ -52,19 +48,19 @@ Sometimes projects don't get done without heroes.  But other times, the hero has
 
 A team _can_ make use of heroism but it's a double-edged sword.  The hero can become [a bottleneck](/tags/Coordination-Risk) to work getting done and because they want to solve all the problems themselves, they [under-communicate](/tags/Communication-Risk).  
 
-### CV Building
+### 3. CV Building
 
 CV Building is when someone decides that the project needs a dose of "Some Technology X", but in actual fact, this is either completely unhelpful to the project (incurring large amounts of [Complexity Risk](/tags/Complexity-Risk)), or merely a poor alternative to something else.  
 
 It's very easy to spot CV building:  look for choices of technology that are incongruently complex compared to the problem they solve and then challenge by suggesting a simpler alternative.
 
-### Devil Makes Work
+### 4. Devil Makes Work
 
 Heroes can be useful, but _underused_ project members are a nightmare.   The problem is, people who are not fully occupied begin to worry that actually the team would be better off without them, and then wonder if their jobs are at risk.
 
 Even if they don't worry about their jobs, sometimes they need ways to stave off _boredom_.  The solution to this is "busy-work":  finding tasks that, at first sight, look useful, and then delivering them in an over-elaborate way that'll keep them occupied.  This is also known as [_Gold Plating_](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)).  This will leave you with more [Complexity Risk](/tags/Complexity-Risk) than you had in the first place. 
 
-### Pet Projects
+### 5. Pet Projects
 
 > "A project, activity or goal pursued as a personal favourite, rather than because it is generally accepted as necessary or important."  - [Pet Project, _Wiktionary_](https://www.wordnik.com/words/pet%20project)
 
@@ -72,7 +68,7 @@ Sometimes budget-holders have projects they value more than others without refer
 
 Working on a pet project usually means you get lots of attention (and more than enough budget), but it can fall apart very quickly under scrutiny.
 
-### Morale Failure
+### 6. Morale Failure
 
 ![Morale Failure](/img/generated/risks/agency/morale.svg)
 
@@ -85,8 +81,7 @@ Sometimes the morale of the team or individuals within it dips, leading to lack 
  - **The goal isn't sufficiently worthy**, or the team doesn't feel sufficiently valued.
  
  
- 
-### Teams
+## Agency Risk For Teams
 
 [Agency Risk](/tags/Agency-Risk) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](/tags/Goal) that don't align with those of the overall organisation.  For example:
 

@@ -17,7 +17,7 @@ practice:
      reason: "Provides realistic timelines helps hit important deadlines."
    - tag: Funding Risk
      reason: "Accurate estimation helps in securing and managing funding."
-   - tag: Staff Risk
+   - tag: Agency Risk
      reason: "Helps in planning and managing staff usage effectively."
   attendant:
    - tag: Schedule Risk

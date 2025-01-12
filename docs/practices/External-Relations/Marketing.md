@@ -17,6 +17,8 @@ practice:
      reason: "Promotes the software to reach potential customers and increase market share."
    - tag: Communication Risk
      reason: "Facilitates communication of the product's value proposition to the target audience."
+   - tag: Reputational Risk
+     reason: "Good communication and product marketing can help solidify good reputation."
   attendant:
    - tag: Funding Risk
      reason: "Marketing campaigns can be expensive."
