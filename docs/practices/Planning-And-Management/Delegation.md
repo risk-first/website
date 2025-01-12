@@ -11,6 +11,7 @@ practice:
   aka: 
    - "Task Assignment"
    - "Empowerment"
+   - "Hierarchy"
    - "Authority Delegation"
    - "Responsibility Allocation"
   mitigates:

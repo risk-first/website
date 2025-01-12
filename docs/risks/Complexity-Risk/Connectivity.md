@@ -80,7 +80,7 @@ Secondly, it's not apparent to **i** that **j** _even exists_: we have hidden th
 
 ![Modularisation and Hierarchy](/img/generated/risks/complexity/modularisation.svg)
 
-The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Codebase Risk](/tags/Codebase-Risk).  
+The trade-off of modularisation/hierarchy is shown in the above diagram, and it's our third tool for battling [Complexity Risk](/tags/Complexity-Risk).  
 
 But we don't just see this in software, it's everywhere in our lives:  societies, business, and living organisms all use this technique.  For example in our bodies we have:
   
