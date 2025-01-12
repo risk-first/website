@@ -61,7 +61,3 @@ There are plenty of ideas which _seem a really good idea at the time_ but then e
 SLOC is not on its own a _bad idea_, but using it as a metric for developer productivity _is_.
 
 > "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.” - [Bill Gates](https://www.goodreads.com/quotes/536587)
-
-![Evolution Feature Risks, as manifested in the Internal Model](/img/generated/risks/map-and-territory/map_and_territory_table_3.svg)
-
-The diagram above shows how Evolution-type [Feature Risks](/tags/Feature-Risk) can manifest in the Internal Model.

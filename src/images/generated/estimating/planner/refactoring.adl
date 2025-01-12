@@ -5,11 +5,7 @@
          xslt:template="/public/templates/risk-first/risk-first-template.xsl">
    <group id="4" style="--kite9-layout: down; ">
       <mitigated id="37">
-         <risk href="/public/templates/risk-first/redesign/risks/communication_risk_v2.svg"
-               id="communication">
-            <code id="code">Co</code>
-            <title id="title">Communication Risk</title>
-         </risk>
+         <risk class="communication" />
       </mitigated>
       <description id="4-1" style="text-align: center; ">50% Of Users Don't
 				Complete The Premium-Tier
@@ -21,11 +17,7 @@
 				Subscriptions</action>
    </group>
    <group id="9">
-      <risk class="generic"
-            href="/public/templates/risk-first/redesign/risks/goal_v2.svg"
-            id="2">
-         <code id="co2">Goal</code>
-         <title id="title2">50K Subscribers By Q4</title>
+      <risk class="goal">50K Subscribers By Q4
       </risk>
    </group>
    <align id="5-0" style="--kite9-direction: right;">

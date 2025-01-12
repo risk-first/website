@@ -6,8 +6,10 @@
          id="diagram-113"
          xslt:template="/public/templates/risk-first/risk-first-template.xsl">
    <container bordered="true" id="c">
-      <risk class="staff"/>
+      <risk class="reliability"/>
       <risk class="internal-model"/>
+      <label>Having individuals be the sole 
+      experts means key person risk</label>
    </container>
    <group style="--kite9-layout: right;">
       <action class="left" style="--kite9-horizontal-align: right;">Individual
@@ -18,5 +20,7 @@
    </group>
    <container bordered="true" id="c-zc">
       <risk class="agency"/>
+      <label>But not allowing staff to exert their autonomous 
+      control over aspects of their work might also cause issues.</label>
    </container>
 </diagram>

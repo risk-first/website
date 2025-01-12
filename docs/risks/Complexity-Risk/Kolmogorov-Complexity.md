@@ -72,24 +72,24 @@ So there is at some point a trade-off to be made between [Complexity Risk](/tags
 
 ### Refactoring
 
-![Using Refactoring and Abstraction to reduce Codebase Risk](/img/generated/risks/complexity/refactoring.svg)
+![Using Refactoring and Abstraction to reduce Complexity](/img/generated/risks/complexity/refactoring.svg)
 
 Abstraction is therefore a key tool in the battle against [Complexity Risk](/tags/Complexity-Risk): it allows us to jettison repetition.  But, as the code-golf example shows, you can go too far.  So an important part of software development is picking the _right_ abstractions:  ones that are useful, durable and pervasive.  
 
-Time spent replacing poor abstractions with better ones is called _refactoring_.  
+Time spent replacing poor abstractions with better ones is called [refactoring](/tags/Refactoring).  
 
-The above diagram demonstrates that a key practice in battling [Codebase Risk](/tags/Codebase-Risk) is choosing **a minimal set of useful abstractions**.  The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](/tags/Schedule-Risk).   
+The above diagram demonstrates that a key practice in battling [Complexity Risk](/tags/Complexity-Risk) is choosing **a minimal set of useful abstractions**.  The attendant risk in doing that work (the downside) is the _time spent doing it_. That is, [Schedule Risk](/tags/Schedule-Risk).   
 
 Sometimes it is better to have an ok-ish abstraction _now_ rather than a brilliant abstraction _too late_. 
 
 ### Languages and Dependencies
 
-The above Javascript example also demonstrates a second way in which we can manage [Codebase Risk](/tags/Codebase-Risk).  
+The above Javascript example also demonstrates a second way in which we can manage [Complexity Risk](/tags/Complexity-Risk).  
 
 In the third version of the program, we used the method `.repeat()`, which allowed us to save a further 16 symbols.  
 
 `.repeat()` is a recent addition to Javascript, added in ES6.  What this shows is that the Kolmogorov complexity of a program is actually _heavily dependent_ on the features of the programming language:  using ES6-Javascript allows us to produce simpler programs than before. 
 
-![Using Libraries and Languages to reduce Codebase Risk](/img/generated/risks/complexity/libraries.svg)
+![Using Libraries and Languages to reduce Complexity Risk](/img/generated/risks/complexity/libraries.svg)
 
-So as the above diagram shows, we can also reduce [Codebase Risk](/tags/Codebase-Risk) in our choice of _languages_ and _third party libraries_.   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) instead.   
+So as the above diagram shows, we can also reduce [Complexity Risk](/tags/Complexity-Risk) via [languages and libraries](/tags/Dependency-Adoption).   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) instead.   

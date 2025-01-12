@@ -56,18 +56,10 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Feature Risks](/tags/Feature-Risks)                        |When you haven't built features the market needs, or the features you have built contain bugs, or the market changes underneath you.    |
 |[Communication Risk](/tags/Communication-Risk)            |Risks associated with getting messages heard and understood.|             
 |[Complexity Risk](/tags/Complexity-Risk)                  |Your software is so complex it makes it hard to change, understand, or run.             |        
-|[Dependency Risks](/tags/Dependency-Risks)                  |Risks of depending on other people, products, software, functions, etc. This is a general look at dependencies, before diving into specifics like...|  
-|[Deadline Risk](/tags/Deadline-Risk)                      |The risk of creating a dependency around a point in time.|
-|[Process Risk](/tags/Process-Risk)                        |When you depend on a business process, or human process to give you something you need.|
-|[Lock-In Risk](/tags/Lock-In-Risk)                      |Risks due to making decisions that limit your choices later on.  Sometimes, you go the wrong way on the [Risk Landscape](/risks/Risk-Landscape) and it's hard to get back to where you want to be.|            
-|[Agency Risk](/tags/Agency-Risk)                          |Risks that staff have their own [Goals](/tags/Goal), which might not align with those of the project or team.|
-|[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|       
-|[Map And Territory Risk](/tags/Map-And-Territory-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  
-|[Operational Risk](/tags/Operational-Risk)                |Software is embedded in a system containing people, buildings, machines and other services.  Operational risk considers this wider picture of risk associated with running a software service or business in the real world.|
-       
-       
-<Matrix />       
-       
+|[Dependency Risks](/tags/Dependency-Risks)                  |Risks of depending on other people, products, software, functions, etc. This is a broken down into specific sub-risks like [Deadline Risk](/tags/Deadline-Risk), [Agency Risk](/tags/Agency-Risk), [Process Risk](/tags/Process-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) . |  
+|[Internal Model Risk](/tags/Internal-Model-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  
+|[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|
+|[Environmental Risks](/tags/Environmental-Risk)                |Software is embedded in a system containing people, buildings, machines and other services. This section considers this wider picture of risk associated with running a software service or business in the real world.|
        
 After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.
 

@@ -37,6 +37,6 @@ But _extrinsic motivation_ is a complex, difficult-to-apply tool.  In [Internal 
 
 ![Collective Code Ownership, Individual Responsibility](/img/generated/risks/agency/cco.svg)
 
-Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Agency Risks](/tags/Agency-Risk) like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Internal Model Risk](/tags/Internal-Model-Risk), but these push in the opposite direction to _individual responsibility_.   
+Tools like [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and [Collective Code Ownership](https://en.wikipedia.org/wiki/Collective_ownership) are about mitigating [Dependency Risks](/tags/Dependency-Risks) on staff, like [Key Person Risk](https://en.wikipedia.org/wiki/Key_person_insurance#Key_person_definition) and [Internal Model Risk](/tags/Internal-Model-Risk), but these push in the opposite direction to _individual responsibility_.   
 
 This is an important consideration:  in adopting _those_ tools, you are necessarily setting aside certain _other_ tools to manage [Agency Risk](/tags/Agency-Risk) as a result.

@@ -10,19 +10,21 @@
               id="c"
               style="--kite9-layout: right; --kite9-vertical-align: center;">
       <mitigated>
-         <risk class="codebase"/>
+         <risk class="complexity"/>
       </mitigated>
       <label id="id_16">
-        Internal Model
+        The codebase is over-complex, slowing down
+        further work and making it hard to evolve.
       </label>
    </container>
    <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
-      <action id="a1">Abstraction, Refactoring, Simplification</action>
+      <action id="a1">Refactoring</action>
    </group>
    <container id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
       <risk class="schedule" id="r1"/>
       <label id="id_16-tq">
-          Attendant Risks
-        </label>
+          Refactoring can often interrupt other scheduled work
+          and create a block to progress until it is complete.
+      </label>
    </container>
 </diagram>

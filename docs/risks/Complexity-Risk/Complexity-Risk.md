@@ -11,7 +11,6 @@ tags:
  - Risks
  - Refactoring
  - Complexity Risk
- - Codebase Risk
  - Dead End Risk
  - Abstraction
 definitions:
@@ -25,14 +24,6 @@ part_of: Operational Risk
 [Complexity Risk](/tags/Complexity-Risk) is the [risk](/tags/Risk) to your project due to its underlying "complexity" - the amount of code, documentation, issues, features, different types of user and so on and, crucially, the [relationships between those elements](./Complexity-Risk/Connectivity).   
 
 Looking at the living world, society or software in general, we can see that -over time- complexity increases.  There is a trade-off wherein we can capture more resources, more value or more user requirements (respectively) through increasing complexity.  The downside of this is that complex systems are more brittle and harder to change.  
-
-In this section we will:
-
- - Look at two ways in which complexity is measured, via [Kolmogorov Complexity](/risks/Complexity-Risk#kolmogorov-complexity) and [Graph-Connectivity](/risks/Complexity-Risk#connectivity).
- - Define [Complexity Risk](/tags/Complexity-Risk), and the related risks of [Codebase Risk](/tags/Codebase-Risk) (complexity in your codebase) and [Dead-End Risk](/tags/Dead-End-Risk) (risk of implementations getting "stuck").
- - Discuss ways to think about complexity:  as [mass](/risks/Complexity-Risk#complexity-is-mass), [technical debt](/risks/Complexity-Risk#technical-debt) and [mess](/risks/Complexity-Risk#kitchen-analogy).
- - Discuss ways to manage complexity risk, such as modularisation, hierarchy, use of languages and libraries and by avoiding feature creep.
- - Discuss places where Complexity Risk [manifests](/risks/Complexity-Risk#where-complexity-hides) in computing.  
 
 ## Worked Example
 
