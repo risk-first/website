@@ -3,17 +3,25 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
 	style="--kite9-layout: right; ">
 
-	<mitigated>
-		<risk class="feature" />
-	</mitigated>
-	
-    <action>Adopt Complex Dependency</action>
-    
-    <risk class="internal-model" />
-    <risk class="communication" />
-    <risk class="lock-in" />
+	<container bordered="true" id="c"
+		style="--kite9-layout: down; ">
+		<mitigated>
+			<risk class="feature-fit" />
+		</mitigated>
+		<label>Clients need features...</label>
+	</container>
 
-  </diagram>
+
+	<action>Adopt Complex Dependency</action>
+
+	<container bordered="true" id="c"
+		style="--kite9-layout: down; ">
+		<risk class="internal-model" />
+		<risk class="communication" />
+		<risk class="lock-in" />
+	</container>
+
+</diagram>

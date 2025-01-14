@@ -58,7 +58,7 @@ What's happening here is that we're _exploiting a pattern_: we noticed that `abc
 
 By applying abstraction, we can improve in the direction of the Kolmogorov lower bound.  By allowing ourselves to say that _symbols_ (like `out` and `ABCD`) are worth one complexity point, we've allowed that we can be descriptive in naming `function` and `const`.  Naming things is an important part of abstraction, because to use something, you have to be able to refer to it.
 
-Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](/tags/Conceptual-Integrity-Risk), and the more work developers will have changing it. 
+Generally, the more complex a piece of software is, the more difficulty users will have [understanding it](/tags/Internal-Model-Risk), and the more work developers will have changing it. 
 
 Although we should prefer the third version of our code over either the first or second (because of its brevity) we could go further down into [Code Golf](https://en.wikipedia.org/wiki/Code_golf) territory.  The following javascript program plays [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz) up to 100, but is less readable than you might hope.
 
@@ -92,4 +92,4 @@ In the third version of the program, we used the method `.repeat()`, which allow
 
 ![Using Libraries and Languages to reduce Complexity Risk](/img/generated/risks/complexity/libraries.svg)
 
-So as the above diagram shows, we can also reduce [Complexity Risk](/tags/Complexity-Risk) via [languages and libraries](/tags/Dependency-Adoption).   This doesn't come without a cost, though.  We are trading-off our own [Codebase Risk](/tags/Codebase-Risk) but increasing [Dependency Risk](/tags/Dependency-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) instead.   
+So as the above diagram shows, we can also reduce [Complexity Risk](/tags/Complexity-Risk) via [languages and libraries](/tags/Dependency-Adoption).   This doesn't come without a cost, though.  We are trading-off our own code's [Complexity Risk](/tags/Complexity-Risk) but adding [Dependency Risks](/tags/Dependency-Risks) instead.   

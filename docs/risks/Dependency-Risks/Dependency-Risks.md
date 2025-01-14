@@ -15,7 +15,7 @@ part_of: Operational Risk
 
 # Dependency Risks
 
-[Dependency Risks](/tags/Dependency-Risk) are risks you take on whenever you have a dependency on something (or someone) else.  
+[Dependency Risks](/tags/Dependency-Risks) are risks you take on whenever you have a dependency on something (or someone) else.  
 
 One simple example could be that the software service you write might depend on hardware to run on:  if the server goes down, the service goes down too.  In turn, the server depends on electricity from a supplier, as well as a network connection from a provider.  If either of these dependencies aren't met, the service is out of commission.
 
@@ -29,7 +29,7 @@ This isn't even lucky though: life has adapted to build dependencies on things t
 
 Although life exists at the bottom of the ocean around [hydrothermal vents](https://en.wikipedia.org/wiki/Hydrothermal_vent), it is a very different kind of life to ours and has a different set of dependencies given its circumstances. 
 
-This tells us a lot about [Dependency Risk](/tags/Dependency-Risk) right here:
+This tells us a lot about [Dependency Risk](/tags/Dependency-Risks) right here:
 
  - On the one hand, _depending on something_ is very often helpful, and quite often essential.  (For example, all life seem to depend on water).
  - Successful organisms _adapt_ to the dependencies available to them (like the thermal vent creatures).

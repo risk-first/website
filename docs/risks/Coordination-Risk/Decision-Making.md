@@ -1,6 +1,8 @@
 ---
 title: Decision Making
 sidebar_position: 2
+slug: /risks/Decision-Making
+
 tags:
   - Coordination Risk
 ---
@@ -68,7 +70,7 @@ Clearly, this is just a _model_, it's not set in stone and decision making style
 
 ## Staff As Agents
 
-Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](/tags/Dependency-Risk) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](/tags/Agency-Risk) over their own actions.  
+Staff in a team have a dual nature:  they are **Agents** and **Resources** at the same time.  The team [depends](/tags/Dependency-Risks) on staff for their resource of _labour_, but they're also part of the decision making process of the team, because they have [_agency_](/tags/Agency-Risk) over their own actions.  
 
 Part of [Coordination Risk](/tags/Coordination-Risk) is about trying to mitigate differences in [Internal Models](/tags/Internal-Model). So it's worth considering how varied people's models can be:
 
@@ -86,7 +88,7 @@ Specifically this describes a process whereby a new group will form and then be 
 
 Since [Coordination](/tags/Coordination-Risk) is about [Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](/tags/Coordination-Risk) issues like:
 
- - People leaving, taking their [Internal Models](/tags/Internal-Model) and expertise with them ([Key Person Risk](/tags/Staff-Risk)).
+ - People leaving, taking their [Internal Models](/tags/Internal-Model) and expertise with them ([Key Person Risk](/tags/Reliability-Risk)).
  - People requiring external training, to understand new tools and techniques ([Internal Model](/tags/Internal-Model-Risk)).
  - People being protective about their knowledge in order to protect their jobs ([Agency Risk](/tags/Agency-Risk)). 
  

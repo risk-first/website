@@ -6,10 +6,10 @@ slug: /risks/On-Software-Dependencies
 sidebar_position: 10
 tweet: yes
 tags: 
- - Dependency Risk
+ - Dependency Risks
 ---
 
-In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risk](/tags/Dependency-Risk). 
+In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risks](/tags/Dependency-Risks). 
 
 In this section we will look at:
 
@@ -35,7 +35,7 @@ Let's look at some more examples:
 |[Process-Risk](/tags/Process-Risk)                         |Reporting tools, online forms, process tracking tools                     |
 |[Agency-Risk](/tags/Agency-Risk)                           |Auditing tools, transaction logs, Time-Sheet software, HR Software        |  
 |[Operational-Risk](/tags/Operational-Risk)                 |Support tools like ZenDesk, Grafana, InfluxDB, Geneos, Security Tools     |
-|[Feature-Risk](/tags/Feature-Risk)                         |Every piece of software you use!                                          |
+|[Feature-Fit-Risk](/tags/Feature-Fit-Risk)                         |Every piece of software you use!                                          |
   
 With this in mind, we can see that adding a software dependency is a trade-off:  we reduce some risk (as in the table above), but in return we pick up [Dependency Risk](/tags/Dependency-Risks) as a result.  Whether this trade-off is worth it depends entirely on how well that software dependency resolves the original risk and how onerous the new risks are that we pick up.
 
@@ -87,7 +87,7 @@ function out() {                           (7 symbols)
 1.  **Language Matters**:  the Kolmogorov complexity is dependent on the language, and the features the language has built in. 
 2.  **Exact Kolmogorov complexity is uncomputable anyway:**  Since it's the _theoretical_ minimum program length, it's a fairly abstract idea, so we shouldn't get too hung up on this.  There is no function to be able to say, "What's the Kolmogorov complexity of string X?"
 3.  **What is this new library function we've created?**   Is `abcdRepeater` going to be part of _every_ Javascript?  If so, then we've shifted [Codebase Risk](/tags/Complexity-Risk) away from ourselves, but we've pushed [Communication Risk](/tags/Communication-Risk) onto every _other_ user of Javascript, because `abcdRepeater` will be clogging up the JavaScript documentation for everyone, despite being rarely useful.
-4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Codebase Risk](/tags/Codebase-Risk) we gain in [Complexity Risk](/risks/Complexity-Risk#space-and-time-complexity).
+4.  **Are there equivalent functions for every single other string?**  If so, then compilation is no longer a tractable problem because now we have a massive library of different `XXXRepeater` functions to compile against.   So, what we _lose_ in [Complexity Risk](/tags/Complexity-Risk) in our programs, we gain in [Complexity Risk](/risks/Complexity-Risk) in the language we use.
 5.  **Language design, then, is about _ergonomics_:** x After you have passed the relatively low bar of providing [Turing Completeness](https://en.wikipedia.org/wiki/Turing_completeness), the key is to provide _useful_ features that enable problems to be solved, without over-burdening the user with features they _don't_ need.  And in fact, all software is about this.
 6.  **Language Ecosystems _really_ matter**: all modern languages allow extensions via libraries, modules or plugins.  If your particular `abcdRepeater` isn't in the main library,   
 
@@ -109,12 +109,12 @@ The interface of a dependency expands when you ask it to do a wider variety of t
 
 ![Software Dependency Ergonomics:  adopting complex dependencies](/img/generated/risks/software-dependency/ergonomics2.svg)
 
-Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Dead End Risk](/tags/Dead-End-Risk)).
+Adopting complex software dependencies (as shown in the diagram above) might allow you to avoid complexity in your own codebase.  However, this likely gives you a longer learning curve before you understand the tool, and you _might_ run into issues later where the tool fails to do something critical that you wanted (a [Lock-In Risk](/tags/Lock-In-Risk)).
 
 Using a software dependency allows us to split a project's complexity into two: 
 
  - The inner complexity of the dependency (how it works internally, its own [internal complexity](/risks/Complexity-Risk#kolmogorov-complexity)).
- - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](/tags/Protocol-Risk), which will be a function of the complexity of the tool itself.
+ - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](/tags/Communication-Risk), which will be a function of the complexity of the tool itself.
 
 ![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.svg)
  
@@ -144,7 +144,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in books and magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Fit Risk](/tags/Feature-Fit-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-End Risk](/tags/Dead-End-Risk), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Fit Risk](/tags/Feature-Fit-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-Ends](/risks/Complexity-Risk/Complexity-Analogies#Avoiding-Dead-Ends), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
  - A password reset screen
  - To email the reset links to the user
@@ -157,7 +157,7 @@ One of the hidden risks of embarking on a code-your-own approach is that the fea
 
 ### Unwritten Software
 
-Sometimes you will pick up [Dependency Risk](/tags/Dependency-Risk) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
+Sometimes you will pick up [Dependency Risks](/tags/Dependency-Risks) from _unwritten software_.  This commonly happens when work is divided amongst team members, or teams.  
 
 ![Sometimes, a module you're writing will depend on unwritten code](/img/generated/risks/software-dependency/unwritten.svg)
 

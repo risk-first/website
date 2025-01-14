@@ -11,7 +11,6 @@ tags:
  - Risks
  - Refactoring
  - Complexity Risk
- - Dead End Risk
  - Abstraction
 definitions:
  - name: Abstraction
@@ -34,7 +33,7 @@ It's the early 2000s: your Pokémon website is becoming really popular and profi
 
 ![Increasing the Cost To Reduce Operational Risks](/img/generated/risks/posters/complexity-risk2.svg) 
 
-It's the early 2020s: your Pokémon website is becoming really popular and profitable but you're worried that you're carrying too much [Operational Risk](tags/Operational-Risk).  You're able to turn on some backup features, load balancing and increase the instances via the console provided by your Cloud Service Provider, handing off the [Complexity Risk](/tags/Complexity-Risk) to them at some expense.  As well as helping with [Demand Management](/tags/Demand-Management), CSPs have allowed software developers to shift a lot of [Complexity Risk](/tags/Complexity-Risk) to them, the downsides being [cost](/tags/Funding-Risk) and [lock-in](/tags/Lock-In-Risk).
+It's the early 2020s: your Pokémon website is becoming really popular and profitable but you're worried that you're carrying too much [Operational Risk](/tags/Operational-Risk).  You're able to turn on some backup features, load balancing and increase the instances via the console provided by your Cloud Service Provider, handing off the [Complexity Risk](/tags/Complexity-Risk) to them at some expense.  As well as helping with [Demand Management](/tags/Demand-Management), CSPs have allowed software developers to shift a lot of [Complexity Risk](/tags/Complexity-Risk) to them, the downsides being [cost](/tags/Funding-Risk) and [lock-in](/tags/Lock-In-Risk).
 
 ## Example Threats
 
@@ -76,7 +75,7 @@ An important lesson here is that choice of language can reduce complexity: and w
  
 ### 5. Networking / Security
 
-There are plenty of [Complexity Risk](/tags/Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](/tags/Protocol-Risk). 
+There are plenty of [Complexity Risk](/tags/Complexity-Risk) perils in _anything_ to do with networked code, chief amongst them being error handling and (again) [protocol evolution](/risks/On-Protocols). 
 
 **Threat**: In the case of security considerations, exploits _thrive_ on the complexity of your code, and the weaknesses that occur because of it.  In particular, Schneier's Law says, never implement your own cryptographic scheme:
 

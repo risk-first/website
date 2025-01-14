@@ -53,7 +53,7 @@ It's not long before someone comes down with food poisoning.
 
 ![Complexity Risk and its implications](/img/generated/risks/complexity/complexity-risk-impact.svg)
 
-We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](Agency-Risk#security).
+We wouldn't tolerate this behaviour in a restaurant kitchen, so why put up with it in a software project?  This state-of-affairs is illustrated in the above diagram.  Not only does [Complexity Risk](/tags/Complexity-Risk) slow down future development, it can be a cause of [Operational Risks](/tags/Operational-Risk) and [Security Risks](/tags/Security-Risk).
 
 ## Feature Creep
 
@@ -72,7 +72,7 @@ Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gol
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](/tags/Agency-Risk).  This is something we'll return to in [Agency Risk](/tags/Agency-Risk).
 
-## Complexity Dead-Ends: An Example
+## Complexity  -Ends: An Example
 
 Imagine a complex software system composed of many sub-systems.  Let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
@@ -94,4 +94,4 @@ Working in a complex environment makes it harder to see developmental dead-ends.
  
 Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/tags/Hidden-Risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/tags/Risk-Landscape).
 
-[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of [Dead-End Risk](/tags/Dead-End-Risk), because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with backups against the often inadvertent [Dead-End Risk](/tags/Dead-End-Risk) of someone wiping the hard-disk.
+[Version Control Systems](https://en.wikipedia.org/wiki/Version_control) like [Git](https://en.wikipedia.org/wiki/Git) are a useful mitigation of dead ends, because using them means that at least you can _go back_ to the point where you made the bad decision and go a different way.  Additionally, they provide you with mitigations against the [Reliability Risk](/tags/Reliability-Risk) of using hard-disk.

@@ -169,7 +169,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ### Specific Tactics
 
-1. **Software as a Service**: [Software-as-a-Service (SaaS)](/tags/Software-Dependency-Risk) is an example of transferring risk, since another party is responsible for making sure the service is up-and-running, backed up, etc.  
+1. **Software as a Service**: [Software-as-a-Service (SaaS)](/risks/On-Software-Dependencies) is an example of transferring risk, since another party is responsible for making sure the service is up-and-running, backed up, etc.  
 
 1. **Employ Good People**: Having staff is a great way to share risk, whether you are a firm or a team.  The employee takes care of some of the risk for you.  In return, you're paying them a wage which helps them manage their own risks.  This is the time-tested, win-win symbiosis of a good trade.    
 
@@ -241,7 +241,7 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 ## Specific Tactics
 
-1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Map and Territory Risk](/tags/Map-And-Territory-Risk) covers this in more detail.
+1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Internal Model Risk](/tags/Internal-Model-Risk) covers this in more detail.
 
 1.  **Second opinions** and **audits** correct for errors in monitoring by people who can be too close to the problem.
 

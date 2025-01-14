@@ -23,7 +23,7 @@ part_of: Dependency Risks
 Process Risk intersects with several other types of risk we've covered so far:
 
 - [Agency Risk](/tags/Agency-Risk): Processes have their own agency - they often involve decision making (a loan application or passport renewal).
-- [Reliability Risk](tags/Reliability-Risk): Processes can fail for various reasons (a payment process for example) or unavailable when they lack resources (think of CPU bottlenecks or queues at the post-office counter)..
+- [Reliability Risk](/tags/Reliability-Risk): Processes can fail for various reasons (a payment process for example) or unavailable when they lack resources (think of CPU bottlenecks or queues at the post-office counter)..
 - [Communication Risk](/tags/Communication-Risk): You need to communicate intent to the process, and have it report back its status (think of buying something on the Internet, and the delivery company communicating where the parcel is in transit).
 - [Feature Fit Risk](/tags/Feature-Fit-Risk): A Process should be supplying some useful _features_ to you in order for you to use it.  Is it fit for purpose? (An example might be starting to fill out a form but then realising you're filling out the wrong form).
 
@@ -83,11 +83,11 @@ For the customers of the team, the introduction of the issue management system c
 
 ### 3.  Lost Accountability
 
-- **Threat**: Processes can reduce accountability.   _Following a process_ instead of making decisions as you go gives people (and systems) allows for scapegoating the process when things go wrong.
+- **Threat**: Processes can reduce accountability.   _Following a process_ instead of making decisions as you go gives people (and systems) allows for scape-goating the process when things go wrong.
 
 ### 4. Bureaucratic Creep
 
-- **Threat**: Its easier for processes to accrete rather than be decommissioned.  This is [Parkinson's Law](On-Bureaucracy) and slowly ratchets up inefficiency.
+- **Threat**: Its easier for processes to accrete rather than be decommissioned.  This is an implication of Parkinson's Law and slowly ratchets up inefficiency.
 
 :::tip Anecdote Corner
 
@@ -95,7 +95,7 @@ Over the years I have worked in the Finance Industry it's given me time to obser
 
 1. Initially, I could release software by logging onto the production accounts with a shared password that everyone knew, and deploy software or change data in the database.  
 2. The first issue with this is [Agency Risk from bad actors](/tags/Agency-Risk):  how could you know that the numbers weren't being altered in the databases? _Production Auditing_ was introduced so that at least you could tell what was being changed and when, in order to point the blame later.
-3. But there was still plenty of scope for deliberate or accidental [Dead-End Risk](/tags/Dead-End-Risk) damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
+3. But there was still plenty of scope for deliberate or accidental damage.  Next, passwords were taken out of the hands of developers and you needed approval to "break glass" to get onto production.  
 4. The increasing complexity (and therefore [Complexity Risk](/tags/Complexity-Risk)) in production environments meant that sometimes changes collided with each other, or were performed at inopportune times.  Change Requests were introduced.  This is an approval process which asks you to describe what you want to change in production, and why you want to change it.  
 5. The change request software is generally awful, making the job of raising change requests tedious and time-consuming.  Therefore, in one workplace, developers _automated_ the processes for release, including the process to write the change request.  This allowed them to improve release cadence at the expense of owning more code.
 6. Auditors didn't like the fact that this automation existed: effectively, that meant that developers could get access to production with the press of a button, taking you back to step 1...

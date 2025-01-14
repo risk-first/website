@@ -62,7 +62,7 @@ But, this is a low bar -  some tools offer _amazing_ returns on investment:
 
 A _really good tool_ offers such advantages that not using it becomes _unthinkable_:  Linux is heading towards this point.   For Java developers, the JVM is there already.  
 
-Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](/tags/Dependency-Risk).
+Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](/risks/On-Software-Dependencies).
 
 
 ## See Also

@@ -44,7 +44,7 @@ As we discussed in [Journeys](Journeys), there are plenty of problems in getting
 
 ![Journeys Meets Cabinets](/img/estimates/dimensions-2.png)
 
-What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](/tags/Dead-End-Risk) anyway!
+What happens when you relax those constraints?  If there is _no map_ and the _closeness_ heuristic isn't available, you're in a maze.   You can't tell how "done" you are in a maze by judging your distance to the exit point - you may be heading to a [Dead End](/risks/Complexity-Risk/Complexity-Analogies#avolding-dead-ends) anyway!
 
 ![Maze Estimating](/img/estimates/mazes.png)
 

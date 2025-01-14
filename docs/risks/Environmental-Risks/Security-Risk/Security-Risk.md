@@ -13,8 +13,7 @@ tweet: yes
 tags: 
  - Risks
  - Security Risk
- - Environmental Risk
-part_of: Operational Risk
+part_of: Environmental Risks
 ---
 
 <RiskIntro fm={frontMatter} />
@@ -80,7 +79,7 @@ Some examples include malware, phishing, Zero-Day Exploits and Distributed Denia
 
 ### 3.  Personnel-Based Threats
 
-**Threat**: Insider attacks (see [Agency Risk](tag/Agency-Risk) for more examples.
+**Threat**: Insider attacks (see [Agency Risk](/tags/Agency-Risk) for more examples.
 
 **Threat**: Social engineering - persuading employees to reveal sensitive information or grant elevated access.
 

@@ -198,6 +198,6 @@ Do human languages support forward compatibility?  To some extent!  New words ar
 
 ### 5. Protocol Implementation
 
-A further [Communication Risk](/tags/Communuication-Risk) threat exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
+A further [Communication Risk](/tags/Communication-Risk) threat exists in heterogeneous computing environments where protocols have been independently implemented based on standards.  For example, there are now so many different browsers, all supporting variations of `HTTP`, `HTML` and `JavaScript` that it becomes impossible to test a website comprehensively over all the different permutations.  
 
 To mitigate as much risk as possible, generally we test web sites in a subset of browsers, and use a lowest-common-denominator approach to choosing protocol and language features.

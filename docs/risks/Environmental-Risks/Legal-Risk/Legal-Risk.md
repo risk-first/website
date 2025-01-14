@@ -13,8 +13,7 @@ tweet: yes
 tags: 
  - Risks
  - Legal Risk
- - Environmental Risk
-part_of: Operational Risk
+part_of: Environmental Risks
 ---
 
 <RiskIntro fm={frontMatter} />

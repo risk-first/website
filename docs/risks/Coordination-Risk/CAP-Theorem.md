@@ -1,6 +1,7 @@
 ---
 title: CAP Theorem
 sidebar_position: 3
+slug: /risks/CAP-Theorem
 tags:
   - Coordination Risk
 ---

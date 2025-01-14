@@ -59,7 +59,7 @@ Below is a table outlining the different risks we'll see.  There _is_ an order t
 |[Dependency Risks](/tags/Dependency-Risks)                  |Risks of depending on other people, products, software, functions, etc. This is a broken down into specific sub-risks like [Deadline Risk](/tags/Deadline-Risk), [Agency Risk](/tags/Agency-Risk), [Process Risk](/tags/Process-Risk) and [Lock-In Risk](/tags/Lock-In-Risk) . |  
 |[Internal Model Risk](/tags/Internal-Model-Risk)    |Risks due to the fact that people don't see the world as it really is. (After all, they're working off different, imperfect [Internal Models](/tags/Internal-Model).)|  
 |[Coordination Risk](/tags/Coordination-Risk)              |Risks due to the fact that systems contain multiple agents, which need to work together.|
-|[Environmental Risks](/tags/Environmental-Risk)                |Software is embedded in a system containing people, buildings, machines and other services. This section considers this wider picture of risk associated with running a software service or business in the real world.|
+|[Environmental Risks](/tags/Environmental-Risks)                |Software is embedded in a system containing people, buildings, machines and other services. This section considers this wider picture of risk associated with running a software service or business in the real world.|
        
 After the last stop on the tour, in [Staging and Classifying](Staging-And-Classifying) we'll have a recap about what we've seen and make some guesses about how things fit together.
 
@@ -105,4 +105,4 @@ Just as naturalists are able to head out and find new species of insects and pla
 
 It's a big, crazy, evolving world of software.  Help to fill in the details.   Report back what you find.
                                                       
-So, let's get started with [Feature Risk](/tags/Feature-Risk).
+So, let's get started with some [Feature Risks](/tags/Feature-Risks).

@@ -2,6 +2,7 @@
 title: Coordination Risk
 description: Risks due to the fact that systems contain multiple agents, which need to work together.
 
+slug: /risks/Coordination-Risk
 
 featured: 
   class: c
@@ -36,7 +37,7 @@ On an open source software project, the maintainers are often required to make a
 
 ![Coordination Risk after introducing voting](/img/generated/risks/posters/coordination-risk1.svg)
 
-As shown in the above diagram, they tried to remedy this by instituting [a governance process](/tags/Approval) wherein the maintainers voted on key architectural issues together.   However, the debates took up a lot of time and often ended in further argument and misunderstanding.  
+As shown in the above diagram, they tried to remedy this by instituting [a governance process](/tags/Approvals) wherein the maintainers voted on key architectural issues together.   However, the debates took up a lot of time and often ended in further argument and misunderstanding.  
 
 One alternative suggested to them was to decide on a "[Benevolent Dictator for Life (BDFL)](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life)".  This was a title originally conferred on Guido van Rossum, creator of the Python Language, but other famous examples exist such as Rich Hickey (Clojure Language) and Linus Torvalds (the Linux Kernel).
 

@@ -144,9 +144,9 @@ This means that clients often keep projects running for far longer than they sho
 
 There is an alternative to too-early or too-late risk.  You can always choose to be _on time_.  This is definitely a choice: Just like a student can always hand _something_ in on assignment day (even if it's just a title scrawled on a piece of paper), you can always hand in whatever work you have.  
 
-Then, instead of worrying about [Deadline Risk](/risks/(/tags/Deadline-Risk), you are letting [Feature Fit Risk](/tags/Feature-Risk) vary to take up the slack.
+Then, instead of worrying about [Deadline Risk](/risks/(/tags/Deadline-Risk), you are letting [Feature Fit Risk](/tags/Feature-Fit-Risk) vary to take up the slack.
 
-So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket) and [Kitchen-Cabinet](Kitchen-Cabinet).  Now, it's time to review a third - estimating [Journey Style](Journeys), and looking at how we can minimise [Feature Fit Risk](/tags/Feature-Risk) within an available budget.
+So far, we've seen two kinds of estimate:  [Fill-The-Bucket](Fill-The-Bucket) and [Kitchen-Cabinet](Kitchen-Cabinet).  Now, it's time to review a third - estimating [Journey Style](Journeys), and looking at how we can minimise [Feature Fit Risk](/tags/Feature-Fit-Risk) within an available budget.
 
 
  

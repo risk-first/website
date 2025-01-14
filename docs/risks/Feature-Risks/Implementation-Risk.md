@@ -9,6 +9,7 @@ tags:
  - Risks
  - Implementation Risk
 part_of: Feature Risks
+slug: /risks/Implementation-Risk
 ---
 
 <RiskIntro fm={frontMatter} />
@@ -19,7 +20,7 @@ part_of: Feature Risks
 
 ![Reducing Implementation Risk Via Automated Testing](/img/generated/risks/posters/implementation-risk.svg) 
 
-In the above diagram, we can see [Implementation Risks](/tags/Implementation-Risk) being addressed by [Automated Testing](../../practices/Testing-And-Quality-Assurance/Automated-Testing) - building out a series of examples and running them to make sure the software behaves as expected.  The downsides of this may include the extra [complexity](/tags/Complexity-Risk) in the project and the [impact to the schedule](/tags/Schedule-Risk) of building the tests. 
+In the above diagram, we can see [Implementation Risks](/tags/Implementation-Risk) being addressed by [Automated Testing](/tags/Automated-Testing) - building out a series of examples and running them to make sure the software behaves as expected.  The downsides of this may include the extra [complexity](/tags/Complexity-Risk) in the project and the [impact to the schedule](/tags/Schedule-Risk) of building the tests. 
 
 As you can see from the table at the top, many of the practices we adopt in software development have been designed for the purpose of tackling [Implementation Risks](/tags/Implementation-Risk), but incur their own overheads in terms of effort and time.  
 

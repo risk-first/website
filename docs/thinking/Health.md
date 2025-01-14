@@ -29,7 +29,7 @@ I am going to argue here that _risks_ affect the health of a thing, where the th
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Risk).
+ - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Fit-Risk).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario). 
  

@@ -41,6 +41,8 @@ Availability is a measure of reliability often used for services, often expresse
 
 **Threat:** An online service that you want to use doesn't publish [Service Level Agreements (SLAs)](https://en.wikipedia.org/wiki/Service-level_agreement) and therefore it's hard to build software reliably on top of it.
 
+**Threat:** People also suffer reliability issues!  Staff can be sick or leave.  This is a threat to the reliability of services you build.
+
 ### 2. Quality of Service (QoS)  
 
 Often a service dependency can be responding quickly (i.e. have good availability) but still perform inadequately, perhaps with wrong or sloppy results.  

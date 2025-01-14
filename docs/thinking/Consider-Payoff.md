@@ -120,7 +120,7 @@ But, there is always the opposite opinion:  [You _Are_ Gonna Need It](http://wik
 
 So which is right?  We should conclude that we do the work _if there is a worthwhile [Payoff](/tags/Payoff)_.  
 
- - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand [how the software went wrong](/tags/Invisibility-Risk).
+ - Logging statements are _good_, because otherwise, you're increasing the risk that in production, no one will be able to understand [how the software went wrong](/tags/Communication-Risk).
  - However, adding them takes time, which might [risk us not hitting our schedule](/tags/Schedule-Risk).
  - Also, we have to manage larger log files on our production systems.  _Too much logging_ is just noise, and makes it harder to figure out what went wrong.  This increases the risk that our software is [less transparent in how it works](/tags/Complexity-Risk).
  

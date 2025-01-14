@@ -33,8 +33,8 @@ In software development, although we might face [Lock-In Risk](/tags/Lock-In-Ris
 
 Let's take a look at a hypothetical system structure, in the diagram above.  In this design, we are transforming data from the `input` to the `output`.  But how should we do it?
 
- - We could transform via library 'a', using the [Protocols](/tags/Protocol-Risk) of 'a', and having a dependency on 'a' (the top dotted path).
- - We could use library 'b', using the [Protocols](/tags/Protocol-Risk) of 'b', and having a dependency on 'b' (the bottom dotted path).
+ - We could transform via library 'a', using the protocols of 'a', and having a dependency on 'a' (the top dotted path).
+ - We could use library 'b', using the protocols of 'b', and having a dependency on 'b' (the bottom dotted path).
  - We could use neither, and avoid the dependency, but potentially pick up lots more [Complexity Risk](/tags/Complexity-Risk) and [Schedule Risk](/tags/Schedule-Risk) because we have to code our own alternative to 'a' and 'b' (the dotted route through the middle).
 
 The choice of approach presents us with [Lock-In Risk](/tags/Lock-In-Risk) options because we don't know that we'll necessarily be successful with any of these options until we _go down the path_ of committing to one:
@@ -57,7 +57,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
 
 - **Integration Testing**.  Building a unit test is easy.  You are generally testing some code you have written, aided with a testing framework.  Your code and the framework are both written in the same language, which means low [Lock-In Risk](/tags/Lock-In-Risk).  But to _integration test_ you need to step outside this boundary and so it becomes much harder.  This is true whether you are integrating with other systems (providing or supplying them with data) or parts of your own system (say testing the client-side and server parts together).  
 
-- **User Interface Testing**.  The interface with the user is a complex, under-specified risky [protocol](/tags/Protocol-Risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this:  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
+- **User Interface Testing**.  The interface with the user is a complex, under-specified risky [protocol](/tags/Communication-Risk).  Although tools exist to automate UI testing (such as [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), these rarely satisfactorily mitigate this:  can you be sure that the screen hasn't got strange glitches, that the mouse moves correctly, that the proportions on the screen are correct on all browsers?  
 
 - **Jobs**.  When you pick a new technology to learn and add to your CV, it's worth keeping in mind how useful this will be to you in the future.   It's career-limiting to be stuck in a dying ecosystem with the need to retrain.
 
@@ -71,7 +71,7 @@ Although ecosystems are one very pernicious type of boundary in software develop
  
 ### 1. Sunk Costs
 
-The Sunk Cost of the [Learning Curve](/tags/Learning-Curve-Risk) we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](/tags/Feature-Fit-Risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](/thinking/Meeting-Reality) quickly.
+The Sunk Cost of the learning curve we've overcome to integrate the dependency, which may fail to live up to expectations (_cf._ [Feature Fit Risks](/tags/Feature-Fit-Risk)).   We can avoid accreting this by choosing the _simplest_ and _fewest_ dependencies for any task, and trying to [Meet Reality](/thinking/Meeting-Reality) quickly.
 
 **Threat**: Although you can anticipate the level of commitment, choosing a dependency in advance is a [bet](/tags/Bet) where you have limited information.
 
@@ -83,7 +83,7 @@ Softare libraries and products come and go.  A choice that was popular when it w
 
 ### 3. Extent Of Lock-In
 
-[The level of Lock In](Ecosystems), where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
+[The level of Lock In](/risks/Ecosystem-Lock-In), where the cost of switching to a new dependency in the future is some function of the level of commitment to the current dependency.  As an example, consider the level of commitment you have to your mother tongue.  If you have spent your entire life committed to learning and communicating in English, there is a massive level of lock-in.  Overcoming this to become fluent in Chinese may be an overwhelming task.
 
 **Threat**: Pervasive commitments (e.g. around language choices) have much higher levels of Lock-In Risk.
 
@@ -103,7 +103,7 @@ Will the dependency satisfy your expanding requirements going forward? It's ofte
 
 **Example:**  Earlier in my career, [Oracle](https://oracle.com) bought Tangosol, a small consultancy that made [Coherence](https://en.wikipedia.org/wiki/Oracle_Coherence).   Having done this, they increase the licensing costs of Coherence to huge levels, milking the [Cash Cow](https://en.wikipedia.org/wiki/Cash_cow) of the installed user-base, but ensuring no-one else is likely to commit to it in the future.
 
-**Threat**: The owner of the dependency has the opportunity to unilaterally change the licensing conditions for your dependency.  (Compare to [Open Source](../Software-Dependency-Risk)).
+**Threat**: The owner of the dependency has the opportunity to unilaterally change the licensing conditions for your dependency.  (Compare to [Open Source](/risks/On-Software-Dependencies)).
   
 :::tip Anecdote Corner
 

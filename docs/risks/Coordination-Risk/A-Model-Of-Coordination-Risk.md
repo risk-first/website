@@ -1,6 +1,8 @@
 ---
 title: A Model Of Coordination Risk
 sidebar_position: 1
+slug: /risks/A-Model-Of-Coordination-Risk
+
 tags:
   - Coordination Risk
 ---
@@ -22,13 +24,13 @@ As you can see, by _sharing_, it's possible that the _total benefit_ is greater 
 Just two things are needed for competition to occur:
 
  - Multiple, Individual agents, trying to achieve [Goals](/tags/Goal).
- - Scarce Resources, which the agents want to use as [Dependencies](/tags/Dependency-Risk).
+ - Scarce Resources, which the agents want to use as [Dependencies](/tags/Dependency-Risks).
 
 ### Coordination via Communication
 
 The only way that the agents can move away from competition towards coordination is via [Communication](/tags/Communication-Risk), and this is where their coordination problems begin.  
 
-[Coordination Risk](/tags/Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](/tags/Goal), and they have different ideas because they have different [Internal Models](/tags/Internal-Model).  As we saw in the section on [Communication Risk](/tags/Communication-Risk), we can only hope to synchronise [Internal Models](/tags/Internal-Model) if there are high-bandwidth [Channels](/tags/Channel-Risk) available for communication. 
+[Coordination Risk](/tags/Coordination-Risk) commonly occurs where people have different ideas about how to achieve a [goal](/tags/Goal), and they have different ideas because they have different [Internal Models](/tags/Internal-Model).  As we saw in the section on [Communication Risk](/tags/Communication-Risk), we can only hope to synchronise [Internal Models](/tags/Internal-Model) if there are high-bandwidth [Channels](/risks/On-Channels) available for communication. 
 
 You might think, therefore, that this is just another type of [Communication Risk](/tags/Communication-Risk) problem, and that's often a part of it, but even with synchronized [Internal Models](/tags/Internal-Model), coordination risk can occur.  Imagine the example of people all trying to madly leave a burning building.  They all have the same information (the building is on fire).  If they coordinate, and leave in an orderly fashion, they might all get out.  If they don't, and there's a scramble for the door, more people might die.
 

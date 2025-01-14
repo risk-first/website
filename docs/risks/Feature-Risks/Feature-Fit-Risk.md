@@ -10,6 +10,7 @@ tags:
  - Risks
  - Feature Fit Risk
 part_of: Feature Risks
+slug: /risks/Feature-Fit-Risk
 ---
 
 <RiskIntro fm={frontMatter} />
@@ -50,7 +51,7 @@ In the above diagram, we can see Feature Fit Risk being addressed by [Analysis](
 
 ### 6.  Over-Complication
 
-**Threat**: In an effort to provide as much as many features as possible, software can become over-complicated and hard to use.  Trying to mitigate [Feature Fit Risk](/tags/Feature-Fit-Risk) can lead to [Complexity Risk](/tags/Complexity-RisK).
+**Threat**: In an effort to provide as much as many features as possible, software can become over-complicated and hard to use.  Trying to mitigate [Feature Fit Risk](/tags/Feature-Fit-Risk) can lead to [Complexity Risk](/tags/Complexity-Risk).
 
 :::tip Anecdote Corner
 

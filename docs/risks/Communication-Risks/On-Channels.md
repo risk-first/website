@@ -24,7 +24,7 @@ Shannon discusses that no channel is perfect:  there is always the **risk of noi
 
 There are practical implications to this:  messages might be delayed or delivered in the wrong order, or not be acknowledged when they do arrive.  Sometimes, a channel is just an inappropriate way of communicating.  When you work in a different time-zone to someone else on your team, there is _automatic_ [Communication Risk](/tags/Communication-Risk), because instantaneous communication is only available for a few hours a day. 
 
-When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practices of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and grouping all the developers together: although you don't know whether useful communication will happen, you are mitigating [Channel Risk](/tags/Channel-Risk) by ensuring high-quality communication channels are in place.
+When channels are **poor-quality**, less communication occurs.  People will try to communicate just the most important information.  But, it's often impossible to know a-priori what constitutes "important".   This is why [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) recommends the practices of [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming) and grouping all the developers together: although you don't know whether useful communication will happen, you are mitigating [Communication Risk](/tags/Communication-Risk) by ensuring high-quality communication channels are in place.
 
 At other times channels are crowded and can contain so much information that we can't hope to receive all the messages.  In these cases we don't even observe the whole channel, just parts of it. 
 
@@ -43,4 +43,4 @@ This works both ways.  Let's looks at some of the **Communication Risks** from t
 
 ![Marketing Communication](/img/generated/risks/communication/communication_marketing.svg)
 
-[Internal Models](/tags/Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risk) when needed.
+[Internal Models](/tags/Internal-Model) don't magically get populated with the information they need:  they fill up gradually, as shown in the diagram above.  Popular products and ideas _spread_, by word-of-mouth or other means.  Part of the job of being a good technologist is to keep track of new **Ideas**, **Concepts** and **Options**, so as to use them as [Dependencies](/tags/Dependency-Risks) when needed.

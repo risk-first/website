@@ -95,7 +95,7 @@ On a Risk-First diagram, tasks - or actions as we call them - are shown in "sign
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_ and the resulting risk that the potential customers don't trust the quality of our product.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the action is the world as it is now, whereas on the right is the world as it will be _after_ taking some action.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](/tags/Trust-And-Belief-Risk) in our product.  
+So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Reputational Risk](/tags/Reputational-Risk) in our product.  
 
 ## Question 2: What Do We Gain?
 

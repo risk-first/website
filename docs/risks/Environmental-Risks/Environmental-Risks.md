@@ -9,7 +9,7 @@ featured:
 tweet: yes
 slug: /risks/Environmental-Risks
 tags: 
- - Environmental Risk
+ - Environmental Risks
 ---
 
 # Environmental Risks
@@ -22,9 +22,9 @@ It's important to understand that software is always operating within a context.
 
 One useful technique for environmental analysis is [PEST or PESTLE](https://en.wikipedia.org/wiki/PEST_analysis), which breaks down the environment into specific components: Political, Economic, Social, Technological, Legal and Ecological.  Other frameworks suggest looking at Demographic, Geographic or Military elements too.    
  
-There is a lot to this subject, so this section is just a taster: we're going to consider just two specific types of environmental risk, [Security Risk](/tags/Security-Risk) and [Legal Risk](/tags/Legal-Risk).  And then cap off the taxonomy of risks by looking at [Operational Risk](/tags/Operational-Risk), which really encompasses the others.  
-
 ## Types Of Environmental Risk
+
+There is a lot to this subject, so this section is just a taster: we're going to consider just two specific types of environmental risk, [Security Risk](/tags/Security-Risk), [Legal Risk](/tags/Legal-Risk) and [Reputational Risk](/tags/Reputational-Risk).  And then cap off the taxonomy of risks by looking at [Operational Risk](/tags/Operational-Risk), which really encompasses the others. 
 
 <TagList tag="Environmental Risk"  /> 
 

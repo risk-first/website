@@ -1,5 +1,11 @@
+---
+title: Operations Management
+description: How Operations Managers handle Operational Risk
 
-## Operations Management
+slug: /risks/Operations-Management
+tags: 
+ - Operational Risk
+---
 
 If we are designing a software system to "live" in the real world we have to be mindful of the **Operational Context** we're working in and craft our software and processes accordingly.   This view of the "wider" system is the discipline of Operations Management.  
 
@@ -17,7 +23,7 @@ The diagram above is a Risk-First interpretation of [Slack _et al_'s model of Op
  
 ![Risk-First Operations Management:  Taking Action, inspired by the work of Slack _et al._](/img/generated/risks/operational/operational-risk.svg)
  
-The healthy functioning of the **Transform Process** is the domain of [Operations Management](#operations-management).  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions.
+The healthy functioning of the **Transform Process** is the domain of Operations Management.  As the above diagram shows (again, modified from Slack _et al._) this involves the following types of actions.
 
  - **Control**:  ensuring that the Transform Process is working according to its targets.  This includes day-to-day quality control and monitoring . 
  - **Planning**: this covers aspects such as capacity planning, forecasting and project planning.   This is about making sure the transform process has targets to meet and the resources to meet them.
@@ -46,11 +52,11 @@ As we saw in [Internal Model Risk](/tags/Internal-Model-Risk), it's very easy to
 
 ### Scanning The Operational Context
 
-There are plenty of [Hidden Risks](/tags/Hidden-Risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of [Operations Management](#operations-management) is to look for trouble.
+There are plenty of [Hidden Risks](/tags/Hidden-Risk) within the operation's environment. These change all the time in response to economic, legal or political change.  In order to manage a risk, you have to uncover it, so part of Operations Management is to look for trouble.
 
 - **Environmental Scanning** is all about trying to determine which changes in the environment are going to impact your operation.   Here we are trying to determine the level of [Dependency Risk](/tags/Dependency-Risks) we face for external dependencies, such as suppliers, customers, markets and regulation.  Tools like [PEST](https://en.wikipedia.org/wiki/PEST_analysis) are relevant, as is 
 - **[Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test)**: looking for security weaknesses within the operation.  See [OWASP](https://en.wikipedia.org/wiki/OWASP) for examples.
-- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](/tags/Software-Dependency-Risk).
+- **[Vulnerability Management](https://en.wikipedia.org/wiki/Vulnerability_management)** is about keeping up-to-date with vulnerabilities in [Software Dependencies](/risks/On-Software-Dependencies).
 
 ## Planning
 
@@ -64,7 +70,7 @@ As the diagram above shows, we can bring [Planning](#planning) to bear on depend
 
 ![Design and Change Activities](/img/generated/risks/operational/design-change.svg)
 
-Since our operation exists in a world of risks like [Red Queen Risk](/tags/Red-Queen-Risk) and [Market Risk](/tags/Market-Risk), we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
+Since our operation exists in a world of [Environmental Risks](/tags/Environmental-Risks) we would expect that the output of our [Planning](#planning) actions would result in changes to our operation.  
 
 While _planning_ is a day-to-day operational feedback loop, _design_ is a longer feedback loop changing not just the parameters of the operation, but the operation itself.
 
@@ -75,32 +81,3 @@ In recent years the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement has 
   - Using code to automate previously manual Operations functions, like monitoring and releasing.
   - Involving Operations in the planning and design, so that the delivered software is optimised for the environment it runs in.
   
-## Improvement
-
-No system can be perfect, and after it meets the real world, we will want to improve it over time.  But [Operational Risk](/tags/Operational-Risk) includes an element of [Reputational Risk](/tags/Reputational-Risk): we have a  _reputation_ and the good will of our customers to consider when we make improvements.  Because this is very hard to rebuild, we should consider this before releasing software that might not live up to expectations.    
-
-So there is a tension between "you only get one chance to make a first impression" and "gilding the lily" (perfectionism).  In the past I've seen this stated as _pressure to ship vs pressure to improve_.
-
-![Balance of Risks from Delivering Software](/img/generated/risks/operational/ship-it.svg)
-
-A Risk-First re-framing of this (as shown in the diagram above) might be the balance between:
-
-- The perceived scarcity (such as funding, time available, etc) of staying in development (pressure to ship).
-- The perceived [Reputational Risk](/tags/Reputational-Risk), [Feature Fit Risk](/tags/Feature-Fit-Risk) and [Operational Risk](/tags/Operational-Risk) of going to production (pressure to improve).
-
-The "should we ship?" decision is therefore a complex one.  In [Meeting Reality](/thinking/Meeting-Reality), we discussed that it's better to do this "sooner, more frequently, in smaller chunks and with feedback".  We can meet [Operational Risk](/tags/Operational-Risk) _on our own terms_ by doing so: 
-
-|Meet Reality...             |Techniques                                                            | 
-|----------------------------|----------------------------------------------------------------------|
-|**Sooner**                  |Beta Testing, Soft Launches, Business Continuity Testing              |
-|**More Frequently**         |Continuous Delivery, Sprints                                          |
-|**In Smaller Chunks**       |Modular Releases, Microservices, Feature Toggles, Trial Populations   |
-|**With Feedback**           |User Communities, Support Groups, Monitoring, Logging, Analytics      |
-
-<!--latex \pagebreak -->
-
-## The End Of The Road
-
-In a way, [actions](/tags/Take-Action) like [Design](/tags/Design) and [Development](/tags/Coding) bring us right back to where we started from: identifying [Dependency Risks](/tags/Dependency-Risks), [Feature Risks](/tags/Feature-Risks) and [Complexity Risks](/tags/Complexity-Risk) that hinder our operation, and mitigating them through actions like _software development_.  
-
-Our safari of risk is finally complete: it's time to reflect on what we've seen in the next section, [Staging and Classifying](Staging-And-Classifying).  

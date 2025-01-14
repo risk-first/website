@@ -2,7 +2,7 @@
 title: Internal Model Risk
 description: Risks due to the differences between reality and an internal model of reality, and the assumption that they are equivalent. 
 
-
+slug: /risks/Internal-Model-Risk
 featured: 
   class: c
   element: '<risk class="internal-model" />'

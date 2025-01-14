@@ -91,7 +91,7 @@ We need to acknowledge that pursuing certain goals via certain courses of action
 
 ## Summing Up
 
-The most valuable project management skill is being able to chart a course controlling your exposure to risk.  Sometimes, that will mean [hitting a deadline](/tags/Deadline-Risk), but equally it could be [reducing codebase complexity](/tags/Complexity-Risk), [making a feature more accessible](/tags/Feature-Access-Risk) or [removing problematic dependencies](/tags/Software-Dependency-Risk).
+The most valuable project management skill is being able to chart a course controlling your exposure to risk.  Sometimes, that will mean [hitting a deadline](/tags/Deadline-Risk), but equally it could be [reducing codebase complexity](/tags/Complexity-Risk), [making a feature more accessible](/tags/Feature-Fit-Risk) or [removing problematic dependencies](/tags/Dependency-Risks).
 
 The most important skill is to be able to _weigh up the risks_, decide on a course of action that exposes you to the greatest expected return, while looking for ways of increasing the payoff of winning and minimise the impact of losing.
 

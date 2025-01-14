@@ -111,7 +111,7 @@ _Really good design_ would be coming up with a course of action that takes care 
 
 ## Criticism
 
-One of the criticisms of the [Risk Register](Track-Risk#risk-registers) approach is that of [mistaking the map for the territory](/tags/Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Track-Risk#risk-registers) approach is that of [mistaking the map for the territory](/tags/Internal-Model-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](/tags/Hidden-Risk) for that very reason. Or, to put another way:
 

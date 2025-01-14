@@ -30,7 +30,7 @@ This grants you some leeway as now you have two variables to play with: the _siz
 
 In startup circles, this "amount of time you can afford it" is called the ["Runway"](https://en.wiktionary.org/wiki/runway):  you have to get the product to "take-off" (become profitable) before the runway ends.
 
-In the above diagram, your startup is constrained in this way and wants to maximise its available runway.  Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Funding Risk](/tags/Funding-Risk). The problem with this is that when the founders' focus changes to raising funds, they can no longer be focused on _building the right product_ (i.e. [Feature Fit Risk](tags/Feature-Fit-Risk)) building it quickly ([Schedule Risk](/tags/Schedule-Risk)) and doing so before the market for the product changes ([Market Risk](/tags/Market-Risk)).
+In the above diagram, your startup is constrained in this way and wants to maximise its available runway.  Startups often spend a lot of time courting investors in order to get funding and mitigate this type of [Funding Risk](/tags/Funding-Risk). The problem with this is that when the founders' focus changes to raising funds, they can no longer be focused on _building the right product_ (i.e. [Feature Fit Risk](/tags/Feature-Fit-Risk)) building it quickly ([Schedule Risk](/tags/Schedule-Risk)) and doing so before the market for the product changes ([Market Risk](/tags/Market-Risk)).
 
 ## Example Threats
 
@@ -46,7 +46,7 @@ In the above diagram, your startup is constrained in this way and wants to maxim
 
 **Threat**:  The market changes in some way (perhaps interest rates, a stock crash, exchange rates) which affect the source of funding.
 
-**See** [Market Risk](tags/Market-Risk)
+**See** [Market Risk](/tags/Market-Risk)
 
 ### 3.  Threats From Demand
 

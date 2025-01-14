@@ -9,6 +9,7 @@ tags:
  - Risks
  - Market Risk
 part_of: Feature Risks
+slug: /risks/Market-Risk
 ---
 
 <RiskIntro fm={frontMatter} />

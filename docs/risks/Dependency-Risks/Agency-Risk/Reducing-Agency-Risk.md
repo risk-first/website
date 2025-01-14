@@ -3,6 +3,7 @@ title: Reducing Agency Risk
 sidebar_position: 2
 tags:
   - Agency Risk
+slug: /risks/Reducing-Agency-Risk
 ---
 
 As noted in the [main article](/risks/Agency-Risk), there are various ways to reduce [Agency Risk](/tags/Agency-Risk), such as [Monitoring](/tags/Review),  [Security Hardening](/tags/Security-Testing), [Contracts](/tags/Contracts) and so on.,  However here are a couple of other approaches to consider to reduce Agency Risk.

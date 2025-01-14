@@ -53,7 +53,7 @@ It looks like this:
 
 > "Sometimes a user story is generated that cannot be well estimated until the development team does some actual work to resolve a technical question or a design problem. The solution is to create a 'spike,' which is some work whose purpose is to provide the answer or solution. " - [Spike Solution, _Agile Dictionary_](https://agiledictionary.com/209/spike/) 
 
-You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, addressing [Software Dependency](/tags/Software-Dependency-Risk) problems.  For example:
+You might want to use a Spike Solution to test out replacing a badly-fitting technology for a more appropriate one.  That is, addressing [Software Dependency](/risks/On-Software-Dependencies) problems.  For example:
 
 > "Let's explore using [ElasticSearch](https://en.wikipedia.org/wiki/Elasticsearch) for searching instead of SQL Statements."
 
