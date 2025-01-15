@@ -166,11 +166,11 @@ All I need to do is "weigh up" the change in risks as best as I can.  A lot of t
 
 So far, we've been looking at each task individually, working out which risks we're addressing, and which ones we're exposed to as a result.  If you have plenty of spare talent and only a few tasks, then maybe that's enough and you can get to work on all the tasks that have a positive [Payoff](/tags/Payoff).   But if you're constrained, then you should be hunting for the [actions](/tags/Take-Action) with the biggest [Payoff](/tags/Payoff) and doing those first.
 
-Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](/thinking/Track-Risk#risk-registers).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](/tags/Payoff).  This will be covered in further detail in the [next section](Stop-Estimating-Start-Navigating).
-
-But for now, let's talk about in which ways this is better or worse than Planning Poker.
+Things change too when you have a whole team engaged in the planning process.  Although people will generally agree on what the risks _are_, they often will disagree on the [Probability they will occur, or the impact if they do](/thinking/Track-Risk#risk-registers).   In cases like these, you might want to allow each stakeholder to "vote up" the risks they consider significant, or vote up the actions they consider to have high [Payoff](/tags/Payoff).  
 
 ## Some Points To Note
+
+Let's talk about in which ways this is better or worse than Planning Poker.
 
 ![Instead of Estimates](/img/generated/estimating/planner/estimates.svg)
 
