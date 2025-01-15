@@ -21,6 +21,8 @@ practice:
      reason: "Monitors for security breaches and anomalies."
    - tag: Process Risk
      reason: "Monitoring a process can ensure that when it misbehaves the issues are quickly caught."  
+   - tag: Agency Risk
+     reason: "Monitoring the behaviour of agents, whether people or processes, helps identify when behaviour becomes counter-productive."
   attendant:
    - tag: Complexity Risk
      reason: "Implementing comprehensive monitoring solutions can add complexity."
@@ -32,6 +34,7 @@ practice:
    - ../Deployment-and-Operations/Incident-Management
    - ../Tools-and-Standards/Prototyping
    - ../Communication-and-Collaboration/Documentation
+   - ../External-Relations/Analysis
 ---
 
 <PracticeIntro details={frontMatter} /> 
@@ -41,11 +44,6 @@ practice:
 > "Network monitoring is the use of a system that constantly monitors a computer network for slow or failing components and that notifies the network administrator (via email, SMS or other alarms) in case of outages or other trouble. Network monitoring is part of network management." - [Network monitoring, _Wikipedia_](https://en.wikipedia.org/wiki/Network_monitoring)
 
 Monitoring encompasses a wide range of practices designed to ensure that systems operate efficiently and without interruption. This includes tracking the performance, availability, and security of networks, systems, and applications. Effective monitoring helps in early detection of issues, allowing for prompt resolution and minimizing the impact on operations.
-
-See:
- - [Operations Management](/risks/Operational-Risk#operations-management)
- - [Monitoring](/risks/Agency-Risk#monitoring)
- - [Control](/risks/Operational-Risk#control)
 
 ## See Also
 

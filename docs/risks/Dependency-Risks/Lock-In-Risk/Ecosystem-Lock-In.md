@@ -65,7 +65,7 @@ The above chart is an example of this: look at how the number of public classes 
 
 ## Backward Compatibility
 
-The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](/risks/On-Protocols#backward-compatibility).
+The art of good design is to afford the greatest increase in functionality with the smallest increase in complexity possible, and this usually means [Refactoring](https://en.wikipedia.org/wiki/Refactoring).  But, this is at odds with [Backward Compatibility](/risks/On-Protocols#3-backward-compatibility).
 
 Each new version has a greater functional scope than the one before, making the platform more attractive.   But this increases the [Complexity Risk](/tags/Complexity-Risk) as there is more functionality to deal with.  
 
@@ -73,4 +73,4 @@ Each new version has a greater functional scope than the one before, making the 
 
 You can see in the diagram above the Peter Principle at play:  as more responsibility is given to a dependency, the more complex it gets and the greater the learning curve to work with it.  Large ecosystems like Java react to [Internal Model Risk](/tags/Internal-Model-Risk) by having copious amounts of literature to read or buy to help, but it is still off-putting.
 
-Because [Complexity is Mass](/risks/Complexity-Risk#complexity-is-mass), large ecosystems can't respond quickly to c.  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.
+Because [Complexity is Mass](/risks/Complexity-Analogies#complexity-is-mass), large ecosystems can't respond quickly to c.  This means that when the world changes, new ecosystems are likely to appear to fill gaps, rather than old ones moving in.

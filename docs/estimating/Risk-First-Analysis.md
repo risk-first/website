@@ -41,7 +41,7 @@ Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](/t
 
 - [Kitchen Cabinet](Kitchen-Cabinet):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going right back to square one.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
-- [Fractals](Fractals):  In this domain, [Parkinson's Law](/risks/Process-Risk#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
+- [Fractals](Fractals):  In this domain, [Parkinson's Law](/risks/Process-Risk#4-bureaucratic-creep) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
 ![Three Dimensions From Fill-The-Bucket](/img/estimates/dimensions.png)
 

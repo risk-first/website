@@ -27,9 +27,7 @@ Process Risk intersects with several other types of risk we've covered so far:
 - [Communication Risk](/tags/Communication-Risk): You need to communicate intent to the process, and have it report back its status (think of buying something on the Internet, and the delivery company communicating where the parcel is in transit).
 - [Feature Fit Risk](/tags/Feature-Fit-Risk): A Process should be supplying some useful _features_ to you in order for you to use it.  Is it fit for purpose? (An example might be starting to fill out a form but then realising you're filling out the wrong form).
 
-So clearly there is overlap here with other types of risk we've looked at:  a good process should be reliable, available (i.e. not scarce), transparent in its communications and obedient to our wishes.  In fact, Process Risk really should be thought of as just a wrapper for other things.  Nevertheless, it's a useful pattern to talk about as it comes up repeatedly.
-
-![Process Risk Overlap Venn Diagram](/img/risks/process-risk/Process-Risk-Overlap.svg)
+So clearly there is a degree overlap here with other types of risk we've looked at:  a good process should be reliable, available (i.e. not scarce), transparent in its communications and obedient to our wishes.  In fact, Process Risk really should be thought of as just a wrapper for other things.  Nevertheless, it's a useful pattern to talk about as it comes up repeatedly.
 
 ## Worked Example
 
@@ -87,7 +85,7 @@ For the customers of the team, the introduction of the issue management system c
 
 ### 4. Bureaucratic Creep
 
-- **Threat**: Its easier for processes to accrete rather than be decommissioned.  This is an implication of Parkinson's Law and slowly ratchets up inefficiency.
+- **Threat**: Its easier for processes to accrete rather than be decommissioned.  This is an implication of Parkinson's Law (work expands so as to fill the time available for its completion) and slowly ratchets up inefficiency.
 
 :::tip Anecdote Corner
 

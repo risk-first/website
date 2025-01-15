@@ -36,7 +36,7 @@ The decisions at the top are faster, but don't do much for mitigating [Coordinat
 
 The trick is to be able to tell which approach is suitable at which time.   Everyone is expected to make decisions _within their realm of expertise_: you can't have developers continually calling meetings to discuss whether they should be using an [Abstract Factory](https://en.wikipedia.org/wiki/Abstract_factory_pattern) or a [Factory Method](https://en.wikipedia.org/wiki/Factory_method_pattern): it would waste time.  The critical question is therefore, "what's the biggest risk?"
 
- - Is the [Coordination Risk](/tags/Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](/tags/Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [morale](Agency-Risk#morale-failure) too.  
+ - Is the [Coordination Risk](/tags/Coordination-Risk) greater?   Are we going to suffer [Dead End Risk](/tags/Complexity-Risk) if the decision is made wrongly?  What if people don't agree with it?  Poor leadership has an impact on [morale](Human-Agency-Risk#6-morale-failure) too.  
  - Is the [Schedule Risk](/tags/Schedule-Risk) greater?  If you have a 1-hour meeting with eight people to decide a decision, that's _one person day_ gone right there:  group decision making is _expensive_.  
  
 So _organisation_ can reduce [Coordination Risk](/tags/Coordination-Risk) but to make this work we need more _communication_, and this has attendant complexity and time costs.  
@@ -86,7 +86,7 @@ The job of harmonising this on a project would seem to fall to the team leader, 
 
 Specifically this describes a process whereby a new group will form and then be required to work together. In the process, they will have many _disputes_.  Ideally, the group will resolve these disputes internally and emerge as a team, with a common [Goal](/tags/Goal).
 
-Since [Coordination](/tags/Coordination-Risk) is about [Resource Allocation](Coordination-Risk#problems-of-coordination) the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](/tags/Coordination-Risk) issues like:
+Since [Coordination](/tags/Coordination-Risk) is about resource allocation, the skills of staff can potentially be looked at as resources to allocate.  This means handling [Coordination Risk](/tags/Coordination-Risk) issues like:
 
  - People leaving, taking their [Internal Models](/tags/Internal-Model) and expertise with them ([Key Person Risk](/tags/Reliability-Risk)).
  - People requiring external training, to understand new tools and techniques ([Internal Model](/tags/Internal-Model-Risk)).

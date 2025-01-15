@@ -42,7 +42,7 @@ Making use of third-party libraries or services in your code.
 
 See:
 
- - [Languages and Dependencies](/risks/Complexity-Risk#languages-and-dependencies)
+ - [Languages and Dependencies](/risks/Kolmogorov-Complexity#languages-and-dependencies)
  - [Software Libraries (On Software Dependencies)](/risks/On-Software-Dependencies#2-software-libraries)
  - [Software-as-a-Service (On Software Dependencies)](/risks/On-Software-Dependencies#3--software-as-a-service)
 

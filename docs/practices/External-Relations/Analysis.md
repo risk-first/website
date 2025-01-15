@@ -12,6 +12,7 @@ practice:
    - "Requirement Analysis"
    - "Business Analysis"
    - "System Analysis"
+   - "Environmental Scanning"
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures that requirements and specifications are clearly understood before development begins."
@@ -25,6 +26,8 @@ practice:
      reason: "Analysis is the process of doing work to build a better Internal Model."
    - tag: Lock-In Risk
      reason: "Analysis can identify dependencies where Lock-In Risk is high."
+   - tag: Operational Risk
+     reason: "Analysis is important to identify threats to an operation from its environment."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, potentially delaying the start of development."
@@ -44,9 +47,7 @@ practice:
 
 Analysis in software development involves examining and breaking down the requirements, systems, and processes to understand the needs and ensure the correct implementation of the software. This practice is crucial for identifying potential issues, clarifying requirements, and ensuring that the development aligns with business goals and user needs.
 
-See: 
-
- - [Environmental Scanning](/risks/Operational-Risk#scanning-the-operational-context)
+Analysis is also important as a tool to understand the environment that your software will run in.  See [Environmental Risks](/tags/Environmental-Risks).
 
 ## See Also
 

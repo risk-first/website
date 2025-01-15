@@ -42,7 +42,7 @@ Delegation involves assigning responsibility and authority to others to carry ou
 
 See:
  
- - [Goal Alignment](/risks/Agency-Risk#goal-alignment)=
+ - [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment)
  - [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
 
 ## See Also

@@ -12,15 +12,12 @@ tags:
  - Refactoring
  - Complexity Risk
  - Abstraction
-definitions:
- - name: Abstraction
-   description: blah
 part_of: Operational Risk
 ---
 
 <RiskIntro fm={frontMatter} />
 
-[Complexity Risk](/tags/Complexity-Risk) is the [risk](/tags/Risk) to your project due to its underlying "complexity" - the amount of code, documentation, issues, features, different types of user and so on and, crucially, the [relationships between those elements](./Complexity-Risk/Connectivity).   
+[Complexity Risk](/tags/Complexity-Risk) is the [risk](/tags/Risk) to your project due to its underlying "complexity" - the amount of code, documentation, issues, features, different types of user and so on and, crucially, the [relationships between those elements](/risks/Connectivity).   
 
 Looking at the living world, society or software in general, we can see that -over time- complexity increases.  There is a trade-off wherein we can capture more resources, more value or more user requirements (respectively) through increasing complexity.  The downside of this is that complex systems are more brittle and harder to change.  
 

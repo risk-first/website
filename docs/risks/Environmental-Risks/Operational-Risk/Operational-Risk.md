@@ -32,7 +32,7 @@ They decide to [out-source](/tags/Outsourcing) their support function to a low-c
 
 Any of the risks we've covered so far can knock-on to be an [Operational Risk](/tags/Operational-Risk) - that's one of the main reasons we've left this until the end.  Below is a non-exhaustive look at some of the ways these intersect. 
 
-In reality, there is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Effective [Operational Risk Management](/tags/Operational-Risk) means we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of [Operations Management](Operations-Management).
+In reality, there is a long laundry-list of everything that can go wrong due to operating in "The Real World".  Effective [Operational Risk Management](/tags/Operational-Risk) means we have to consider that these dependencies will fail in any number of unusual ways, and we can't be ready for all of them.  Preparing for this comes under the umbrella of Operations Management.
 
 ### 1. Process Risk
 

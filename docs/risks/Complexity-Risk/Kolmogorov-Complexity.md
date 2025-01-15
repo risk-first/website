@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Kolmogorov Complexity
+slug: /risks/Kolmogorov-Complexity
 ---
 
 The standard Computer-Science definition of complexity is [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity).  This is:

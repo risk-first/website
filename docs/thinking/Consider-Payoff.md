@@ -34,6 +34,8 @@ definitions:
    description: The probability-weighted return of the bet.
    anchor: the-structure-of-a-bet
    part_of: Bet
+ - name: Abstraction
+   description: The practice of hiding complex implementation details and exposing only the essential features of an object or system to simplify its use and understanding.
 sidebar_position: 10
 tweet: yes
 ---

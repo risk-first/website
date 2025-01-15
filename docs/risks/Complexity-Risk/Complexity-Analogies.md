@@ -1,11 +1,12 @@
 ---
 sidebar_position: 3
 title: Analogies For Complexity
+slug: /risks/Complexity-Analogies
 ---
 
-So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/tags/Abstraction) and [Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation) and via [Dependencies](/risks/Complexity-Risk#languages-and-dependencies).  
+So, we've looked at some measures of software structure complexity.  We can say "this is more complex than this" for a given piece of code or structure.  We've also looked at three ways to manage it:  [Abstraction](/tags/Abstraction) and [Modularisation](/risks/Connectivity#hierarchies-and-modularisation) and via [Dependencies](/risks/Kolmogorov-Complexity#languages-and-dependencies).  
 
-However, we've not really said why complexity entails [Risk](/tags/Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](/risks/Complexity-Risk#complexity-is-mass), [Technical Debt](/risks/Complexity-Risk#technical-debt) and [Mess](/risks/Complexity-Risk#kitchen-analogy)  
+However, we've not really said why complexity entails [Risk](/tags/Attendant-Risk).  So let's address that now by looking at three analogies, [Mass](#complexity-is-mass), [Technical Debt](#technical-debt) and [Mess](#kitchen-analogy)  
 
 ## Complexity is Mass
 
@@ -31,7 +32,7 @@ At a basic level, [Complexity Risk](/tags/Complexity-Risk) heavily impacts on [S
 
 ## Technical Debt
 
-The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as [Technical Debt](/risks/Complexity-Risk#technical-debt):
+The most common way we talk about [Complexity Risk](/tags/Complexity-Risk) in software is as Technical Debt:
 
 > "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organisations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise." - [Ward Cunningham, 1992, _Wikipedia, Technical Debt_](https://en.wikipedia.org/wiki/Technical_debt)
 
@@ -43,7 +44,7 @@ But having mitigated the [Feature Fit Risk](/tags/Feature-Fit-Risk) this way, yo
 
 ### Kitchen Analogy
 
-It’s often hard to make the case for minimising [Technical Debt](/risks/Complexity-Risk#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](/thinking/Evaluating-Risk#discounting-the-future-to-zero).)
+It’s often hard to make the case for minimising [Technical Debt](#technical-debt): it often feels that there are more important priorities, especially when technical debt can be “swept under the carpet” and forgotten about until later.  (See [Discounting](/thinking/Evaluating-Risk#discounting-the-future-to-zero).)
 
 One helpful analogy I have found is to imagine your code-base is a kitchen.   After preparing a meal (i.e. delivering the first implementation), _you need to tidy up the kitchen_.  This is just something everyone does as a matter of _basic sanitation_. 
 
@@ -72,7 +73,7 @@ Therefore, [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep) (or [Gol
 
 Sometimes, feature-creep happens because either managers feel they need to keep their staff busy, or the staff decide on their own that they need to [keep themselves busy](/tags/Agency-Risk).  This is something we'll return to in [Agency Risk](/tags/Agency-Risk).
 
-## Complexity  -Ends: An Example
+## Complexity Dead Ends
 
 Imagine a complex software system composed of many sub-systems.  Let's say that the Accounting sub-system needed password protection (so you built this).  Then the team realised that you needed a way to _change the password_ (so you built that).   Then, you needed to have more than one user of the Accounting system so they would all need passwords (OK, fine).  
 
@@ -86,11 +87,11 @@ At this point, you realise you're in a **Dead End**:
 
 > There’s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: they are probably wrong. The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:  _It’s harder to read code than to write it._    - [Things You Should Never Do, Part 1, _Joel Spolsky_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-Whichever option you choose, this is a dead end because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead-ends up-front because of the complexity of the system in front of you.
+Whichever option you choose, this is a dead end because with hindsight, it would probably have been better to do authentication in a common way _once_.  But it's hard to see these dead ends up-front because of the complexity of the system in front of you.
 
 ### Avoiding Dead Ends
 
-Working in a complex environment makes it harder to see developmental dead-ends.
+Working in a complex environment makes it harder to see developmental dead ends.
  
 Sometimes, the path across the [Risk Landscape](/risks/Risk-Landscape) will take you to dead ends, and the only benefit to be gained is experience.  No one deliberately chooses a dead end - often you can take an action that doesn't pay off, but frequently the dead end appears from nowhere:  it's a [Hidden Risk](/tags/Hidden-Risk).  The source of a lot of this hidden risk is the complexity of the [risk landscape](/tags/Risk-Landscape).
 

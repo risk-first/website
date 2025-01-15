@@ -26,6 +26,6 @@ One useful technique for environmental analysis is [PEST or PESTLE](https://en.w
 
 There is a lot to this subject, so this section is just a taster: we're going to consider just two specific types of environmental risk, [Security Risk](/tags/Security-Risk), [Legal Risk](/tags/Legal-Risk) and [Reputational Risk](/tags/Reputational-Risk).  And then cap off the taxonomy of risks by looking at [Operational Risk](/tags/Operational-Risk), which really encompasses the others. 
 
-<TagList tag="Environmental Risk"  /> 
+<TagList tag="Environmental Risks"  /> 
 
 

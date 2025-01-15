@@ -51,9 +51,8 @@ Refactoring is all about ensuring you have the right abstractions.
 
 See: 
 
- - [Refactoring](/risks/Complexity-Risk#refactoring)
- - [The Power of Abstractions](/risks/Staging-And-Classifying#the-power-of-abstractions)
- - [Hierarchies and Modularisation](/risks/Complexity-Risk#hierarchies-and-modularisation)
+ - [Refactoring](/risks/Kolmogorov-Complexity#refactoring)
+ - [Hierarchies and Modularisation](/risks/Connectivity#hierarchies-and-modularisation)
  
 
 ## External References

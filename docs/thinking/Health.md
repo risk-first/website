@@ -122,7 +122,7 @@ When an organisation or a project hires an employee they are doing so in order t
 
 Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conflict with one another:
 
- - Putting in [a heroic effort](/risks/Agency-Risk#the-hero) might save a project but at the expense of your personal health. 
+ - Putting in [a heroic effort](/risks/Human-Agency-Risk#2-the-hero) might save a project but at the expense of your personal health. 
    
  - [Lobbying](https://en.wikipedia.org/wiki/Lobbying) is trying to push the  political agenda of an organisation at the state level, which might help the health of the organisation at the expense of the state or its citizens.  
  

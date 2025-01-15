@@ -42,7 +42,7 @@ For a firm wanting to strengthen its security posture, there is almost an unlimi
 
 ![Security as a mitigation for Agency Risk](/img/generated/risks/posters/security-risk.svg)
 
-In the diagram above, a firm decides to address security risk with training, multi-factor authentication schemes, endpoint detection and response (EDR) and encrypting it's data.  In many scenarios, these are all good practices if implemented correctly.  However, [Agency Risk](/tags/Agency-Risk) and [Security Risk](Agency-Risk#security) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](/tags/Complexity-Risk), because secure systems are necessarily more complex than insecure ones.  
+In the diagram above, a firm decides to address security risk with training, multi-factor authentication schemes, endpoint detection and response (EDR) and encrypting it's data.  In many scenarios, these are all good practices if implemented correctly.  However, [Agency Risk](/tags/Agency-Risk) and [Security Risk](/tags/Security-Risk) thrive on complexity:  the more complex the systems we create, the more opportunities there are for bad actors to insert themselves and extract their own value.  The dilemma is, _increasing security_ also means increasing [Complexity Risk](/tags/Complexity-Risk), because secure systems are necessarily more complex than insecure ones.  
 
 :::tip Anecdote Corner
 

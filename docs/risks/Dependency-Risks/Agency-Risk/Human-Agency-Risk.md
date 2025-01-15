@@ -86,7 +86,7 @@ Sometimes the morale of the team or individuals within it dips, leading to lack 
 
 [Agency Risk](/tags/Agency-Risk) applies to _whole teams_ too.  It's perfectly possible that a team within an organisation develops [Goals](/tags/Goal) that don't align with those of the overall organisation.  For example:
 
- - A team introduces excessive [Bureaucracy](/risks/Process-Risk#bureaucracy) in order to avoid work it doesn't like.
+ - A team introduces excessive [Bureaucracy](/risks/Process-Risk#4-bureaucratic-creep) in order to avoid work it doesn't like.
  - A team gets obsessed with a particular technology, or their own internal process improvement, at the expense of delivering business value.
  - A marginalised team forces their services on other teams in the name of "consistency".   (This can happen a lot with "Architecture", "Branding" and "Testing" teams, sometimes for the better, sometimes for the worse.)
 

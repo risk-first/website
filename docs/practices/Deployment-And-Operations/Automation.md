@@ -49,11 +49,6 @@ practice:
 
 One of the key ways to measure whether your team is doing _useful work_ is to look at whether, in fact, it can be automated.  And this is the spirit of [DevOps](/methods/DevOps) - the idea that people in general are poor at repeatable tasks, and anything people do repeatedly _should_ be automated.  
 
-See: 
-
- - [Automation (Meeting Reality)](/thinking/Meeting-Reality#example-automation)
- - [The Purpose of Process](/risks/Process-Risk#the-purpose-of-process)
-
 ## See Also
 
 <TagList tag="Automation" />

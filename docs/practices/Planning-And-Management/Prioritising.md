@@ -77,8 +77,7 @@ By prioritising, you get to [Meet Reality](/thinking/Meeting-Reality) _sooner_ a
 
 
 See:
- - [Operations Management](/risks/Operational-Risk#operations-management)
- - [Planning](/risks/Operational-Risk#planning)
+ - [Issue Management](Issue-Management)
  - [Tracking Risks](/thinking/Track-Risk#visualising-risks)
 
 

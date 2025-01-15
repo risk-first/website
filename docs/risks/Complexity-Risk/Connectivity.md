@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Connectivity As Complexity
+slug: /risks/Connectivity
 ---
 
 A second useful measure of complexity comes from graph theory, and that is the connectivity of a graph:

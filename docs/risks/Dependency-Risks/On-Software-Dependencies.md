@@ -5,8 +5,6 @@ description: Discussion of Dependency Risks due to software.
 slug: /risks/On-Software-Dependencies
 sidebar_position: 10
 tweet: yes
-tags: 
- - Dependency Risks
 ---
 
 In this section, we're going to look specifically at _Software_ dependencies, although many of the concerns we'll raise here apply equally to all the other types of dependency we outlined in [Dependency Risks](/tags/Dependency-Risks). 
@@ -41,7 +39,7 @@ With this in mind, we can see that adding a software dependency is a trade-off: 
 
 ## Programming Languages as Dependencies
 
-In the earlier section on [Complexity Risk](/tags/Complexity-Risk) we tackled [Kolmogorov Complexity](/risks/Complexity-Risk#kolmogorov-complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
+In the earlier section on [Complexity Risk](/tags/Complexity-Risk) we tackled [Kolmogorov Complexity](/risks/Kolmogorov-Complexity), and the idea that your codebase had some kind of minimal level of complexity based on the output it was trying to create.  This is a neat idea, but in a way, we cheated.  Let's look at how.
 
 We were trying to figure out the shortest (Javascript) program to generate this output:
 
@@ -113,7 +111,7 @@ Adopting complex software dependencies (as shown in the diagram above) might all
 
 Using a software dependency allows us to split a project's complexity into two: 
 
- - The inner complexity of the dependency (how it works internally, its own [internal complexity](/risks/Complexity-Risk#kolmogorov-complexity)).
+ - The inner complexity of the dependency (how it works internally, its own [internal complexity](/risks/Kolmogorov-Complexity)).
  - The complexity of the instructions that we need to write to make the tool work, [the protocol complexity](/tags/Communication-Risk), which will be a function of the complexity of the tool itself.
 
 ![Types of Complexity For a Software Dependency](/img/generated/risks/software-dependency/protocol-complexity.svg)
@@ -144,7 +142,7 @@ All 3 approaches involve a different risk-profile.  Let's look at each in turn, 
 
 Way before the Internet, this was the only game in town.  Tool support was very thin-on-the-ground.  Algorithms could be distributed as code snippets _in books and magazines_ which could be transcribed and run, and added to your program.  This spirit lives on somewhat in StackOverflow and JSFiddle, where you are expected to "adopt" others' code into your own project. Code-your-own is still the best option if you have highly bespoke requirements, or are dealing with unusual environmental contexts.
 
-One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Fit Risk](/tags/Feature-Fit-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead-Ends](/risks/Complexity-Risk/Complexity-Analogies#Avoiding-Dead-Ends), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
+One of the hidden risks of embarking on a code-your-own approach is that the features you need are _not_ apparent from the outset.  What might appear to be a trivial implementation of some piece of functionality can often turn into its own industry as more and more hidden [Feature Fit Risk](/tags/Feature-Fit-Risk) is uncovered.  For example, as we discussed in our earlier treatment of [Dead Ends](/risks/Complexity-Analogies#avoiding-dead-ends), building log-in screens _seemed like a good idea_.  However, this gets out-of-hand fast when you need:
 
  - A password reset screen
  - To email the reset links to the user

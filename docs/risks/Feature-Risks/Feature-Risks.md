@@ -22,6 +22,6 @@ Not considering [Feature Risks](/tags/Feature-Risks) means that you might be bui
  
 ## Types Of Feature Risk
 
-<TagList tag="Feature Risks" filter="risks/Feature-Risks" /> 
+<TagList tag="Feature Risks" /> 
 
 
