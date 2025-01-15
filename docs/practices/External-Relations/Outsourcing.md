@@ -52,7 +52,7 @@ In the extreme, I've seen situations where the team at one location has decided 
 
 When this happens, it's because somehow the team feel that [Coordination Risk](/tags/Coordination-Risk) is more unmanageable than [Schedule Risk](/tags/Schedule-Risk).
 
-There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](/tags/Review), or simply modularizing accross geographic boundaries, in respect of [Conway's Law](/tags/Coordination-Risk):
+There are some mitigations here:  video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](/tags/Review), or simply modularizing across geographic boundaries, in respect of [Conway's Law](/tags/Coordination-Risk):
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations."  - _[M. Conway](https://en.wikipedia.org/wiki/Conways_law)_
 

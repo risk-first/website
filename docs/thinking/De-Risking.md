@@ -209,9 +209,9 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 ### General Examples
 
-- **Stop-Loss Trades** are an investment where should the trade start loosing too much money, the trade is closed out, limiting the downside.
+- **Stop-Loss Trades** are an investment where should the trade start losing too much money, the trade is closed out, limiting the downside.
 
-- **Incident Reporting Plans**: often businesses will have a procedure for dealing with irregular behaviour (such as a cyber attack). 
+- **Incident Reporting Plans**: often businesses will have a procedure for dealing with irregular behaviour (such as a cyberattack). 
 
 - **Regulations**: firms such as banks or drug companies operate under heavy regulation, designed to control and limit both the amount of risk they take on and that expose their customers to.
 

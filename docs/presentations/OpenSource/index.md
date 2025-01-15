@@ -116,7 +116,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>So, that’s often known as a LAMP stack.  So Linux, Apache, we know.  MySQL is a database - so all your wordpress posts get stored in there.  And PHP, Pearl, Python, they’re open-source programming languages - some of the biggest.  And Wordpress is written in PHP.</p>
 
-      <p>All of this is Open Source… except perhaps for MySQL, which was Open Source, but is now owned by Oracle.  But here’s the thing:  once Oracle (somehow) managed to aquire MySQL, the original open-source MySQL became MariaDB.</p>
+      <p>All of this is Open Source… except perhaps for MySQL, which was Open Source, but is now owned by Oracle.  But here’s the thing:  once Oracle (somehow) managed to acquire MySQL, the original open-source MySQL became MariaDB.</p>
 
 
             </div>
@@ -159,7 +159,7 @@ hide_table_of_contents: true
                 <img src="/img/presentations/OpenSource/images/images.010.jpg" alt="Image of slide number 10" />
             </div>
             <div class="slide-notes">
-                      <p>Ok, so here’s a story from before I was at Deutsche Bank, when I was working with Credit Suisse in their Risk department.  We were building a new risk calculator.  And the process went something like this.  The guy on the left, he’s the Analyst.  He writes a requirements document, explaining exactly how he thinks the calcuator should work.  Then, he goes to the pub.  Often, for several days. </p>
+                      <p>Ok, so here’s a story from before I was at Deutsche Bank, when I was working with Credit Suisse in their Risk department.  We were building a new risk calculator.  And the process went something like this.  The guy on the left, he’s the Analyst.  He writes a requirements document, explaining exactly how he thinks the calculator should work.  Then, he goes to the pub.  Often, for several days. </p>
 
       <p>Next, the developer picks up these requirements, and starts programming. </p>
 
