@@ -15,18 +15,18 @@ practice:
   mitigates:
    - tag: Operational Risk
      reason: "Provides data to inform decision-making and improve operational efficiency."
-   - tag: Feature Access Risk
+   - tag: Feature Fit Risk
      reason: "Helps in understanding the use of the system."
    - tag: Implementation Risk
      reason: "Identifies areas of improvement in the implementation process."
   attendant:
    - tag: Funding Risk
      reason: "Implementing measurement systems can be expensive."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependencies on measurement tools and their accuracy."
    - tag: Complexity Risk
      reason: "Collecting and analyzing data can add to the complexity of the project."
-   - tag: Map And Territory Risk
+   - tag: Internal Model Risk
      reason: "Focusing on the wrong measures can blind you to what's important."
   related:
    - ../Deployment-and-Operations/Monitoring

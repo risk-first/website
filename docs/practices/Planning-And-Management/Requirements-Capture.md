@@ -16,13 +16,11 @@ practice:
    - tag: Feature Fit Risk
      reason: "Ensures that features align with client needs and expectations."
    - tag: Coordination Risk
-     reason: "Can Provide a clear understanding of requirements to all stakeholders."
-   - tag: Conceptual Integrity Risk
+     reason: "Reduces coordination risks around deciding what should be built."
+   - tag: Communication Risk
      reason: "Helps in explaining exactly what should be built."
   attendant:
-   - tag: Feature Drift Risk
-     reason: "Requirements will evolve and this can lead to feature drift."
-   - tag: Dependency Risk
+   - tag: Schedule Risk
      reason: "Thorough requirements capture can be time-consuming."
   related:
    - ../Planning-and-Management/Prioritising

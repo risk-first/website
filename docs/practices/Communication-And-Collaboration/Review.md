@@ -16,21 +16,21 @@ practice:
   mitigates:
    - tag: Implementation Risk
      reason: "Ensures quality and correctness of work products."
-   - tag: Conceptual Integrity Risk
+   - tag: Communication Risk
      reason: "Maintains alignment with design principles and goals."
    - tag: Complexity Risk
-     reason: "Identifies and resolves potential complexities during the review process."
+     reason: "Identifies unnecessary complexity and communicates necessary complexity to the rest of the team."
    - tag: Agency Risk
      reason: "Reviewing work or activity can ensure good behaviour."
-   - tag: Map And Territory Risk
-     reason: "Reviews and audits can uncover unseen problems in a system"
+   - tag: Internal Model Risk
+     reason: "Reviews and audits can uncover unseen problems in a system."
+   - tag: Reliability Risk
+     reason: "Reviews and audits can be performed to investigate the causes of unreliability in a system."
   attendant:
    - tag: Schedule Risk
      reason: "Reviews can introduce delays in the project timeline."
    - tag: Coordination Risk
-     reason: "Requires effective coordination among team members."
-   - tag: Implementation Risk
-     reason: "Can lead to conflicts over quality and implementation details."
+     reason: "Synchronous reviews require effective coordination among team members."
   related:
    - ../Deployment-And-Operations/Monitoring
    - Retrospective

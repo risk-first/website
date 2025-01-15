@@ -16,14 +16,13 @@ practice:
    - tag: Agency Risk
      reason: "Aligns the goals and expectations of various stakeholders, reducing conflicts."
    - tag: Coordination Risk
-     reason: "Allows stakeholders to coordinate on their work and demands."
+     reason: "Allows stakeholders to coordinate on their demands."
    - tag: Communication Risk
-     reason: "Facilitates clear and consistent communication between stakeholders."
+     reason: "Facilitates clear and consistent communication between stakeholders."  
+   - tag: Internal Model Risk
+     reason: "Talking to stakeholders helps to share and socialise Internal Models." 
+      
   attendant:
-   - tag: Coordination Risk
-     reason: "Requires effective coordination among all stakeholders, which can be challenging."
-   - tag: Boundary Risk
-     reason: "Managing diverse stakeholder expectations can create rigid boundaries."
    - tag: Communication Risk
      reason: "Misaligned communication strategies can lead to misunderstandings and conflicts."
   related:

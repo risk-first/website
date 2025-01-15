@@ -13,16 +13,14 @@ practice:
    - "End-to-End Testing"
    - "Continuous Integration"
   mitigates:
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Ensures that integrated components work together as expected."
    - tag: Implementation Risk
-     reason: "Validates that the implementation meets requirements."
-   - tag: Regression Risk
-     reason: "Detects regressions early in the integration phase."
+     reason: "Validates that the implementation meets requirements and detects regressions early in the integration phase."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Adds dependencies on test environments and their availability."
   related:
    - ../Planning-and-Management/Change-Management

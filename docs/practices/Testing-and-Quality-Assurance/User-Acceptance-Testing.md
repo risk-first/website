@@ -22,6 +22,8 @@ practice:
      reason: "Validates that the implementation meets the specified requirements."
    - tag: Communication Risk
      reason: "Facilitates feedback from end users, improving the final product."
+   - tag: Internal Model Risk
+     reason:  "As a feedback mechanism, UAT helps improve understanding of users and their requirements."
   attendant:
    - tag: Schedule Risk
      reason: "UAT can be time-consuming, potentially delaying the release."

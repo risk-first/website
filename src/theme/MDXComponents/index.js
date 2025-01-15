@@ -5,6 +5,7 @@ import PracticeIntro from '../PracticeIntro'
 import RiskIntro from '../RiskIntro'
 import MethodIntro from '../MethodIntro'
 import TermList from '../TermList';
+import Matrix from '../Matrix';
 
 export default {
   ...MDXComponents,
@@ -13,7 +14,8 @@ export default {
   PracticeIntro,
   RiskIntro,
   MethodIntro, 
-  TermList
+  TermList,
+  Matrix
 };
 
 

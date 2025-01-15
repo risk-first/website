@@ -21,6 +21,6 @@ This is an incomplete index of software development practices that you might app
 
 ## Main Areas
 
-Practices here are broken down into the following main categories.
+Practices here are broken down into the following (fairly arbitrary) categories.
 
 <TagList filter="practices" tag="Practice Category" />

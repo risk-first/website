@@ -13,19 +13,23 @@ practice:
    - "External Hiring"
    - "Third-Party Development"
   mitigates:
-   - tag: Staff Risk
+   - tag: Agency Risk
      reason: "Accesses external resources and skills that may not be available internally."
    - tag: Funding Risk
      reason: "Can be cost-effective by leveraging economies of scale."
    - tag: Schedule Risk
-     reason: "Can speed up project timelines by adding more workforce."
+     reason: "Can speed up project timelines by increasing the workforce."
   attendant:
    - tag: Agency Risk
      reason: "Creates dependencies on third-party vendors and their reliability."
    - tag: Communication Risk
      reason: "May introduce communication challenges with external teams."
    - tag: Security Risk
-     reason: "Potential risks related to data security and confidentiality."
+     reason: "Sharing responsibilities across multiple organisations can introduce new security risks."
+   - tag: Market Risk
+     reason: "Increasing the size of the supply chain introduces risks that the state of that supply chain changes with the market."
+   - tag: Legal Risk
+     reason: "Outsourcing relationships may be more legally complex than hiring staff directly."
   related:
    - ../Planning-and-Management/Contract
    - ../Communication-and-Collaboration/Stakeholder-Management

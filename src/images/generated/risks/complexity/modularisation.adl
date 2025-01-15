@@ -10,21 +10,23 @@
               id="c"
               style="--kite9-layout: right; --kite9-vertical-align: center;">
       <mitigated>
-         <risk class="codebase"/>
+         <risk class="complexity"/>
       </mitigated>
       <label id="id_16">
-        Internal Model
+        Systems in which there are multiple paths of
+        communication and control are often complex.
       </label>
    </container>
    <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
-      <action id="a1">Modularisation, Hierarchy</action>
+      <action id="a1">Delegation, Hierarchy</action>
    </group>
    <group style="--kite9-layout: down;">
       <container id="d1" style="--kite9-layout: right; --kite9-sizing: maximize;">
          <risk class="communication" id="r1"/>
-         <risk class="invisibility" id="r2"/>
          <label id="id_16-ar">
-          Attendant Risks
+          Introducing hierarchical ownership simplifies the 
+          design, but introduces new opportunities for
+          Communication Risk.
         </label>
       </container>
    </group>

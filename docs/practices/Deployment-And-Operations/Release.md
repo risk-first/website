@@ -12,9 +12,8 @@ practice:
    - "Software Release Management"
    - "Deployment"
    - "Launch"
+   - "Publication"
   mitigates:
-   - tag: Feature Access Risk
-     reason: Users are able to access the features you release to them.
    - tag: Feature Fit Risk
      reason: Putting new features in the hands of users can make your product fit their needs better.
    - tag: Market Risk
@@ -23,9 +22,17 @@ practice:
      reason: "Delivering features might mean you get paid for the software you write."
   attendant:
    - tag: Schedule Risk
-     reason: "Delays in the release process can impact overall project timelines."
+     reason: "Delays in the release process can impact overall project time-lines."
    - tag: Operational Risk
      reason: "Releasing software means that the software has to be supported in production."
+   - tag: Process Risk
+     reason: "Complex release procedures are a source of process risk."
+   - tag: Reliability Risk
+     reason: "Releases can introduce discontinuities in software service if not managed well."
+   - tag: Reputational Risk
+     reason: "Poor release management can destroy reputation and good-will." 
+   - tag: Legal Risk  
+     reason: Publishing or releasing code may involve licensing, Intellectual Property, Liability or other legal compliance."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control

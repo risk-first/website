@@ -13,20 +13,18 @@ practice:
    - "Module Testing"
   mitigates:
    - tag: Implementation Risk
-     reason: "Ensures that individual components work correctly."
-   - tag: Regression Risk
-     reason: "Detects regressions early in the development cycle."
+     reason: "Ensures that individual components work correctly and detects regressions early in the development cycle."
    - tag: Complexity Risk
-     reason: "Simplifies debugging by isolating issues to specific units."
+     reason: "Aids in refactoring by ensuring that functionality survives the change."
   attendant:
    - tag: Schedule Risk
      reason: "Writing and maintaining unit tests can be time-consuming."
    - tag: Complexity Risk
      reason: "Managing a large suite of unit tests can add to the complexity."
-   - tag: Software Dependency Risk
+   - tag: Reliability Risk
      reason: "Creates dependencies on testing frameworks and tools."
-   - tag: Map And Territory Risk
-     reason: "Unit Testing and code coverage doesn't reflect how a system will work when assembled."
+   - tag: Internal Model Risk
+     reason: "Unit Testing and code coverage can give false assurances about how a system will work in the real world."
   related:
    - ../Testing-and-Quality-Assurance/Integration-Testing
    - ../Development-and-Coding/Coding

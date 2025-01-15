@@ -13,8 +13,10 @@ practice:
    - "Stress Testing"
    - "Performance Benchmarking"
   mitigates:
-   - tag: Feature Access Risk
-     reason: "Identifies performance bottlenecks that could impact operations."
+   - tag: Feature Fit Risk
+     reason: "Identifies performance bottlenecks that could affect usefulness."
+   - tag: Reliability Risk
+     reason: "Performance testing software can establish bounds on its reliability."
   attendant:
    - tag: Schedule Risk
      reason: "Can be time-consuming, leading to delays in the project timeline."
@@ -22,8 +24,8 @@ practice:
      reason: "Requires sophisticated tools and setup, adding complexity."
    - tag: Funding Risk
      reason: "Performance testing tools and environments can be expensive."
-   - tag: Map And Territory Risk
-     reason: "Performance testing might not be reflecting real-world scenarios."
+   - tag: Internal Model Risk
+     reason: "Performance testing might give a false confidence and not reflect real-world scenarios."
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing

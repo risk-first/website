@@ -63,7 +63,7 @@ After some back-and-forth, the team agrees on a number.  But what does this numb
 
 - **Complexity**: An alternate view is that [a story point is about _complexity_](https://www.clearvision-cm.com/blog/why-Story Points-are-a-measure-of-complexity-not-effort/).  This means a Sprint is all about budgeting complexity, rather than effort.   This makes some sense but given that the sprint is measured in person-days, and the scrum leader is going to produce a report showing how many story points were completed in a sprint, it's clear that complexity really is just a weak proxy for person-days anyway.  In fact, there are lots of tasks that might be low-complexity, but take a lot of time anyway, such as designing 500 icons.  This will clearly take a lot of time, but be low-complexity, so you better give it enough story points to represent the time you'll spend on it.   
 
-- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.  Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](/tags/Map-And-Territory-Risk)?  
+- **Relative Sizing**: A third way of looking at it is that really, story points are just about _relative_ sizing:  it doesn't matter what they refer to or how big they are, it's all about trying to budget the right amount of work into the sprint.  For example, you can either have two one-point stories, or a two-point story, and the effect on the sprint is the same.  Because there is no fixed definition of the size of a story point, you do run the risk of story-point "inflation" or "deflation".  But unless you are trying to use them to plot team productivity over time, this shouldn't really matter so much.  And we'd never make the mistake of doing that, [right](/risks/Internal-Model-Risk/Metrics)?  
 
 ## Observations
 
@@ -94,17 +94,17 @@ A common complaint when tasks overrun is that the team were blind-sided by [Hidd
  
 Couldn't we bootstrap the estimation process by providing an "Interference Checklist" for story points, based on the things that commonly throw spanners into the works?  
 
-Below, I've sketched out a small section of what this might look like.  The [next article](Interference-Checklist) contains a more complete Interference Checklist that I've put together and you can modify for your own purposes.
+The [next article](Interference-Checklist) contains such an Interference Checklist that I've put together and you can modify for your own purposes.
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      |           |                 |
+| **\- [Communication Risk](/tags/Communication-Risk)** | Requires new interface to be added      |           |                 |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           |                 |
+| **\- [Schedule Risk](/tags/Schedule-Risk)**| Interface Experimentation required                   |           |                 |
 |                                              | Varied user population                                                            |           |                 |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature Fit Risk](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     |           |                 |
 
 By starting discussions with an Interference Checklist, we can augment the "play planning poker" process by _prompting people on things to think about_, like "Do we know what done looks like here?", "Is this going to affect some of our existing functionality?", "How are we going to get it tested?".  
@@ -142,13 +142,13 @@ Maybe the Interference Checklist for it looks like this:
 
 | **Area**                                     | **Concern**                                                                       | **Notes** | **Point Value** |
 | -------------------------------------------- | --------------------------------------------------------------------------------- | --------- | --------------- |
-| **\- [Conceptual Integrity Risk](/tags/Conceptual-Integrity-Risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
+| **\- [Communication Risk](/tags/Communication-Risk)** | Requires new interface to be added      | Yes, new screen  | 1                |
 |                                              | Requires refactoring of existing interfaces                                       |           |                 |
-| **\- [Feature-Access Risk](/tags/Feature-Access-Risk)**| Interface Experimentation required                   |           | 1               |
+| **\- [Schedule Risk](/tags/Schedule-Risk)**| Interface Experimentation required                   |           | 1               |
 |                                              | Varied user population                                                            |           | 1               |
 |                                              |                                                                                   |           |                 |
 | **\- [Implementation Risk](/tags/Implementation-Risk)** | Developer unfamiliar with the requirements / system |           |                 |                                              
-| **\- [Feature-Fit](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
+| **\- [Feature Fit Risk](/tags/Feature-Fit-Risk)**| Success criteria hard to define                                          |           |                 |
 |                                              | Difficult-to-access user base                                                     | Need to find a representative group | 2    |
 |                                              |                                                                                   | Total     | 5               |      
 

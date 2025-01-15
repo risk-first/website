@@ -29,7 +29,7 @@ I am going to argue here that _risks_ affect the health of a thing, where the th
 
  - **A Living Organism**, such as the human body, which is exposed to _health risks_, such as [Cardiovascular Disease](https://en.wikipedia.org/wiki/Cardiovascular_disease).  
  
- - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Risk).
+ - **A Software Product** is a thing we interact with, built out of code.  The health of that software is damaged by the existence of [bugs and missing features](/tags/Feature-Fit-Risk).
  
  - **A Project**, like making a film or organising a [dinner party](A-Simple-Scenario). 
  
@@ -122,7 +122,7 @@ When an organisation or a project hires an employee they are doing so in order t
 
 Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conflict with one another:
 
- - Putting in [a heroic effort](/risks/Agency-Risk#the-hero) might save a project but at the expense of your personal health. 
+ - Putting in [a heroic effort](/risks/Human-Agency-Risk#2-the-hero) might save a project but at the expense of your personal health. 
    
  - [Lobbying](https://en.wikipedia.org/wiki/Lobbying) is trying to push the  political agenda of an organisation at the state level, which might help the health of the organisation at the expense of the state or its citizens.  
  
@@ -132,7 +132,7 @@ Sometimes, as discussed in [Agency Risk](/tags/Agency-Risk) these can be in conf
 
 If all of these disparate domains at all of these different scales are tracking health risks, it is clear that we should be doing this for software projects too.
 
-The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Communication-Risk) or [Dependency Risk](/tags/Dependency-Risk).   Every project faces these.  
+The health risks affecting people are well known (by doctors, at least) and we have the list of state-level risks above too.  [Risk-First](https://riskfirst.org) is therefore about building a similar catalog for risks affecting the health of software development projects.  Risks are in general _not_ unique on software projects - they are the same ones over and over again, such as [Communication Risk](/tags/Communication-Risk) or [Dependency Risks](/tags/Dependency-Risks).   Every project faces these.  
 
 Having shown that risk management is _scale invariant_, we're next going to look at general strategies we can use to manage all of these various health risks.
 

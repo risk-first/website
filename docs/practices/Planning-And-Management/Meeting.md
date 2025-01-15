@@ -22,7 +22,7 @@ practice:
    - tag: Schedule Risk
      reason: "Can consume a significant amount of time if not managed effectively."
    - tag: Coordination Risk
-     reason: "Risk of not having all relevant team members present or engaged."
+     reason: "Meetings usually happen at a particular time so involve coordinating schedules."
    - tag: Process Risk
      reason: "Decisions may be delayed if consensus is not reached during the meeting."
   related:

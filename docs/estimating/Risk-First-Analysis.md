@@ -29,7 +29,7 @@ The previous article, [Fixing Scrum](Fixing-Scrum), examined Scrum's idea of "Sp
 
 ![Scrum: Consequences Of Time-Boxing](/img/generated/estimating/planner/scrum-consequences.svg)
 
-The diagram above shows this behaviour in the form of a [Risk-First Diagram](/thinking/Risk-First-Diagrams).  Put briefly:  _risks_ ([Schedule Risk](/tags/Schedule-Risk), [Feature Risk](/tags/Feature-Risk)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
+The diagram above shows this behaviour in the form of a [Risk-First Diagram](/thinking/Risk-First-Diagrams).  Put briefly:  _risks_ ([Schedule Risk](/tags/Schedule-Risk), [Feature Fit Risk](/tags/Feature-Fit-Risk)) are addressed by actions such as "Development", "Review" or "Planning Poker".  
 
 If you're new to [Risk-First](https://www.riskfirst.org) then it's probably worth explaining at this point that one of the purposes of this project is to enumerate the different types of risk you could face running a software project.  You can begin to learn about them all [here](/risks/Start).  Suffice to say, we have icons to represent each of these kinds of risks, and the rest of this article will introduce some of them to you in passing.
 
@@ -41,7 +41,7 @@ Seen like this, **Planning Poker** is a tool to avoid the [Coordination Risk](/t
 
 - [Kitchen Cabinet](Kitchen-Cabinet):  In this domain, there is _hidden work_.  We don't know how much there might be.  If we can break down tasks into smaller units, then by the _law of averages_ and the _central limit theorem_, we can apply some statistics to figure out when we might finish.
 - [Journeys](Journeys):  In this domain, work is heterogeneous and interconnected.  Different parts depend on each other, and a failure in one part might mean going right back to square one.  The way to estimate in this domain is to _know the landscape_ and to build in _buffers_.  
-- [Fractals](Fractals):  In this domain, [Parkinson's Law](/risks/Process-Risk#bureaucracy) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
+- [Fractals](Fractals):  In this domain, [Parkinson's Law](/risks/Process-Risk#4-bureaucratic-creep) is king.  There is always more work to be done.  The best thing we can do is try and apply ourselves to the _highest value_ work at any given point, and frequently refer back to reality to find out if we're building the right thing.
 
 ![Three Dimensions From Fill-The-Bucket](/img/estimates/dimensions.png)
 
@@ -95,7 +95,7 @@ On a Risk-First diagram, tasks - or actions as we call them - are shown in "sign
 
 By fixing the rendering bug, we are trying to deal the problem that the software _demos badly_ and the resulting risk that the potential customers don't trust the quality of our product.  Risk-First diagrams show chronology from left-to-right.  That is, on the left of the action is the world as it is now, whereas on the right is the world as it will be _after_ taking some action.  To show that our action will eliminate some existing risk, we can strike it out by drawing a line through it.
 
-So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Trust Risk](/tags/Trust-And-Belief-Risk) in our product.  
+So, this diagram encapsulates the reason why we might fix the rendering bug:  it's about addressing potential [Reputational Risk](/tags/Reputational-Risk) in our product.  
 
 ## Question 2: What Do We Gain?
 
@@ -103,9 +103,9 @@ So, this diagram encapsulates the reason why we might fix the rendering bug:  it
 
 Let's move on to task 2, the **Search Function**, as shown in the above diagram.
 
-As with the **Rendering Bug**, above, we lose something:  [Feature Risk](/tags/Feature-Risk), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Risk](/tags/Feature-Risk), and building products that fit the needs of their users.
+As with the **Rendering Bug**, above, we lose something:  [Feature Fit Risk](/tags/Feature-Fit-Risk), which is the risk (to us) that the features our product is supplying don't meet the client's (or the market's) requirements.  Writing code is all about identifying and removing [Feature Fit Risk](/tags/Feature-Fit-Risk), and building products that fit the needs of their users.
 
-So as in the Rendering Bug example, we can show [Feature Risk](/tags/Feature-Risk) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](/tags/Attendant-Risk) of taking that action:  
+So as in the Rendering Bug example, we can show [Feature Fit Risk](/tags/Feature-Fit-Risk) being eliminated by showing it on the left with a strike-out line.   However, it's been established during analysis that the way to implement this feature is to introduce [ElasticSearch](https://www.elastic.co), a third-party piece of software.  This in itself is an [Attendant Risk](/tags/Attendant-Risk) of taking that action:  
 
 - Are we going to find that easy to deploy and maintain?  
 - What impact will this have on hosting charges?  
@@ -152,7 +152,7 @@ On the face of it, it's clear why the Sales Team might feel annoyed - there is a
 
 ![Fixing The Build, v2](/img/generated/estimating/planner/ci-impact-2.svg)
 
-The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Staff Risk](/tags/Staff-Risk), [Coordination Risk](/tags/Coordination-Risk) and [Funding Risk](/tags/Funding-Risk) for the whole business and therefore seems like it might have a better [Expected Return](/tags/Expected-Return).
+The above diagram models that.  Fixing the CI Pipeline is now implicated in reducing [Agency Risk](/tags/Agency-Risk), [Coordination Risk](/tags/Coordination-Risk) and [Funding Risk](/tags/Funding-Risk) for the whole business and therefore seems like it might have a better [Expected Return](/tags/Expected-Return).
 
 ## Judgement
 

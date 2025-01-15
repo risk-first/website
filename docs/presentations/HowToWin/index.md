@@ -328,7 +328,7 @@ hide_table_of_contents: true
 
       <p>Just like in the horse racing, or the roulette example, what we want are bets where payoff is worth what you stake.  </p>
 
-      <p>So, you might say: a bet on OAuth2 adds the software dependency risk, but at least it doesn’t tie up one developer for a month, pushing up my schedule risk.  Things could go south, but this might be the safest bet out of the ones available.</p>
+      <p>So, you might say: a bet on OAuth2 adds a dependency risk, but at least it doesn’t tie up one developer for a month, pushing up my schedule risk.  Things could go south, but this might be the safest bet out of the ones available.</p>
 
 
             </div>
@@ -420,7 +420,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>So, let’s look at the Stake:   </p>
 
-      <p>Adding a new feature is going to take time - that’s schedule risk.  It’s going to make your product more complex, that’s Complexity Risk.   And, it might make your product harder to understand and use - that’s Conceptual Integrity Risk.</p>
+      <p>Adding a new feature is going to take time - that’s schedule risk.  It’s going to make your product more complex, that’s Complexity Risk.   And, it might make your product harder to understand and use - that’s Communication Risk.</p>
 
       <p>On the other hand, if the features of your product don’t fit the requirements of the client then they may go off and start using a competitor’s product.  So, that’s hopefully this feature fit risk we’re reducing on the other side.</p>
 
@@ -450,7 +450,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>So, the payoff, for doing Fixed Price Contract is that your business is going to make money - it’s funding risks will be reduced.</p>
 
-      <p>But, for the client, the great thing about a Fixed Price Contract is that they know how much the project will cost.  So, you’ve taken on their funding risk.  And of course, you’ve taken on their Feature Risk - you have to provide the Features of the software that this client needs.</p>
+      <p>But, for the client, the great thing about a Fixed Price Contract is that they know how much the project will cost.  So, you’ve taken on their funding risk.  And of course, you’ve taken on their Feature Risks - you have to provide the Features of the software that this client needs.</p>
 
       <p>So in order to make accurate estimates, and win these bets, it’s all about having a good internal model of the development process, and how long things take.</p>
 

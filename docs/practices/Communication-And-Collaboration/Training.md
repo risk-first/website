@@ -13,17 +13,17 @@ practice:
    - "Instruction"
    - "Skill Development"
   mitigates:
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Provides necessary education to help team members get up to speed."
    - tag: Operational Risk
      reason: "Ensures that staff are well-trained in operational procedures and best practices."
    - tag: Security Risk
      reason: "Educates team members on security protocols and practices."
+   - tag: Legal Risk
+     reason: "Sometimes, training is required to demonstrate that an organisation complies with certain legal obligations."
   attendant:
    - tag: Schedule Risk
      reason: "Training sessions can take time away from development, impacting schedules."
-   - tag: Dependency Risk
-     reason: "Creates a dependency on training programs and their effectiveness."
   related:
    - ../Documentation
    - ../Development-and-Coding/Pair-Programming

@@ -63,7 +63,7 @@ If we accept the assertion that _all_ the actions we take on a project are about
 
 For example:
 
- - If we do a [Code Review](/tags/Review), we are partly trying to minimise the risks of bugs slipping through into production and also manage the [Key Person Risk](/tags/Staff-Risk) of knowledge not being widely-enough shared. 
+ - If we do a [Code Review](/tags/Review), we are partly trying to minimise the risks of bugs slipping through into production and also manage the key person risk of knowledge not being widely-enough shared. 
  - If we write [Unit Tests](/tags/Automated-Testing), we’re addressing the risk of bugs going to production. We’re also mitigating against the risk of _regression_ and future changes breaking our existing functionality.   
  - If we enter into a contract with a supplier then we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place we have legal recourse against this risk.
 

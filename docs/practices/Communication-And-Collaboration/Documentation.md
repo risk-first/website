@@ -13,19 +13,15 @@ practice:
    - "Guides"
    - "Technical Writing"
   mitigates:
-   - tag: Invisibility Risk
-     reason: "Makes all aspects of the project transparent and accessible to the team."
    - tag: Communication Risk
      reason: "Provides clear guidelines and information, reducing misunderstandings."
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Detailed documentation helps manage and understand complex systems."
   attendant:
    - tag: Schedule Risk
      reason: "Creating and maintaining documentation can be time-consuming."
    - tag: Complexity Risk
-     reason: "Extensive documentation can sometimes add to complexity rather than simplifying it."
-   - tag: Implementation Risk
-     reason: "Poorly documentation can lead to implementation issues in development."
+     reason: "Documentation is also a source of complexity on a project and can slow down change."
   related:
    - ../Planning-and-Management/Requirements-Capture
    - ../Development-and-Coding/Code-Reviews

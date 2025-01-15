@@ -14,11 +14,13 @@ practice:
    - "Lessons Learned"
   mitigates:
    - tag: Coordination Risk
-     reason: "Identifies and addresses coordination issues through regular reviews."
+     reason: "Identifies and addresses historic coordination issues through regular reviews."
    - tag: Process Risk
      reason: "Continuously improves processes and practices."
    - tag: Feature-Drift Risk
      reason: "Captures feedback and adjusts features to meet evolving needs."
+   - tag: Internal Model Risk
+     reason: "Looking at what went wrong before leads to improving the internal model of risk for the future."
   attendant:
    - tag: Schedule Risk
      reason: "Requires coordination and can disrupt regular workflows."

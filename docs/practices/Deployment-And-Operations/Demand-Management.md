@@ -15,8 +15,8 @@ practice:
    - "Capacity Planning"
    - "Resource Scaling"
   mitigates:
-   - tag: Scarcity Risk
-     reason: "Helps in efficiently allocating resources to meet the demand without overburdening the team."
+   - tag: Reliability Risk
+     reason: "Helps in efficiently allocating scarce dependencies to meet the most critical demands."
    - tag: Deadline Risk
      reason: "Ensures that the demand is managed to meet delivery schedules."
    - tag: Market Risk
@@ -43,7 +43,7 @@ TODO: buffers, queues, pools, kanban
 
 See: 
 
-- [Scarcity Risk](/risks/Dependency-Risks/Scarcity-Risks/Mitigations)
+- [Reliability Risk](/risks/Reliability-Risk)
 
 
 ## See Also

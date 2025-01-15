@@ -128,7 +128,7 @@ hide_table_of_contents: true
 
       <p>For example, if I was building a twitter-based website for printing T-Shirts, I might use some twitter APIs, some OAuth2 login piece, an API for getting the T-Shirts printed, and some kind of payments API like Stripe.  </p>
 
-      <p>One really key risk then for me is what I call Boundary Risk:  can I get all those dependencies to behave together in a cohesive manner.  What happens when the dependencies change?   Will they all co-operate in the way I want.  </p>
+      <p>One really key risk then for me is what I call Lock-In Risk:  can I get all those dependencies to behave together in a cohesive manner.  What happens when the dependencies change?   Will they all co-operate in the way I want.  </p>
 
       <p>If some of my libraries are written in Java, and some in C++, will I be in the situation above where I’m trying to join Lego with those sticklebrick things on the left?  </p>
 
@@ -136,7 +136,7 @@ hide_table_of_contents: true
 
       <p>One tennet of Agile development is do “the simplest thing that could possibly work”.</p>
 
-      <p>But is that going to lead you into this Boundary Risk problem?  Are you going to try to combine things that just don’t work together?</p>
+      <p>But is that going to lead you into this Lock-In Risk problem?  Are you going to try to combine things that just don’t work together?</p>
 
       <p>This goes back to that whole “Meta-Game” idea that I was talking about earlier.</p>
 
@@ -170,7 +170,7 @@ hide_table_of_contents: true
                 <img src="/img/presentations/AgileVsOpenSource/images/images.009.jpg" alt="Image of slide number 9" />
             </div>
             <div class="slide-notes">
-                      <p>So this Boundary Risk problem is getting worse over time.  Every day there are more and more Open Source libraries to choose from.  No one has time to evaluate even a tiny fraction of them.</p>
+                      <p>So this Lock-In Risk problem is getting worse over time.  Every day there are more and more Open Source libraries to choose from.  No one has time to evaluate even a tiny fraction of them.</p>
 
       <p>I call this the “Broccoli Problem”.  To start with, on the left, we had computers, which did.. well, computing. </p>
 
@@ -280,9 +280,9 @@ hide_table_of_contents: true
                 <img src="/img/presentations/AgileVsOpenSource/images/images.015.jpg" alt="Image of slide number 15" />
             </div>
             <div class="slide-notes">
-                      <p>But there’s a big problem with that Open Feedback loop.  Because it doesn’t properly involve money, it’s not well-funded.   So, there’s a big worry in Open Source which is nicely explained by this XKCD comic.  The worry is Staff Risk - that you have some dependency on a piece of software that is maintained invisibly by some critical person.  </p>
+                      <p>But there’s a big problem with that Open Feedback loop.  Because it doesn’t properly involve money, it’s not well-funded.   So, there’s a big worry in Open Source which is nicely explained by this XKCD comic.  The worry is Agency Risk - that you have some dependency on a piece of software that is maintained invisibly by some critical person.  </p>
 
-      <p>A lot of Open Source is funded by that guy in Nebraska.  It’s a personal project, done for the love of it, or through personal necessity.  The problem with that is the Staff Risk - by depending on this piece of software -no matter how good it is- you are also depending on the team maintaining it, to a certain extent.</p>
+      <p>A lot of Open Source is funded by that guy in Nebraska.  It’s a personal project, done for the love of it, or through personal necessity.  The problem with that is the Agency Risk - by depending on this piece of software -no matter how good it is- you are also depending on the team maintaining it, to a certain extent.</p>
 
       <p>If there were more money in the system, there might be a bigger team of people involved in that one supporting project.</p>
 

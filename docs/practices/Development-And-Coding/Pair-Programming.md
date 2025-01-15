@@ -17,13 +17,15 @@ practice:
   mitigates:
    - tag: Coordination Risk
      reason: "Enhances collaboration and coordination between developers."
-   - tag: Learning Curve Risk
+   - tag: Internal Model Risk
      reason: "Facilitates knowledge sharing and learning."
    - tag: Implementation Risk
-     reason: "More eyeballs means fewer bugs and a better implementation"     
+     reason: "More eyeballs means fewer bugs and a better implementation" 
+   - tag: Reliability Risk
+     reason: "More developers may be able to produce a more reliable implementation."    
   attendant:
    - tag: Coordination Risk
-     reason: "Requires effective coordination and can be challenging to implement."
+     reason: "Requires coordination around time, place, activity and skills."
    - tag: Schedule Risk
      reason: "Can slow down individual productivity, impacting overall schedule."
    - tag: Agency Risk

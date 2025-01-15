@@ -14,7 +14,7 @@ function tagUrl(tag) {
 const Practice = ({tag, reason, uses}) => {
 	const addUses = uses && uses.length > 0
 	return (
-		<li class="practice"><a href={tagUrl(tag)}>{tag}</a>: {reason} { addUses ? (<span>See:</span>) : null } 
+		<li class="practice"><a href={tagUrl(tag)}>{tag}</a>: {reason} { addUses ? (<span>Referred to as:</span>) : null } 
 		
 		{
 			

@@ -184,9 +184,9 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>They are managing a couple of risks:  First, you want to test your code before you put it in production.  Putting untested code into production is an Operational Risk right there!</p>
 
-      <p>But also, there is a Regression Risk:  our code is going to change in the future, we want to change it, and if we have tests, we have some more certainty that when we do change it, we haven’t introduced new bugs.  </p>
+      <p>But also, there the threat of regression:  our code is going to change in the future, we want to change it, and if we have tests, we have some more certainty that when we do change it, we haven’t introduced new bugs.  </p>
 
-      <p>And, it’s a tradeoff - that’s what’s being shown here.  In order to address regression risk, and operational risk, I have to own some extra code in my codebase.  So, that’s complexity risk.  And building those tests, and maintaining them, that’s going to take some of my schedule up, so there’s a risk to the schedule in writing tests.</p>
+      <p>And, it’s a tradeoff - that’s what’s being shown here.  In order to address implementation risk, and operational risk, I have to own some extra code in my codebase.  So, that’s complexity risk.  And building those tests, and maintaining them, that’s going to take some of my schedule up, so there’s a risk to the schedule in writing tests.</p>
 
       <p>Now, if you’re good at Unit Testing, this is a great deal. The trick is to write <i>just enough</i> tests to address the risks on the left. But if you go crazy, you end up turning it into an industry, which blows up those risks on the right.</p>
 

@@ -11,7 +11,7 @@
      width="917"
      pp:width="$width"
      preserveAspectRatio="xMidYMid meet"
-     height="459"
+     height="472"
      pp:height="$height">
    <metadata xmlns:md="http://www.kite9.org/schema/metadata">
       <md:self>http://robs-pro:8080/api/renderer?format=svg</md:self>
@@ -495,9 +495,24 @@ text-align: center;
 --kite9-min-height: 160pt;
 }
 
-*[k9-elem="hidden"] {
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
 --kite9-min-width: 120pt;
 --kite9-min-height: 160pt;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="mitigated"] *.k9-content *[k9-elem="risk"], *[k9-elem="hidden"] *.k9-content *[k9-elem="risk"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
 }
 
 *[k9-elem="risk"] {
@@ -512,8 +527,8 @@ text-align: center;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-min-width: 120pt;
---kite9-min-height: 160pt;
+--kite9-min-width: 145pt;
+--kite9-min-height: 170pt;
 }
 
 *[k9-elem="title"][k9-format="text-fixed"] {
@@ -549,25 +564,24 @@ text-align: center;
 --kite9-horizontal-align: CENTER;
 }
 
-*[k9-elem="celltext"] {
+*[k9-elem="celltext"][k9-format="text-fixed"] {
 --kite9-usage: REGULAR;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
---kite9-vertical-align: CENTER;
---kite9-horizontal-align: LEFT;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-align: CENTER;
 --kite9-horizontal-sizing: MINIMIZE;
 --kite9-vertical-sizing: MINIMIZE;
-font-size: 40pt;
+font-size: 15pt;
 fill: black;
-font-family: "gothic";
 stroke: none;
 --kite9-text-bounds-width: 350pt;
 }
 
 *[k9-elem="celltext"].bold {
-font-family: "gothic-bold";
+font-weight: bold;
 }
 
 *[k9-elem="celltext"].bottom {
@@ -578,37 +592,8 @@ font-family: "gothic-bold";
 --kite9-horizontal-align: LEFT;
 }
 
-*[k9-elem="bulleted"] {
---kite9-usage: REGULAR;
---kite9-type: CONTAINER;
+*[k9-elem="description"].top {
 --kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
-}
-
-*[k9-elem="ctext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic";
-stroke: none;
---kite9-type: TEXT;
-}
-
-*[k9-elem="btext"] {
---kite9-usage: REGULAR;
---kite9-vertical-align: TOP;
---kite9-horizontal-align: LEFT;
-font-size: 40pt;
-fill: black;
-font-family: "gothic-bold";
-stroke: none;
---kite9-type: TEXT;
 }
 
 *[k9-elem="tick"] {
@@ -632,10 +617,34 @@ stroke: none;
 --kite9-vertical-align: TOP;
 }
 
+*[k9-elem="table"] &gt; rect, *[k9-elem="table"] &gt; g &gt; rect {
+stroke: white;
+}
+
+*[k9-elem="table"].wide *[k9-elem="description"] {
+--kite9-text-bounds-width: 450pt;
+}
+
+*[k9-elem="description"].top {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].middle {
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="cell"] &gt; g &gt; rect {
+stroke: white;
+}
+
 *[k9-elem="description"], *[k9-elem="long-description"], *.description {
 font-size: 14pt;
-font-family: "gothic-italic";
-font-style: italic;
 --kite9-padding-top: 10pt;
 --kite9-padding-right: 10pt;
 --kite9-padding-bottom: 10pt;
@@ -643,24 +652,10 @@ font-style: italic;
 --kite9-text-bounds-width: 250pt;
 }
 
-*[k9-elem="leg"] {
---kite9-type: CONTAINER;
---kite9-layout: DOWN;
---kite9-min-height: 110pt;
---kite9-min-width: 70pt;
---kite9-horizontal-sizing: MINIMIZE;
---kite9-vertical-sizing: MINIMIZE;
---kite9-margin-top: 0pt;
---kite9-margin-right: 0pt;
---kite9-margin-bottom: 0pt;
---kite9-margin-left: 0pt;
---kite9-vertical-align: BOTTOM;
-}
-
-*[k9-elem="plinth"] {
---kite9-type: CONTAINER;
---kite9-horizontal-sizing: MAXIMIZE;
---kite9-vertical-sizing: MAXIMIZE;
+*[k9-elem="description"].bold {
+fill: black;
+font-style: normal;
+font-weight: 600;
 }
 
 *[k9-elem="big-image"] {
@@ -824,6 +819,16 @@ indent: 0;
 text-align: center;
 font-weight: 300;
 font-style: italic;
+}
+
+*[k9-elem="glyph"].rect {
+--kite9-min-height: 40pt;
+--kite9-min-width: 30pt;
+}
+
+*[k9-elem="glyph"].circle {
+--kite9-min-height: 30pt;
+--kite9-min-width: 30pt;
 }
 
 *[k9-texture="none"] {
@@ -1166,7 +1171,7 @@ font-size: 16pt;
 --kite9-link-minimum-length: 30pt;
 }
 
-*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="action"] *[k9-texture="background"] {
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; ellipse, *[k9-elem="action"] *[k9-texture="background"] {
 fill: url(#risk-background);
 stroke: black;
 stroke-width: 1pt;
@@ -1445,7 +1450,7 @@ fill-opacity: 1;
    <g xmlns:xslt="http://www.kite9.org/schema/xslt"
       k9-contains="connected label"
       k9-texture="none"
-      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [917.0, 459.0]; position: none; painter: direct-svg; "
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [917.0, 472.0]; position: none; painter: direct-svg; "
       id="dia"
       k9-format="container"
       k9-ui="layout label fill size"
@@ -1461,7 +1466,7 @@ fill-opacity: 1;
                pp:x="$x"
                rx="0"
                ry="0"
-               height="459"
+               height="472"
                pp:width="$width"/>
       </g>
       <g class="k9-content">
@@ -1469,7 +1474,7 @@ fill-opacity: 1;
             transform="translate(20.0,20.0)"
             k9-texture="background"
             style="--kite9-sizing: maximize; --kite9-layout: down "
-            k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [maximize maximize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [20.0, 20.0]; rect-size: [277.0, 419.0]; position: none; painter: direct-svg; "
+            k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [maximize maximize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [20.0, 20.0]; rect-size: [277.0, 432.0]; position: none; painter: direct-svg; "
             id="d"
             k9-format="container"
             k9-ui="drag delete align connect insert autoconnect layout label fill stroke size align"
@@ -1484,68 +1489,68 @@ fill-opacity: 1;
                      pp:x="$x"
                      rx="10pt"
                      ry="10pt"
-                     height="419"
+                     height="432"
                      pp:width="$width"/>
             </g>
             <g class="k9-content">
                <g k9-elem="group"
                   k9-texture="none"
                   style="kite-layout: right; "
-                  transform="translate(46.0,26.0)"
+                  transform="translate(29.0,26.0)"
                   k9-format="container"
-                  k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [66.0, 46.0]; rect-size: [186.0, 239.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [49.0, 46.0]; rect-size: [219.0, 252.0]; position: none; painter: direct-svg; ">
                   <g class="k9-shape" k9-highlight="pulse stroke">
                      <rect x="0"
                            y="0"
-                           width="186"
+                           width="219"
                            pp:y="$y"
                            pp:height="$height"
                            pp:x="$x"
                            rx="10pt"
                            ry="10pt"
-                           height="239"
+                           height="252"
                            pp:width="$width"/>
                   </g>
                   <g class="k9-content">
                      <g k9-elem="mitigated"
                         k9-texture="none"
+                        transform="translate(13.0,13.0)"
                         k9-format="container"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [66.0, 46.0]; rect-size: [186.0, 239.0]; position: none; painter: direct-svg; ">
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [0.0 0.0 0.0 0.0]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [62.0, 59.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; ">
                         <g class="k9-shape" k9-highlight="pulse">
                            <rect x="0"
                                  y="0"
-                                 width="186"
+                                 width="193"
                                  pp:y="$y"
                                  pp:height="$height"
                                  pp:x="$x"
                                  rx="5pt"
                                  ry="5pt"
-                                 height="239"
+                                 height="226"
                                  pp:width="$width"/>
                         </g>
                         <g class="k9-content">
                            <g k9-elem="risk"
                               k9-texture="background"
                               class="attendant"
-                              transform="translate(13.0,13.0)"
                               k9-format="container"
-                              k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [79.0, 59.0]; rect-size: [160.0, 213.0]; position: none; painter: direct-svg; ">
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 226.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [62.0, 59.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; ">
                               <g class="k9-shape" k9-highlight="pulse">
                                  <rect x="0"
                                        y="0"
-                                       width="160"
+                                       width="193"
                                        pp:y="$y"
                                        pp:height="$height"
                                        pp:x="$x"
                                        rx="5pt"
                                        ry="5pt"
-                                       height="213"
+                                       height="226"
                                        pp:width="$width"/>
                               </g>
                               <g class="k9-content">
                                  <g k9-elem="code"
                                     k9-texture="foreground"
-                                    transform="translate(50.8,42.3)"
+                                    transform="translate(67.8,42.3)"
                                     k9-format="text-fixed"
                                     k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [132.0, 72.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
                                     <g class="k9-content k9-no-shape" k9-highlight="pulse">
@@ -1559,7 +1564,7 @@ fill-opacity: 1;
                                  </g>
                                  <g k9-elem="image"
                                     k9-texture="none"
-                                    transform="translate(46.7,61.7)"
+                                    transform="translate(63.7,61.7)"
                                     k9-format="image-fixed"
                                     k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [125.0, 120.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
                                     <g class="k9-content k9-no-shape">
@@ -1580,9 +1585,9 @@ fill-opacity: 1;
                                              height="50pt"/>
                                     </g>
                                  </g>
-                                 <g transform="translate(30.4,170.3)"
+                                 <g transform="translate(46.4,183.3)"
                                     k9-texture="foreground"
-                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [111.0, 208.0]; rect-size: [97.0, 51.0]; position: none; painter: direct-svg; "
+                                    k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [110.0, 221.0]; rect-size: [97.0, 51.0]; position: none; painter: direct-svg; "
                                     id="@text"
                                     k9-format="text-fixed"
                                     k9-ui="orphan edit fill font size align"
@@ -1606,12 +1611,12 @@ fill-opacity: 1;
                               </g>
                            </g>
                         </g>
-                        <line x1="0"
-                              pp:x2="$width"
-                              x2="186"
-                              y1="239"
-                              y2="0"
-                              pp:y1="$height"
+                        <line x1="-10"
+                              pp:x2="$width+10"
+                              x2="203"
+                              y1="236"
+                              y2="-10"
+                              pp:y1="$height+10"
                               stroke="black"
                               stroke-opacity="0.2"
                               stroke-width="10pt"/>
@@ -1620,9 +1625,9 @@ fill-opacity: 1;
                </g>
                <g k9-elem="description"
                   k9-texture="foreground"
-                  transform="translate(32.3,325.7)"
+                  transform="translate(32.3,338.7)"
                   k9-format="text-fixed"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [40.0, 311.0]; rect-size: [237.0, 77.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [40.0, 324.0]; rect-size: [237.0, 77.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <g rendered="true">
                         <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
@@ -1639,9 +1644,9 @@ fill-opacity: 1;
                   </g>
                </g>
                <g k9-contains="none"
-                  transform="translate(93.0,368.0)"
+                  transform="translate(93.0,381.0)"
                   k9-texture="none"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [113.0, 388.0]; rect-size: [91.0, 51.0]; position: none; placement: down;painter: direct-svg; "
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [113.0, 401.0]; rect-size: [91.0, 51.0]; position: none; placement: down;painter: direct-svg; "
                   id="id_17"
                   k9-format="text-shape-inline"
                   k9-ui="delete edit xml drag place fill stroke size font direction align"
@@ -1664,7 +1669,7 @@ fill-opacity: 1;
                         k9-texture="foreground"
                         transform="translate(11.4,34.3)"
                         k9-format="text-fixed"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [126.0, 401.0]; rect-size: [65.0, 25.0]; position: none; painter: direct-svg; ">
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [126.0, 414.0]; rect-size: [65.0, 25.0]; position: none; painter: direct-svg; ">
                         <g class="k9-content k9-no-shape" k9-highlight="pulse">
                            <g rendered="true">
                               <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
@@ -1681,9 +1686,9 @@ fill-opacity: 1;
          <g k9-elem="action"
             k9-texture="background"
             style="--kite9-horizontal-align: left;"
-            transform="translate(317.0,188.0)"
+            transform="translate(317.0,195.0)"
             k9-format="text-shape-inline"
-            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: left; vert: center; layout: null; rectangular: connected; rect-pos: [317.0, 188.0]; rect-size: [212.0, 83.0]; position: none; painter: direct-svg; ">
+            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: left; vert: center; layout: null; rectangular: connected; rect-pos: [317.0, 195.0]; rect-size: [212.0, 83.0]; position: none; painter: direct-svg; ">
             <g class="k9-shape" k9-highlight="pulse">
                <g k9-highlight="pulse"
                   k9-texture="background"
@@ -1698,7 +1703,7 @@ fill-opacity: 1;
                   k9-texture="foreground"
                   transform="translate(14.3,37.3)"
                   k9-format="text-fixed"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [333.0, 204.0]; rect-size: [167.0, 51.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [333.0, 211.0]; rect-size: [167.0, 51.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <g rendered="true">
                         <g>
@@ -1720,7 +1725,7 @@ fill-opacity: 1;
             transform="translate(549.0,20.0)"
             k9-texture="background"
             style="--kite9-sizing: maximize; --kite9-layout: vertical; "
-            k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [maximize maximize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [549.0, 20.0]; rect-size: [348.0, 419.0]; position: none; painter: direct-svg; "
+            k9-info="margin: [20.0 20.0 20.0 20.0]; padding: [20.0 20.0 20.0 20.0]; min-size: [0.0 0.0]; sizing: [maximize maximize]; horiz: center; vert: center; layout: vertical; rectangular: connected; rect-pos: [549.0, 20.0]; rect-size: [348.0, 432.0]; position: none; painter: direct-svg; "
             bordered="true"
             id="c"
             k9-format="container"
@@ -1736,25 +1741,25 @@ fill-opacity: 1;
                      pp:x="$x"
                      rx="10pt"
                      ry="10pt"
-                     height="419"
+                     height="432"
                      pp:width="$width"/>
             </g>
             <g class="k9-content">
                <g k9-elem="group"
                   k9-texture="none"
-                  transform="translate(78.0,26.0)"
+                  transform="translate(65.0,26.0)"
                   k9-format="container"
-                  k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [627.0, 46.0]; rect-size: [193.0, 239.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [0.0 0.0 0.0 0.0]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [614.0, 46.0]; rect-size: [219.0, 252.0]; position: none; painter: direct-svg; ">
                   <g class="k9-shape" k9-highlight="pulse stroke">
                      <rect x="0"
                            y="0"
-                           width="193"
+                           width="219"
                            pp:y="$y"
                            pp:height="$height"
                            pp:x="$x"
                            rx="10pt"
                            ry="10pt"
-                           height="239"
+                           height="252"
                            pp:width="$width"/>
                   </g>
                   <g class="k9-content">
@@ -1763,23 +1768,23 @@ fill-opacity: 1;
                         class="schedule"
                         transform="translate(13.0,13.0)"
                         k9-format="container"
-                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [160.0 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [640.0, 59.0]; rect-size: [167.0, 213.0]; position: none; painter: direct-svg; ">
+                        k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 226.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [627.0, 59.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; ">
                         <g class="k9-shape" k9-highlight="pulse">
                            <rect x="0"
                                  y="0"
-                                 width="167"
+                                 width="193"
                                  pp:y="$y"
                                  pp:height="$height"
                                  pp:x="$x"
                                  rx="5pt"
                                  ry="5pt"
-                                 height="213"
+                                 height="226"
                                  pp:width="$width"/>
                         </g>
                         <g class="k9-content">
                            <g k9-elem="code"
                               k9-texture="foreground"
-                              transform="translate(49.5,42.3)"
+                              transform="translate(62.5,42.3)"
                               k9-format="text-fixed"
                               k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [692.0, 72.0]; rect-size: [64.0, 35.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
@@ -1793,7 +1798,7 @@ fill-opacity: 1;
                            </g>
                            <g k9-elem="image"
                               k9-texture="none"
-                              transform="translate(50.7,61.7)"
+                              transform="translate(63.7,61.7)"
                               k9-format="image-fixed"
                               k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [690.0, 120.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
                               <g class="k9-content k9-no-shape">
@@ -1814,9 +1819,9 @@ fill-opacity: 1;
                                        height="50pt"/>
                               </g>
                            </g>
-                           <g transform="translate(12.2,196.3)"
+                           <g transform="translate(50.2,183.3)"
                               k9-texture="foreground"
-                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [653.0, 234.0]; rect-size: [141.0, 25.0]; position: none; painter: direct-svg; "
+                              k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [678.0, 221.0]; rect-size: [92.0, 51.0]; position: none; painter: direct-svg; "
                               id="@text"
                               k9-format="text-fixed"
                               k9-ui="orphan edit fill font size align"
@@ -1825,7 +1830,13 @@ fill-opacity: 1;
                               <g class="k9-content k9-no-shape" k9-highlight="pulse">
                                  <g rendered="true">
                                     <g>
-                                       <path d="M6.8472 0.2361 Q3.2639 0.2361 0.8125 -2.1111 L2.1111 -3.7153 Q4.2639 -1.6667 6.9306 -1.6667 Q8.3819 -1.6667 9.1944 -2.3125 Q10.0069 -2.9653 10.0069 -3.9028 Q10.0069 -4.8819 9.1597 -5.4028 Q8.3194 -5.9306 6.3333 -6.3819 Q4.6736 -6.7639 3.6181 -7.25 Q2.5625 -7.7431 1.9653 -8.5556 Q1.3681 -9.3681 1.3681 -10.625 Q1.3681 -11.8403 2.0139 -12.8194 Q2.6667 -13.8056 3.8264 -14.3681 Q4.9931 -14.9306 6.4444 -14.9306 Q8.0625 -14.9306 9.3611 -14.3958 Q10.6667 -13.8681 11.7986 -12.8611 L10.5625 -11.2431 Q9.6181 -12.0972 8.5417 -12.5625 Q7.4653 -13.0347 6.3542 -13.0347 Q5.5694 -13.0347 4.9236 -12.7222 Q4.2847 -12.4167 3.9236 -11.9028 Q3.5625 -11.3889 3.5625 -10.8194 Q3.5625 -10.1528 3.9653 -9.7222 Q4.375 -9.2986 5.1319 -9.0069 Q5.8889 -8.7222 7.2292 -8.4028 Q9.6875 -7.8264 10.9306 -6.8889 Q12.1806 -5.9514 12.1806 -4.1181 Q12.1806 -2.8611 11.5625 -1.875 Q10.9444 -0.8958 9.7361 -0.3264 Q8.5347 0.2361 6.8472 0.2361 ZM19.9697 0.2569 Q18.435 0.2569 17.0878 -0.5278 Q15.7406 -1.3194 14.9489 -2.6528 Q14.1642 -3.9861 14.1642 -5.5278 Q14.1642 -7.0625 14.9628 -8.3819 Q15.7684 -9.7083 17.1017 -10.4931 Q18.435 -11.2847 19.9906 -11.2847 Q21.1434 -11.2847 22.185 -10.8333 Q23.2336 -10.3889 24.0461 -9.5764 L22.6156 -8.2569 Q22.1225 -8.8125 21.4281 -9.1319 Q20.7336 -9.4514 19.9697 -9.4514 Q18.9836 -9.4514 18.1434 -8.9167 Q17.3031 -8.3819 16.7961 -7.4722 Q16.2961 -6.5694 16.2961 -5.5278 Q16.2961 -4.4583 16.7961 -3.5486 Q17.3031 -2.6458 18.1434 -2.1111 Q18.9836 -1.5764 19.9906 -1.5764 Q20.7545 -1.5764 21.4559 -1.9097 Q22.1642 -2.2431 22.6781 -2.8194 L24.1086 -1.5139 Q23.2753 -0.6806 22.2197 -0.2083 Q21.1642 0.2569 19.9697 0.2569 ZM31.9779 -11.2847 Q33.1723 -11.2847 34.1237 -10.7361 Q35.0751 -10.1944 35.5959 -9.2222 Q36.1168 -8.2569 36.1168 -7.0208 L36.1168 0 L34.0473 0 L34.0473 -6.6528 Q34.0473 -7.8958 33.3321 -8.6736 Q32.6168 -9.4514 31.5126 -9.4514 Q30.7001 -9.4514 29.9918 -9.0972 Q29.2904 -8.75 28.8737 -8.1458 Q28.4571 -7.5486 28.4571 -6.8472 L28.4571 0 L26.3668 0 L26.3668 -14.9097 L28.4571 -14.9097 L28.4571 -9.3889 Q28.9709 -10.2431 29.9154 -10.7639 Q30.8668 -11.2847 31.9779 -11.2847 ZM44.201 -1.6181 Q45.0552 -1.6181 45.958 -1.9583 Q46.8677 -2.3056 47.3607 -2.8194 L48.6802 -1.4514 Q47.958 -0.6806 46.6871 -0.2083 Q45.4163 0.2569 44.2219 0.2569 Q42.6871 0.2569 41.3816 -0.4861 Q40.083 -1.2361 39.3121 -2.5556 Q38.5482 -3.8819 38.5482 -5.5486 Q38.5482 -7.1667 39.2844 -8.4792 Q40.0205 -9.7917 41.2774 -10.5347 Q42.5413 -11.2847 44.0552 -11.2847 Q45.7149 -11.2847 46.9094 -10.4861 Q48.1038 -9.6875 48.7357 -8.2153 Q49.3677 -6.7431 49.3677 -4.7778 L40.6802 -4.7778 Q40.8955 -3.3681 41.8399 -2.4931 Q42.7913 -1.6181 44.201 -1.6181 ZM44.1385 -9.4097 Q42.8607 -9.4097 41.9094 -8.6042 Q40.958 -7.8056 40.701 -6.4653 L47.3191 -6.4653 Q47.1246 -7.8056 46.3121 -8.6042 Q45.5066 -9.4097 44.1385 -9.4097 ZM62.4008 -14.9097 L62.4008 0 L60.3106 0 L60.3106 -1.9167 Q59.6717 -0.875 58.6578 -0.3056 Q57.6439 0.2569 56.3869 0.2569 Q54.9564 0.2569 53.7897 -0.4792 Q52.63 -1.2153 51.9633 -2.5347 Q51.3036 -3.8611 51.3036 -5.5278 Q51.3036 -7.1875 51.9633 -8.5 Q52.63 -9.8125 53.7897 -10.5486 Q54.9564 -11.2847 56.3869 -11.2847 Q57.6439 -11.2847 58.6439 -10.7153 Q59.6508 -10.1528 60.3106 -9.1319 L60.3106 -14.9097 L62.4008 -14.9097 ZM56.8939 -1.5764 Q57.88 -1.5764 58.6578 -2.0764 Q59.4356 -2.5833 59.8731 -3.4861 Q60.3106 -4.3958 60.3106 -5.5278 Q60.3106 -6.6528 59.8731 -7.5486 Q59.4356 -8.4514 58.6578 -8.9514 Q57.88 -9.4514 56.8939 -9.4514 Q55.8939 -9.4514 55.1022 -8.9514 Q54.3175 -8.4514 53.88 -7.5486 Q53.4425 -6.6528 53.4425 -5.5278 Q53.4425 -4.3958 53.88 -3.4861 Q54.3175 -2.5833 55.1022 -2.0764 Q55.8939 -1.5764 56.8939 -1.5764 ZM75.2859 -11.0278 L75.2859 0 L73.1747 0 L73.1747 -1.5972 Q72.6609 -0.7708 71.7234 -0.2569 Q70.7859 0.2569 69.6747 0.2569 Q68.4803 0.2569 67.5289 -0.2847 Q66.5845 -0.8333 66.0567 -1.7986 Q65.5359 -2.7708 65.5359 -4.0139 L65.5359 -11.0278 L67.6053 -11.0278 L67.6053 -4.375 Q67.6053 -3.1389 68.3206 -2.3542 Q69.0359 -1.5764 70.147 -1.5764 Q71.2928 -1.5764 72.1678 -2.2361 Q73.0428 -2.9028 73.1747 -3.8819 L73.1747 -11.0278 L75.2859 -11.0278 ZM78.3562 -14.9097 L80.4465 -14.9097 L80.4465 0 L78.3562 0 L78.3562 -14.9097 ZM88.5745 -1.6181 Q89.4286 -1.6181 90.3314 -1.9583 Q91.2411 -2.3056 91.7342 -2.8194 L93.0536 -1.4514 Q92.3314 -0.6806 91.0606 -0.2083 Q89.7897 0.2569 88.5953 0.2569 Q87.0606 0.2569 85.755 -0.4861 Q84.4564 -1.2361 83.6856 -2.5556 Q82.9217 -3.8819 82.9217 -5.5486 Q82.9217 -7.1667 83.6578 -8.4792 Q84.3939 -9.7917 85.6508 -10.5347 Q86.9147 -11.2847 88.4286 -11.2847 Q90.0883 -11.2847 91.2828 -10.4861 Q92.4772 -9.6875 93.1092 -8.2153 Q93.7411 -6.7431 93.7411 -4.7778 L85.0536 -4.7778 Q85.2689 -3.3681 86.2133 -2.4931 Q87.1647 -1.6181 88.5745 -1.6181 ZM88.512 -9.4097 Q87.2342 -9.4097 86.2828 -8.6042 Q85.3314 -7.8056 85.0745 -6.4653 L91.6925 -6.4653 Q91.4981 -7.8056 90.6856 -8.6042 Q89.88 -9.4097 88.512 -9.4097 ZM113.9659 -9.875 Q113.9659 -8.2153 112.9312 -6.9861 Q111.8964 -5.7569 110.2089 -5.3125 L113.9381 0 L111.4659 0 L107.8826 -5.0972 L104.5145 -5.0972 L104.5145 0 L102.3548 0 L102.3548 -14.6528 L108.5214 -14.6528 Q110.0562 -14.6528 111.2923 -14.0417 Q112.5353 -13.4375 113.2506 -12.3403 Q113.9659 -11.2431 113.9659 -9.875 ZM104.5145 -7.1042 L108.2228 -7.1042 Q109.827 -7.1042 110.7923 -7.8472 Q111.7645 -8.5972 111.7645 -9.875 Q111.7645 -11.1597 110.7923 -11.9028 Q109.827 -12.6528 108.2228 -12.6528 L104.5145 -12.6528 L104.5145 -7.1042 ZM117.3996 -12.8611 Q116.8649 -12.8611 116.4899 -13.2431 Q116.1149 -13.6319 116.1149 -14.1458 Q116.1149 -14.6528 116.4899 -15.0278 Q116.8649 -15.4028 117.3996 -15.4028 Q117.9065 -15.4028 118.2815 -15.0139 Q118.6565 -14.6319 118.6565 -14.1458 Q118.6565 -13.6319 118.2815 -13.2431 Q117.9065 -12.8611 117.3996 -12.8611 ZM116.3301 -11.0278 L118.4413 -11.0278 L118.4413 0 L116.3301 0 L116.3301 -11.0278 ZM125.4854 0.2569 Q124.2423 0.2569 122.9923 -0.1667 Q121.7493 -0.5972 120.7701 -1.3889 L121.7701 -2.9028 Q123.6243 -1.5556 125.5062 -1.5556 Q126.4437 -1.5556 127.0201 -1.9514 Q127.5965 -2.3472 127.5965 -2.9861 Q127.5965 -3.6667 126.9993 -4.0069 Q126.402 -4.3542 125.0965 -4.7153 Q123.0757 -5.2708 122.1868 -5.9722 Q121.3048 -6.6806 121.3048 -7.9792 Q121.3048 -9.4722 122.4229 -10.375 Q123.5409 -11.2847 125.3118 -11.2847 Q126.3604 -11.2847 127.4159 -10.9444 Q128.4715 -10.6042 129.3882 -10.0069 L128.4507 -8.4514 Q126.8048 -9.4722 125.3118 -9.4722 Q124.4576 -9.4722 123.9159 -9.1181 Q123.3743 -8.7708 123.3743 -8.1736 Q123.3743 -7.7431 123.6173 -7.4861 Q123.8604 -7.2292 124.3465 -7.0139 Q124.8395 -6.8056 125.909 -6.4861 Q127.1034 -6.125 127.8604 -5.7917 Q128.6173 -5.4583 129.1382 -4.8194 Q129.6659 -4.1806 129.6659 -3.1597 Q129.6659 -1.6181 128.4923 -0.6806 Q127.3187 0.2569 125.4854 0.2569 ZM137.3872 -6.0347 L141.9288 0 L139.4149 0 L135.9566 -4.6319 L134.1858 -2.8403 L134.1858 0 L132.0955 0 L132.0955 -14.9097 L134.1858 -14.9097 L134.1858 -5.3958 L139.5816 -11.0278 L142.1441 -11.0278 L137.3872 -6.0347 Z"
+                                       <path d="M6.8472 0.2361 Q3.2639 0.2361 0.8125 -2.1111 L2.1111 -3.7153 Q4.2639 -1.6667 6.9306 -1.6667 Q8.3819 -1.6667 9.1944 -2.3125 Q10.0069 -2.9653 10.0069 -3.9028 Q10.0069 -4.8819 9.1597 -5.4028 Q8.3194 -5.9306 6.3333 -6.3819 Q4.6736 -6.7639 3.6181 -7.25 Q2.5625 -7.7431 1.9653 -8.5556 Q1.3681 -9.3681 1.3681 -10.625 Q1.3681 -11.8403 2.0139 -12.8194 Q2.6667 -13.8056 3.8264 -14.3681 Q4.9931 -14.9306 6.4444 -14.9306 Q8.0625 -14.9306 9.3611 -14.3958 Q10.6667 -13.8681 11.7986 -12.8611 L10.5625 -11.2431 Q9.6181 -12.0972 8.5417 -12.5625 Q7.4653 -13.0347 6.3542 -13.0347 Q5.5694 -13.0347 4.9236 -12.7222 Q4.2847 -12.4167 3.9236 -11.9028 Q3.5625 -11.3889 3.5625 -10.8194 Q3.5625 -10.1528 3.9653 -9.7222 Q4.375 -9.2986 5.1319 -9.0069 Q5.8889 -8.7222 7.2292 -8.4028 Q9.6875 -7.8264 10.9306 -6.8889 Q12.1806 -5.9514 12.1806 -4.1181 Q12.1806 -2.8611 11.5625 -1.875 Q10.9444 -0.8958 9.7361 -0.3264 Q8.5347 0.2361 6.8472 0.2361 ZM19.9697 0.2569 Q18.435 0.2569 17.0878 -0.5278 Q15.7406 -1.3194 14.9489 -2.6528 Q14.1642 -3.9861 14.1642 -5.5278 Q14.1642 -7.0625 14.9628 -8.3819 Q15.7684 -9.7083 17.1017 -10.4931 Q18.435 -11.2847 19.9906 -11.2847 Q21.1434 -11.2847 22.185 -10.8333 Q23.2336 -10.3889 24.0461 -9.5764 L22.6156 -8.2569 Q22.1225 -8.8125 21.4281 -9.1319 Q20.7336 -9.4514 19.9697 -9.4514 Q18.9836 -9.4514 18.1434 -8.9167 Q17.3031 -8.3819 16.7961 -7.4722 Q16.2961 -6.5694 16.2961 -5.5278 Q16.2961 -4.4583 16.7961 -3.5486 Q17.3031 -2.6458 18.1434 -2.1111 Q18.9836 -1.5764 19.9906 -1.5764 Q20.7545 -1.5764 21.4559 -1.9097 Q22.1642 -2.2431 22.6781 -2.8194 L24.1086 -1.5139 Q23.2753 -0.6806 22.2197 -0.2083 Q21.1642 0.2569 19.9697 0.2569 ZM31.9779 -11.2847 Q33.1723 -11.2847 34.1237 -10.7361 Q35.0751 -10.1944 35.5959 -9.2222 Q36.1168 -8.2569 36.1168 -7.0208 L36.1168 0 L34.0473 0 L34.0473 -6.6528 Q34.0473 -7.8958 33.3321 -8.6736 Q32.6168 -9.4514 31.5126 -9.4514 Q30.7001 -9.4514 29.9918 -9.0972 Q29.2904 -8.75 28.8737 -8.1458 Q28.4571 -7.5486 28.4571 -6.8472 L28.4571 0 L26.3668 0 L26.3668 -14.9097 L28.4571 -14.9097 L28.4571 -9.3889 Q28.9709 -10.2431 29.9154 -10.7639 Q30.8668 -11.2847 31.9779 -11.2847 ZM44.201 -1.6181 Q45.0552 -1.6181 45.958 -1.9583 Q46.8677 -2.3056 47.3607 -2.8194 L48.6802 -1.4514 Q47.958 -0.6806 46.6871 -0.2083 Q45.4163 0.2569 44.2219 0.2569 Q42.6871 0.2569 41.3816 -0.4861 Q40.083 -1.2361 39.3121 -2.5556 Q38.5482 -3.8819 38.5482 -5.5486 Q38.5482 -7.1667 39.2844 -8.4792 Q40.0205 -9.7917 41.2774 -10.5347 Q42.5413 -11.2847 44.0552 -11.2847 Q45.7149 -11.2847 46.9094 -10.4861 Q48.1038 -9.6875 48.7357 -8.2153 Q49.3677 -6.7431 49.3677 -4.7778 L40.6802 -4.7778 Q40.8955 -3.3681 41.8399 -2.4931 Q42.7913 -1.6181 44.201 -1.6181 ZM44.1385 -9.4097 Q42.8607 -9.4097 41.9094 -8.6042 Q40.958 -7.8056 40.701 -6.4653 L47.3191 -6.4653 Q47.1246 -7.8056 46.3121 -8.6042 Q45.5066 -9.4097 44.1385 -9.4097 ZM62.4008 -14.9097 L62.4008 0 L60.3106 0 L60.3106 -1.9167 Q59.6717 -0.875 58.6578 -0.3056 Q57.6439 0.2569 56.3869 0.2569 Q54.9564 0.2569 53.7897 -0.4792 Q52.63 -1.2153 51.9633 -2.5347 Q51.3036 -3.8611 51.3036 -5.5278 Q51.3036 -7.1875 51.9633 -8.5 Q52.63 -9.8125 53.7897 -10.5486 Q54.9564 -11.2847 56.3869 -11.2847 Q57.6439 -11.2847 58.6439 -10.7153 Q59.6508 -10.1528 60.3106 -9.1319 L60.3106 -14.9097 L62.4008 -14.9097 ZM56.8939 -1.5764 Q57.88 -1.5764 58.6578 -2.0764 Q59.4356 -2.5833 59.8731 -3.4861 Q60.3106 -4.3958 60.3106 -5.5278 Q60.3106 -6.6528 59.8731 -7.5486 Q59.4356 -8.4514 58.6578 -8.9514 Q57.88 -9.4514 56.8939 -9.4514 Q55.8939 -9.4514 55.1022 -8.9514 Q54.3175 -8.4514 53.88 -7.5486 Q53.4425 -6.6528 53.4425 -5.5278 Q53.4425 -4.3958 53.88 -3.4861 Q54.3175 -2.5833 55.1022 -2.0764 Q55.8939 -1.5764 56.8939 -1.5764 ZM75.2859 -11.0278 L75.2859 0 L73.1747 0 L73.1747 -1.5972 Q72.6609 -0.7708 71.7234 -0.2569 Q70.7859 0.2569 69.6747 0.2569 Q68.4803 0.2569 67.5289 -0.2847 Q66.5845 -0.8333 66.0567 -1.7986 Q65.5359 -2.7708 65.5359 -4.0139 L65.5359 -11.0278 L67.6053 -11.0278 L67.6053 -4.375 Q67.6053 -3.1389 68.3206 -2.3542 Q69.0359 -1.5764 70.147 -1.5764 Q71.2928 -1.5764 72.1678 -2.2361 Q73.0428 -2.9028 73.1747 -3.8819 L73.1747 -11.0278 L75.2859 -11.0278 ZM78.3562 -14.9097 L80.4465 -14.9097 L80.4465 0 L78.3562 0 L78.3562 -14.9097 ZM88.5745 -1.6181 Q89.4286 -1.6181 90.3314 -1.9583 Q91.2411 -2.3056 91.7342 -2.8194 L93.0536 -1.4514 Q92.3314 -0.6806 91.0606 -0.2083 Q89.7897 0.2569 88.5953 0.2569 Q87.0606 0.2569 85.755 -0.4861 Q84.4564 -1.2361 83.6856 -2.5556 Q82.9217 -3.8819 82.9217 -5.5486 Q82.9217 -7.1667 83.6578 -8.4792 Q84.3939 -9.7917 85.6508 -10.5347 Q86.9147 -11.2847 88.4286 -11.2847 Q90.0883 -11.2847 91.2828 -10.4861 Q92.4772 -9.6875 93.1092 -8.2153 Q93.7411 -6.7431 93.7411 -4.7778 L85.0536 -4.7778 Q85.2689 -3.3681 86.2133 -2.4931 Q87.1647 -1.6181 88.5745 -1.6181 ZM88.512 -9.4097 Q87.2342 -9.4097 86.2828 -8.6042 Q85.3314 -7.8056 85.0745 -6.4653 L91.6925 -6.4653 Q91.4981 -7.8056 90.6856 -8.6042 Q89.88 -9.4097 88.512 -9.4097 Z"
+                                             stroke="none"/>
+                                    </g>
+                                 </g>
+                                 <g rendered="true">
+                                    <g>
+                                       <path d="M42.7083 15.725 Q42.7083 17.3847 41.6736 18.6139 Q40.6389 19.8431 38.9514 20.2875 L42.6806 25.6 L40.2083 25.6 L36.625 20.5028 L33.2569 20.5028 L33.2569 25.6 L31.0972 25.6 L31.0972 10.9472 L37.2639 10.9472 Q38.7986 10.9472 40.0347 11.5583 Q41.2778 12.1625 41.9931 13.2597 Q42.7083 14.3569 42.7083 15.725 ZM33.2569 18.4958 L36.9653 18.4958 Q38.5694 18.4958 39.5347 17.7528 Q40.5069 17.0028 40.5069 15.725 Q40.5069 14.4403 39.5347 13.6972 Q38.5694 12.9472 36.9653 12.9472 L33.2569 12.9472 L33.2569 18.4958 ZM46.142 12.7389 Q45.6073 12.7389 45.2323 12.3569 Q44.8573 11.9681 44.8573 11.4542 Q44.8573 10.9472 45.2323 10.5722 Q45.6073 10.1972 46.142 10.1972 Q46.649 10.1972 47.024 10.5861 Q47.399 10.9681 47.399 11.4542 Q47.399 11.9681 47.024 12.3569 Q46.649 12.7389 46.142 12.7389 ZM45.0726 14.5722 L47.1837 14.5722 L47.1837 25.6 L45.0726 25.6 L45.0726 14.5722 ZM54.2278 25.8569 Q52.9848 25.8569 51.7348 25.4333 Q50.4917 25.0028 49.5125 24.2111 L50.5125 22.6972 Q52.3667 24.0444 54.2486 24.0444 Q55.1861 24.0444 55.7625 23.6486 Q56.3389 23.2528 56.3389 22.6139 Q56.3389 21.9333 55.7417 21.5931 Q55.1445 21.2458 53.8389 20.8847 Q51.8181 20.3292 50.9292 19.6278 Q50.0473 18.9194 50.0473 17.6208 Q50.0473 16.1278 51.1653 15.225 Q52.2834 14.3153 54.0542 14.3153 Q55.1028 14.3153 56.1584 14.6556 Q57.2139 14.9958 58.1306 15.5931 L57.1931 17.1486 Q55.5473 16.1278 54.0542 16.1278 Q53.2 16.1278 52.6584 16.4819 Q52.1167 16.8292 52.1167 17.4264 Q52.1167 17.8569 52.3598 18.1139 Q52.6028 18.3708 53.0889 18.5861 Q53.582 18.7944 54.6514 19.1139 Q55.8459 19.475 56.6028 19.8083 Q57.3598 20.1417 57.8806 20.7806 Q58.4084 21.4194 58.4084 22.4403 Q58.4084 23.9819 57.2348 24.9194 Q56.0611 25.8569 54.2278 25.8569 ZM66.1296 19.5653 L70.6713 25.6 L68.1574 25.6 L64.6991 20.9681 L62.9282 22.7597 L62.9282 25.6 L60.838 25.6 L60.838 10.6903 L62.9282 10.6903 L62.9282 20.2042 L68.3241 14.5722 L70.8866 14.5722 L66.1296 19.5653 Z"
                                              stroke="none"/>
                                     </g>
                                  </g>
@@ -1837,9 +1848,9 @@ fill-opacity: 1;
                </g>
                <g k9-elem="description"
                   k9-texture="foreground"
-                  transform="translate(32.7,325.7)"
+                  transform="translate(32.7,338.7)"
                   k9-format="text-fixed"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [569.0, 311.0]; rect-size: [308.0, 77.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [569.0, 324.0]; rect-size: [308.0, 77.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <g rendered="true">
                         <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">
@@ -1856,9 +1867,9 @@ fill-opacity: 1;
                   </g>
                </g>
                <g k9-contains="none"
-                  transform="translate(133.0,368.0)"
+                  transform="translate(133.0,381.0)"
                   k9-texture="none"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [682.0, 388.0]; rect-size: [82.0, 51.0]; position: none; placement: down;painter: direct-svg; "
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: label; rect-pos: [682.0, 401.0]; rect-size: [82.0, 51.0]; position: none; placement: down;painter: direct-svg; "
                   id="id_17-xg"
                   k9-format="text-shape-inline"
                   k9-ui="delete edit xml drag place fill stroke size font direction align"
@@ -1881,7 +1892,7 @@ fill-opacity: 1;
                         k9-texture="foreground"
                         transform="translate(12.2,34.3)"
                         k9-format="text-fixed"
-                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [695.0, 401.0]; rect-size: [56.0, 25.0]; position: none; painter: direct-svg; ">
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [695.0, 414.0]; rect-size: [56.0, 25.0]; position: none; painter: direct-svg; ">
                         <g class="k9-content k9-no-shape" k9-highlight="pulse">
                            <g rendered="true">
                               <g fill="rgb(36,51,20)" stroke="rgb(36,51,20)">

@@ -20,8 +20,8 @@ practice:
    - tag: Communication Risk
      reason: "Facilitates direct communication with potential customers to understand their needs."
   attendant:
-   - tag: Staff Risk
-     reason: "Requires a dedicated sales team and resources."
+   - tag: Agency Risk
+     reason: "Probably requires a dedicated sales team and resources."
    - tag: Funding Risk
      reason: "Sales activities can incur significant costs."
    - tag: Deadline Risk

@@ -146,7 +146,7 @@ hide_table_of_contents: true
 
       <p>Well, it’s  managing a couple of risks: Unit Tests are Automated, so they can be run all the time.  This reduces the amount of Manual Testing you need to do.  Too much manual testing is a risk, because well, it takes time and the feedback is slow, but also you have to rely on people to do it the same every time.  And if people are bad at one thing, it’s doing the same repetitive task day-in-day-out exactly the same every time.</p>
 
-      <p>But also, there is a Regression Risk: our code is going to change in the future.  Are we going to break the functionality of our existing code when we change it?  By having unit tests, we have some more certainty that when we do change it, we haven’t broken features and functionality that already exist.</p>
+      <p>But also, there is the threat of regression: our code is going to change in the future.  Are we going to break the functionality of our existing code when we change it?  By having unit tests, we have some more certainty that when we do change it, we haven’t broken features and functionality that already exist.</p>
 
       <p>So, the Risks we are managing with Unit Testing are on the left of this diagram.   What’s the downside of Unit Testing?   That’s on the right:</p>
 
@@ -389,7 +389,7 @@ hide_table_of_contents: true
             <div class="slide-notes">
                       <p>Now, at this point, you might be thinking - how many of these risks are there?  tvtropes has literally thousands of different tropes recorded.  Is it the same for Software Projects?  </p>
 
-      <p>Luckily, the answer is no.  On the Risk-First website I just break it down into about 50, and some of those are just more specific versions of others.  There are many different types of Dependency Risk - such as Staff Risk, and Software Dependency Risk.</p>
+      <p>Luckily, the answer is no.  On the Risk-First website I just break it down into about 50, and some of those are just more specific versions of others.  There are many different types of Dependency Risk - such as Agency Risk, and Reliability Risk.</p>
 
       <p>I run through these on the website but we’re not going to go into detail today.   </p>
 

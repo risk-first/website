@@ -63,7 +63,7 @@ We'll come back to this in a minute.
 
 Arguably, Risk-First uses the term 'Risk' wrongly:  most literature suggests [risk can be measured](https://keydifferences.com/difference-between-risk-and-uncertainty.html) whereas uncertainty represents things that cannot.  
 
-I am using **risk** everywhere because later we will talk about specific risks (e.g. [Boundary Risk](/tags/Boundary-Risk) or [Complexity Risk](/tags/Complexity-Risk)) and it doesn't feel grammatically correct to talk about those as **uncertainties**.  
+I am using **risk** everywhere because later we will talk about specific risks (e.g. [Lock-In Risk](/tags/Lock-In-Risk) or [Complexity Risk](/tags/Complexity-Risk)) and it doesn't feel grammatically correct to talk about those as **uncertainties**.  
 
 Additionally there is pre-existing usage in Banking of terms like [Operational Risk](https://en.wikipedia.org/wiki/Operational_risk) or [Reputational risk](https://www.investopedia.com/terms/r/reputational-risk.asp) which are also not really a-priori measurable.
 
@@ -111,7 +111,7 @@ _Really good design_ would be coming up with a course of action that takes care 
 
 ## Criticism
 
-One of the criticisms of the [Risk Register](Track-Risk#risk-registers) approach is that of [mistaking the map for the territory](/tags/Map-And-Territory-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
+One of the criticisms of the [Risk Register](Track-Risk#risk-registers) approach is that of [mistaking the map for the territory](/tags/Internal-Model-Risk).  That is, mistakenly believing that what's on the Risk Register _is all there is_.  
 
 In the preceding discussions, I have been careful to point out the existence of [Hidden Risks](/tags/Hidden-Risk) for that very reason. Or, to put another way:
 

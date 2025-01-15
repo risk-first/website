@@ -16,16 +16,18 @@ practice:
    - "Re-Use"
   mitigates:
    - tag: Feature Fit Risk
-     reason: "Ensures that the features conform to predefined standards, reducing variability."
+     reason: "Ensures that the features conform to predefined standards, reducing variability and potentially widening accessibility."
    - tag: Operational Risk
      reason: "Reduces operational errors by providing clear guidelines and protocols."
    - tag: Communication Risk
      reason: "Improves communication by using a common language and standardized terms."
+   - tag: Lock-In Risk
+     reason: "Using software that adheres to standards allows for swapping out components and promotes competition amongst dependencies."
   attendant:
    - tag: Inflexibility Risk
      reason: "May limit creativity and flexibility by enforcing strict adherence to standards."
-   - tag: Implementation Risk
-     reason: "Can introduce complexity and delays during the implementation phase."
+   - tag: Schedule Risk
+     reason: "Adhering to standards can introduce scope creep during the implementation phase."
    - tag: Compliance Risk
      reason: "Ensuring continuous compliance with evolving standards can be challenging."
   related:
@@ -42,7 +44,7 @@ practice:
 Standardisation involves creating, implementing, and enforcing standards and guidelines to ensure consistency, compatibility, and quality across software projects. This practice helps in maintaining uniformity, reducing complexity, and improving communication among team members and stakeholders.
 
 See:
-- [Unwritten Software (Software Dependency Risk)](/risks/Software-Dependency-Risk#unwritten-software)
+- [Unwritten Software (On Software Dependencies)](/risks/On-Software-Dependencies#unwritten-software)
 
 
 ## See Also

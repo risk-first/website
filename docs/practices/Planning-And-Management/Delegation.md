@@ -11,16 +11,17 @@ practice:
   aka: 
    - "Task Assignment"
    - "Empowerment"
+   - "Hierarchy"
    - "Authority Delegation"
    - "Responsibility Allocation"
   mitigates:
-   - tag: Coordination Risk
-     reason: "Ensures optimal utilization of team members' skills and capabilities."
    - tag: Schedule Risk
      reason: "Distributes workload effectively, helping to meet deadlines."
-   - tag: Process Risk
-     reason: "Delegation can be used to stop processes getting in the way of progress."
   attendant:
+   - tag: Security Risk
+     reason: "Delegating responsibility can introduce new security risks."
+   - tag: Coordination Risk
+     reason: "Increases the number of entities involved in project coordination."
    - tag: Agency Risk
      reason: "Can lead to a loss of control over task execution and quality."
    - tag: Communication Risk
@@ -28,6 +29,7 @@ practice:
   related:
    - ../Planning-And-Management/Prioritising
    - ../Collaboration-And-Communication/Stakeholder-Management
+   - ../External-Relations/Outsourcing
 ---
 
 <PracticeIntro details={frontMatter} /> 
@@ -40,7 +42,7 @@ Delegation involves assigning responsibility and authority to others to carry ou
 
 See:
  
- - [Goal Alignment](/risks/Agency-Risk#goal-alignment)=
+ - [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment)
  - [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
 
 ## See Also

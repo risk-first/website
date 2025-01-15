@@ -40,7 +40,7 @@ Scrum's rule about working-to-a-sprint is well-meaning but not always applicable
 
 ## Case 3: Technical Debt
 
-Sometimes, I am faced with a conflict over whether to pay off [technical debt](/risks/Complexity-Risk#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders but sometimes it is an internal, personal conflict.  
+Sometimes, I am faced with a conflict over whether to pay off [technical debt](/risks/Complexity-Analogies#technical-debt) or build new functionality.  Sometimes the conflict will be with people in my team, or with stake-holders but sometimes it is an internal, personal conflict.  
 
 ![Technical Debt vs Building Features](/img/generated/bets/purpose/technical-debt.svg)
 
@@ -133,7 +133,7 @@ Let's go back to our original cases:
 
  - If I decide to **suspend the current sprint** to fix an outage, then that’s because I’ve decided that the risk of lost business, or the damage to reputation is much greater than the risk of customers walking because we didn’t complete the planned features.  
 - When the Agile Manifesto stresses **Individuals and Interactions over Processes and Tools**, it’s because it believes focusing on processes and tools leads to much greater risk.  This is based on the experience that while focusing on individuals and interactions may appear to be a less efficient way to build software, following strict formal processes massively increases the much worse risk of [building the wrong product](/tags/Feature-Fit-Risk). 
-- When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](/tags/Balance-Of-Risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](/tags/Feature-Risk) in the short term, whilst I might believe that [clearing technical debt](/risks/Complexity-Risk#technical-debt) allows us to get features delivered faster in the long term.
+- When we argue for **fixing technical debt against shipping a new feature**, what we are really doing is expressing differences in our models of the [balance of risk](/tags/Balance-Of-Risk) from taking these actions.   My boss and I might both be trying to minimise the risk of customers defecting to another product but he might believe this is best achieved by [adding new features](/tags/Feature-Fit-Risk) in the short term, whilst I might believe that [clearing technical debt](/risks/Complexity-Analogies#technical-debt) allows us to get features delivered faster in the long term.
 - In the example of **Sustainably vs Quickly**, it's clear that what we should be doing is trying to avoid altering the balance of risks in a way that sacrifices too much Sustainability or Speed.  To do this requires judgement in the form of an accurate [Internal Model](/tags/Internal-Model) of the [balance of risks](/tags/Balance-Of-Risk).
 
 ### Other Scenarios
@@ -141,7 +141,7 @@ Let's go back to our original cases:
 In a way, this is not just about development teams.  Any time a person is added to an organisation, the hope is that it will improve the [balance of risk](/tags/Balance-Of-Risk) for that organisation.  The development team are experts in improving the balance of [technical risks](/risks/Risk-Landscape) but other teams have other specialities:
  
  - The Finance team are there to avoid the risk of [running out of money](/tags/Funding-Risk) and ensuring that the bills get paid (avoiding [Legal Risks](/tags/Operational-Risk)).
- - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](/tags/Schedule-Risk), [Reputation Damage](/tags/Trust-And-Belief-Risk), [Morale Issues](/risks/Agency-Risk#morale-failure) and [Legal Risks](/tags/Operational-Risk).
+ - The Human Resources team are there to make sure staff are hired, managed and leave properly.  Doing this avoids [inefficiency](/tags/Schedule-Risk), [Reputation Damage](/tags/Reputational-Risk), [Morale Issues](/risks/Human-Agency-Risk#6-morale-failure) and [Legal Risks](/tags/Operational-Risk).
  - The best doctors have accurate [Internal Models](/tags/Internal-Model). They can best diagnose the illnesses and figure out treatments that improve the patient's [balance of risk](/tags/Balance-Of-Risk).  Medical Students are all taught to 'first, do no harm':
 
 > "given an existing problem, it may be better not to do something, or even to do nothing, than to risk causing more harm than good." - [Primum non nocere, _Wikipedia_](https://en.wikipedia.org/wiki/Primum_non_nocere).

@@ -13,6 +13,7 @@ practice:
    - "SCM"
    - "Software Configuration Management"
    - "Feature Toggle"
+   - "Feature Flag"
   mitigates:
    - tag: Implementation Risk
      reason: "Establishes and maintains consistency in the software product's performance and attributes."
@@ -21,12 +22,8 @@ practice:
    - tag: Complexity Risk
      reason: "Reduces complexity by managing system changes in a controlled and documented manner."
   attendant:
-   - tag: Process Risk
-     reason: "The CM process can introduce bureaucratic overhead."
-   - tag: Dependency Risk
-     reason: "Dependencies on the CM tools and processes can become critical points of failure."
-   - tag: Security Risk
-     reason: "Incorrect configuration management can lead to security vulnerabilities."
+   - tag: Reliability Risk
+     reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Tools-and-Standards/Version-Control

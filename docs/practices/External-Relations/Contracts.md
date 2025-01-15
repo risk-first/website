@@ -19,13 +19,17 @@ practice:
      reason: "Outlines cost structures and helps manage budget expectations."
    - tag: Schedule Risk
      reason: "Establishes timelines and milestones to keep the project on track."
+   - tag: Legal Risk
+     reason: "A well-written contract establishes the terms under which software is provided or used."
   attendant:
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: "Contracts can create rigid boundaries that limit flexibility."
    - tag: Coordination Risk
-     reason: "Requires careful coordination to ensure all terms are met."
+     reason: "Contracting work can often involve setting careful terms to minimise coordination risks."
    - tag: Process Risk
-     reason: "The process of drafting, negotiating, and managing contracts can be complex and time-consuming."
+     reason: "The process of drafting, negotiating, and managing contracts is a process with significant risk."
+   - tag: Deadline Risk
+     reason: "Contracts often stipulate certain conditions must be met at certain times."
   related:
    - ../Planning-and-Management/Change-Management
    - ../Development-and-Coding/Coding

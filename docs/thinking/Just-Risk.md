@@ -58,7 +58,7 @@ This _hints_ at the fact that at some level it's all about risk:
 
 The reason you are [taking an action](/tags/Take-Action) is to manage a risk.  For example: 
 
- - If you're coding up new features in the software, this is managing [Feature Risk](/tags/Feature-Risk) (which we'll explore in more detail later).  
+ - If you're coding up new features in the software, this is managing [Feature Fit Risk](/tags/Feature-Fit-Risk) (which we'll explore in more detail later).  
  - If you're getting a business sign-off for something, this is managing the risk of everyone not agreeing on a course of action (a [Coordination Risk](/tags/Coordination-Risk)).  
  - If you're writing a test, then that's managing a type of [Implementation Risk](/tags/Implementation-Risk).  
 

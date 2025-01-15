@@ -22,15 +22,15 @@ practice:
      reason: "Provides a systematic approach to managing and addressing operational issues."
    - tag: Communication Risk
      reason: "Facilitates communication about issues and their status among team members."
-   - tag: Trust and Belief Risk
+   - tag: Reputational Risk
      reason: "Tracking and fixing bugs improves software reputation."
    - tag: Security Risk
-     reason: "Addresses and resolves security incidents to protect the organization."
+     reason: "Track and Prioritise Security Issues and Incidents."
   attendant:
    - tag: Complexity Risk
-     reason: "Managing a large number of logged issues can add complexity."
+     reason: "Managing an excessive number of logged issues can add complexity."
    - tag: Process Risk
-     reason: "Creates dependency on issue tracking tools and their accuracy."
+     reason: "The issue lifecycle from creation to resolution is a process, therefore a source of process risk."
    - tag: Schedule Risk
      reason: "Managing and resolving logged issues can impact project timelines."
   related:

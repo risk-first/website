@@ -3,17 +3,25 @@
 	xmlns:xslt="http://www.kite9.org/schema/xslt"
 	xmlns="http://www.kite9.org/schema/adl"
 	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-113"
 	style="--kite9-layout: right; ">
 
+	<container bordered="true" id="c"
+		style="--kite9-layout: down; ">
 
-	<mitigated>
-		<risk class="feature" />
-	</mitigated>
-	
-    <action>Adopt Simple Dependencies</action>
-    
-    <risk class="complexity" />
-    <risk class="feature-fit" />
+		<mitigated>
+			<risk class="feature-fit" />
+		</mitigated>
+		<label>Clients need features...</label>
+	</container>
 
-  </diagram>
+	<action>Adopt Simple Dependencies</action>
+
+	<container bordered="true" id="c"
+		style="--kite9-layout: down; ">
+		<risk class="complexity" />
+		<risk class="dependency" />
+		<label>Supporting these via dependencies might
+		accrue some new risks.</label>
+	</container>
+</diagram>

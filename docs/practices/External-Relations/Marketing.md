@@ -15,15 +15,15 @@ practice:
   mitigates:
    - tag: Market Risk
      reason: "Promotes the software to reach potential customers and increase market share."
-   - tag: Feature Drift Risk
-     reason: "Make the most of market opportunities while they exist."
    - tag: Communication Risk
      reason: "Facilitates communication of the product's value proposition to the target audience."
+   - tag: Reputational Risk
+     reason: "Good communication and product marketing can help solidify good reputation."
   attendant:
    - tag: Funding Risk
      reason: "Marketing campaigns can be expensive."
    - tag: Coordination Risk
-     reason: "Requires dedicated resources for planning and execution."
+     reason: "Marketing efforts often need to be coordinated with other parts of the business."
    - tag: Deadline Risk
      reason: "Timing of marketing campaigns needs to align with product readiness."
   related:

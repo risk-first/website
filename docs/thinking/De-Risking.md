@@ -101,9 +101,9 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 1.  **Do Risky Things Early**:  If you are building some software process which has ten steps in it, and the 9th step has a high probability of not being implementable, then _build the 9th step first_.  If you succeed, you've massively reduced the risk of the process construction.  IF you fail, you'll only have lost the time it took to build that one step.  _Build a proof of concept_.
 
-1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [Software Dependency Risk](/tags/Software-Dependency-Risk)
+1.  **Take Care With Dependencies**: Choose popular technologies and known reliable components. Whilst hiring people is hard work at the best of times, hiring PL/1 programmers is _really hard_. This tactic is explored in much more depth in [On Software Dependencies](/risks/On-Software-Dependencies)
 
-1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](/tags/Extreme-Programming) to reduce [Key Person Risk](/tags/Agency-Risk) and [Communication Risk](/tags/Communication-Risk).  See [Dependency Risk](/tags/Dependency-Risk) for more on this.  
+1.  **Redundancy**: Avoid single points of failure.   For example, Pair Programming is a control espoused by [Extreme Programming](/tags/Extreme-Programming) to reduce [Key Person Risk](/tags/Agency-Risk) and [Communication Risk](/tags/Communication-Risk).  See [Dependency Risks](/tags/Dependency-Risks) for more on this.  
 
 1.  **Create Options**:  Using _feature flags_ allows you to turn off functionality in production, avoiding an all-or-nothing commitment.  Working in branches gives the same optionality while developing. 
 
@@ -147,7 +147,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ### Specific Tactics
 
-1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Learning Curve Risk](/tags/Learning-Curve-Risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](/tags/Coordination-Risk) problem, such as concurrent writes or consistency.
+1.  **Avoid Unfamiliar Technologies**:  If you are working in a team which has no experience of relational databases, then storing data in files _might_ be a way to avoid the [Internal Model Risk](/tags/Internal-Model-Risk) associated with this technology.  Of course, you may pick up other, more serious risks as a result: Relational Databases are software solutions to many kinds of [Coordination Risk](/tags/Coordination-Risk) problem, such as concurrent writes or consistency.
 
 2.  **Do Your Research**:  If you're not clear about the risks of a particular decision up front, it can be hard to avoid them.  Although, some of the biggest breakthroughs come from people _not_ following this advice such as the Wright Brothers inventing powered flight and Percy Spencer inventing the microwave oven.  Don't spend your life avoiding all risks.
 
@@ -169,7 +169,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 ### Specific Tactics
 
-1. **Software as a Service**: [Software-as-a-Service (SaaS)](/tags/Software-Dependency-Risk) is an example of transferring risk, since another party is responsible for making sure the service is up-and-running, backed up, etc.  
+1. **Software as a Service**: [Software-as-a-Service (SaaS)](/risks/On-Software-Dependencies) is an example of transferring risk, since another party is responsible for making sure the service is up-and-running, backed up, etc.  
 
 1. **Employ Good People**: Having staff is a great way to share risk, whether you are a firm or a team.  The employee takes care of some of the risk for you.  In return, you're paying them a wage which helps them manage their own risks.  This is the time-tested, win-win symbiosis of a good trade.    
 
@@ -193,7 +193,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 - **War** is a risk that is usually accepted by businesses.  You're unlikely to be able to buy insurance against this.
 
-- **Key Staff**: Having a super-star on the team is risky as they might leave.  But sometimes they are a risk worth accepting because of the value they bring.  This is covered in more detail in [Staff Risk](/tags/Staff-Risk).
+- **Key Staff**: Having a super-star on the team is risky as they might leave.  But sometimes they are a risk worth accepting because of the value they bring.  This is covered in more detail in [Agency Risk](/tags/Agency-Risk).
 
 ### Specific Tactics
 
@@ -241,7 +241,7 @@ There is a grey area here, because on the one hand you are [retaining](#retain) 
 
 ## Specific Tactics
 
-1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Map and Territory Risk](/tags/Map-And-Territory-Risk) covers this in more detail.
+1.  **Establish Metrics** that allow you to observe the performance of the systems you build.   [Internal Model Risk](/tags/Internal-Model-Risk) covers this in more detail.
 
 1.  **Second opinions** and **audits** correct for errors in monitoring by people who can be too close to the problem.
 

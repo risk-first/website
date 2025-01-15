@@ -10,10 +10,11 @@
               id="c"
               style="--kite9-layout: right; --kite9-vertical-align: center;">
       <mitigated>
-         <risk class="codebase"/>
+         <risk class="complexity"/>
       </mitigated>
       <label id="id_16">
-        Internal Model
+        Implementing everything means owning a lot of 
+        complexity.  
       </label>
    </container>
    <group style="--kite9-layout: down; --kite9-horizontal-align: left;">
@@ -24,7 +25,9 @@
          <risk class="dependency" id="r2"/>
          <risk class="boundary"/>
          <label id="id_16-eq">
-          Attendant Risks
+          Using libraries or languages shifts
+          complexity to another owner, but creates dependency
+          and lock-in risks.
         </label>
       </container>
    </group>

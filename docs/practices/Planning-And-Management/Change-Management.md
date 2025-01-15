@@ -18,12 +18,12 @@ practice:
    - tag: Implementation Risk
      reason: "Avoid bugs from creeping into the system."
    - tag: Coordination Risk
-     reason: "Controls the impact of changes on other project activities."
+     reason: "Specifically addresses coordinating change in a structured way."
   attendant:
    - tag: Schedule Risk
      reason: "Managing changes systematically can introduce delays."
    - tag: Process Risk
-     reason: "Change management can increase dependency on approval processes and stakeholders."
+     reason: "Change control is a process, and therefore is a source of process risk. "
   related:
    - ../Development-and-Coding/Coding
    - ../Testing-and-Quality-Assurance/Integration-Testing

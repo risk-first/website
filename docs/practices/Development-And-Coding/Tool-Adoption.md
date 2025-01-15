@@ -20,13 +20,13 @@ practice:
    - tag: Operational Risk
      reason: "Enhances operational efficiency through the use of appropriate tools."
   attendant:
-   - tag: Software Dependency Risk
+   - tag: Lock-In Risk
      reason: "Creates dependencies on specific tools and their continued support."
    - tag: Funding Risk
      reason: "Can incur costs associated with acquiring and maintaining tools."
    - tag: Complexity Risk
      reason: "Integrating multiple tools can add complexity to the development process."
-   - tag: Boundary Risk
+   - tag: Lock-In Risk
      reason: Once tools become embedded in the process, they can be hard to change.
   related:
    - ../Planning-and-Management/Change-Management
@@ -62,7 +62,7 @@ But, this is a low bar -  some tools offer _amazing_ returns on investment:
 
 A _really good tool_ offers such advantages that not using it becomes _unthinkable_:  Linux is heading towards this point.   For Java developers, the JVM is there already.  
 
-Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](/tags/Dependency-Risk).
+Picking new tools and libraries should be done **very carefully**:  you may be stuck with your choices for some time.  Here is a [short guide that might help](/risks/On-Software-Dependencies).
 
 
 ## See Also
