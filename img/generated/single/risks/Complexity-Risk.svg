@@ -495,9 +495,24 @@ text-align: center;
 --kite9-min-height: 160pt;
 }
 
-*[k9-elem="hidden"] {
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
 --kite9-min-width: 120pt;
 --kite9-min-height: 160pt;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="mitigated"] *.k9-content *[k9-elem="risk"], *[k9-elem="hidden"] *.k9-content *[k9-elem="risk"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
 }
 
 *[k9-elem="risk"] {
@@ -513,7 +528,7 @@ text-align: center;
 --kite9-padding-bottom: 10pt;
 --kite9-padding-left: 10pt;
 --kite9-min-width: 145pt;
---kite9-min-height: 160pt;
+--kite9-min-height: 170pt;
 }
 
 *[k9-elem="title"][k9-format="text-fixed"] {
@@ -1456,9 +1471,9 @@ fill-opacity: 1;
          <g k9-elem="risk"
             k9-texture="background"
             class="complexity"
-            transform="translate(37.0,27.0)"
+            transform="translate(37.0,20.0)"
             k9-format="container"
-            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 213.33334350585938]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [37.0, 27.0]; rect-size: [193.0, 213.0]; position: none; painter: direct-svg; ">
+            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 226.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [37.0, 20.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; ">
             <g class="k9-shape" k9-highlight="pulse">
                <rect x="0"
                      y="0"
@@ -1468,7 +1483,7 @@ fill-opacity: 1;
                      pp:x="$x"
                      rx="5pt"
                      ry="5pt"
-                     height="213"
+                     height="226"
                      pp:width="$width"/>
             </g>
             <g class="k9-content">
@@ -1476,7 +1491,7 @@ fill-opacity: 1;
                   k9-texture="foreground"
                   transform="translate(78.6,42.3)"
                   k9-format="text-fixed"
-                  k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [117.0, 40.0]; rect-size: [34.0, 35.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [117.0, 33.0]; rect-size: [34.0, 35.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape" k9-highlight="pulse">
                      <g rendered="true">
                         <g>
@@ -1490,7 +1505,7 @@ fill-opacity: 1;
                   k9-texture="none"
                   transform="translate(63.7,61.7)"
                   k9-format="image-fixed"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [100.0, 88.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [100.0, 81.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
                   <g class="k9-content k9-no-shape">
                      <image x="0"
                             y="0"
@@ -1509,9 +1524,9 @@ fill-opacity: 1;
                            height="50pt"/>
                   </g>
                </g>
-               <g transform="translate(39.0,170.3)"
+               <g transform="translate(39.0,183.3)"
                   k9-texture="foreground"
-                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [77.0, 176.0]; rect-size: [114.0, 51.0]; position: none; painter: direct-svg; "
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [77.0, 182.0]; rect-size: [114.0, 51.0]; position: none; painter: direct-svg; "
                   id="@text"
                   k9-format="text-fixed"
                   k9-ui="orphan edit fill font size align"
@@ -1526,7 +1541,7 @@ fill-opacity: 1;
                      </g>
                      <g rendered="true">
                         <g>
-                           <path d="M53.7083 15.725 Q53.7083 17.3847 52.6736 18.6139 Q51.6389 19.8431 49.9514 20.2875 L53.6806 25.6 L51.2083 25.6 L47.625 20.5028 L44.2569 20.5028 L44.2569 25.6 L42.0972 25.6 L42.0972 10.9472 L48.2639 10.9472 Q49.7986 10.9472 51.0347 11.5583 Q52.2778 12.1625 52.9931 13.2597 Q53.7083 14.3569 53.7083 15.725 ZM44.2569 18.4958 L47.9653 18.4958 Q49.5694 18.4958 50.5347 17.7528 Q51.5069 17.0028 51.5069 15.725 Q51.5069 14.4403 50.5347 13.6972 Q49.5694 12.9472 47.9653 12.9472 L44.2569 12.9472 L44.2569 18.4958 ZM57.142 12.7389 Q56.6073 12.7389 56.2323 12.3569 Q55.8573 11.9681 55.8573 11.4542 Q55.8573 10.9472 56.2323 10.5722 Q56.6073 10.1972 57.142 10.1972 Q57.649 10.1972 58.024 10.5861 Q58.399 10.9681 58.399 11.4542 Q58.399 11.9681 58.024 12.3569 Q57.649 12.7389 57.142 12.7389 ZM56.0726 14.5722 L58.1837 14.5722 L58.1837 25.6 L56.0726 25.6 L56.0726 14.5722 ZM65.2278 25.8569 Q63.9848 25.8569 62.7348 25.4333 Q61.4917 25.0028 60.5125 24.2111 L61.5125 22.6972 Q63.3667 24.0444 65.2486 24.0444 Q66.1861 24.0444 66.7625 23.6486 Q67.3389 23.2528 67.3389 22.6139 Q67.3389 21.9333 66.7417 21.5931 Q66.1445 21.2458 64.8389 20.8847 Q62.8181 20.3292 61.9292 19.6278 Q61.0473 18.9194 61.0473 17.6208 Q61.0473 16.1278 62.1653 15.225 Q63.2834 14.3153 65.0542 14.3153 Q66.1028 14.3153 67.1584 14.6556 Q68.2139 14.9958 69.1306 15.5931 L68.1931 17.1486 Q66.5473 16.1278 65.0542 16.1278 Q64.2 16.1278 63.6584 16.4819 Q63.1167 16.8292 63.1167 17.4264 Q63.1167 17.8569 63.3598 18.1139 Q63.6028 18.3708 64.0889 18.5861 Q64.582 18.7944 65.6514 19.1139 Q66.8459 19.475 67.6028 19.8083 Q68.3598 20.1417 68.8806 20.7806 Q69.4084 21.4194 69.4084 22.4403 Q69.4084 23.9819 68.2348 24.9194 Q67.0611 25.8569 65.2278 25.8569 ZM77.1296 19.5653 L81.6713 25.6 L79.1574 25.6 L75.6991 20.9681 L73.9282 22.7597 L73.9282 25.6 L71.838 25.6 L71.838 10.6903 L73.9282 10.6903 L73.9282 20.2042 L79.3241 14.5722 L81.8866 14.5722 L77.1296 19.5653 Z"
+                           <path d="M50.2083 15.725 Q50.2083 17.3847 49.1736 18.6139 Q48.1389 19.8431 46.4514 20.2875 L50.1806 25.6 L47.7083 25.6 L44.125 20.5028 L40.7569 20.5028 L40.7569 25.6 L38.5972 25.6 L38.5972 10.9472 L44.7639 10.9472 Q46.2986 10.9472 47.5347 11.5583 Q48.7778 12.1625 49.4931 13.2597 Q50.2083 14.3569 50.2083 15.725 ZM40.7569 18.4958 L44.4653 18.4958 Q46.0694 18.4958 47.0347 17.7528 Q48.0069 17.0028 48.0069 15.725 Q48.0069 14.4403 47.0347 13.6972 Q46.0694 12.9472 44.4653 12.9472 L40.7569 12.9472 L40.7569 18.4958 ZM53.642 12.7389 Q53.1073 12.7389 52.7323 12.3569 Q52.3573 11.9681 52.3573 11.4542 Q52.3573 10.9472 52.7323 10.5722 Q53.1073 10.1972 53.642 10.1972 Q54.149 10.1972 54.524 10.5861 Q54.899 10.9681 54.899 11.4542 Q54.899 11.9681 54.524 12.3569 Q54.149 12.7389 53.642 12.7389 ZM52.5726 14.5722 L54.6837 14.5722 L54.6837 25.6 L52.5726 25.6 L52.5726 14.5722 ZM61.7278 25.8569 Q60.4848 25.8569 59.2348 25.4333 Q57.9917 25.0028 57.0125 24.2111 L58.0125 22.6972 Q59.8667 24.0444 61.7486 24.0444 Q62.6861 24.0444 63.2625 23.6486 Q63.8389 23.2528 63.8389 22.6139 Q63.8389 21.9333 63.2417 21.5931 Q62.6445 21.2458 61.3389 20.8847 Q59.3181 20.3292 58.4292 19.6278 Q57.5473 18.9194 57.5473 17.6208 Q57.5473 16.1278 58.6653 15.225 Q59.7834 14.3153 61.5542 14.3153 Q62.6028 14.3153 63.6584 14.6556 Q64.7139 14.9958 65.6306 15.5931 L64.6931 17.1486 Q63.0473 16.1278 61.5542 16.1278 Q60.7 16.1278 60.1584 16.4819 Q59.6167 16.8292 59.6167 17.4264 Q59.6167 17.8569 59.8598 18.1139 Q60.1028 18.3708 60.5889 18.5861 Q61.082 18.7944 62.1514 19.1139 Q63.3459 19.475 64.1028 19.8083 Q64.8598 20.1417 65.3806 20.7806 Q65.9084 21.4194 65.9084 22.4403 Q65.9084 23.9819 64.7348 24.9194 Q63.5611 25.8569 61.7278 25.8569 ZM73.6296 19.5653 L78.1713 25.6 L75.6574 25.6 L72.1991 20.9681 L70.4282 22.7597 L70.4282 25.6 L68.338 25.6 L68.338 10.6903 L70.4282 10.6903 L70.4282 20.2042 L75.8241 14.5722 L78.3866 14.5722 L73.6296 19.5653 Z"
                                  stroke="none"/>
                         </g>
                      </g>
