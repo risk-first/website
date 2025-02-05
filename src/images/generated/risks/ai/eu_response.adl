@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt;">
+	<group style="--kite9-layout: down; ">
+
+		<container style="--kite9-layout: right; ">
+			<mitigated>
+				<risk class="attendant" id="id_0-wo">Bias and
+					Discrimination
+				</risk>
+			</mitigated>
+			<mitigated>
+				<risk class="attendant" id="id_0-de">Privacy
+					Violations
+				</risk>
+			</mitigated>
+			<mitigated>
+				<risk class="attendant" id="id_0-de">Explainability
+					&amp; Recourse</risk>
+			</mitigated>
+			<group style="--kite9-layout: down; ">
+				<action>Avoid / Control </action>
+				<action>Monitor </action>
+			</group>
+			<label>EU Laws aim to tackle these risks...</label>
+		</container>
+		<container id="c2" style="--kite9-layout: right; ">
+			<risk class="attendant" id="id_0-de">Job
+				Displacement
+			</risk>
+			<risk class="attendant" id="id_0-de">Misinformation</risk>
+			<label>...but don't address these risks</label>
+		</container>
+	</group>
+</diagram>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt;">
+	<group style="--kite9-layout: down; ">
+
+		<container style="--kite9-layout: down; ">
+			<group>
+				<group style="--kite9-layout: right; ">
+					<component id="1">Product</component>
+					<action id="2">Regulation</action>
+					<action id="3">Launch</action>
+					<action id="3b">Real-World Use</action>
+				</group>
+				<arrow id="f1">feedback</arrow>
+			</group>
+			<description>Regulated Industry</description>
+		</container>
+		<container id="c2" style="--kite9-layout: down; ">
+			<group>
+				<group style="--kite9-layout: right; ">
+					<component id="4">Product</component>
+					<action id="5">Launch</action>
+					<action id="6">Regulation</action>
+					<action id="6b">Real-World Use</action>
+				</group>
+				<arrow id="f2">feedback</arrow>
+			</group>
+			<description>Unregulated Industry</description>
+		</container>
+	</group>
+
+
+	<link>
+		<from reference="1" />
+		<to reference="2" shape="arrow" />
+	</link>
+	<link>
+		<from reference="2" />
+		<to reference="3" shape="arrow" />
+	</link>
+	<link>
+		<from reference="3" />
+		<to reference="3b" shape="arrow" />
+	</link>
+	<link>
+		<from reference="3b" />
+		<to reference="f1" />
+	</link>
+	<link>
+		<from reference="f1" />
+		<to reference="2" shape="arrow" />
+	</link>
+	<link>
+		<from reference="4" />
+		<to reference="5" shape="arrow" />
+	</link>
+	<link>
+		<from reference="5" />
+		<to reference="6" shape="arrow" />
+	</link>
+	<link>
+		<from reference="6" />
+		<to reference="6b" shape="arrow" />
+	</link>
+	<link>
+		<from reference="6b" />
+		<to reference="f2" />
+	</link>
+	<link>
+		<from reference="f2" />
+		<to reference="6" shape="arrow" />
+	</link>
+	<align drawDirection="down">
+		<from reference="3" />
+		<to reference="f1" />
+	</align>
+</diagram>
