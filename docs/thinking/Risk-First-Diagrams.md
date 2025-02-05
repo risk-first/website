@@ -83,7 +83,7 @@ There are [all kinds of risks](/risks/Risk-Landscape) we face in life and we att
 
 As well as considering Risk-First diagrams to be like the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), you could also think in terms of [functional programming](https://en.wikipedia.org/wiki/Functional_programming), which might be more familiar to us as software developers.  
 
-We are _tranforming_ an input condition (on the left) into an _output_ condition (on the right) by way of a function (the action we take, in the middle).  
+We are _transforming_ an input condition (on the left) into an _output_ condition (on the right) by way of a function (the action we take, in the middle).  
 
 ## Other Elements
 
