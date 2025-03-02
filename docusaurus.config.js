@@ -17,6 +17,7 @@ const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left'
 					{ to: '/bets/Start', label: 'Bets', position: 'left' },
 					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
 					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
+					{ to: '/ai/Start', label: 'AI', position: 'left' },
 					]
 
 /** @type {import('@docusaurus/types').Config} */

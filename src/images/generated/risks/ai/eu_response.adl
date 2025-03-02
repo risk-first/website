@@ -7,20 +7,21 @@
 	<group style="--kite9-layout: down; ">
 
 		<container style="--kite9-layout: right; ">
-			<mitigated>
-				<risk class="attendant" id="id_0-wo">Bias and
-					Discrimination
-				</risk>
-			</mitigated>
-			<mitigated>
-				<risk class="attendant" id="id_0-de">Privacy
-					Violations
-				</risk>
-			</mitigated>
-			<mitigated>
-				<risk class="attendant" id="id_0-de">Explainability
-					&amp; Recourse</risk>
-			</mitigated>
+			<group style="--kite9-layout: right; ">
+				<group style="--kite9-layout: down; ">
+					<mitigated><risk class="internal-model" id="id_0-wo" /></mitigated>
+					<description  style="text-align: center; ">Increased risk of bias and discrimination in software
+						systems.</description>
+				</group>
+				<group style="--kite9-layout: down; ">
+					<mitigated><risk class="security" id="id_1-wo" /></mitigated>
+					<description style="text-align: center; ">Extra opportunity for privacy violations</description>
+				</group>
+				<group style="--kite9-layout: down; ">
+					<mitigated><risk class="process" id="id_2-wo" /></mitigated>
+					<description  style="text-align: center; ">Lack of explainability and recourse</description>
+				</group>
+			</group>
 			<group style="--kite9-layout: down; ">
 				<action>Avoid / Control </action>
 				<action>Monitor </action>
@@ -28,10 +29,16 @@
 			<label>EU Laws aim to tackle these risks...</label>
 		</container>
 		<container id="c2" style="--kite9-layout: right; ">
-			<risk class="attendant" id="id_0-de">Job
-				Displacement
-			</risk>
-			<risk class="attendant" id="id_0-de">Misinformation</risk>
+			<group style="--kite9-layout: right; ">
+				<group style="--kite9-layout: down; ">
+					<risk class="market" id="id_3-wo" />
+					<description  style="text-align: center; ">Increased pace of job displacement</description>
+				</group>
+				<group style="--kite9-layout: down; ">
+					<risk class="communication" id="id_4-wo" />
+					<description  style="text-align: center; ">Misinformation</description>
+				</group>
+			</group>
 			<label>...but don't address these risks</label>
 		</container>
 	</group>

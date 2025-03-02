@@ -7,30 +7,30 @@
 
 	<group style="--kite9-layout: down; --kite9-sizing: minimize; ">
 		<group id="g1"
-			style="--kite9-layout: right;  --kite9-connection-align: 50%; ">
+			style="--kite9-layout: down;  --kite9-connection-align: 50%; ">
 			<mitigated>
-				<risk class="attendant">Information
-					Leak
-				</risk>
+				<risk class="security"/>
 			</mitigated>
+			<description  style="text-align: center; ">Information
+					Leak</description>
 		</group>
 
 		<group id="g2"
-			style="--kite9-layout: right;  --kite9-connection-align: 50%; ">
+			style="--kite9-layout: down;  --kite9-connection-align: 50%; ">
 			<mitigated>
-				<risk class="attendant">Unauthorized
-					Access
-				</risk>
+				<risk class="operational" />
 			</mitigated>
+			<description  style="text-align: center; ">Unauthorized
+					Access</description>
 		</group>
 
 		<group id="g3"
-			style="--kite9-layout: right;  --kite9-connection-align: 50%; ">
+			style="--kite9-layout: down;  --kite9-connection-align: 50%; ">
 			<mitigated>
-				<risk class="attendant">Foundation Model
-					Drift / Change
-				</risk>
+				<risk class="reliability" />
 			</mitigated>
+			<description  style="text-align: center; ">Foundation Model
+					Drift / Change</description>
 		</group>
 	</group>
 
