@@ -57,7 +57,7 @@ tweet: yes
 
 # Derisking
 
-In this section, we're going to more closely at what, so far, we've called "[Taking Action](/tags/Take-Action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
+In this section, we're going to look more closely at what, so far, we've called "[Taking Action](/tags/Take-Action)" and separate out different ways this can be done.   We'll introduce the correct risk management terms and give examples of how to apply these to software development.
 
 ## What is Taking Action?
 
