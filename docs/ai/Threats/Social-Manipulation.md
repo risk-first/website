@@ -4,13 +4,16 @@ description: AI could predict and shape human behaviour on an unprecedented scal
 
 featured: 
   class: c
-  element: '<risk class="communication">Social Manipulation</risk>'
+  element: '<risk class="communication" /><description>Social Manipulation</description>'
 tags:
- - AI-Risk
- - Social-Manipulation
+ - AI Threats
+ - Social Manipulation
 sidebar_position: 2
 tweet: yes
+part_of: AI Threats
 ---
+
+<AIThreatIntro fm={frontMatter} />
 
 AI systems designed to influence behaviour at scale could (and do) undermine democracy, free will, and individual autonomy.
 
@@ -23,8 +26,6 @@ AI systems designed to influence behaviour at scale could (and do) undermine dem
 - **Deepfakes: A Grounded Threat Assessment** [Chesney & Citron, 2019](https://dx.doi.org/10.2139/ssrn.3213954): Explores the implications of deepfake technology, highlighting the urgent necessity for innovative detection tools and policy interventions (see below).
 
 - **Nazi Propaganda** [United States Holocaust Memorial Museum](https://encyclopedia.ushmm.org/content/en/article/nazi-propaganda): Examines how the Nazi regime harnessed mass media—including radio broadcasts, film, and print—to shape public opinion, consolidate power, and foment anti-Semitic attitudes during World War.  (Fake content isn't a new problem.)
-
----
 
 ## How This Is Already Happening
 

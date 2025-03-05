@@ -4,11 +4,16 @@ description: A single AI system dominates globally, leading to catastrophic cons
 
 featured: 
   class: c
-  element: '<risk class="lock-in">Synthetic Intelligence Rivalry</risk>'
+  element: | 
+    '<risk class="lock-in" /><description style="text-align: center">Synthetic Intelligence 
+    Rivalry</description>'
 tags:
- - AI-Risk
- - Synthetic-Intelligence-Rivalry
+ - AI Threats
+ - Synthetic Intelligence Rivalry
+part_of: AI Threats
 ---
+
+<AIThreatIntro fm={frontMatter} />
 
 **Impact: 3** - If AI entities did emerge as rivals, the consequences could range from economic disruption to conflicts over control of resources.
 

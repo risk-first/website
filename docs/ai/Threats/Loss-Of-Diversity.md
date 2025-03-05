@@ -4,11 +4,15 @@ description: A single AI system dominates globally, leading to catastrophic cons
 
 featured: 
   class: c
-  element: '<risk class="lock-in">Loss Of Diversity</risk>'
+  element: '<risk class="lock-in" /><description>Loss Of Diversity</description>'
 tags:
- - AI-Risk
- - Loss-Of-Diversity
+ - AI Threats
+ - Loss Of Diversity
+part_of: AI Threats
 ---
+
+<AIThreatIntro fm={frontMatter} />
+
 
 **Impact: 3** - A lack of diversity could create system-wide vulnerabilities, where a single flaw in a dominant AI model causes widespread failure.
 

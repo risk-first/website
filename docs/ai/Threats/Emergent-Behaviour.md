@@ -4,13 +4,16 @@ description: AI develops unforeseen behaviours, capabilities, or self-replicatio
 
 featured: 
   class: c
-  element: '<risk class="feature-fit">Emergent Behaviour</risk>'
+  element: '<risk class="feature-fit" /><description>Emergent Behaviour</description>'
 tags:
- - AI-Risk
- - Emergent-Behaviour
+ - AI Threats
+ - Emergent Behaviour
 sidebar_position: 2
 tweet: yes
+part_of: AI Threats
 ---
+
+<AIThreatIntro fm={frontMatter} />
 
 
 **Impact: 3** - While some emergent behaviors may be benign, others could lead to unintended or harmful consequences that are difficult to control.

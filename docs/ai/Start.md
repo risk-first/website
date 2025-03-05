@@ -1,6 +1,6 @@
 ---
-title: Artificial Intelligence Risks
-description: Risk-First Track of articles on Bets within Software Development
+title: Artificial Intelligence Threats
+description: Risk-First Track of articles on Artificial Intelligence Threats
 
 
 featured: 
@@ -16,17 +16,15 @@ sidebar_position: 7
 
 A sequence looking at societal-level risks due to Artificial Intelligence (AI). 
 
-![AI Risks Diagram](/img/generated/risks/ai/future_risks.svg)
-
 ## Outcomes
 
 - Understand the main risks we face as society nurturing AI.
 - Understand which risks can be managed, which perhaps can't.
 
-## Risks
+## Threats
 
-<TagList filter="ai" tag="AI-Risk" />
+<TagList filter="ai" tag="AI Threats" />
 
 ## Practices
 
-<TagList filter="ai" tag="AI-Practice" />
+<TagList filter="ai" tag="Practice" />
