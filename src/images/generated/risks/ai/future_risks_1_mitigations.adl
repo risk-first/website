@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt; --kite9-layout: down;">
+	<group style="--kite9-layout: right; ">
+		<mitigated>
+			<risk class="process" id="id_0-wo" />
+		</mitigated>
+		<description style="text-align: center; ">Loss of
+			human control
+		</description>
+		<group
+			style="--kite9-layout: down; --kite9-horizontal-align: left; ">
+			<action>Kill Switches</action>
+			<action>AI-As-Judge</action>
+			<action>Ecosystem Diversity</action>
+		</group>
+	</group>
+	<group style="--kite9-layout: right; ">
+		<mitigated>
+			<risk class="agency" id="id_1-wo" />
+		</mitigated>
+		<description style="text-align: center;  ">Misaligned
+			Goals
+		</description>
+		<group style="--kite9-layout: down; --kite9-horizontal-align: left; ">
+			<action>Human-In-The-Loop</action>
+		</group>	
+	</group>
+	<group style="--kite9-layout: right; ">
+		<mitigated>
+			<risk class="security" id="id_2-wo" />
+		</mitigated>
+		<description style="text-align: center;  ">Superintelligence with
+			malicious intent
+		</description>
+		<group
+			style="--kite9-layout: down; --kite9-horizontal-align: left; ">
+			<action>Treaties</action>
+			<action>Transparency</action>
+			<action>Ecosystem Diversity</action>
+		</group>
+	</group>
+
+	<group style="--kite9-layout: right; ">
+		<mitigated>
+			<risk class="complexity" id="id_2-wo" />
+		</mitigated>
+		<description style="text-align: center;  ">Unintended
+			Cascading Failures
+		</description>
+		<group
+			style="--kite9-layout: down; --kite9-horizontal-align: left; ">
+			<action>Stress Testing</action>
+			<action>Redundancy</action>
+			<action>Kill Switches</action>
+		</group>
+	</group>
+	<group style="--kite9-layout: right; ">
+		<mitigated>
+			<risk class="feature-fit" id="id_3-wo" />
+		</mitigated>
+		<description style="text-align: center;">Emergent,
+			Unhelpful Behaviour
+		</description>
+		<group
+			style="--kite9-layout: down; --kite9-horizontal-align: left; ">
+			<action>Replication Controls</action>
+			<action>Monitoring</action>
+			<action>AI Law</action>
+		</group>
+	</group>
+
+
+</diagram>
