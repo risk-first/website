@@ -3,9 +3,9 @@ title: Global AI Governance
 description: International cooperation is necessary to prevent AI firms from evading national regulations by relocating to jurisdictions with lax oversight.
 featured: 
   class: c
-  element: '<action>National AI Regulation</action>'
+  element: '<action>Global AI Governance</action>'
 tags: 
-  - National AI Regulation
+  - Global AI Governance
   - AI Practice
 practice:
   mitigates:
