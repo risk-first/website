@@ -23,9 +23,9 @@ AI development is increasingly controlled by a small number of corporations and 
 
 ## Sources
 
-**Bostrom & Shulman, "Global AI Governance" (2021):** Discusses the risks of a single dominant AI system shaping global decision-making. If AI governance converges around a monolithic framework, any flaw or misalignment in the system could have catastrophic consequences at a planetary scale.
+**Bostrom & Shulman, "Sharing The World With Digital Minds" [2021](https://nickbostrom.com/papers/digital-minds.pdf):** Discusses the risks of a single dominant AI system shaping global decision-making. If AI governance converges around a monolithic framework, any flaw or misalignment in the system could have catastrophic consequences at a planetary scale.
 
-**OpenAI’s Research on AI Model Homogeneity (2022):** Highlights concerns that if AI models become too similar—due to the concentration of AI development within a few major entities—there could be systemic vulnerabilities, lack of innovation, and a failure to address diverse global needs.
+**Picking on the Same Person: Does Algorithmic Monoculture lead to Outcome Homogenization? [2022](https://arxiv.org/pdf/2211.13972v1):** Highlights concerns that if AI models become too similar—due to the concentration of AI development within a few major entities—there could be systemic vulnerabilities, lack of innovation, and a failure to address diverse global needs.
 
 ## How This Is Already Happening
 

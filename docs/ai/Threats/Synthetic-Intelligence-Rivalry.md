@@ -21,9 +21,9 @@ If AI entities did emerge as rivals, the consequences could range from economic 
 
 ## Sources
 
-**Drexler's Multi-polar AI Scenario:** AI systems may not form a single superintelligent entity but instead compete as multiple independent economic and political agents, influencing industries and national policies. This view likens AI entities to corporations without human employees—self-sustaining, goal-driven entities that operate within legal and economic frameworks but optimize for efficiency, influence, and control over resources. (Eric Drexler, "Reframing Superintelligence" (2019))
+**Drexler's Multi-polar AI Scenario:** AI systems may not form a single superintelligent entity but instead compete as multiple independent economic and political agents, influencing industries and national policies. This view likens AI entities to corporations without human employees—self-sustaining, goal-driven entities that operate within legal and economic frameworks but optimize for efficiency, influence, and control over resources. [Eric Drexler, "Reframing Superintelligence" (2019)](https://www.fhi.ox.ac.uk/wp-content/uploads/Reframing_Superintelligence_FHI-TR-2019-1.1-1.pdf)
 
-**Harari's AI Evolution Hypothesis:** AI could evolve into a distinct force with its own goals, priorities, and possibly a separate "culture," making cooperation difficult and leading to human obsolescence. Some early examples of this trend include algorithm-driven hedge funds, automated corporations with minimal human employees, and self-optimizing AI systems that influence critical decision-making processes. (Yuval Noah Harari, "Homo Deus" (2016))
+**Harari's AI Evolution Hypothesis:** AI could evolve into a distinct force with its own goals, priorities, and possibly a separate "culture," making cooperation difficult and leading to human obsolescence. Some early examples of this trend include algorithm-driven hedge funds, automated corporations with minimal human employees, and self-optimizing AI systems that influence critical decision-making processes. [Yuval Noah Harari, "Homo Deus" (2016)](https://www.ynharari.com/book/homo-deus/)
 
 ## How This Is Already Happening
 

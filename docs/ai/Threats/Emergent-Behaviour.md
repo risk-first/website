@@ -25,9 +25,9 @@ AI systems sometimes exhibit unexpected behaviours that were not directly progra
 
 ## Sources
 
-**DeepMind’s AI Risk Studies (2023):** Research into emergent AI behaviours highlights that as models scale, they may develop unanticipated capabilities, sometimes without direct human prompting.
+**DeepMind’s AI Risk Studies [2023](https://arxiv.org/pdf/2305.15324):** Research into emergent AI behaviours highlights that as models scale, they may develop unanticipated capabilities, sometimes without direct human prompting.
 
-**MIT Technology Review (2022):** Reports on AI unpredictability in large language models, showing how these systems often display unexpected behaviours that were not explicitly trained into them.
+**MIT Technology Review [2022](https://www.technologyreview.com/2022/11/22/1063618/trust-large-language-models-at-your-own-peril/):** Reports on AI unpredictability in large language models, showing how these systems often display unexpected behaviours that were not explicitly trained into them.
 
 ## How This Is Already Happening
 
