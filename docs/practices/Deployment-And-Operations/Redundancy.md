@@ -4,6 +4,7 @@ description: Ensuring backup systems are in place to prevent failure.
 tags: 
   - Redundancy 
   - Practice
+  - AI Practice
 featured: 
   class: c
   element: '<action>Redundancy</action>'
@@ -18,6 +19,8 @@ practice:
      reason: "Minimizes operational disruptions by providing backup components."
    - tag: Security Risk
      reason: "Enhances security by providing alternative paths and systems."
+   - tag: Unintended Cascading Failures
+     reason: "Implementing backup mechanisms to prevent systemic failures from spreading across interconnected systems."
   attendant:
    - tag: Complexity Risk
      reason: "Introducing redundancy can add complexity to the system."

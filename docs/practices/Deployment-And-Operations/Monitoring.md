@@ -4,6 +4,7 @@ description: Continuous observation and tracking of a system, team or person, pe
 tags: 
   - Monitoring
   - Practice
+  - AI Practice
 featured: 
   class: c
   element: '<action>Monitoring</action>'
@@ -23,6 +24,10 @@ practice:
      reason: "Monitoring a process can ensure that when it misbehaves the issues are quickly caught."  
    - tag: Agency Risk
      reason: "Monitoring the behaviour of agents, whether people or processes, helps identify when behaviour becomes counter-productive."
+   - tag: Emergent Behaviour
+     reason: "Implementing real-time monitoring of AI behaviour in deployment to detect and intervene in emergent risks."
+   - tag: Unintended Cascading Failures
+     reason: "Developing real-time oversight mechanisms to detect anomalies before they cascade into large-scale failures."
   attendant:
    - tag: Complexity Risk
      reason: "Implementing comprehensive monitoring solutions can add complexity."

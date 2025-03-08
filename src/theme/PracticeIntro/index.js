@@ -69,13 +69,12 @@ export default ({details}) => {
 
 	const myTag = allTags[title]
 
-	//console.log("Found " + JSON.stringify(myTag.map(i => i.title)))
-
 	const methods = sortAndUnique(myTag.map(article => isMethod(article, title)).filter(i => i != undefined))
 	
-	const mainAka = details.practice.aka.map(i => { return { name: i} }) 
+	const mainAka = details.practice.aka ? details.practice.aka.map(i => { return { name: i} }) : []
 	const moreAka = methods.flatMap(m => m.use.map(u => { return {name: u, from: m.article, link: m.permalink, bob: JSON.stringify(m) }}))
 	const sortedAka = [...mainAka, ...moreAka].sort((a, b) => a.name.localeCompare(b.name)) 
+	console.log("Found " + JSON.stringify(myTag.map(i => i.title)))
 	
     return <div className={styles.practiceIntro}>
     	<div className={styles.columns}>
@@ -86,31 +85,43 @@ export default ({details}) => {
 				{details.description}
 			</div>
 		</div>
-    	<h3>Also Known As</h3>
-    	<ul>
-    	{
-			//JSON.stringify(sortedAka)
-		sortedAka.map(m => <Aka name={m.name} from={m.from} link={m.link} /> )
+		{
+			(sortedAka.length > 0) ? <>
+		    	<h3>Also Known As</h3>
+		    	<ul>
+		    	{
+					//JSON.stringify(sortedAka)
+				sortedAka.map(m => <Aka name={m.name} from={m.from} link={m.link} /> )
+				}
+				</ul></> : null
 		}
-		</ul>
-		<h3>Related</h3>
-		<ul>
-    	{
-			details.practice.related.map(i => <li><a href={i}>{formatReadableTag(i)}</a></li>)
+		{
+			(details.practice.related) ? (
+				<><h3>Related</h3>
+				<ul>
+		    	{
+					details.practice.related.map(i => <li><a href={i}>{formatReadableTag(i)}</a></li>)
+				}
+				</ul></>
+			) : null
 		}
-		</ul>
-		<h3>Addresses / Mitigates</h3>
-		<ul>
-    	{
-			details.practice.mitigates.map(i => <Risk tag={i.tag} reason={i.reason} />)
+		{
+			 (details.practice.mitigates) ?(<><h3>Addresses / Mitigates</h3>
+			<ul>
+	    	{
+				details.practice.mitigates.map(i => <Risk tag={i.tag} reason={i.reason} />)
+			}
+			</ul></>) : null
 		}
-		</ul>
-		<h3>Attendant Risks</h3>
-		<ul>
-    	{
-			details.practice.attendant.map(i => <Risk tag={i.tag} reason={i.reason} />)
+		{
+			(details.practice.attendant) ? 
+			<><h3>Attendant Risks</h3>
+			<ul>
+	    	{
+				details.practice.attendant.map(i => <Risk tag={i.tag} reason={i.reason} />)
+			}
+			</ul></> : null
 		}
-		</ul>
 		{
 			methods.length > 0 ? (
 				<>
