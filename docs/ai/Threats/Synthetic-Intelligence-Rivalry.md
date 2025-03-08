@@ -1,6 +1,6 @@
 ---
 title: Synthetic Intelligence Rivalry
-description: A single AI system dominates globally, leading to catastrophic consequences if it fails or contains errors.
+description: AI systems may develop independent agency and compete economically, socially, or politically with human institutions.
 
 featured: 
   class: c
@@ -15,7 +15,9 @@ part_of: AI Threats
 
 <AIThreatIntro fm={frontMatter} />
 
-**Impact: 3** - If AI entities did emerge as rivals, the consequences could range from economic disruption to conflicts over control of resources.
+## Risk Score: Medium
+
+If AI entities did emerge as rivals, the consequences could range from economic disruption to conflicts over control of resources.
 
 ## Sources
 
@@ -34,24 +36,6 @@ part_of: AI Threats
 If AI-driven firms primarily trade with and serve other AI systems (e.g., automated supply chains, financial markets), the traditional human economy might shrink in relevance.
 
 Wealth and resources might accumulate within AI-run/minimally-staffed corporations, reducing human participation in decision-making and wealth distribution.
-
-## Mitigations
-
-- **National Regulation**
-    
-    - Governments can implement policies that ensure AI-driven firms remain accountable to human oversight. This could include requiring AI systems to maintain transparency, adhere to ethical standards, and uphold employment obligations by ensuring that a minimum level of human involvement remains in corporate decision-making.
-    - **Efficacy:** High - Government policies can strongly influence AI firms' behavior if enforced effectively.
-    - **Ease of Implementation:** Medium - Requires strong legal frameworks, enforcement mechanisms, and political will.
-- **Global AI Governance**
-    
-    - International cooperation is necessary to prevent AI firms from evading national regulations by relocating to jurisdictions with lax oversight. Agreements between countries, similar to financial regulations, could establish shared standards for AI ethics, accountability, and human involvement in AI-controlled economies.
-    - **Efficacy:** Medium - Can provide international oversight, but effectiveness depends on cooperation among nations.
-    - **Ease of Implementation:** Low - Challenging due to differing national interests, enforcement issues, and political resistance.
-- **Multi-Stakeholder Oversight**
-    
-    - Involving diverse groups—including governments, private sector leaders, labor unions, and AI researchers—can ensure a balanced approach to regulating AI-driven economic agents. This approach would create cross-industry standards that prevent AI from prioritizing its own optimization at the expense of human well-being, ensuring AI serves collective interests rather than narrow corporate gains.
-    - **Efficacy:** Medium - Helps ensure diverse perspectives and accountability, but may lack strong enforcement mechanisms.
-    - **Ease of Implementation:** Medium - Requires collaboration between private, public, and academic sectors, which can be slow and bureaucratic.
 
 ## Key Question: Does Capitalism Still Serve Humans?
 

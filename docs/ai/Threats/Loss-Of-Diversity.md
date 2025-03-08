@@ -13,8 +13,13 @@ part_of: AI Threats
 
 <AIThreatIntro fm={frontMatter} />
 
+## Risk Score: Medium
 
-**Impact: 3** - A lack of diversity could create system-wide vulnerabilities, where a single flaw in a dominant AI model causes widespread failure.
+A lack of diversity could create system-wide vulnerabilities, where a single flaw in a dominant AI model causes widespread failure.
+
+## Description
+
+
 
 ## Sources
 
@@ -29,22 +34,6 @@ part_of: AI Threats
 - **Monoculture Effects in AI Decision-Making:** AI is increasingly being embedded into critical decision-making systems (finance, healthcare, military strategy). If all of these systems rely on a few underlying models, unexpected failures or adversarial attacks could spread rapidly across multiple industries.
     
 - **Lack of Innovation Due to Model Homogeneity:** When the same AI architectures are used across different sectors, it stifles alternative approaches that might better serve specialized needs. A uniform AI landscape risks optimizing for narrow commercial objectives rather than the diverse interests of different populations and industries.
-    
-
-## Mitigations
-
-- **Ecosystem Diversity**
-    - Encouraging the development of multiple, independent AI models instead of relying on a single dominant system.
-    - **Efficacy: High** - Diversified AI systems reduce systemic risks and encourage innovation.
-    - **Ease of Implementation: Medium** - Requires regulatory incentives or decentralized AI development initiatives.
-- **Multi-Stakeholder Oversight**
-    - Ensuring that AI governance involves multiple institutions, including governments, researchers, and civil society, to prevent monopolization.
-    - **Efficacy: Medium** - Helps distribute AI power more equitably but may struggle with enforcement.
-    - **Ease of Implementation: Medium** - Requires cooperation between multiple sectors, which can be slow and politically complex.
-- **Transparency**
-    - Requiring AI developers to publish model architectures, data sources, and decision-making rationales.
-    - **Efficacy: Medium** - Increases accountability but does not prevent monopolization directly.
-    - **Ease of Implementation: Medium** - Transparency regulations are becoming more common but face resistance from corporate interests.
 
 ## Can Risk Management Address This Risk?
 

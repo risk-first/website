@@ -15,6 +15,8 @@ part_of: AI Threats
 
 <AIThreatIntro fm={frontMatter} />
 
+## Risk Score: High
+
 AI systems designed to influence behaviour at scale could (and do) undermine democracy, free will, and individual autonomy.
 
 ## Sources
@@ -60,39 +62,5 @@ AI systems designed to influence behaviour at scale could (and do) undermine dem
 - TikTok’s recommendation algorithm: Known for its powerful engagement-driven feed, it can rapidly shape users’ content consumption, potentially reinforcing certain narratives or trends. See: [TikTok Algorithm Eating Disorder article on The Verge](https://www.theverge.com/2021/12/18/22843606/tiktok-wsj-algorithm-change-eating-disorder).
 
 - China’s social credit initiatives: Although not purely about content manipulation, these systems use data and behavioral metrics to encourage or discourage particular actions, effectively guiding social behavior.
-
----
-
-## Mitigations
-
-### AI Transparency Regulations
-
-- Mandate clear labeling of AI-generated content.
-- Require accountability and auditing mechanisms for social media platforms.
-- **Examples:** 
-  - [Generative AI and watermarking - European Parliament](https://www.europarl.europa.eu/RegData/etudes/BRIE/2023/757583/EPRS_BRI\(2023\)757583_EN.pdf)
-- **Efficacy:** Medium – Transparency can deter some manipulative actors, but determined bad actors may still evade or exploit labelling.
-- **Ease of Implementation:** Moderate – Requires infrastructure for labelling, auditing, and enforcement, but could be mandated by legislation.
-
-### Ethical AI Development Standards
-
-- Industry-wide codes of conduct to discourage manipulative AI.
-- Incentivize designers to embed fairness and user consent into algorithmic systems.
-- **Examples**
-  -  [Understanding artificial intelligence ethics and safety - Turing Institute](https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf)
-  - [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html#principles)
-  - [DOD Adopts Ethical Principles for Artificial Intelligence](https://www.defense.gov/News/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/)
-- **Efficacy:** Medium – Encourages best practices and self-regulation, but relies on voluntary compliance without legal backing.
-- **Ease of Implementation:** Low – Professional bodies and industry coalitions can quickly adopt and publicize guidelines, though ensuring universal adherence remains a challenge. Firms have varying incentives, budgets, and ethical priorities, making universal buy-in elusive.
-
-### Education & Public Awareness Campaigns
-
-- Equip citizens with media literacy skills to spot deepfakes and manipulation attempts.
-- Encourage public understanding of how personal data can be exploited by AI-driven systems.
-- **Examples:**
-  - https://newslit.org
-  - https://www.unesco.org/en/media-information-literacy
-- **Efficacy:** High – Empowered, media-savvy populations are significantly harder to manipulate.  However, scaling efforts to entire populations is a substantial challenge given diverse educational, cultural, and socioeconomic barriers.
-- **Ease of Implementation:** Low – While public outreach is feasible, achieving wide coverage and sustained engagement can be resource-intensive.  Overcoming entrenched biases, misinformation echo chambers, and public apathy is an uphill battle, particularly if there’s no supportive policy or consistent funding.
 
 

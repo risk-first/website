@@ -55,7 +55,7 @@ export default function TagList(props) {
 
 	//console.log("Filter: "+filter)
 
-	oneTag.sort(sorts[sort]);
+	oneTag.sort(sorts[sort]).filter(uniqueOnly);
 	
 	// oneTag
 	//.filter(d => d.permalink.indexOf(filter) > -1)

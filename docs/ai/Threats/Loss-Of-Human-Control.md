@@ -16,6 +16,12 @@ part_of: AI Threats
 
 <AIThreatIntro fm={frontMatter} />
 
+## Risk Score: Low
+
+AI systems may operate autonomously in ways that humans cannot predict or control. If AI entities develop objectives that misalign with human values, we may be unable to stop or correct their actions before harm ensues.
+
+## Description
+
 AI systems that act without robust human oversight can evolve in ways that defy our attempts at control or correction. In the short term, engineers have to wrestle with new approaches to defining acceptable behaviour (see Amodei et al):  even just cleaning an environment is a hard goal to pin down (clean doesn't mean devoid of any furniture, for example).  How do you allow the AI to learn and improve without enabling "Reward Hacking", where it finds ways to game the reward function (a la Goodhart's law).  
 
 The problem is that human oversight is _expensive_: we want to have a minimum level of oversight without worrying that things will go wrong. 

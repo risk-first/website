@@ -9,6 +9,10 @@ module.exports = async function myPlugin(context, options) {
             const docs = version.docs;
 
 			// docs.forEach(d => console.log(d))
+			
+			function onlyUnique(value, index, array) {
+ 				return array.indexOf(value) === index;
+			}
 
             // build the mapping of tags to docs
             const tagToDocMap = {};
@@ -20,7 +24,7 @@ module.exports = async function myPlugin(context, options) {
                 const partOf = doc.frontMatter.part_of ? [doc.frontMatter.part_of] : []
                 const title = doc.frontMatter.title
                 
-                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf]
+                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf].filter(onlyUnique)
                 
                 const isRisk = allTags.includes("Risks") 
                 const isAIThreat = allTags.includes("AI Threats")
@@ -32,6 +36,8 @@ module.exports = async function myPlugin(context, options) {
 						console.warn(`${doc.title} is not self-tagged risk =${isRisk} practice=${isPractice} tags=${JSON.stringify(allTags)}`)
 					}
 				}
+				
+				
                 
                 //console.log(JSON.stringify(allTags));
                 
