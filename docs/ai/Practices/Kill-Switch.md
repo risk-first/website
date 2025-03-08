@@ -17,13 +17,8 @@ practice:
 
 <PracticeIntro details={frontMatter} />
 
-### Kill-Switch Mechanisms
-
-- **Examples:**  
+## Examples
+  
   - **Google DeepMind’s ‘Big Red Button’ concept** (2016), proposed as a method to interrupt a reinforcement learning AI without it learning to resist interruption.  
   
   - **Hardware Interrupts in Robotics:** Physical or software-based emergency stops that immediately terminate AI operation.  
-  
-- **Efficacy:** High – An explicit interruption capability can avert catastrophic errors or runaway behaviours, but it's more likely that they will be employed once the error has started, in order to prevent further harm.
-- **Ease of Implementation:** Medium – Requires robust design and consistent testing to avoid workarounds by advanced AI.
-

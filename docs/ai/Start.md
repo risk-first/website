@@ -1,5 +1,5 @@
 ---
-title: Artificial Intelligence Risk
+title: Artificial Intelligence Risk (Draft)
 description: Risk-First Track of articles on Artificial Intelligence Risk
 
 featured: 
@@ -21,8 +21,8 @@ A sequence looking at societal-level risks due to Artificial Intelligence (AI).
 
 ## Threats
 
-<TagList filter="ai" tag="AI Threats" />
+<TagList tag="AI Threats" />
 
 ## Practices
 
-<TagList filter="ai" tag="AI Practice" />
+<TagList tag="AI Practice" />

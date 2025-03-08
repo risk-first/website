@@ -18,6 +18,8 @@ practice:
    - tag: Synthetic Intelligence With Malicious Intent
      reason: International agreements restricting AI weaponization and requiring human oversight for all military AI operations.
 ---
+
+<PracticeIntro details={frontMatter} />
     
 - Agreements between countries, similar to financial regulations, could establish shared standards for AI ethics, accountability, and human involvement in AI-controlled economies.
 

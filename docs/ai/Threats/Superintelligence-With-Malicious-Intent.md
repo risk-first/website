@@ -15,7 +15,6 @@ part_of: AI Threats
 
 <AIThreatIntro fm={frontMatter} />
 
-
 ## Risk Score: High 
 
 AI systems that surpass human intelligence could develop goals that conflict with human well-being, either by design or through unintended consequences. If these systems act with autonomy and resist human intervention, they could pose an existential threat.
