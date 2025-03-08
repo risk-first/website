@@ -11,6 +11,8 @@ practice:
   mitigates:
    - tag: Loss Of Human Control
      reason: "An explicit interruption capability can avert catastrophic errors or runaway behaviours"
+   - tag: Synthetic Intelligence With Malicious Intent
+     reason: Implementing fail-safe mechanisms to neutralise dangerous AI weapons systems.
 ---
 
 <PracticeIntro details={frontMatter} />

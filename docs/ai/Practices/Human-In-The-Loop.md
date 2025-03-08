@@ -11,6 +11,8 @@ practice:
   mitigates:
    - tag: Loss Of Human Control
      reason: "Maintaining consistent human oversight in critical AI systems, ensuring that final decisions or interventions rest with human operators rather than the AI."
+   - tag: Synthetic Intelligence With Malicious Intent
+     reason: See Example of "Centaur" War Teams
 ---
 
 <PracticeIntro details={frontMatter} />

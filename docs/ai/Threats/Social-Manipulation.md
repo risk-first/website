@@ -4,7 +4,8 @@ description: AI could predict and shape human behaviour on an unprecedented scal
 
 featured: 
   class: c
-  element: '<risk class="communication" /><description>Social Manipulation</description>'
+  element: '<risk class="communication" /><description style="text-align: center">Social
+   Manipulation</description>'
 tags:
  - AI Threats
  - Social Manipulation

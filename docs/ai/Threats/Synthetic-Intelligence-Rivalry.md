@@ -5,7 +5,7 @@ description: AI systems may develop independent agency and compete economically,
 featured: 
   class: c
   element: | 
-    '<risk class="lock-in" /><description style="text-align: center">Synthetic Intelligence 
+    '<risk class="coordination" /><description style="text-align: center">Synthetic Intelligence 
     Rivalry</description>'
 tags:
  - AI Threats

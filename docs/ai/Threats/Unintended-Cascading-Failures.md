@@ -3,8 +3,9 @@ title: Unintended Cascading Failures
 description: "AI interacting with critical systems (finance, infrastructure, etc.) may trigger global-scale unintended consequences."
 featured: 
   class: c
-  element: '<risk class="reliability" /><description>Unintended 
-  Cascading Failures</description>'
+  element: |
+    <risk class="complexity" /><description  style="text-align: center">Unintended 
+    Cascading Failures</description>
 tags:
  - AI Threats
  - Unintended Cascading Failures
@@ -16,7 +17,7 @@ part_of: AI Threats
 <AIThreatIntro fm={frontMatter} />
 ---
 
-## Risk Score: Low
+## Risk Score: Medium
 
 AI systems operating in complex, interdependent environments can trigger unexpected and widespread disruptions, affecting industries, economies, and societies at large. These cascading effects are difficult to predict and mitigate, making systemic AI failures one of the most pressing risks in modern technological governance.
 

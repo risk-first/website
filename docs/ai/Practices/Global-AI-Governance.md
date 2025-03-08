@@ -15,7 +15,8 @@ practice:
    - tag: Social Manipulation
      reason: "Encourages best practices and self-regulation, but relies on voluntary compliance without legal backing." 
      efficacy: Medium
-   
+   - tag: Synthetic Intelligence With Malicious Intent
+     reason: International agreements restricting AI weaponization and requiring human oversight for all military AI operations.
 ---
     
 - Agreements between countries, similar to financial regulations, could establish shared standards for AI ethics, accountability, and human involvement in AI-controlled economies.
