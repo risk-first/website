@@ -30,7 +30,7 @@ An online gaming firm is considering adding forum features, where players can di
 
 ![Mitigating Feature Fit Risk Leads to Legal Risk](/img/generated/risks/posters/legal-risk.svg)
 
-But as the above diagram shows, mitigating these [Feature Fit Risks](/tags/Feature-Fit-Risk) naively exposes the firm to [Leagl Risks](/tags/Legal-Risk).  For example:
+But as the above diagram shows, mitigating these [Feature Fit Risks](/tags/Feature-Fit-Risk) naively exposes the firm to [Legal Risks](/tags/Legal-Risk).  For example:
 
   - One of the players uploads copyrighted media.  They copyright holder may then file a [DCMA takedown notice](https://www.dmca.com/FAQ/What-is-a-DMCA-Takedown) to have it removed.
   - Content might be uploaded that breaks privacy laws, e.g [General Data Protection Regulation (GDPR)](https://gdpr-info.eu).

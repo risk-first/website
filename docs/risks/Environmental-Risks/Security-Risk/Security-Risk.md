@@ -48,7 +48,7 @@ In the diagram above, a firm decides to address security risk with training, mul
 
 CrowdStrike's Falcon tool is an Endpoint Detection and Response (EDR) tool designed to detect attacks aimed at compromising staff's personal computers, such as [ransomware](https://en.wikipedia.org/wiki/Ransomware), [Advanced Persistent Threats](https://en.wikipedia.org/wiki/Advanced_persistent_threat) and [Zero-Day Exploits](https://en.wikipedia.org/wiki/Zero-day_vulnerability).  As more and more staff moved outside of corporate firewalls during the COVID-19 pandemic, tools like this were seen as more and more valuable.
 
-However, what clients of CrowdStrike were unware of was the company's extremely lax approach to quality assurance of its product - they pushed  code out to computers around the world without any rigorous testing, which was a disaster waiting to happen.  In July 2024 a CrowdStrike release caused widespread sytems crashes and a global IT outage as Windows PC's rebooted over and over again, unable to start properly.  
+However, what clients of CrowdStrike were unware of was the company's extremely lax approach to quality assurance of its product - they pushed  code out to computers around the world without any rigorous testing, which was a disaster waiting to happen.  In July 2024 a CrowdStrike release caused widespread systems crashes and a global IT outage as Windows PC's rebooted over and over again, unable to start properly.  
 
 It is estimated that [Fortune 500 companies suffered $5.4bn of losses](https://nypost.com/2024/07/24/business/microsoft-to-take-hit-as-fortune-500-suffers-5-4b-in-crowdstrike-losses-study) due to the outage.
 
