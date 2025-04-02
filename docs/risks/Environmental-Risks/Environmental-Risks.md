@@ -1,6 +1,6 @@
 ---
 title: Environmental Risks
-description: Risks related the environment in which an operation is perfomed.
+description: Risks related the environment in which an operation is performed.
 
 
 featured: 
