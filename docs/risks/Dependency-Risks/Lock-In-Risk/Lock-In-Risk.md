@@ -77,7 +77,7 @@ The Sunk Cost of the learning curve we've overcome to integrate the dependency, 
 
 ### 2. Life Expectancy
 
-Softare libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](/tags/Market-Risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
+Software libraries and products come and go.  A choice that was popular when it was made may be superseded in the future by something better.  (_cf._ [Market Risk](/tags/Market-Risk)).  This may not be a problem until you try to renew a support contract, or try to do an operating system update. Although no-one can predict how long a technology will last, [The Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) suggests that _future life expectancy is proportional to current age_.  So, you might expect a technology that has been around for ten years to be around for a further ten.
 
 **Threat**: Committing to new technologies when they have an unproven track record.
 
