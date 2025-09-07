@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-layout: down; ">
+
+	<table k9-texture="none" style="--kite9-grid-size: 2 3; ">
+
+		<cell>
+			<description class="bold">COSO Action</description>
+		</cell>
+
+		<cell style="--kite9-layout: down; ">
+			<action>Risk Response</action>
+			<description>Mitigate, accept, or transfer risks.</description>
+		</cell>
+
+
+		<cell>
+			<description class="bold">Software Development</description>
+		</cell>
+		
+		<cell style="--kite9-layout: right;"> 
+			<group style="--kite9-layout: down; --kite9-vertical-align: top; ">
+				<action>Design</action>
+				<description>Figuring out how to address the risks you've identified.</description>
+			</group>
+			<group style="--kite9-layout: down; --kite9-vertical-align: top; ">
+				<action>Prototyping</action>
+				<description>Evaluating approaches for mitigating risks.</description>
+		</group>
+		</cell>
+	</table>
+
+</diagram>

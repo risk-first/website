@@ -13,6 +13,8 @@ practice:
      reason: "Maintaining consistent human oversight in critical AI systems, ensuring that final decisions or interventions rest with human operators rather than the AI."
    - tag: Synthetic Intelligence With Malicious Intent
      reason: See Example of "Centaur" War Teams
+   - tag: Unintended Cascading failures
+     reason: "Human oversight of automated systems can help shortcut cascading failure."
 ---
 
 <PracticeIntro details={frontMatter} />

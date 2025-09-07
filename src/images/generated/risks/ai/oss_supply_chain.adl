@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt;">
+	<group style="--kite9-layout: right; ">
+		
+		<group style="--kite9-layout: down; ">
+			<risk class="security" />
+			<description style="text-align: center; ">
+			The open source software 
+			supply chain poses numerous 
+			security risks to 
+			organisations using 
+			open source software.
+			</description>
+		</group>
+		
+		<group style="--kite9-layout: right;  ">
+			<group  style="--kite9-layout: down; ">
+				<action id="a1">Software Bill-of-Materials
+				(SBOMs)</action>
+				<description id="d1" style="text-align: center; ">Providing transparency of the code contents of software products.</description>
+			</group>
+			<group  style="--kite9-layout: down; ">
+				<action id="a2">National Vulnerability Database
+				(NVD)</action>
+				<description  id="d2" style="text-align: center; ">Cataloguing known vulnerabilities in software and  providing a way to be notified about them.</description>
+			</group>
+			<group  style="--kite9-layout: down; ">
+				<action id="a3">OpenSSF
+				 Best Practices / 
+				Security Baseline</action>		
+				<description id="d3" style="text-align: center; ">Hygiene standards around open source projects to prevent bad actors from exploiting them.</description>	
+			</group>
+				
+		</group>
+	</group>
+	<align>
+		<from reference="a1" />
+		<to reference="a2" />
+	</align>
+	<align>
+		<from reference="a2" />
+		<to reference="a3" />
+	</align>
+</diagram>

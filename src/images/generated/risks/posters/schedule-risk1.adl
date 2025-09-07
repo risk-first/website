@@ -6,8 +6,13 @@
          id="diagram-113"
          xslt:template="/public/templates/risk-first/risk-first-template.xsl">
    <container bordered="true" id="c" >
+ 		<mitigated>
+ 
       <risk class="complexity"/>
+ </mitigated>
+ 		<mitigated>
       <risk class="feature-fit" />
+      </mitigated>
       <label id="id_16">
       The codebase is becoming over-complex and it's 
       making it hard to deliver the required features.

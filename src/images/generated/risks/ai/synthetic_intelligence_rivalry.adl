@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-min-width: 900pt; --kite9-layout: right;">
+
+	<group style="--kite9-layout: down;  --kite9-vertical-align: top;">
+		<risk class="coordination" id="id_4-wo" />
+		<description  style="text-align: center; font-weight: bold; ">Synthetic Intelligence Rivalry</description>
+		<description  style="text-align: center;  ">Rival AI entities could emerge with conflicting goals, leading to competition with humanity akin to geopolitical conflicts. (AI Colonialism)
+</description>
+	</group>
+		
+		
+	<group style="--kite9-layout: right;  ">
+		<group  style="--kite9-layout: down; ">
+			<action id="a1">Global AI Governance</action>
+			<description id="d1" style="text-align: center; ">Can provide international oversight, but effectiveness depends on cooperation among nations.</description>
+		</group>
+		<group  style="--kite9-layout: down; ">
+			<action id="a2">National AI Regulation</action>
+			<description  id="d2" style="text-align: center; ">Government policies can strongly influence AI firms' behavior if enforced effectively.</description>
+		</group>
+		<group  style="--kite9-layout: down; ">
+			<action id="a3">Multi-Stakeholder Oversight</action>		
+			<description id="d3" style="text-align: center; ">By involving multiple stakeholders, concentration of the gains from AI can be shared across civilisation, mitigating economic disruption.</description>	
+		</group>
+	</group>
+	<align>
+		<from reference="a1" />
+		<to reference="a2" />
+	</align>
+	<align>
+		<from reference="a2" />
+		<to reference="a3" />
+	</align>
+	
+</diagram>

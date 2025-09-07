@@ -8,17 +8,17 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-const navLinks =  [	{ to: '/overview/Start', label: 'Overview', position: 'left' },
-					{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
-					{ to: '/risks/Start', label: 'Risks', position: 'left' },
-					{ to: '/practices/Start', label: 'Practices', position: 'left' },
-					{ to: '/methods/Start', label: 'Methods', position: 'left' },
-					{ to: '/books/Start', label: 'Books', position: 'left' },
-					{ to: '/bets/Start', label: 'Bets', position: 'left' },
-					{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-					{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
-					{ to: '/ai/Start', label: 'AI', position: 'left' },
-					]
+const navLinks = [{ to: '/overview/Start', label: 'Overview', position: 'left' },
+{ to: '/thinking/Start', label: 'Thinking', position: 'left' },
+{ to: '/risks/Start', label: 'Risks', position: 'left' },
+{ to: '/practices/Start', label: 'Practices', position: 'left' },
+{ to: '/methods/Start', label: 'Methods', position: 'left' },
+{ to: '/books/Start', label: 'Books', position: 'left' },
+{ to: '/bets/Start', label: 'Bets', position: 'left' },
+{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
+{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
+{ to: '/ai/Start', label: 'AI', position: 'left' },
+]
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -78,14 +78,14 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-		announcementBar: {
-		      id: 'support_us',
-		      content:
-		        'Risk-First Software Development Second Edition - Coming Soon! <a target="_blank" rel="noopener noreferrer" href="/Risk-First-Second-Edition">Click here for details</a>',
-		      backgroundColor: 'rgb(245, 62,121)',
-		      textColor: '#ffffff',
-		      isCloseable: true,
-		    },	
+			announcementBar: {
+				id: 'support_us',
+				content:
+					'Risk-First Software Development Second Edition - Available Now! <a target="_blank" rel="noopener noreferrer" href="/Risk-First-Second-Edition">Click here for details</a>',
+				backgroundColor: 'rgb(245, 62,121)',
+				textColor: '#ffffff',
+				isCloseable: true,
+			},
 			image: 'img/generated/titles/index.png',
 			metadata: [
 				{ name: 'msvalidate.01', content: "3D19A6D7C17D82567867CF4238511ED1" }

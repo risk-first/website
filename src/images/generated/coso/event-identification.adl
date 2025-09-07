@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia"
+	style="--kite9-layout: down; ">
+
+	<table k9-texture="none" style="--kite9-grid-size: 2 3; ">
+
+		<cell>
+			<description class="bold">COSO Action</description>
+		</cell>
+
+		<cell style="--kite9-layout: down; ">
+			<action>Event Identification</action>
+			<description>Identifying what could stop the organisation from accomplishing its goals.</description>
+		</cell>
+
+
+		<cell>
+			<description class="bold">Software Development</description>
+		</cell>
+		
+		<cell style="--kite9-layout: right;"> 
+			<group style="--kite9-layout: down; --kite9-vertical-align: top; ">
+				<action>Measurement</action>
+				<description>Working out what to track to monitor risks to our project.</description>
+			</group>
+			<group style="--kite9-layout: down; --kite9-vertical-align: top; ">
+				<action>Analysis</action>
+				<description>Ascertaining what risks exist within the environment you’re operating in, or
+what risks you’re addressing in the project.</description>
+		</group>
+		</cell>
+	</table>
+
+</diagram>

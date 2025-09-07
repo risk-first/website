@@ -6,30 +6,25 @@
     style="--kite9-layout: right; --kite9-min-width: 900pt;">
     
       <group style="--kite9-layout: down">
-         <group style="--kite9-layout: right; --kite9-horizontal-align: left;">
+         <group style="--kite9-layout: right; --kite9-horizontal-sizing: maximize; ">
             <action style="--kite9-min-width: 200pt; --kite9-horizontal-align: left; ">Fast Feedback</action>
-            <container id="d" style="--kite9-horizontal-align: right; ">
-               <hidden>
-                  <risk class="attendant">Some Risks</risk>
-               </hidden>
-               <label id="4">
-                  Attendant Risks
-                  <symbols/>
-               </label>
-            </container>
+            <hidden style="--kite9-horizontal-align: left; ">
+               <risk class="attendant">Some Risks</risk>
+            </hidden>
+            <description id="4">
+               Fast feedback will expose some hidden risks...
+            </description>
          </group>
-         <group style="--kite9-layout: right; --kite9-horizontal-align: left;">
+         <group style="--kite9-layout: right; --kite9-horizontal-sizing: maximize; ">
             <action style="--kite9-min-width: 200pt;  --kite9-horizontal-align: left;  ">Thorough Feedback</action>
-            <container id="d-ks" style="--kite9-horizontal-align: right; ">
-               <hidden>
-                  <risk class="attendant">More Risks</risk>
-               </hidden>
-               <risk class="attendant">Schedule Risk</risk>
-               <label id="4-ob">
-                  Attendant Risks
-                  <symbols/>
-               </label>
-            </container>
+            <hidden style="--kite9-horizontal-align: right; ">
+               <risk class="attendant" >More Risks</risk>
+            </hidden>
+            <risk class="attendant" id="m2" style="--kite9-horizontal-align: right; ">Schedule Risk</risk>
+            <description id="4-ob" style="--kite9-horizontal-align: right; ">
+               but thorough feedback will expose more risks at the 
+               expense of the schedule.
+            </description>
          </group>
       </group>
    </diagram>

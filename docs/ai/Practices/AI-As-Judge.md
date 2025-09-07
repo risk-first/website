@@ -18,6 +18,8 @@ practice:
      reason: "Can prevent harmful misinformation, disinformation, and deepfakes from spreading by having a second user-owned AI fact-check or block misleading content."
    - tag: Loss Of Human Control
      reason: "Can enforce alignment principles by rejecting responses that optimise for harmful proxy goals."
+   - tag: Unintended Cascading failures
+     reason: "Introduces a level of redundancy around AI systems, allowing them to sound the alarm when operational parameters are breached."
 ---
     
 <PracticeIntro details={frontMatter} />
