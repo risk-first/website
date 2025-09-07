@@ -9,6 +9,8 @@ tags:
   - AI Practice
 practice:
   mitigates:
+   - tag: Synthetic Intelligence Rivalry
+     reason: "By involving multiple stakeholders, concentration of the gains from AI can be shared across civilisation, mitigating economic disruption."
    - tag: Loss Of Diversity
      reason: "Ensuring that AI governance involves multiple institutions, including governments, researchers, and civil society, to prevent monopolisation."
      efficacy: Medium

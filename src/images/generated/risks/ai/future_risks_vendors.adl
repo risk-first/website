@@ -24,6 +24,14 @@
 			</group>
 			<description  style="text-align: center; ">Building systems using AI is not deterministic "engineering"</description>
 		</group>
+		<group style="--kite9-layout: down; ">
+			<group style="--kite9-layout: right; ">
+				<risk class="reliability" id="id_3-le" />
+				<risk class="security" id="id_3-wo" />
+			</group>
+			<description  style="text-align: center; ">The pace of AI / technology introduces new failure modes
+			and worsens the threat landscape.</description>
+		</group>
 	</group>
 	<align>
 		<from reference="id_0-wo" />
@@ -32,5 +40,9 @@
 	<align>
 		<from reference="id_1-wo" />
 		<to reference="id_2-wo" />
+	</align>
+	<align>
+		<from reference="id_2-wo" />
+		<to reference="id_3-le" />
 	</align>
 </diagram>

@@ -27,7 +27,7 @@ Unintended cascading effects are a dangerous aspect of AI deployment at scale.  
 
 - **When Bots Teach Themselves to Trade** [Johnson et al., 2013](https://www.nature.com/articles/s41599-019-0224-3): Examines AI-driven financial crashes caused by autonomous trading systems responding unpredictably to market conditions.
 
-- **Supply Chain Resilience in AI Era** [Sheffi, 2020](https://doi.org/10.1080/00207543.2020.1813767): Explores how automated logistics and AI-based supply chain management can inadvertently amplify disruptions.
+- **Supply Chain Resilience in AI Era** [Sheffi, 2020](https://www.youtube.com/live/BkBuNFjLgFg?si=xvNL4hBkT4GCQMYQ): Explores how automated logistics and AI-based supply chain management can inadvertently amplify disruptions.
 
 - **AI and Workforce Displacement** [Brynjolfsson & McAfee, 2014](https://doi.org/10.7551/mitpress/9780262029470.001.0001): Investigates the macroeconomic impact of AI-induced job automation and its cascading social consequences.
 
@@ -54,6 +54,8 @@ Unintended cascading effects are a dangerous aspect of AI deployment at scale.  
 - **Real-Life Example:** The [Global Chip Shortage (2020–2022)](https://www.weforum.org/agenda/2021/10/global-chip-shortage-supply-chain/), where disruptions in semiconductor manufacturing led to severe production delays across the automobile industry. Automated supply chain models failed to anticipate and mitigate cascading effects, leaving manufacturers unable to meet demand.
 
 - **Real-Life Example:** During the [COVID-19 pandemic](https://doi.org/10.1038/s41599-021-00729-4), automated supply chain optimizations led to stock shortages in essential goods as demand spikes outpaced rigid AI-driven distribution models.
+
+- **The Open Source Software Supply Chain:**  Vulnerabilities have led to large-scale cybersecurity incidents. Attacks on widely-used packages (e.g. Log4j, SolarWinds) propagated rapidly through automated update systems, revealing how technical interdependence can cascade into systemic digital risk.
 
 ## Mitigations
 

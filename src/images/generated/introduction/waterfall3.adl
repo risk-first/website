@@ -36,20 +36,21 @@
          <action style="--kite9-horizontal-align: left; --kite9-min-width: 200pt;">Specification</action>
          <action style="--kite9-horizontal-align: left; --kite9-min-width: 200pt;">Fixed Price Contracts</action>
       </group>
-      <container bordered="true" id="c-ug">
-         <risk class="attendant">Requirements
-        Changes
-      </risk>
-         <risk class="attendant" id="1">Late
-        Delivery
-      </risk>
-         <risk class="attendant" id="2">Cost
-        Overruns
-      </risk>
-         <label id="id_16-uu">
+      <container bordered="true" id="c-ug" style="--kite9-layout: down; ">
+         <group style="--kite9-layout: right; ">
+            <risk class="attendant">Requirements
+            Changes
+            </risk>
+               <risk class="attendant" id="1">Late
+            Delivery
+            </risk>
+               <risk class="attendant" id="2">Cost
+            Overruns
+            </risk>
+         </group>
+         <description id="id_16-uu">
             Attendant Risks
-            <symbols/>
-         </label>
+         </description>
       </container>
       <link>
          <from reference="1"/>

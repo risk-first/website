@@ -6,16 +6,33 @@
 	xmlns:pp="http://www.kite9.org/schema/post-processor"
 	style="--kite9-layout: right; " xmlns:svg="http://www.w3.org/2000/svg">
 
-	<table k9-texture="none">
+	<table k9-texture="none" style="--kite9-grid-size: 4  3; ">
 		<cell style=" --kite9-occupies: 0 0;" k9-texture="none">
+			<s k9-format="svg-fixed" k9-texture="foreground" k9-shape="none"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text transform="rotate(-90)">High</svg:text>
+			</s>
+		</cell>
+
+		<cell style=" --kite9-occupies: 0 1;" k9-texture="none">
 			<s k9-format="svg-fixed" k9-texture="foreground" k9-shape="none"
 				transform="rotate(-90)"
 				style="--kite9-margin: 6pt; font-size: 10pt;">
 				<svg:text transform="rotate(-90)">Impact</svg:text>
 			</s>
 		</cell>
+		
+		<cell style=" --kite9-occupies: 0 2; " k9-texture="none">
+			<s k9-format="svg-fixed" k9-shape="none" k9-texture="foreground"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text>Low</svg:text>
+			</s>
+		</cell>
+		
 		<cell
-			style=" --kite9-occupies: 1 0; --kite9-min-size: 300pt 300pt; ">
+			style=" --kite9-occupies: 1 1; --kite9-min-size: 300pt 300pt; ">
 				<sym transform="translate(50,200)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">1</sym>
 				<sym transform="translate(80,260)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">2</sym>
 				<sym transform="translate(280,50)" id="t1" k9-format="text-shape-inline" style="--kite9-transform: none; " k9-shape="risk-point">3</sym>
@@ -24,16 +41,9 @@
 				
 		</cell>
 
-		<cell style=" --kite9-occupies: 1 1; " k9-texture="none">
-			<s k9-format="svg-fixed" k9-shape="none" k9-texture="foreground"
-				transform="rotate(-90)"
-				style="--kite9-margin: 6pt; font-size: 10pt;">
-				<svg:text>Probability</svg:text>
-			</s>
-		</cell>
 
 		<cell k9-texture="none" id="5"
-			style="--kite9-occupies: 2 2 0 0; --kite9-vertical-align: top; --kite9-padding-left: 10pt; --kite9-layout: down; --kite9-vertical-align: top; --kite9-horizontal-align: left;">
+			style="--kite9-occupies: 3 1; --kite9-vertical-align: top; --kite9-padding-left: 10pt; --kite9-layout: down; --kite9-vertical-align: top; --kite9-horizontal-align: left;">
 			<group id="g1"
 				style="--kite9-horizontal-align: left; --kite9-margin: 0; --kite9-padding-left: 20pt">
 				<symbol transform="translate(-50, 50)" id="t1"
@@ -65,7 +75,21 @@
 				<t k9-format="text-fixed" style="--kite9-padding: 20pt; ">Ruin The Food</t>
 			</group>
 		</cell>
-
+<cell style=" --kite9-occupies: 1 2; " k9-texture="none">
+			<s k9-format="svg-fixed" k9-shape="none" k9-texture="foreground"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text>Probability</svg:text>
+			</s>
+		</cell>
+		
+		<cell style=" --kite9-occupies: 2 2; " k9-texture="none">
+			<s k9-format="svg-fixed" k9-shape="none" k9-texture="foreground"
+				transform="rotate(-90)"
+				style="--kite9-margin: 6pt; font-size: 10pt;">
+				<svg:text>High</svg:text>
+			</s>
+		</cell>
 	</table>
 
 </diagram>
