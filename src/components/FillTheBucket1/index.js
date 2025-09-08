@@ -1,26 +1,8 @@
 
 import { MyChart, range } from '../MyChart'
 
-import {
-	Chart as ChartJS,
-	CategoryScale,
-	LinearScale,
-	PointElement,
-	LineElement,
-	Title,
-	Tooltip,
-	Legend,
-} from 'chart.js'
+import Chart from 'chart.js/auto';
 
-ChartJS.register(
-	CategoryScale,
-	LinearScale,
-	PointElement,
-	LineElement,
-	Title,
-	Tooltip,
-	Legend
-)
 
 
 function stddev(range, mean, variance) {
