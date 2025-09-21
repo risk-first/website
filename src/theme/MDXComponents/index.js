@@ -7,6 +7,7 @@ import MethodIntro from '../MethodIntro'
 import TermList from '../TermList';
 import Matrix from '../Matrix';
 import AIThreatIntro from '../AIThreatIntro'
+import Movement from '../../components/Movement'
 
 export default {
   ...MDXComponents,
@@ -14,10 +15,11 @@ export default {
   BoxOut,
   PracticeIntro,
   RiskIntro,
-  MethodIntro, 
+  MethodIntro,
   TermList,
   Matrix,
-  AIThreatIntro
+  AIThreatIntro,
+  Movement
 };
 
 

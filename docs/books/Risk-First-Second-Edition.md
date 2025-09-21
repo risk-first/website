@@ -38,7 +38,7 @@ It also contains two entirely new chapters dealing with technological change, re
 
 In essence, this is the post-agile, AI-aware manual for understanding and harnessing the forces of innovation in play when developing software systems.
 
-## Getting Involved
+## What's A Beta?
 
 <BoxOut title="What's A Beta For A Book, Anyway?">
 
@@ -49,6 +49,10 @@ Once the book is declared "finished", it'll get published proper and you'll get 
 [Access the Beta Here](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)
 
 </BoxOut>
+
+## Amplify!
+
+<Movement />
 
 <BoxOut title="Join The Risk-First GitHub Organisation">
 
