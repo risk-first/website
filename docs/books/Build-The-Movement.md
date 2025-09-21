@@ -11,3 +11,7 @@ sidebar_position: 2
 ---
 
 <Movement />
+
+<BoxOut title="QR Code To Share">
+![Risk First Second Edition](/img/misc/qr/rf2e.png)
+</BoxOut>
