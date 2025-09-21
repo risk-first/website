@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import styles from './styles.module.css';
 
 export default function Movement() {
@@ -69,96 +70,101 @@ export default function Movement() {
 
     return (
         <section className={styles.movementSection}>
-            <div className={styles.container}>
-                <div className={styles.content}>
-                    <h2 className={styles.title}>Let's Create a Movement 🚀</h2>
-                    <div className={styles.text}>
-                        <p>
-                            Risk-First is more than just a book — it's a different way to think about how software really gets built.
-                            And movements only grow when people share them.
-                        </p>
-                        <p>
-                            Here's how you can get in on the ground floor of a new movement and help spread the word and get rewarded:
-                        </p>
-                        <ol className={styles.steps}>
-                            <li>Share this page on LinkedIn, X (Twitter), or your favorite platform.</li>
-                            <li>Fill out this quick form with your email address and a link to your post.</li>
-                            <li>Get rewarded — I'll send you a special discount code to grab a <strong>free</strong> digital copy of Risk-First Software Development, Second Edition (Beta).</li>
-                        </ol>
-                    </div>
+            <BrowserOnly>
+                {() => (
 
-                    <div className={styles.shareButtons}>
-                        <a
-                            href={shareLinks.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.shareButton}
-                        >
-                            Share on LinkedIn
-                        </a>
-                        <a
-                            href={shareLinks.twitter}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.shareButton}
-                        >
-                            Share on X (Twitter)
-                        </a>
-                        <a
-                            href={shareLinks.facebook}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.shareButton}
-                        >
-                            Share on Facebook
-                        </a>
-                    </div>
+                    <div className={styles.container}>
+                        <div className={styles.content}>
+                            <h2 className={styles.title}>Let's Create a Movement 🚀</h2>
+                            <div className={styles.text}>
+                                <p>
+                                    Risk-First is more than just a book — it's a different way to think about how software really gets built.
+                                    And movements only grow when people share them.
+                                </p>
+                                <p>
+                                    Here's how you can get in on the ground floor of a new movement and help spread the word and get rewarded:
+                                </p>
+                                <ol className={styles.steps}>
+                                    <li>Share this page on LinkedIn, X (Twitter), or your favorite platform.</li>
+                                    <li>Fill out this quick form with your email address and a link to your post.</li>
+                                    <li>Get rewarded — I'll send you a special discount code to grab a <strong>free</strong> digital copy of Risk-First Software Development, Second Edition (Beta).</li>
+                                </ol>
+                            </div>
 
-                    <form className={styles.form} onSubmit={handleSubmit}>
-                        <h3 className={styles.formTitle}>👉 Share the Page & Claim Your Free Copy</h3>
+                            <div className={styles.shareButtons}>
+                                <a
+                                    href={shareLinks.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.shareButton}
+                                >
+                                    Share on LinkedIn
+                                </a>
+                                <a
+                                    href={shareLinks.twitter}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.shareButton}
+                                >
+                                    Share on X (Twitter)
+                                </a>
+                                <a
+                                    href={shareLinks.facebook}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.shareButton}
+                                >
+                                    Share on Facebook
+                                </a>
+                            </div>
 
-                        <div className={styles.formGroup}>
-                            <label htmlFor="email" className={styles.label}>
-                                Email Address *
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                className={styles.input}
-                                required
-                                placeholder="your@email.com"
-                            />
+                            <form className={styles.form} onSubmit={handleSubmit}>
+                                <h3 className={styles.formTitle}>👉 Share the Page & Claim Your Free Copy</h3>
+
+                                <div className={styles.formGroup}>
+                                    <label htmlFor="email" className={styles.label}>
+                                        Email Address *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                        placeholder="your@email.com"
+                                    />
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label htmlFor="socialLink" className={styles.label}>
+                                        Link to Your Post *
+                                    </label>
+                                    <input
+                                        type="url"
+                                        id="socialLink"
+                                        name="socialLink"
+                                        value={formData.socialLink}
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                        placeholder="https://linkedin.com/posts/..."
+                                    />
+                                </div>
+
+                                <button type="submit" className={styles.submitButton}>
+                                    Claim My Discount Code
+                                </button>
+                            </form>
+
+                            <p className={styles.footerText}>
+                                Together, we can build a community that puts risk where it belongs: at the center of how we understand software.
+                            </p>
                         </div>
-
-                        <div className={styles.formGroup}>
-                            <label htmlFor="socialLink" className={styles.label}>
-                                Link to Your Post *
-                            </label>
-                            <input
-                                type="url"
-                                id="socialLink"
-                                name="socialLink"
-                                value={formData.socialLink}
-                                onChange={handleInputChange}
-                                className={styles.input}
-                                required
-                                placeholder="https://linkedin.com/posts/..."
-                            />
-                        </div>
-
-                        <button type="submit" className={styles.submitButton}>
-                            Claim My Discount Code
-                        </button>
-                    </form>
-
-                    <p className={styles.footerText}>
-                        Together, we can build a community that puts risk where it belongs: at the center of how we understand software.
-                    </p>
-                </div>
-            </div>
+                    </div>
+                )}
+            </BrowserOnly>
         </section >
     );
 }
