@@ -21,7 +21,13 @@ export default function Movement() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://automation.riskfirst.org:8080/api/movement/submit', {
+            console.log('Submitting form data:', formData);
+            console.log('Current origin:', window.location.origin);
+            console.log('Current protocol:', window.location.protocol);
+            console.log('Current hostname:', window.location.hostname);
+
+            // Use HTTPS through Cloudflare
+            const response = await fetch('https://automation.riskfirst.org/api/movement/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,10 +35,16 @@ export default function Movement() {
                 body: JSON.stringify(formData),
             });
 
+            console.log('Response status:', response.status);
+            console.log('Response headers:', response.headers);
+
             if (response.ok) {
+                const result = await response.text();
+                console.log('Response body:', result);
                 setIsSubmitted(true);
             } else {
-                console.error('Form submission failed');
+                const errorText = await response.text();
+                console.error('Form submission failed:', response.status, errorText);
                 alert('There was an error submitting the form. Please try again.');
             }
         } catch (error) {
