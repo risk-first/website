@@ -50,7 +50,7 @@ Once the book is declared "finished", it'll get published proper and you'll get 
 
 </BoxOut>
 
-## Amplify!
+## Please Help!
 
 <Movement />
 
