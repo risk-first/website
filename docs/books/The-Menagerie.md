@@ -8,7 +8,7 @@ tags:
 featured:
   class: bg1
   element: '<big-image imgsrc="/public/templates/risk-first/posts/book-grey.png" />'
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # The Menagerie

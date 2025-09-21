@@ -12,17 +12,14 @@ export default function Parts() {
 				<h2>Get Involved</h2>
 			</div>
 			<div className={styles.callToAction}>
-				<ImageBullet  image="/img/front/star.svg" alt="Connect Icon">
+				<ImageBullet image="/img/front/hand-up.svg" alt="Movement Icon">
+					<a href="/Build-The-Movement">Build The Movement & Get A Free Book!</a>
+				</ImageBullet>
+				<ImageBullet image="/img/front/star.svg" alt="Connect Icon">
 					<a href="https://github.com/risk-first/website">Star The Repo On GitHub!</a>
 				</ImageBullet>
-				<ImageBullet  image="/img/front/edit.svg" alt="Connect Icon"> 
-					<a href="/overview/Contributors">Edit An Article!</a>
-				</ImageBullet>
-				<ImageBullet  image="/img/front/github.svg" alt="Connect Icon"> 
-				Join Our <a href="https://github.com/orgs/risk-first/teams/risk-first-team">GitHub Team</a> (and receive regular updates)
-				</ImageBullet>
-				<ImageBullet  image="/img/front/training.svg" alt="Connect Icon"> 
-				Join or Run A Training Session (contact <a href="https://www.linkedin.com/in/robmoffat/">Rob</a>)
+				<ImageBullet image="/img/front/github.svg" alt="Connect Icon">
+					Join Our <a href="https://github.com/orgs/risk-first/teams/risk-first-team">GitHub Team</a> (and receive regular updates)
 				</ImageBullet>
 			</div>
 		</HomeSection>
