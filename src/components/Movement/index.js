@@ -27,7 +27,7 @@ export default function Movement() {
             console.log('Current hostname:', window.location.hostname);
 
             // Use HTTPS through Cloudflare
-            const response = await fetch('https://automation.riskfirst.org/api/movement/submit', {
+            const response = await fetch('https://automation.riskfirst.org:8080/api/movement/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export default function Movement() {
                     <div className={styles.content}>
                         <h2 className={styles.title}>Thank You! 🎉</h2>
                         <p className={styles.message}>
-                            Thanks for helping spread the Risk-First movement! Check your email for your special discount code.
+                            Thanks for helping spread the Risk-First movement! Your discount code will be with you shortly.
                         </p>
                         <button
                             className={styles.button}
@@ -95,7 +95,7 @@ export default function Movement() {
                                         And movements only grow when people share them.
                                     </p>
                                     <p>
-                                        Here's how you can get in on the ground floor of a new movement and help spread the word and get rewarded:
+                                        If you want in on the ground floor of a new movement, please help spread the word and get rewarded:
                                     </p>
                                     <ol className={styles.steps}>
                                         <li>Share this page on LinkedIn, X (Twitter), or your favorite platform.</li>

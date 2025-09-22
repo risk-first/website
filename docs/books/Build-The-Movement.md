@@ -1,6 +1,6 @@
 ---
-title: "Build The Movement!"
-description: "Read to find out how to get hold of a free copy of RF2E!"
+title: "Help Us Build!"
+description: "Read on to find out how to get hold of a free copy of RF2E!"
 slug: /Build-The-Movement
 featured:
   class: bg1
