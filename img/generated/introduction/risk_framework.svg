@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:adl="http://www.kite9.org/schema/adl"
+     xmlns:exslt="http://exslt.org/common"
+     xmlns:pp="http://www.kite9.org/schema/post-processor"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     contentScriptType="text/ecmascript"
+     zoomAndPan="magnify"
+     contentStyleType="text/css"
+     version="1.0"
+     width="1087"
+     pp:width="$width"
+     preserveAspectRatio="xMidYMid meet"
+     height="278"
+     pp:height="$height">
+   <metadata xmlns:md="http://www.kite9.org/schema/metadata">
+      <md:self>http://robs-pro:8080/api/renderer?format=svg</md:self>
+   </metadata>
+   <defs>
+      <style xml:space="preserve">*[k9-format="text-fixed"] {
+--kite9-type: TEXT;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="image"], *[k9-format="image-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="shape"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="svg"], *[k9-format="svg-fixed"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+}
+
+*[k9-format="container"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-image-captioned"], *[k9-format="text-shape-captioned"], *[k9-format="text-shape-portrait"], *[k9-format="text-shape-inline"] {
+--kite9-type: CONTAINER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-image-portrait"], *[k9-format="text-shape-portrait"] {
+--kite9-layout: DOWN;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="depiction"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="depiction"] {
+--kite9-type: SVG;
+--kite9-horizontal-align: CENTER;
+--kite9-connections: SEPARATE;
+}
+
+*[k9-format="text-shape-inline"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-image-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-portrait"] &gt; g &gt; *[k9-elem="caption"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-type: TEXT;
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] {
+--kite9-type: LINK;
+}
+
+*[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="from"], *[k9-format="text-shape-captioned"] &gt; g &gt; *[k9-elem="shape-align"] &gt; g &gt; *[k9-elem="to"] {
+--kite9-type: LINK_END;
+}
+
+*[k9-elem="diagram"] {
+--kite9-type: DIAGRAM;
+--kite9-traversal-bottom: LEAVING;
+--kite9-traversal-left: LEAVING;
+--kite9-traversal-right: LEAVING;
+--kite9-traversal-top: LEAVING;
+}
+
+*[k9-elem="group"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-min-width: 40pt;
+--kite9-min-height: 40pt;
+}
+
+*[k9-elem="container"] {
+--kite9-padding-top: 15pt;
+--kite9-padding-right: 15pt;
+--kite9-padding-bottom: 15pt;
+--kite9-padding-left: 15pt;
+--kite9-margin-top: 15pt;
+--kite9-margin-right: 15pt;
+--kite9-margin-bottom: 15pt;
+--kite9-margin-left: 15pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+}
+
+*[k9-elem="label"] {
+--kite9-usage: LABEL;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="label-inner"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 4pt;
+--kite9-padding-right: 4pt;
+--kite9-padding-bottom: 4pt;
+--kite9-padding-left: 4pt;
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+}
+
+*[k9-elem="label"][end="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="label"][end="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="table"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="cell"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 30pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+}
+
+*[k9-format="link-align"], *[k9-format="link-basic"] {
+--kite9-type: LINK;
+--kite9-link-from-xpath: "descendant::*[@k9-elem='from']/@reference";
+--kite9-link-to-xpath: "descendant::*[@k9-elem='to']/@reference";
+}
+
+*[k9-elem="link-grab"], *[k9-elem="align-grab"], *[k9-elem="grab"], *[k9-elem="align-body"], *[k9-elem="link-body"] {
+--kite9-usage: DECAL;
+--kite9-type: SVG;
+fill: none;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+--kite9-link-corner-radius: 6pt;
+}
+
+*.indicators-on *[id] *[k9-elem="align-body"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*[k9-elem="from"] {
+--kite9-link-end: FROM;
+}
+
+*[k9-elem="to"] {
+--kite9-link-end: TO;
+}
+
+*[k9-elem="from"].gap, *[k9-elem="to"].gap {
+--kite9-marker-reserve: 20pt;
+}
+
+*[k9-elem="from"][shape="open-diamond"], *[k9-elem="to"][shape="open-diamond"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="from"][shape="open-arrow"], *[k9-elem="to"][shape="open-arrow"] {
+--kite9-marker-reserve: 6pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-type: LINK_END;
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+}
+
+*[k9-elem="port"] {
+--kite9-type: PORT;
+}
+
+*[k9-elem="hub"] {
+--kite9-type: SVG;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-min-width: 10pt;
+--kite9-min-height: 10pt;
+}
+
+*[k9-elem="group"] {
+--kite9-type: CONTAINER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="textarea"] {
+--kite9-margin-top: 4pt;
+--kite9-margin-right: 4pt;
+--kite9-margin-bottom: 4pt;
+--kite9-margin-left: 4pt;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+}
+
+*[id] &gt; *[k9-highlight] {
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="grab"] {
+stroke-width: 10pt;
+fill-opacity: 0.5;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.1;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.8;
+stroke-width: 1pt;
+stroke-dasharray: none;
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-visible);
+}
+
+*.indicators-on *[id] &gt; *[k9-highlight~="fill"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.6;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="fill"] {
+fill-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] {
+stroke-opacity: 0;
+}
+
+*.indicators-off *[id] &gt; *[k9-highlight~="stroke"] &gt; image {
+filter: url(#highlight-invisible);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="bar"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="bar"] {
+stroke-width: 10pt;
+stroke-opacity: 0.8;
+stroke: rgb(253, 152, 112);
+}
+
+*.indicators-on *[id][default] &gt; *[k9-highlight~="pulse"], *.indicators-on *[id][default] &gt; g &gt; *[k9-highlight~="pulse"] {
+fill-opacity: 1;
+fill: rgb(253, 152, 112);
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="stroke"], *.mouseover &gt; g &gt; *[k9-highlight~="outline"], *.mouseover &gt; g &gt; *[k9-highlight~="bar"], *.mouseover &gt; *[k9-highlight~="stroke"], *.mouseover &gt; *[k9-highlight~="outline"], *.mouseover &gt; *[k9-highlight~="bar"] {
+stroke: rgb(187, 221, 238);
+stroke-opacity: 1;
+}
+
+*.mouseover &gt; g &gt; *[k9-highlight~="pulse"], *.mouseover &gt; g &gt; *[k9-highlight~="fill"], *.mouseover &gt; g &gt; *[k9-highlight~="grab"], *.mouseover &gt; *[k9-highlight~="pulse"], *.mouseover &gt; *[k9-highlight~="fill"], *.mouseover &gt; *[k9-highlight~="grab"], *.mouseover.grid-temporary {
+fill: rgb(204, 238, 255);
+fill-opacity: 0.8;
+}
+
+*.selected &gt; g &gt; *[k9-highlight~="outline"], *.selected &gt; g &gt; *[k9-highlight~="stroke"], *.selected &gt; g &gt; *[k9-highlight~="bar"], *.selected &gt; *[k9-highlight~="outline"], *.selected &gt; *[k9-highlight~="stroke"], *.selected &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 204, 0);
+stroke-opacity: 0.8;
+}
+
+*[k9-elem="_temporary"].selected, *.selected &gt; g &gt; *[k9-highlight~="pulse"], *.selected &gt; g &gt; *[k9-highlight~="fill"], *.selected &gt; g &gt; *[k9-highlight~="grab"], *.selected &gt; *[k9-highlight~="pulse"], *.selected &gt; *[k9-highlight~="fill"], *.selected &gt; *[k9-highlight~="grab"] {
+fill: rgb(255, 204, 0);
+fill-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="outline"], *.dropping &gt; g &gt; *[k9-highlight~="stroke"], *.dropping &gt; g &gt; *[k9-highlight~="bar"], *.dropping &gt; *[k9-highlight~="outline"], *.dropping &gt; *[k9-highlight~="stroke"], *.dropping &gt; *[k9-highlight~="bar"] {
+stroke: rgb(220, 221, 221);
+stroke-opacity: 0.8;
+}
+
+*.dropping &gt; g &gt; *[k9-highlight~="pulse"], *.dropping &gt; g &gt; *[k9-highlight~="fill"], *.dropping &gt; g &gt; *[k9-highlight~="grab"], *.dropping &gt; *[k9-highlight~="pulse"], *.dropping &gt; *[k9-highlight~="fill"], *.dropping &gt; *[k9-highlight~="grab"] {
+fill: rgb(220, 221, 221);
+fill-opacity: 0.8;
+}
+
+*[k9-elem="diagram"].selected &gt; *[k9-highlight] {
+fill-opacity: 0;
+fill: white;
+}
+
+*.inactive &gt; *[k9-highlight~="outline"], *.inactive &gt; *[k9-highlight~="stroke"], *.inactive &gt; *[k9-highlight~="bar"] {
+stroke-opacity: 0.2;
+}
+
+*.inactive &gt; *[k9-highlight~="pulse"], *.inactive &gt; *[k9-highlight~="fill"], *.inactive &gt; *[k9-highlight~="grab"], *.inactive &gt; g &gt; text {
+fill-opacity: 0.2;
+}
+
+*.indicators-on *.grid-temporary {
+fill-opacity: 0.3;
+stroke: none;
+}
+
+*[k9-elem="action"] {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-padding-top: 12pt;
+--kite9-padding-right: 22pt;
+--kite9-padding-bottom: 12pt;
+--kite9-padding-left: 12pt;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"].left {
+--kite9-padding-left: 22pt;
+--kite9-padding-right: 12pt;
+}
+
+*[k9-elem="glyph"] &gt; g &gt; *[k9-elem="caption"], *[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: black;
+}
+
+*[k9-elem="glyph"] {
+--kite9-layout: DOWN;
+--kite9-padding-top: 6pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 6pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-margin-bottom: 10pt;
+}
+
+*[k9-elem="artifact"], *[k9-elem="cash"], *[k9-elem="document"], *[k9-elem="users"], *[k9-elem="computer"], *[k9-elem="interface"], *[k9-elem="component"], *[k9-elem="channel-artifact"], *[k9-elem="internal-model-artifact"], *[k9-elem="protocol-artifact"], *[k9-elem="agent-artifact"], *[k9-elem="image-artifact"], *[k9-elem="generic-artifact"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="arrow"], *[k9-elem="block"] {
+--kite9-padding-top: 8pt;
+--kite9-padding-right: 8pt;
+--kite9-padding-bottom: 8pt;
+--kite9-padding-left: 8pt;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-connections: SEPARATE;
+font-size: 15pt;
+font-weight: 500;
+--kite9-link-inset: 3pt;
+}
+
+*[k9-elem="block"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 5pt;
+--kite9-margin-right: 5pt;
+--kite9-margin-bottom: 5pt;
+--kite9-margin-left: 5pt;
+--kite9-padding-top: 5pt;
+--kite9-padding-right: 5pt;
+--kite9-padding-bottom: 5pt;
+--kite9-padding-left: 5pt;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] {
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="description"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-usage: REGULAR;
+--kite9-text-bounds-width: 250pt;
+--kite9-direction: DOWN;
+}
+
+*[k9-elem="planner"] {
+--kite9-layout: GRID;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+--kite9-usage: REGULAR;
+--kite9-vertical-align: CENTER;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+text-align: center;
+--kite9-min-width: 230pt;
+--kite9-min-height: 30pt;
+--kite9-traversal-bottom: ALWAYS;
+--kite9-traversal-left: ALWAYS;
+--kite9-traversal-right: ALWAYS;
+--kite9-traversal-top: ALWAYS;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-layout: RIGHT;
+}
+
+*[k9-elem="planner-header"] {
+--kite9-min-width: 60pt;
+--kite9-min-height: 30pt;
+}
+
+*[k9-elem="mitigated"] {
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+}
+
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-min-width: 120pt;
+--kite9-min-height: 160pt;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="mitigated"] *.k9-content *[k9-elem="risk"], *[k9-elem="hidden"] *.k9-content *[k9-elem="risk"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+}
+
+*[k9-elem="risk"] {
+--kite9-layout: DOWN;
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 145pt;
+--kite9-min-height: 170pt;
+}
+
+*[k9-elem="title"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-type: TEXT;
+--kite9-text-bounds-width: 110pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+}
+
+*[k9-elem="code"][k9-format="text-fixed"] {
+--kite9-horizontal-align: CENTER;
+--kite9-vertical-align: TOP;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk"] &gt; g &gt; *[k9-format="image-fixed"] {
+--kite9-vertical-align: TOP;
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="celltext"][k9-format="text-fixed"] {
+--kite9-usage: REGULAR;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-vertical-align: BOTTOM;
+--kite9-horizontal-align: CENTER;
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+font-size: 15pt;
+fill: black;
+stroke: none;
+--kite9-text-bounds-width: 350pt;
+}
+
+*[k9-elem="celltext"].bold {
+font-weight: bold;
+}
+
+*[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="celltext"] *[k9-elem="text-label"] {
+--kite9-horizontal-align: LEFT;
+}
+
+*[k9-elem="description"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="tick"] {
+--kite9-usage: REGULAR;
+--kite9-type: CONTAINER;
+}
+
+*[k9-elem="table"] *[k9-elem="risk"], *[k9-elem="table"] *[k9-elem="tick"] {
+--kite9-horizontal-align: CENTER;
+--kite9-margin-top: 20pt;
+--kite9-margin-right: 20pt;
+--kite9-margin-bottom: 20pt;
+--kite9-margin-left: 20pt;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="table"] *[k9-elem="celltext"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="table"] &gt; rect, *[k9-elem="table"] &gt; g &gt; rect {
+stroke: white;
+}
+
+*[k9-elem="table"].wide *[k9-elem="description"] {
+--kite9-text-bounds-width: 450pt;
+}
+
+*[k9-elem="description"].top {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="description"].middle {
+--kite9-horizontal-align: CENTER;
+}
+
+*[k9-elem="cell"] &gt; g &gt; rect {
+stroke: white;
+}
+
+*[k9-elem="description"], *[k9-elem="long-description"], *.description {
+font-size: 14pt;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-text-bounds-width: 250pt;
+}
+
+*[k9-elem="description"].bold {
+fill: black;
+font-style: normal;
+font-weight: 600;
+}
+
+*[k9-elem="big-image"] {
+--kite9-margin-top: 10pt;
+--kite9-margin-right: 10pt;
+--kite9-margin-bottom: 10pt;
+--kite9-margin-left: 10pt;
+--kite9-link-inset: 10pt;
+--kite9-link-gutter: 10pt;
+--kite9-layout: VERTICAL;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-min-width: 110pt;
+--kite9-min-height: 140pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+--kite9-layout: VERTICAL;
+--kite9-padding-left: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-bottom: 0pt;
+}
+
+*[k9-elem="group"].principle-outline {
+fill: white;
+fill-opacity: 1;
+--kite9-padding-top: 50pt;
+--kite9-padding-right: 50pt;
+--kite9-padding-bottom: 50pt;
+--kite9-padding-left: 50pt;
+}
+
+*[k9-elem="group"].principle-top {
+--kite9-layout: GRID;
+--kite9-grid-columns: 2;
+--kite9-grid-rows: 2;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+--kite9-margin-top: 3pt;
+--kite9-margin-right: 3pt;
+--kite9-margin-bottom: 3pt;
+--kite9-margin-left: 3pt;
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-min-width: 1000pt;
+--kite9-min-height: 535pt;
+}
+
+*[k9-elem="group"].principle-left-top {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-margin-top: 0pt;
+}
+
+*[k9-elem="group"].principle-right-top {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MINIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-left-bottom {
+--kite9-horizontal-sizing: MINIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="group"].principle-right-bottom {
+--kite9-horizontal-sizing: MAXIMIZE;
+--kite9-vertical-sizing: MAXIMIZE;
+--kite9-layout: DOWN;
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 30pt;
+--kite9-margin-top: 0pt;
+--kite9-margin-right: 0pt;
+--kite9-margin-bottom: 0pt;
+--kite9-margin-left: 0pt;
+}
+
+*[k9-elem="risk-first-logo"].principle {
+--kite9-vertical-align: BOTTOM;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+}
+
+*[k9-elem="page-title"].principle-site {
+font-family: "Metropolis";
+font-size: 14pt;
+fill: rgb(97, 162, 161);
+letter-spacing: 1.4;
+font-weight: 600;
+text-align: center;
+--kite9-margin-top: 0;
+}
+
+*[k9-elem="page-title"].number {
+font-family: "Metropolis";
+font-size: 60pt;
+fill: rgb(245, 62, 121);
+indent: 0;
+font-weight: 600;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-title"].principle {
+font-family: "Metropolis";
+font-size: 60pt;
+font-weight: 600;
+fill: rgb(0, 0, 0);
+text-align: left;
+--kite9-padding-bottom: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-right: 30pt;
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="page-summary"].principle {
+font-family: "Metropolis";
+font-size: 25pt;
+--kite9-text-bounds-width: 600pt;
+--kite9-padding-top: 0pt;
+--kite9-padding-right: 0pt;
+--kite9-padding-bottom: 0pt;
+--kite9-padding-left: 0pt;
+fill: rgb(97, 162, 161);
+indent: 0;
+text-align: center;
+font-weight: 300;
+font-style: italic;
+}
+
+*[k9-elem="glyph"].rect {
+--kite9-min-height: 40pt;
+--kite9-min-width: 30pt;
+}
+
+*[k9-elem="glyph"].circle {
+--kite9-min-height: 30pt;
+--kite9-min-width: 30pt;
+}
+
+*[k9-texture="none"] {
+fill: white;
+fill-opacity: 0.001;
+stroke-opacity: 0.001;
+}
+
+*[k9-texture="background"] {
+fill: white;
+fill-opacity: 1;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="default"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture~="outline"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: black;
+stroke-opacity: 1;
+}
+
+*[k9-texture~="foreground"] {
+fill: black;
+fill-opacity: 1;
+stroke: none;
+stroke-width: 0;
+}
+
+*[k9-texture="background"][k9-elem="container"] {
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-texture="background"][k9-elem="container"].solid &gt; g.k9-shape &gt; rect {
+stroke-dasharray: none;
+}
+
+*[k9-texture="background"][k9-elem="container"].dotted &gt; g.k9-shape &gt; rect {
+stroke-dasharray: 4 4;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*[k9-elem="cell"] {
+text-align: center;
+}
+
+*[k9-elem="_temporary"], *[k9-elem="cell"] &gt; *[k9-texture="background"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="cell"].bordered {
+stroke: black;
+stroke-width: 2pt;
+}
+
+*[k9-elem="cell"].shaded {
+fill: rgb(222, 222, 222);
+fill-opacity: 1;
+}
+
+*[k9-elem="table"].invisible *[k9-elem="cell"], *[k9-elem="table"].invisible *[k9-elem="_temporary"], *[k9-elem="cell"].invisible, *[k9-elem="table"].invisible {
+stroke: none;
+}
+
+*[k9-elem="cell"].left {
+--kite9-horizontal-align: LEFT;
+text-align: left;
+}
+
+*[k9-elem="cell"].right {
+--kite9-horizontal-align: RIGHT;
+text-align: right;
+}
+
+*[k9-elem="cell"].bottom {
+--kite9-vertical-align: BOTTOM;
+}
+
+*[k9-elem="cell"].top {
+--kite9-vertical-align: TOP;
+}
+
+*[k9-elem="label"] *[k9-texture="background"] {
+stroke: none;
+}
+
+*[k9-elem="label-inner"], *[k9-elem="label"] {
+--kite9-margin-top: 0;
+--kite9-margin-right: 0;
+--kite9-margin-bottom: 0;
+--kite9-margin-left: 0;
+--kite9-padding-top: 0;
+--kite9-padding-right: 0;
+--kite9-padding-bottom: 0;
+--kite9-padding-left: 0;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+fill: rgb(255, 255, 255);
+fill-opacity: 0.01;
+}
+
+*[k9-elem="link"] {
+stroke: black;
+stroke-width: 2pt;
+fill: none;
+}
+
+*[k9-elem="link"].invisible {
+stroke: none;
+}
+
+*[k9-elem="link"].dotted {
+stroke-dasharray: 8;
+}
+
+*[k9-elem="link"].thick {
+stroke-width: 4pt;
+}
+
+*[k9-elem="link"].grey {
+stroke: rgb(204, 204, 204);
+}
+
+*[k9-elem="hub"][k9-texture="background"] {
+fill: rgb(255, 255, 255);
+stroke: none;
+}
+
+*#_moveLayer *[highlight~="fill"], *#_moveLayer *[highlight~="pulse"] {
+fill: rgb(183, 192, 254);
+fill-opacity: 0.7;
+}
+
+*#_moveLayer *[highlight~="stroke"], *#_moveLayer *[highlight~="outline"] {
+stroke: rgb(183, 192, 254);
+stroke-opacity: 0.7;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 0.5;
+}
+
+*.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; g &gt; *[k9-highlight~="bar"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="stroke"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="outline"], *.indicators-on *[k9-info~="contradicting:"] &gt; *[k9-highlight~="bar"] {
+fill: rgb(255, 89, 86);
+fill-opacity: 0.5;
+}
+
+@media editor {
+*[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+}
+
+*[media="editor"] *[k9-elem="diagram"] {
+--kite9-padding-top: 200pt;
+--kite9-padding-right: 200pt;
+--kite9-padding-bottom: 200pt;
+--kite9-padding-left: 200pt;
+--kite9-min-width: 50pt;
+--kite9-min-height: 50pt;
+}
+
+*[k9-elem].attention {
+stroke: rgb(255, 89, 86);
+stroke-opacity: 1;
+}
+
+svg {
+cursor: pointer;
+}
+
+*#_update {
+overflow: hidden;
+}
+
+*[k9-elem="box"] &gt; *[k9-texture="background"] {
+fill: rgb(204, 204, 170);
+fill-opacity: 1;
+stroke: rgb(170, 170, 136);
+stroke-dasharray: none;
+}
+
+*[k9-texture="foreground"], *[k9-texture="background"] &gt; g &gt; text {
+fill: rgb(36, 51, 20);
+font-family: "metropolis";
+font-size: 50pt;
+}
+
+*[k9-elem="label"] {
+fill: black;
+font-family: "metropolis";
+font-size: 35pt;
+}
+
+*[k9-elem="box"].shaded {
+fill: rgb(170, 85, 0);
+}
+
+*[k9-elem="textarea"].warning {
+fill: rgb(255, 136, 0);
+}
+
+*[k9-elem="votes"] {
+--kite9-type: SVG;
+--kite9-usage: DECAL;
+}
+
+*[k9-elem="votes"] &gt; g &gt; rect.back {
+fill: rgb(122, 164, 127);
+fill-opacity: 0.9;
+stroke: none;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.count {
+font-size: 16pt;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"] &gt; g &gt; text.font-awesome {
+font-size: 16pt;
+font-family: "Font Awesome 5 Free";
+font-weight: 400;
+fill: white;
+fill-opacity: 1;
+text-anchor: middle;
+dominant-baseline: middle;
+}
+
+*[k9-elem="votes"][count="0"] &gt; g &gt; rect.back, *[k9-elem="votes"][count="0"] &gt; g &gt; text.count, *[k9-elem="votes"][count="0"] &gt; g &gt; text.font-awesome {
+fill-opacity: 0;
+stroke-opacity: 0;
+}
+
+*[k9-elem="diagram"][k9-texture="none"] {
+fill: white;
+fill-opacity: 1;
+}
+
+*[k9-texture] {
+font-family: "metropolis";
+font-size: 16pt;
+font-weight: 500;
+}
+
+*[k9-texture="artifact"] {
+fill: white;
+fill-opacity: 0.001;
+stroke: none;
+}
+
+*[k9-texture="artifact"] text {
+font-size: 16pt;
+font-weight: 400;
+fill: black;
+text-align: center;
+--kite9-text-bounds-width: 100pt;
+}
+
+*[k9-elem="label"] text, *[k9-elem="description"] text {
+font-style: italic;
+--kite9-direction: RIGHT;
+}
+
+*[k9-elem="caption"] {
+text-align: center;
+}
+
+*[k9-elem="label"] {
+--kite9-padding-top: 10pt;
+--kite9-padding-right: 10pt;
+--kite9-padding-bottom: 10pt;
+--kite9-padding-left: 10pt;
+fill: white;
+}
+
+*[k9-elem="arrow"] {
+fill: black;
+fill-opacity: 1;
+}
+
+*[k9-elem="arrow"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill: white;
+fill-opacity: 1;
+font-size: 16pt;
+}
+
+*[k9-elem="from"], *[k9-elem="to"] {
+--kite9-marker-reserve: 8pt;
+}
+
+*[k9-elem="link"] {
+--kite9-link-minimum-length: 30pt;
+}
+
+*[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; rect, *[k9-elem="glyph"][k9-texture="background"] &gt; g &gt; ellipse, *[k9-elem="action"] *[k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="action"] &gt; g &gt; *[k9-elem="caption"] &gt; g &gt; text {
+fill-opacity: 1;
+font-size: 16pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="hidden"], *[k9-elem="mitigated"] {
+fill: white;
+}
+
+*[k9-elem="title"] {
+font-size: 16pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="code"] {
+font-size: 22pt;
+font-weight: 500;
+fill: black;
+text-align: center;
+}
+
+*[k9-elem="risk"][k9-texture="background"], *[k9-elem="block"][k9-texture="background"] {
+fill: url(#risk-background);
+stroke: black;
+stroke-width: 1pt;
+}
+
+*[k9-elem="container"][k9-texture="background"] {
+fill-opacity: 0.001;
+}
+
+*[k9-elem="planner-cell"], *[k9-elem="planner-header"] {
+stroke: rgb(174, 174, 174);
+stroke-width: 1pt;
+}
+
+*[k9-elem="diagram"].principle {
+fill-opacity: 1;
+fill: rgb(245, 245, 245);
+}
+
+*[k9-elem="container"][k9-texture="background"].principle-top {
+fill: white;
+fill-opacity: 1;
+}
+
+</style>
+      <defs id="links-markers">
+         <marker id="-start-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker id="-end-marker" preserveAspectRatio="xMidYMid meet"/>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="strike-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M7,0 L5,6 h-1 L6,0z"/>
+         </marker>
+         <marker refX="7"
+                 refY="3"
+                 orient="auto"
+                 id="strike-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="strike-marker" d="         M3,0 L1,6 h-1 L2,0z"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-start-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refY="3"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerHeight="6"
+                 id="circle-end-marker"
+                 markerWidth="6"
+                 refX="3">
+            <circle r="2" class="circle-marker" cx="3" cy="3"/>
+         </marker>
+         <marker refX="2"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="6"
+                 refY="3"
+                 orient="auto"
+                 id="diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <polygon class="diamond-marker" points="1,3 4,1 7,3 4,5"/>
+         </marker>
+         <marker refX="5"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-start-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M0,3 L3,1 L6,3 L5,3 L3,1.66 L1,3             L3,4.33 L5,3 L6,3 L3,5 L0,3"/>
+         </marker>
+         <marker refX="1"
+                 refY="3"
+                 orient="auto"
+                 id="open-diamond-end-marker"
+                 markerHeight="6"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="8">
+            <path class="open-diamond-marker"
+                  d="         M6,3 L3,1 L0,3 L1,3 L3,1.66 L5,3             L3,4.33 L1,3 L0,3 L3,5 L6,3"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M2,2 L6,4 L2,6 L4,4 L2,2"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="barbed-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="barbed-arrow-marker" d="M6,2 L2,4 L6,6 L4,4 L6,2"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M6,4 L1,2 L1,3 L4,4 L1,5 L1,6 L6,4         M2,3 h-1 v2 h1z"/>
+         </marker>
+         <marker refX="6"
+                 refY="4"
+                 orient="auto"
+                 id="open-arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="open-arrow-marker"
+                  d="         M1,4 L6,2 L6,3 L3,4 L6,5 L6,6 L1,4         M5,3 h1 v2 h-1z"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="2,4 6,2 6,6"/>
+         </marker>
+         <marker refX="4"
+                 refY="4"
+                 orient="auto"
+                 id="arrow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <polygon class="arrow-marker" points="6,4 2,2 2,6"/>
+         </marker>
+         <marker refX="5"
+                 refY="4"
+                 orient="auto"
+                 id="crow-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M1,4 L4,1 l0.66 0.66 L2.3,4z          M1,4 L4,7 l0.66 -0.66 L2.3,4z"/>
+         </marker>
+         <marker refX="1"
+                 refY="4"
+                 orient="auto"
+                 id="crow-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <path class="crow-marker"
+                  d="          M5,4 L2,1 l-0.66 0.66 L3.66,4z          M5,4 L2,7 l-0.66 -0.66 L3.66,4z"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-end-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+         <marker refX="2"
+                 refY="2"
+                 orient="auto"
+                 id="square-start-marker"
+                 markerHeight="7"
+                 preserveAspectRatio="xMidYMid meet"
+                 markerWidth="7">
+            <rect x="0" width="4" height="4" y="0" class="square-marker"/>
+         </marker>
+      </defs>
+      <defs id="highlight-indicators">
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-visible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 .214                 0 0 0 0 .25                 0 0 0 0 1                 0 0 0 1 0 "
+                           type="matrix"/>
+         </filter>
+         <filter xlink:actuate="onLoad"
+                 xlink:type="simple"
+                 id="highlight-invisible"
+                 xlink:show="other">
+            <feColorMatrix values="0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0 "
+                           type="matrix"/>
+         </filter>
+      </defs>
+      <linearGradient x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                      xlink:type="simple"
+                      xlink:actuate="onLoad"
+                      id="risk-background"
+                      xlink:show="other">
+         <stop stop-color="#FFF" offset="0%"/>
+         <stop stop-color="#DDD" offset="100%"/>
+      </linearGradient>
+      <filter xmlns:svg="http://www.w3.org/2000/svg"
+              xlink:type="simple"
+              xlink:actuate="onLoad"
+              height="130%"
+              id="dropshadow"
+              xlink:show="other">
+         <feGaussianBlur stdDeviation="4" in="SourceAlpha"/>
+         <feOffset dx="6" dy="6"/>
+         <feColorMatrix values="             0 0 0 0 0                 0 0 0 0 0                 0 0 0 0 0                 0 0 0 .4 0"
+                        type="matrix"/>
+         <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+      </filter>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              id="adl:markup"
+              xlink:show="other"
+              type="text/xml;purpose=adl;base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0geG1sbnM9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS9hZGwiCiAgICAgICAgIHhtbG5zOnhzbHQ9Imh0dHA6Ly93d3cua2l0ZTkub3JnL3NjaGVtYS94c2x0IgogICAgICAgICBpZD0iZGlhIgogICAgICAgICB4c2x0OnRlbXBsYXRlPSIvcHVibGljL3RlbXBsYXRlcy9yaXNrLWZpcnN0L3Jpc2stZmlyc3QtdGVtcGxhdGUueHNsIj4KICAgPGdyb3VwIGlkPSJpZF80IiBzdHlsZT0iLS1raXRlOS1wYWRkaW5nOiAxMHB0OyAiPgogICAgICA8YWN0aW9uPkFjdGlvbnM8L2FjdGlvbj4KICAgPC9ncm91cD4KICAgPGFycm93IGlkPSJpZF82Ij4KICAgICAgYWRkcmVzcwogICAgPC9hcnJvdz4KICAgPHJpc2sgY2xhc3M9ImF0dGVuZGFudCIgaWQ9ImlkXzgiPgogICAgICBSaXNrcwogICAgPC9yaXNrPgogICA8YXJyb3cgaWQ9ImlkXzkiPgogICAgICB3aGljaCBvYnN0cnVjdAogICAgPC9hcnJvdz4KICAgPHJpc2sgY2xhc3M9ImdvYWwiIGlkPSJpZF8xMCI+CiAgICAgIEdvYWxzCiAgICA8L3Jpc2s+CiAgIDxsaW5rIGlkPSJpZF81IiBzdHlsZT0iLS1raXRlOS1kaXJlY3Rpb246IHJpZ2h0OyI+CiAgICAgIDxmcm9tIHJlZmVyZW5jZT0iaWRfNCIvPgogICAgICA8dG8gcmVmZXJlbmNlPSJpZF82Ii8+CiAgIDwvbGluaz4KICAgPGxpbmsgaWQ9ImlkXzciIHN0eWxlPSItLWtpdGU5LWRpcmVjdGlvbjogcmlnaHQ7Ij4KICAgICAgPGZyb20gcmVmZXJlbmNlPSJpZF82Ii8+CiAgICAgIDx0byByZWZlcmVuY2U9ImlkXzgiIHNoYXBlPSJhcnJvdyIvPgogICA8L2xpbms+CiAgIDxsaW5rIGlkPSJpZF8xNSIgc3R5bGU9Ii0ta2l0ZTktZGlyZWN0aW9uOiByaWdodDsiPgogICAgICA8ZnJvbSByZWZlcmVuY2U9ImlkXzgiLz4KICAgICAgPHRvIHJlZmVyZW5jZT0iaWRfOSIvPgogICA8L2xpbms+CiAgIDxsaW5rIGlkPSJpZF8xNyIgc3R5bGU9Ii0ta2l0ZTktZGlyZWN0aW9uOiByaWdodDsiPgogICAgICA8ZnJvbSByZWZlcmVuY2U9ImlkXzkiLz4KICAgICAgPHRvIHJlZmVyZW5jZT0iaWRfMTAiIHNoYXBlPSJhcnJvdyIvPgogICA8L2xpbms+CjwvZGlhZ3JhbT4K</script>
+   </defs>
+   <g xmlns:xslt="http://www.kite9.org/schema/xslt"
+      k9-contains="connected label"
+      k9-texture="none"
+      k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: diagram; rect-pos: [0.0, 0.0]; rect-size: [1087.0, 278.0]; position: none; painter: direct-svg; "
+      id="dia"
+      k9-format="container"
+      k9-ui="layout label fill size"
+      k9-elem="diagram"
+      xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+      k9-type="diagram">
+      <g class="k9-shape">
+         <rect x="0"
+               y="0"
+               width="1087"
+               pp:y="$y"
+               pp:height="$height"
+               pp:x="$x"
+               rx="0"
+               ry="0"
+               height="278"
+               pp:width="$width"/>
+      </g>
+      <g class="k9-content">
+         <g k9-contains="connected label"
+            transform="translate(26.0,98.0)"
+            k9-texture="none"
+            style="--kite9-padding: 10pt; "
+            k9-info="margin: [26.666667938232422 26.666667938232422 26.666667938232422 26.666667938232422]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [53.333335876464844 53.333335876464844]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [26.0, 98.0]; rect-size: [147.0, 83.0]; position: none; painter: direct-svg; "
+            id="id_4"
+            k9-format="container"
+            k9-ui="drag delete align insert autoconnect layout label fill stroke size align"
+            k9-elem="group"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse stroke">
+               <rect x="0"
+                     y="0"
+                     width="147"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="10pt"
+                     ry="10pt"
+                     height="83"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="action"
+                  k9-texture="background"
+                  transform="translate(13.0,13.0)"
+                  k9-format="text-shape-inline"
+                  k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [16.0 29.33333396911621 16.0 16.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [39.0, 111.0]; rect-size: [121.0, 57.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-shape" k9-highlight="pulse">
+                     <g k9-highlight="pulse"
+                        k9-texture="background"
+                        style="transform: translate(0px,0px)"
+                        pp:style="transform: translate([[$x]]px,[[$y]]px)">
+                        <polygon points="             0 0,              100.99999940395355 0,             121 28.5,             100.99999940395355 57,             0 57"
+                                 pp:points="             0 0,              [[$width - (15 * $pt)]] 0,             [[$width]] [[$height div 2]],             [[$width - (15 * $pt)]] [[$height]],             0 [[$height]]"/>
+                     </g>
+                  </g>
+                  <g class="k9-content">
+                     <g k9-elem="caption"
+                        k9-texture="foreground"
+                        transform="translate(15.4,37.3)"
+                        k9-format="text-fixed"
+                        k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [55.0, 127.0]; rect-size: [76.0, 25.0]; position: none; painter: direct-svg; ">
+                        <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                           <g rendered="true">
+                              <g>
+                                 <path d="M11.8611 -2.9861 L4.2222 -2.9861 L2.9444 0 L0.5556 0 L6.8472 -14.6528 L9.2361 -14.6528 L15.5278 0 L13.1389 0 L11.8611 -2.9861 ZM11.0278 -4.9306 L8.0417 -11.8819 L5.0556 -4.9306 L11.0278 -4.9306 ZM22.8284 0.2569 Q21.2937 0.2569 19.9465 -0.5278 Q18.5993 -1.3194 17.8076 -2.6528 Q17.0229 -3.9861 17.0229 -5.5278 Q17.0229 -7.0625 17.8215 -8.3819 Q18.627 -9.7083 19.9604 -10.4931 Q21.2937 -11.2847 22.8493 -11.2847 Q24.002 -11.2847 25.0437 -10.8333 Q26.0923 -10.3889 26.9048 -9.5764 L25.4743 -8.2569 Q24.9812 -8.8125 24.2868 -9.1319 Q23.5923 -9.4514 22.8284 -9.4514 Q21.8423 -9.4514 21.002 -8.9167 Q20.1618 -8.3819 19.6548 -7.4722 Q19.1548 -6.5694 19.1548 -5.5278 Q19.1548 -4.4583 19.6548 -3.5486 Q20.1618 -2.6458 21.002 -2.1111 Q21.8423 -1.5764 22.8493 -1.5764 Q23.6131 -1.5764 24.3145 -1.9097 Q25.0229 -2.2431 25.5368 -2.8194 L26.9673 -1.5139 Q26.134 -0.6806 25.0784 -0.2083 Q24.0229 0.2569 22.8284 0.2569 ZM35.156 -0.5347 Q34.7116 -0.1736 34.1352 0.0417 Q33.5588 0.2569 32.9616 0.2569 Q31.6768 0.2569 30.8643 -0.5833 Q30.0588 -1.4306 30.0588 -2.75 L30.0588 -9.2361 L28.3921 -9.2361 L28.3921 -11.0278 L30.0588 -11.0278 L30.0588 -14.0556 L32.1282 -14.0556 L32.1282 -11.0278 L34.7324 -11.0278 L34.7324 -9.2361 L32.1282 -9.2361 L32.1282 -2.9028 Q32.1282 -2.3264 32.4546 -1.9514 Q32.788 -1.5764 33.2602 -1.5764 Q33.6005 -1.5764 33.906 -1.6944 Q34.2185 -1.8125 34.3921 -1.9861 L35.156 -0.5347 ZM38.3594 -12.8611 Q37.8247 -12.8611 37.4497 -13.2431 Q37.0747 -13.6319 37.0747 -14.1458 Q37.0747 -14.6528 37.4497 -15.0278 Q37.8247 -15.4028 38.3594 -15.4028 Q38.8664 -15.4028 39.2414 -15.0139 Q39.6164 -14.6319 39.6164 -14.1458 Q39.6164 -13.6319 39.2414 -13.2431 Q38.8664 -12.8611 38.3594 -12.8611 ZM37.29 -11.0278 L39.4011 -11.0278 L39.4011 0 L37.29 0 L37.29 -11.0278 ZM47.6813 0.2569 Q46.1258 0.2569 44.7924 -0.5278 Q43.4591 -1.3194 42.6535 -2.6528 Q41.8549 -3.9861 41.8549 -5.5278 Q41.8549 -7.0625 42.6535 -8.3819 Q43.4591 -9.7083 44.7924 -10.4931 Q46.1258 -11.2847 47.6813 -11.2847 Q49.216 -11.2847 50.5494 -10.4931 Q51.8827 -9.7083 52.6674 -8.3819 Q53.4591 -7.0625 53.4591 -5.5278 Q53.4591 -3.9861 52.6674 -2.6528 Q51.8827 -1.3194 50.5494 -0.5278 Q49.216 0.2569 47.6813 0.2569 ZM47.6813 -1.5764 Q48.6605 -1.5764 49.5008 -2.1111 Q50.348 -2.6458 50.848 -3.5486 Q51.348 -4.4583 51.348 -5.5278 Q51.348 -6.5694 50.848 -7.4722 Q50.348 -8.3819 49.5008 -8.9167 Q48.6605 -9.4514 47.6813 -9.4514 Q46.6744 -9.4514 45.8202 -8.9167 Q44.973 -8.3819 44.466 -7.4722 Q43.966 -6.5694 43.966 -5.5278 Q43.966 -4.4583 44.466 -3.5486 Q44.973 -2.6458 45.8202 -2.1111 Q46.6744 -1.5764 47.6813 -1.5764 ZM61.5459 -11.2847 Q62.7404 -11.2847 63.6918 -10.7361 Q64.6432 -10.1944 65.164 -9.2222 Q65.6848 -8.2569 65.6848 -7.0208 L65.6848 0 L63.6154 0 L63.6154 -6.6528 Q63.6154 -7.8958 62.9001 -8.6736 Q62.1848 -9.4514 61.0807 -9.4514 Q59.9279 -9.4514 59.0529 -8.7847 Q58.1779 -8.125 58.0459 -7.1458 L58.0459 0 L55.9348 0 L55.9348 -11.0278 L58.0459 -11.0278 L58.0459 -9.4306 Q58.5598 -10.2639 59.4973 -10.7708 Q60.4348 -11.2847 61.5459 -11.2847 ZM72.7066 0.2569 Q71.4635 0.2569 70.2135 -0.1667 Q68.9705 -0.5972 67.9913 -1.3889 L68.9913 -2.9028 Q70.8455 -1.5556 72.7274 -1.5556 Q73.6649 -1.5556 74.2413 -1.9514 Q74.8177 -2.3472 74.8177 -2.9861 Q74.8177 -3.6667 74.2205 -4.0069 Q73.6232 -4.3542 72.3177 -4.7153 Q70.2969 -5.2708 69.408 -5.9722 Q68.526 -6.6806 68.526 -7.9792 Q68.526 -9.4722 69.6441 -10.375 Q70.7621 -11.2847 72.533 -11.2847 Q73.5816 -11.2847 74.6371 -10.9444 Q75.6927 -10.6042 76.6094 -10.0069 L75.6719 -8.4514 Q74.026 -9.4722 72.533 -9.4722 Q71.6788 -9.4722 71.1371 -9.1181 Q70.5955 -8.7708 70.5955 -8.1736 Q70.5955 -7.7431 70.8385 -7.4861 Q71.0816 -7.2292 71.5677 -7.0139 Q72.0607 -6.8056 73.1302 -6.4861 Q74.3246 -6.125 75.0816 -5.7917 Q75.8385 -5.4583 76.3594 -4.8194 Q76.8871 -4.1806 76.8871 -3.1597 Q76.8871 -1.6181 75.7135 -0.6806 Q74.5399 0.2569 72.7066 0.2569 Z"
+                                       stroke="none"/>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g transform="translate(234.0,117.0)"
+            k9-texture="background"
+            k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [234.0, 117.0]; rect-size: [100.0, 45.0]; position: none; painter: direct-svg; "
+            id="id_6"
+            k9-format="text-shape-inline"
+            k9-ui="size drag delete align connect autoconnect edit"
+            k9-elem="arrow"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="100"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="5pt"
+                     ry="5pt"
+                     height="45"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="caption"
+                  k9-texture="foreground"
+                  transform="translate(9.0,31.3)"
+                  k9-format="text-fixed"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [244.0, 127.0]; rect-size: [80.0, 25.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g fill="white" stroke="white">
+                           <path d="M6.1667 -11.2847 Q8.3403 -11.2847 9.5556 -10.0278 Q10.7708 -8.7708 10.7708 -6.6806 L10.7708 0 L8.7014 0 L8.7014 -1.5139 Q8.1042 -0.6806 7.0903 -0.2083 Q6.0833 0.2569 5.0347 0.2569 Q3.2431 0.2569 2.0972 -0.7014 Q0.9583 -1.6667 0.9583 -3.2639 Q0.9583 -4.3333 1.5417 -5.1736 Q2.1319 -6.0139 3.1458 -6.4722 Q4.1597 -6.9306 5.375 -6.9306 Q6.9514 -6.9306 8.7014 -6.3333 L8.7014 -6.6806 Q8.7014 -7.8958 8.0417 -8.7153 Q7.3819 -9.5347 5.8681 -9.5347 Q4.5417 -9.5347 2.75 -8.6181 L1.9861 -10.1736 Q4.2014 -11.2847 6.1667 -11.2847 ZM5.4375 -1.4097 Q6.5486 -1.4097 7.5 -1.9514 Q8.4514 -2.4931 8.7014 -3.4583 L8.7014 -4.9306 Q7.3194 -5.3542 5.6944 -5.3542 Q4.5625 -5.3542 3.7708 -4.7778 Q2.9861 -4.2014 2.9861 -3.3264 Q2.9861 -2.4514 3.6806 -1.9306 Q4.375 -1.4097 5.4375 -1.4097 ZM24.4061 -14.9097 L24.4061 0 L22.3158 0 L22.3158 -1.9167 Q21.6769 -0.875 20.663 -0.3056 Q19.6491 0.2569 18.3922 0.2569 Q16.9616 0.2569 15.795 -0.4792 Q14.6352 -1.2153 13.9686 -2.5347 Q13.3089 -3.8611 13.3089 -5.5278 Q13.3089 -7.1875 13.9686 -8.5 Q14.6352 -9.8125 15.795 -10.5486 Q16.9616 -11.2847 18.3922 -11.2847 Q19.6491 -11.2847 20.6491 -10.7153 Q21.6561 -10.1528 22.3158 -9.1319 L22.3158 -14.9097 L24.4061 -14.9097 ZM18.8991 -1.5764 Q19.8852 -1.5764 20.663 -2.0764 Q21.4408 -2.5833 21.8783 -3.4861 Q22.3158 -4.3958 22.3158 -5.5278 Q22.3158 -6.6528 21.8783 -7.5486 Q21.4408 -8.4514 20.663 -8.9514 Q19.8852 -9.4514 18.8991 -9.4514 Q17.8991 -9.4514 17.1075 -8.9514 Q16.3227 -8.4514 15.8852 -7.5486 Q15.4477 -6.6528 15.4477 -5.5278 Q15.4477 -4.3958 15.8852 -3.4861 Q16.3227 -2.5833 17.1075 -2.0764 Q17.8991 -1.5764 18.8991 -1.5764 ZM38.1661 -14.9097 L38.1661 0 L36.0758 0 L36.0758 -1.9167 Q35.4369 -0.875 34.4231 -0.3056 Q33.4092 0.2569 32.1522 0.2569 Q30.7217 0.2569 29.555 -0.4792 Q28.3953 -1.2153 27.7286 -2.5347 Q27.0689 -3.8611 27.0689 -5.5278 Q27.0689 -7.1875 27.7286 -8.5 Q28.3953 -9.8125 29.555 -10.5486 Q30.7217 -11.2847 32.1522 -11.2847 Q33.4092 -11.2847 34.4092 -10.7153 Q35.4161 -10.1528 36.0758 -9.1319 L36.0758 -14.9097 L38.1661 -14.9097 ZM32.6592 -1.5764 Q33.6453 -1.5764 34.4231 -2.0764 Q35.2008 -2.5833 35.6383 -3.4861 Q36.0758 -4.3958 36.0758 -5.5278 Q36.0758 -6.6528 35.6383 -7.5486 Q35.2008 -8.4514 34.4231 -8.9514 Q33.6453 -9.4514 32.6592 -9.4514 Q31.6592 -9.4514 30.8675 -8.9514 Q30.0828 -8.4514 29.6453 -7.5486 Q29.2078 -6.6528 29.2078 -5.5278 Q29.2078 -4.3958 29.6453 -3.4861 Q30.0828 -2.5833 30.8675 -2.0764 Q31.6592 -1.5764 32.6592 -1.5764 ZM43.565 -8.9167 Q44.0928 -10.0278 45.1692 -10.6528 Q46.2525 -11.2847 47.6553 -11.2847 L47.6553 -9.4514 Q45.9539 -9.4514 44.8289 -8.5833 Q43.7109 -7.7222 43.565 -6.2708 L43.565 0 L41.4539 0 L41.4539 -11.0278 L43.565 -11.0278 L43.565 -8.9167 ZM54.7824 -1.6181 Q55.6366 -1.6181 56.5393 -1.9583 Q57.4491 -2.3056 57.9421 -2.8194 L59.2616 -1.4514 Q58.5393 -0.6806 57.2685 -0.2083 Q55.9977 0.2569 54.8032 0.2569 Q53.2685 0.2569 51.9629 -0.4861 Q50.6643 -1.2361 49.8935 -2.5556 Q49.1296 -3.8819 49.1296 -5.5486 Q49.1296 -7.1667 49.8657 -8.4792 Q50.6018 -9.7917 51.8588 -10.5347 Q53.1227 -11.2847 54.6366 -11.2847 Q56.2963 -11.2847 57.4907 -10.4861 Q58.6852 -9.6875 59.3171 -8.2153 Q59.9491 -6.7431 59.9491 -4.7778 L51.2616 -4.7778 Q51.4768 -3.3681 52.4213 -2.4931 Q53.3727 -1.6181 54.7824 -1.6181 ZM54.7199 -9.4097 Q53.4421 -9.4097 52.4907 -8.6042 Q51.5393 -7.8056 51.2824 -6.4653 L57.9004 -6.4653 Q57.706 -7.8056 56.8935 -8.6042 Q56.0879 -9.4097 54.7199 -9.4097 ZM66.3919 0.2569 Q65.1489 0.2569 63.8989 -0.1667 Q62.6558 -0.5972 61.6766 -1.3889 L62.6766 -2.9028 Q64.5308 -1.5556 66.4127 -1.5556 Q67.3502 -1.5556 67.9266 -1.9514 Q68.503 -2.3472 68.503 -2.9861 Q68.503 -3.6667 67.9058 -4.0069 Q67.3086 -4.3542 66.003 -4.7153 Q63.9822 -5.2708 63.0933 -5.9722 Q62.2114 -6.6806 62.2114 -7.9792 Q62.2114 -9.4722 63.3294 -10.375 Q64.4475 -11.2847 66.2183 -11.2847 Q67.2669 -11.2847 68.3225 -10.9444 Q69.378 -10.6042 70.2947 -10.0069 L69.3572 -8.4514 Q67.7114 -9.4722 66.2183 -9.4722 Q65.3641 -9.4722 64.8225 -9.1181 Q64.2808 -8.7708 64.2808 -8.1736 Q64.2808 -7.7431 64.5239 -7.4861 Q64.7669 -7.2292 65.253 -7.0139 Q65.7461 -6.8056 66.8155 -6.4861 Q68.01 -6.125 68.7669 -5.7917 Q69.5239 -5.4583 70.0447 -4.8194 Q70.5725 -4.1806 70.5725 -3.1597 Q70.5725 -1.6181 69.3989 -0.6806 Q68.2252 0.2569 66.3919 0.2569 ZM77.0159 0.2569 Q75.7729 0.2569 74.5229 -0.1667 Q73.2798 -0.5972 72.3007 -1.3889 L73.3007 -2.9028 Q75.1548 -1.5556 77.0368 -1.5556 Q77.9743 -1.5556 78.5507 -1.9514 Q79.127 -2.3472 79.127 -2.9861 Q79.127 -3.6667 78.5298 -4.0069 Q77.9326 -4.3542 76.627 -4.7153 Q74.6062 -5.2708 73.7173 -5.9722 Q72.8354 -6.6806 72.8354 -7.9792 Q72.8354 -9.4722 73.9534 -10.375 Q75.0715 -11.2847 76.8423 -11.2847 Q77.8909 -11.2847 78.9465 -10.9444 Q80.002 -10.6042 80.9187 -10.0069 L79.9812 -8.4514 Q78.3354 -9.4722 76.8423 -9.4722 Q75.9882 -9.4722 75.4465 -9.1181 Q74.9048 -8.7708 74.9048 -8.1736 Q74.9048 -7.7431 75.1479 -7.4861 Q75.3909 -7.2292 75.877 -7.0139 Q76.3701 -6.8056 77.4395 -6.4861 Q78.634 -6.125 79.3909 -5.7917 Q80.1479 -5.4583 80.6687 -4.8194 Q81.1965 -4.1806 81.1965 -3.1597 Q81.1965 -1.6181 80.0229 -0.6806 Q78.8493 0.2569 77.0159 0.2569 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g transform="translate(395.0,26.0)"
+            k9-texture="background"
+            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 226.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [395.0, 26.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; "
+            class="attendant"
+            id="id_8"
+            k9-format="container"
+            k9-ui="size drag delete align connect autoconnect vote"
+            k9-elem="risk"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="193"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="5pt"
+                     ry="5pt"
+                     height="226"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="code"
+                  k9-texture="foreground"
+                  transform="translate(67.8,42.3)"
+                  k9-format="text-fixed"
+                  k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [465.0, 39.0]; rect-size: [54.0, 35.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g>
+                           <path d="M18.1615 -13.5781 Q18.1615 -11.296 16.7387 -9.6059 Q15.316 -7.9158 12.9957 -7.3047 L18.1233 0 L14.724 0 L9.7969 -7.0087 L5.1658 -7.0087 L5.1658 0 L2.1962 0 L2.1962 -20.1476 L10.6753 -20.1476 Q12.7856 -20.1476 14.4852 -19.3073 Q16.1944 -18.4766 17.178 -16.9679 Q18.1615 -15.4592 18.1615 -13.5781 ZM5.1658 -9.7682 L10.2648 -9.7682 Q12.4705 -9.7682 13.7977 -10.7899 Q15.1345 -11.8212 15.1345 -13.5781 Q15.1345 -15.3446 13.7977 -16.3663 Q12.4705 -17.3976 10.2648 -17.3976 L5.1658 -17.3976 L5.1658 -9.7682 ZM22.8828 -17.684 Q22.1475 -17.684 21.6319 -18.2092 Q21.1163 -18.7439 21.1163 -19.4505 Q21.1163 -20.1476 21.6319 -20.6632 Q22.1475 -21.1788 22.8828 -21.1788 Q23.5798 -21.1788 24.0955 -20.6441 Q24.6111 -20.1189 24.6111 -19.4505 Q24.6111 -18.7439 24.0955 -18.2092 Q23.5798 -17.684 22.8828 -17.684 ZM21.4123 -15.1632 L24.3151 -15.1632 L24.3151 0 L21.4123 0 L21.4123 -15.1632 ZM34.0007 0.3533 Q32.2915 0.3533 30.5728 -0.2292 Q28.8636 -0.8212 27.5172 -1.9097 L28.8922 -3.9913 Q31.4417 -2.1389 34.0294 -2.1389 Q35.3185 -2.1389 36.111 -2.6832 Q36.9035 -3.2274 36.9035 -4.1059 Q36.9035 -5.0417 36.0823 -5.5095 Q35.2612 -5.987 33.466 -6.4835 Q30.6874 -7.2474 29.4652 -8.2118 Q28.2525 -9.1858 28.2525 -10.9714 Q28.2525 -13.0243 29.7898 -14.2656 Q31.3271 -15.5165 33.762 -15.5165 Q35.2039 -15.5165 36.6553 -15.0486 Q38.1067 -14.5807 39.3671 -13.7595 L38.078 -11.6207 Q35.815 -13.0243 33.762 -13.0243 Q32.5876 -13.0243 31.8428 -12.5373 Q31.098 -12.0599 31.098 -11.2387 Q31.098 -10.6467 31.4322 -10.2934 Q31.7664 -9.9401 32.4348 -9.6441 Q33.1127 -9.3576 34.5832 -8.9184 Q36.2256 -8.4219 37.2664 -7.9635 Q38.3072 -7.5052 39.0233 -6.6267 Q39.749 -5.7483 39.749 -4.3446 Q39.749 -2.2248 38.1353 -0.9358 Q36.5216 0.3533 34.0007 0.3533 ZM50.3657 -8.2977 L56.6105 0 L53.1539 0 L48.3987 -6.3689 L45.9638 -3.9054 L45.9638 0 L43.0897 0 L43.0897 -20.5009 L45.9638 -20.5009 L45.9638 -7.4193 L53.3831 -15.1632 L56.9065 -15.1632 L50.3657 -8.2977 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-elem="image"
+                  k9-texture="none"
+                  transform="translate(63.7,61.7)"
+                  k9-format="image-fixed"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [458.0, 87.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape">
+                     <image x="0"
+                            y="0"
+                            width="50pt"
+                            xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25l&#xA;O3N0cm9rZTojMUExNzFCO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJv&#xA;dW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9&#xA;Cgkuc3Qxe2ZpbGw6IzFBMTcxQjt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJz&#xA;dDAiIHBvaW50cz0iMi41LDgyLjUgNDIuMywyLjQgODIuNCw4Mi41ICIvPgo8cGF0&#xA;aCBjbGFzcz0ic3QxIiBkPSJNNDQuMyw1Ny41aC0zLjdjLTEsMC0xLjgtMC44LTEu&#xA;OC0xLjhWMzIuMWMwLTEsMC44LTEuOCwxLjgtMS44aDMuN2MxLDAsMS44LDAuOCwx&#xA;LjgsMS44djIzLjcKCUM0Ni4xLDU2LjcsNDUuMyw1Ny41LDQ0LjMsNTcuNXoiLz4K&#xA;PHBhdGggY2xhc3M9InN0MSIgZD0iTTQ0LjEsNzAuMmgtMy4yYy0xLjEsMC0yLTAu&#xA;OS0yLTJ2LTQuM2MwLTEuMSwwLjktMiwyLTJoMy4yYzEuMSwwLDIsMC45LDIsMnY0&#xA;LjNDNDYuMiw2OS4zLDQ1LjMsNzAuMiw0NC4xLDcwLjIKCXoiLz4KPC9zdmc+Cg=="
+                            xlink:type="simple"
+                            xlink:actuate="onLoad"
+                            height="50pt"
+                            preserveAspectRatio="xMidYMid meet"
+                            xlink:show="embed"/>
+                     <rect x="0"
+                           y="0"
+                           width="50pt"
+                           rx="0pt"
+                           ry="0pt"
+                           height="50pt"/>
+                  </g>
+               </g>
+               <g transform="translate(70.4,209.3)"
+                  k9-texture="foreground"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [467.0, 214.0]; rect-size: [49.0, 25.0]; position: none; painter: direct-svg; "
+                  id="id_8@text"
+                  k9-format="text-fixed"
+                  k9-ui="orphan edit fill font size align"
+                  k9-elem="title"
+                  k9-type="connected">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g>
+                           <path d="M13.2083 -9.875 Q13.2083 -8.2153 12.1736 -6.9861 Q11.1389 -5.7569 9.4514 -5.3125 L13.1806 0 L10.7083 0 L7.125 -5.0972 L3.7569 -5.0972 L3.7569 0 L1.5972 0 L1.5972 -14.6528 L7.7639 -14.6528 Q9.2986 -14.6528 10.5347 -14.0417 Q11.7778 -13.4375 12.4931 -12.3403 Q13.2083 -11.2431 13.2083 -9.875 ZM3.7569 -7.1042 L7.4653 -7.1042 Q9.0694 -7.1042 10.0347 -7.8472 Q11.0069 -8.5972 11.0069 -9.875 Q11.0069 -11.1597 10.0347 -11.9028 Q9.0694 -12.6528 7.4653 -12.6528 L3.7569 -12.6528 L3.7569 -7.1042 ZM16.642 -12.8611 Q16.1073 -12.8611 15.7323 -13.2431 Q15.3573 -13.6319 15.3573 -14.1458 Q15.3573 -14.6528 15.7323 -15.0278 Q16.1073 -15.4028 16.642 -15.4028 Q17.149 -15.4028 17.524 -15.0139 Q17.899 -14.6319 17.899 -14.1458 Q17.899 -13.6319 17.524 -13.2431 Q17.149 -12.8611 16.642 -12.8611 ZM15.5726 -11.0278 L17.6837 -11.0278 L17.6837 0 L15.5726 0 L15.5726 -11.0278 ZM24.7278 0.2569 Q23.4848 0.2569 22.2348 -0.1667 Q20.9917 -0.5972 20.0125 -1.3889 L21.0125 -2.9028 Q22.8667 -1.5556 24.7486 -1.5556 Q25.6861 -1.5556 26.2625 -1.9514 Q26.8389 -2.3472 26.8389 -2.9861 Q26.8389 -3.6667 26.2417 -4.0069 Q25.6445 -4.3542 24.3389 -4.7153 Q22.3181 -5.2708 21.4292 -5.9722 Q20.5473 -6.6806 20.5473 -7.9792 Q20.5473 -9.4722 21.6653 -10.375 Q22.7834 -11.2847 24.5542 -11.2847 Q25.6028 -11.2847 26.6584 -10.9444 Q27.7139 -10.6042 28.6306 -10.0069 L27.6931 -8.4514 Q26.0473 -9.4722 24.5542 -9.4722 Q23.7 -9.4722 23.1584 -9.1181 Q22.6167 -8.7708 22.6167 -8.1736 Q22.6167 -7.7431 22.8598 -7.4861 Q23.1028 -7.2292 23.5889 -7.0139 Q24.082 -6.8056 25.1514 -6.4861 Q26.3459 -6.125 27.1028 -5.7917 Q27.8598 -5.4583 28.3806 -4.8194 Q28.9084 -4.1806 28.9084 -3.1597 Q28.9084 -1.6181 27.7348 -0.6806 Q26.5611 0.2569 24.7278 0.2569 ZM36.6296 -6.0347 L41.1713 0 L38.6574 0 L35.1991 -4.6319 L33.4282 -2.8403 L33.4282 0 L31.338 0 L31.338 -14.9097 L33.4282 -14.9097 L33.4282 -5.3958 L38.8241 -11.0278 L41.3866 -11.0278 L36.6296 -6.0347 ZM47.1279 0.2569 Q45.8848 0.2569 44.6348 -0.1667 Q43.3918 -0.5972 42.4126 -1.3889 L43.4126 -2.9028 Q45.2668 -1.5556 47.1487 -1.5556 Q48.0862 -1.5556 48.6626 -1.9514 Q49.239 -2.3472 49.239 -2.9861 Q49.239 -3.6667 48.6418 -4.0069 Q48.0445 -4.3542 46.739 -4.7153 Q44.7181 -5.2708 43.8293 -5.9722 Q42.9473 -6.6806 42.9473 -7.9792 Q42.9473 -9.4722 44.0654 -10.375 Q45.1834 -11.2847 46.9543 -11.2847 Q48.0029 -11.2847 49.0584 -10.9444 Q50.114 -10.6042 51.0306 -10.0069 L50.0931 -8.4514 Q48.4473 -9.4722 46.9543 -9.4722 Q46.1001 -9.4722 45.5584 -9.1181 Q45.0168 -8.7708 45.0168 -8.1736 Q45.0168 -7.7431 45.2598 -7.4861 Q45.5029 -7.2292 45.989 -7.0139 Q46.482 -6.8056 47.5515 -6.4861 Q48.7459 -6.125 49.5029 -5.7917 Q50.2598 -5.4583 50.7806 -4.8194 Q51.3084 -4.1806 51.3084 -3.1597 Q51.3084 -1.6181 50.1348 -0.6806 Q48.9612 0.2569 47.1279 0.2569 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g transform="translate(649.0,117.0)"
+            k9-texture="background"
+            k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; layout: null; rectangular: connected; rect-pos: [649.0, 117.0]; rect-size: [171.0, 45.0]; position: none; painter: direct-svg; "
+            id="id_9"
+            k9-format="text-shape-inline"
+            k9-ui="size drag delete align connect autoconnect edit"
+            k9-elem="arrow"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="171"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="5pt"
+                     ry="5pt"
+                     height="45"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="caption"
+                  k9-texture="foreground"
+                  transform="translate(9.4,31.3)"
+                  k9-format="text-fixed"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: center; rectangular: connected; rect-pos: [659.0, 127.0]; rect-size: [151.0, 25.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g fill="white" stroke="white">
+                           <path d="M0.6181 -11.0278 L2.7708 -11.0278 L5.3125 -2.8194 L8.0417 -11.0278 L9.8333 -11.0278 L12.5625 -2.8194 L15.0833 -11.0278 L17.2361 -11.0278 L13.5278 0 L11.5833 0 L8.9375 -8.1944 L6.2708 0 L4.3333 0 L0.6181 -11.0278 ZM24.9805 -11.2847 Q26.175 -11.2847 27.1264 -10.7361 Q28.0778 -10.1944 28.5986 -9.2222 Q29.1194 -8.2569 29.1194 -7.0208 L29.1194 0 L27.05 0 L27.05 -6.6528 Q27.05 -7.8958 26.3347 -8.6736 Q25.6194 -9.4514 24.5153 -9.4514 Q23.7028 -9.4514 22.9944 -9.0972 Q22.293 -8.75 21.8764 -8.1458 Q21.4597 -7.5486 21.4597 -6.8472 L21.4597 0 L19.3694 0 L19.3694 -14.9097 L21.4597 -14.9097 L21.4597 -9.3889 Q21.9736 -10.2431 22.918 -10.7639 Q23.8694 -11.2847 24.9805 -11.2847 ZM33.1967 -12.8611 Q32.662 -12.8611 32.287 -13.2431 Q31.912 -13.6319 31.912 -14.1458 Q31.912 -14.6528 32.287 -15.0278 Q32.662 -15.4028 33.1967 -15.4028 Q33.7037 -15.4028 34.0787 -15.0139 Q34.4537 -14.6319 34.4537 -14.1458 Q34.4537 -13.6319 34.0787 -13.2431 Q33.7037 -12.8611 33.1967 -12.8611 ZM32.1273 -11.0278 L34.2384 -11.0278 L34.2384 0 L32.1273 0 L32.1273 -11.0278 ZM42.4978 0.2569 Q40.9631 0.2569 39.6159 -0.5278 Q38.2686 -1.3194 37.477 -2.6528 Q36.6922 -3.9861 36.6922 -5.5278 Q36.6922 -7.0625 37.4909 -8.3819 Q38.2964 -9.7083 39.6297 -10.4931 Q40.9631 -11.2847 42.5186 -11.2847 Q43.6714 -11.2847 44.7131 -10.8333 Q45.7617 -10.3889 46.5742 -9.5764 L45.1436 -8.2569 Q44.6506 -8.8125 43.9561 -9.1319 Q43.2617 -9.4514 42.4978 -9.4514 Q41.5117 -9.4514 40.6714 -8.9167 Q39.8311 -8.3819 39.3242 -7.4722 Q38.8242 -6.5694 38.8242 -5.5278 Q38.8242 -4.4583 39.3242 -3.5486 Q39.8311 -2.6458 40.6714 -2.1111 Q41.5117 -1.5764 42.5186 -1.5764 Q43.2825 -1.5764 43.9839 -1.9097 Q44.6922 -2.2431 45.2061 -2.8194 L46.6367 -1.5139 Q45.8034 -0.6806 44.7478 -0.2083 Q43.6922 0.2569 42.4978 0.2569 ZM54.5059 -11.2847 Q55.7004 -11.2847 56.6518 -10.7361 Q57.6032 -10.1944 58.124 -9.2222 Q58.6448 -8.2569 58.6448 -7.0208 L58.6448 0 L56.5754 0 L56.5754 -6.6528 Q56.5754 -7.8958 55.8601 -8.6736 Q55.1448 -9.4514 54.0407 -9.4514 Q53.2282 -9.4514 52.5198 -9.0972 Q51.8184 -8.75 51.4018 -8.1458 Q50.9851 -7.5486 50.9851 -6.8472 L50.9851 0 L48.8948 0 L48.8948 -14.9097 L50.9851 -14.9097 L50.9851 -9.3889 Q51.499 -10.2431 52.4434 -10.7639 Q53.3948 -11.2847 54.5059 -11.2847 ZM73.004 0.2569 Q71.4485 0.2569 70.1151 -0.5278 Q68.7818 -1.3194 67.9763 -2.6528 Q67.1776 -3.9861 67.1776 -5.5278 Q67.1776 -7.0625 67.9763 -8.3819 Q68.7818 -9.7083 70.1151 -10.4931 Q71.4485 -11.2847 73.004 -11.2847 Q74.5388 -11.2847 75.8721 -10.4931 Q77.2054 -9.7083 77.9901 -8.3819 Q78.7818 -7.0625 78.7818 -5.5278 Q78.7818 -3.9861 77.9901 -2.6528 Q77.2054 -1.3194 75.8721 -0.5278 Q74.5388 0.2569 73.004 0.2569 ZM73.004 -1.5764 Q73.9832 -1.5764 74.8235 -2.1111 Q75.6707 -2.6458 76.1707 -3.5486 Q76.6707 -4.4583 76.6707 -5.5278 Q76.6707 -6.5694 76.1707 -7.4722 Q75.6707 -8.3819 74.8235 -8.9167 Q73.9832 -9.4514 73.004 -9.4514 Q71.9971 -9.4514 71.1429 -8.9167 Q70.2957 -8.3819 69.7888 -7.4722 Q69.2888 -6.5694 69.2888 -5.5278 Q69.2888 -4.4583 69.7888 -3.5486 Q70.2957 -2.6458 71.1429 -2.1111 Q71.9971 -1.5764 73.004 -1.5764 ZM87.3826 -11.2847 Q88.8131 -11.2847 89.9728 -10.5486 Q91.1395 -9.8125 91.7992 -8.5 Q92.459 -7.1875 92.459 -5.5278 Q92.459 -3.8611 91.7992 -2.5347 Q91.1395 -1.2153 89.9728 -0.4792 Q88.8131 0.2569 87.3826 0.2569 Q86.1256 0.2569 85.1117 -0.3056 Q84.0978 -0.875 83.459 -1.9167 L83.459 0 L81.3687 0 L81.3687 -14.9097 L83.459 -14.9097 L83.459 -9.1319 Q84.1187 -10.1528 85.1187 -10.7153 Q86.1256 -11.2847 87.3826 -11.2847 ZM86.8687 -1.5764 Q87.8756 -1.5764 88.6603 -2.0764 Q89.452 -2.5833 89.8895 -3.4861 Q90.327 -4.3958 90.327 -5.5278 Q90.327 -6.6528 89.8895 -7.5486 Q89.452 -8.4514 88.6603 -8.9514 Q87.8756 -9.4514 86.8687 -9.4514 Q85.8895 -9.4514 85.1117 -8.9514 Q84.334 -8.4514 83.8965 -7.5486 Q83.459 -6.6528 83.459 -5.5278 Q83.459 -4.3958 83.8965 -3.4861 Q84.334 -2.5833 85.1117 -2.0764 Q85.8895 -1.5764 86.8687 -1.5764 ZM99.0107 0.2569 Q97.7676 0.2569 96.5176 -0.1667 Q95.2745 -0.5972 94.2954 -1.3889 L95.2954 -2.9028 Q97.1495 -1.5556 99.0315 -1.5556 Q99.969 -1.5556 100.5454 -1.9514 Q101.1218 -2.3472 101.1218 -2.9861 Q101.1218 -3.6667 100.5245 -4.0069 Q99.9273 -4.3542 98.6218 -4.7153 Q96.6009 -5.2708 95.712 -5.9722 Q94.8301 -6.6806 94.8301 -7.9792 Q94.8301 -9.4722 95.9482 -10.375 Q97.0662 -11.2847 98.837 -11.2847 Q99.8857 -11.2847 100.9412 -10.9444 Q101.9968 -10.6042 102.9134 -10.0069 L101.9759 -8.4514 Q100.3301 -9.4722 98.837 -9.4722 Q97.9829 -9.4722 97.4412 -9.1181 Q96.8995 -8.7708 96.8995 -8.1736 Q96.8995 -7.7431 97.1426 -7.4861 Q97.3857 -7.2292 97.8718 -7.0139 Q98.3648 -6.8056 99.4343 -6.4861 Q100.6287 -6.125 101.3857 -5.7917 Q102.1426 -5.4583 102.6634 -4.8194 Q103.1912 -4.1806 103.1912 -3.1597 Q103.1912 -1.6181 102.0176 -0.6806 Q100.844 0.2569 99.0107 0.2569 ZM111.5722 -0.5347 Q111.1277 -0.1736 110.5513 0.0417 Q109.975 0.2569 109.3777 0.2569 Q108.093 0.2569 107.2805 -0.5833 Q106.475 -1.4306 106.475 -2.75 L106.475 -9.2361 L104.8083 -9.2361 L104.8083 -11.0278 L106.475 -11.0278 L106.475 -14.0556 L108.5444 -14.0556 L108.5444 -11.0278 L111.1486 -11.0278 L111.1486 -9.2361 L108.5444 -9.2361 L108.5444 -2.9028 Q108.5444 -2.3264 108.8708 -1.9514 Q109.2041 -1.5764 109.6763 -1.5764 Q110.0166 -1.5764 110.3222 -1.6944 Q110.6347 -1.8125 110.8083 -1.9861 L111.5722 -0.5347 ZM115.9492 -8.9167 Q116.477 -10.0278 117.5534 -10.6528 Q118.6367 -11.2847 120.0395 -11.2847 L120.0395 -9.4514 Q118.3381 -9.4514 117.2131 -8.5833 Q116.095 -7.7222 115.9492 -6.2708 L115.9492 0 L113.8381 0 L113.8381 -11.0278 L115.9492 -11.0278 L115.9492 -8.9167 ZM131.8193 -11.0278 L131.8193 0 L129.7082 0 L129.7082 -1.5972 Q129.1943 -0.7708 128.2568 -0.2569 Q127.3193 0.2569 126.2082 0.2569 Q125.0138 0.2569 124.0624 -0.2847 Q123.1179 -0.8333 122.5901 -1.7986 Q122.0693 -2.7708 122.0693 -4.0139 L122.0693 -11.0278 L124.1388 -11.0278 L124.1388 -4.375 Q124.1388 -3.1389 124.854 -2.3542 Q125.5693 -1.5764 126.6804 -1.5764 Q127.8263 -1.5764 128.7013 -2.2361 Q129.5763 -2.9028 129.7082 -3.8819 L129.7082 -11.0278 L131.8193 -11.0278 ZM140.098 0.2569 Q138.5633 0.2569 137.2161 -0.5278 Q135.8689 -1.3194 135.0772 -2.6528 Q134.2925 -3.9861 134.2925 -5.5278 Q134.2925 -7.0625 135.0911 -8.3819 Q135.8966 -9.7083 137.23 -10.4931 Q138.5633 -11.2847 140.1189 -11.2847 Q141.2716 -11.2847 142.3133 -10.8333 Q143.3619 -10.3889 144.1744 -9.5764 L142.7439 -8.2569 Q142.2508 -8.8125 141.5564 -9.1319 Q140.8619 -9.4514 140.098 -9.4514 Q139.1119 -9.4514 138.2716 -8.9167 Q137.4314 -8.3819 136.9244 -7.4722 Q136.4244 -6.5694 136.4244 -5.5278 Q136.4244 -4.4583 136.9244 -3.5486 Q137.4314 -2.6458 138.2716 -2.1111 Q139.1119 -1.5764 140.1189 -1.5764 Q140.8827 -1.5764 141.5841 -1.9097 Q142.2925 -2.2431 142.8064 -2.8194 L144.2369 -1.5139 Q143.4036 -0.6806 142.348 -0.2083 Q141.2925 0.2569 140.098 0.2569 ZM152.4256 -0.5347 Q151.9812 -0.1736 151.4048 0.0417 Q150.8284 0.2569 150.2312 0.2569 Q148.9464 0.2569 148.1339 -0.5833 Q147.3284 -1.4306 147.3284 -2.75 L147.3284 -9.2361 L145.6617 -9.2361 L145.6617 -11.0278 L147.3284 -11.0278 L147.3284 -14.0556 L149.3978 -14.0556 L149.3978 -11.0278 L152.002 -11.0278 L152.002 -9.2361 L149.3978 -9.2361 L149.3978 -2.9028 Q149.3978 -2.3264 149.7242 -1.9514 Q150.0576 -1.5764 150.5298 -1.5764 Q150.8701 -1.5764 151.1756 -1.6944 Q151.4881 -1.8125 151.6617 -1.9861 L152.4256 -0.5347 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g transform="translate(881.0,26.0)"
+            k9-texture="background"
+            k9-info="margin: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; padding: [13.333333969116211 13.333333969116211 13.333333969116211 13.333333969116211]; min-size: [193.33334350585938 226.6666717529297]; sizing: [minimize minimize]; horiz: center; vert: center; layout: down; rectangular: connected; rect-pos: [881.0, 26.0]; rect-size: [193.0, 226.0]; position: none; painter: direct-svg; "
+            class="goal"
+            id="id_10"
+            k9-format="container"
+            k9-ui="size drag delete align connect autoconnect vote"
+            k9-elem="risk"
+            k9-type="connected">
+            <g class="k9-shape" k9-highlight="pulse">
+               <rect x="0"
+                     y="0"
+                     width="193"
+                     pp:y="$y"
+                     pp:height="$height"
+                     pp:x="$x"
+                     rx="5pt"
+                     ry="5pt"
+                     height="226"
+                     pp:width="$width"/>
+            </g>
+            <g class="k9-content">
+               <g k9-elem="code"
+                  k9-texture="foreground"
+                  transform="translate(65.6,42.3)"
+                  k9-format="text-fixed"
+                  k9-info="margin: [0.0 0.0 13.333333969116211 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [948.0, 39.0]; rect-size: [60.0, 35.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g>
+                           <path d="M11.4965 -10.8568 L19.8325 -10.8568 L19.8325 -2.8168 Q18.4193 -1.375 16.2326 -0.5061 Q14.046 0.3533 11.9071 0.3533 Q9.1189 0.3533 6.7031 -1.0694 Q4.2873 -2.4922 2.8455 -4.8984 Q1.4036 -7.3047 1.4036 -10.0929 Q1.4036 -12.8811 2.8455 -15.2682 Q4.2873 -17.6554 6.7031 -19.0781 Q9.1189 -20.5009 11.9071 -20.5009 Q14.0842 -20.5009 16.2517 -19.651 Q18.4193 -18.8012 19.8325 -17.3403 L17.7509 -15.3446 Q16.7196 -16.4523 15.1059 -17.1111 Q13.4922 -17.7795 11.9071 -17.7795 Q9.9115 -17.7795 8.1927 -16.7196 Q6.4835 -15.6597 5.4714 -13.9028 Q4.4592 -12.1458 4.4592 -10.0929 Q4.4592 -8.0399 5.4714 -6.2639 Q6.4835 -4.4878 8.1927 -3.428 Q9.9115 -2.3776 11.9071 -2.3776 Q13.1962 -2.3776 14.533 -2.8168 Q15.8698 -3.2561 16.8915 -4.0486 L16.8915 -8.2691 L11.4965 -8.2691 L11.4965 -10.8568 ZM31.1244 0.3533 Q28.9855 0.3533 27.1522 -0.7257 Q25.3188 -1.8142 24.2112 -3.6476 Q23.1131 -5.4809 23.1131 -7.6007 Q23.1131 -9.7109 24.2112 -11.5252 Q25.3188 -13.349 27.1522 -14.428 Q28.9855 -15.5165 31.1244 -15.5165 Q33.2346 -15.5165 35.068 -14.428 Q36.9013 -13.349 37.9803 -11.5252 Q39.0688 -9.7109 39.0688 -7.6007 Q39.0688 -5.4809 37.9803 -3.6476 Q36.9013 -1.8142 35.068 -0.7257 Q33.2346 0.3533 31.1244 0.3533 ZM31.1244 -2.1675 Q32.4707 -2.1675 33.6261 -2.9028 Q34.7911 -3.638 35.4786 -4.8793 Q36.1661 -6.1302 36.1661 -7.6007 Q36.1661 -9.033 35.4786 -10.2743 Q34.7911 -11.5252 33.6261 -12.2604 Q32.4707 -12.9957 31.1244 -12.9957 Q29.7398 -12.9957 28.5654 -12.2604 Q27.4004 -11.5252 26.7034 -10.2743 Q26.0159 -9.033 26.0159 -7.6007 Q26.0159 -6.1302 26.7034 -4.8793 Q27.4004 -3.638 28.5654 -2.9028 Q29.7398 -2.1675 31.1244 -2.1675 ZM48.8419 -15.5165 Q51.8306 -15.5165 53.5016 -13.7882 Q55.1726 -12.0599 55.1726 -9.1858 L55.1726 0 L52.3272 0 L52.3272 -2.0816 Q51.506 -0.9358 50.1119 -0.2865 Q48.7273 0.3533 47.2855 0.3533 Q44.8219 0.3533 43.2464 -0.9644 Q41.6805 -2.2917 41.6805 -4.4878 Q41.6805 -5.9583 42.4825 -7.1137 Q43.2942 -8.2691 44.6883 -8.8993 Q46.0824 -9.5295 47.7534 -9.5295 Q49.9209 -9.5295 52.3272 -8.7083 L52.3272 -9.1858 Q52.3272 -10.8568 51.42 -11.9835 Q50.5129 -13.1102 48.4313 -13.1102 Q46.6075 -13.1102 44.144 -11.8498 L43.0937 -13.9887 Q46.1397 -15.5165 48.8419 -15.5165 ZM47.8393 -1.9384 Q49.3671 -1.9384 50.6752 -2.6832 Q51.9834 -3.428 52.3272 -4.7552 L52.3272 -6.7795 Q50.427 -7.362 48.1926 -7.362 Q46.6362 -7.362 45.5476 -6.5694 Q44.4687 -5.7769 44.4687 -4.5738 Q44.4687 -3.3707 45.4235 -2.6545 Q46.3784 -1.9384 47.8393 -1.9384 ZM59.369 -20.5009 L62.2432 -20.5009 L62.2432 0 L59.369 0 L59.369 -20.5009 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g k9-elem="image"
+                  k9-texture="none"
+                  transform="translate(63.7,61.7)"
+                  k9-format="image-fixed"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: top; rectangular: connected; rect-pos: [944.0, 87.0]; rect-size: [68.0, 68.0]; position: none; painter: direct-svg; ">
+                  <g class="k9-content k9-no-shape">
+                     <image x="0"
+                            y="0"
+                            width="50pt"
+                            xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5l&#xA;cmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVn&#xA;LUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNp&#xA;b249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y&#xA;MDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxp&#xA;bmsiIHg9IjBwdCIgeT0iMHB0IgoJIHZpZXdCb3g9IjAgMCA4NSA4NSIgc3R5bGU9&#xA;ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODUgODU7IiB4bWw6c3BhY2U9InBy&#xA;ZXNlcnZlIj4KPHBhdGggZD0iTTY4LjEsNDYuMmwwLjItMS43aDEyLjJ2LTRINjgu&#xA;M2wtMC4yLTEuN2MtMS41LTExLjQtMTAuNS0yMC40LTIxLjktMjEuOWwtMS43LTAu&#xA;MlY0LjVoLTR2MTIuMmwtMS43LDAuMgoJYy0xMS42LDEuNS0yMC40LDEwLjMtMjEu&#xA;OSwyMS45bC0wLjIsMS43SDQuNXY0aDEyLjJsMC4yLDEuN2MxLjUsMTEuNCwxMC41&#xA;LDIwLjQsMjEuOSwyMS45bDEuNywwLjJ2MTIuMmg0VjY4LjNsMS43LTAuMgoJQzU3&#xA;LjYsNjYuNyw2Ni42LDU3LjcsNjguMSw0Ni4yeiBNNDYuOSw2NC4xbC0yLjQsMC41&#xA;di04aC00djhsLTIuNC0wLjVjLTguOC0xLjgtMTUuNC04LjMtMTcuMi0xNy4ybC0w&#xA;LjUtMi40aDh2LTRoLThsMC41LTIuNAoJYzEuOC04LjgsOC4zLTE1LjQsMTcuMi0x&#xA;Ny4ybDIuNC0wLjV2OGg0di04bDIuNCwwLjVjOC44LDEuOCwxNS40LDguMywxNy4y&#xA;LDE3LjJsMC41LDIuNGgtOHY0aDhsLTAuNSwyLjQKCUM2Mi4zLDU1LjcsNTUuNyw2&#xA;Mi4zLDQ2LjksNjQuMXoiLz4KPC9zdmc+Cg=="
+                            xlink:type="simple"
+                            xlink:actuate="onLoad"
+                            height="50pt"
+                            preserveAspectRatio="xMidYMid meet"
+                            xlink:show="embed"/>
+                     <rect x="0"
+                           y="0"
+                           width="50pt"
+                           rx="0pt"
+                           ry="0pt"
+                           height="50pt"/>
+                  </g>
+               </g>
+               <g transform="translate(68.0,209.3)"
+                  k9-texture="foreground"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [0.0 0.0 0.0 0.0]; min-size: [0.0 0.0]; sizing: [minimize minimize]; horiz: center; vert: bottom; rectangular: connected; rect-pos: [950.0, 214.0]; rect-size: [55.0, 25.0]; position: none; painter: direct-svg; "
+                  id="id_10@text"
+                  k9-format="text-fixed"
+                  k9-ui="orphan edit fill font size align"
+                  k9-elem="title"
+                  k9-type="connected">
+                  <g class="k9-content k9-no-shape" k9-highlight="pulse">
+                     <g rendered="true">
+                        <g>
+                           <path d="M8.3611 -7.8958 L14.4236 -7.8958 L14.4236 -2.0486 Q13.3958 -1 11.8056 -0.3681 Q10.2153 0.2569 8.6597 0.2569 Q6.6319 0.2569 4.875 -0.7778 Q3.1181 -1.8125 2.0694 -3.5625 Q1.0208 -5.3125 1.0208 -7.3403 Q1.0208 -9.3681 2.0694 -11.1042 Q3.1181 -12.8403 4.875 -13.875 Q6.6319 -14.9097 8.6597 -14.9097 Q10.2431 -14.9097 11.8194 -14.2917 Q13.3958 -13.6736 14.4236 -12.6111 L12.9097 -11.1597 Q12.1597 -11.9653 10.9861 -12.4444 Q9.8125 -12.9306 8.6597 -12.9306 Q7.2083 -12.9306 5.9583 -12.1597 Q4.7153 -11.3889 3.9792 -10.1111 Q3.2431 -8.8333 3.2431 -7.3403 Q3.2431 -5.8472 3.9792 -4.5556 Q4.7153 -3.2639 5.9583 -2.4931 Q7.2083 -1.7292 8.6597 -1.7292 Q9.5972 -1.7292 10.5694 -2.0486 Q11.5417 -2.3681 12.2847 -2.9444 L12.2847 -6.0139 L8.3611 -6.0139 L8.3611 -7.8958 ZM22.6359 0.2569 Q21.0804 0.2569 19.747 -0.5278 Q18.4137 -1.3194 17.6081 -2.6528 Q16.8095 -3.9861 16.8095 -5.5278 Q16.8095 -7.0625 17.6081 -8.3819 Q18.4137 -9.7083 19.747 -10.4931 Q21.0804 -11.2847 22.6359 -11.2847 Q24.1706 -11.2847 25.504 -10.4931 Q26.8373 -9.7083 27.622 -8.3819 Q28.4137 -7.0625 28.4137 -5.5278 Q28.4137 -3.9861 27.622 -2.6528 Q26.8373 -1.3194 25.504 -0.5278 Q24.1706 0.2569 22.6359 0.2569 ZM22.6359 -1.5764 Q23.6151 -1.5764 24.4554 -2.1111 Q25.3026 -2.6458 25.8026 -3.5486 Q26.3026 -4.4583 26.3026 -5.5278 Q26.3026 -6.5694 25.8026 -7.4722 Q25.3026 -8.3819 24.4554 -8.9167 Q23.6151 -9.4514 22.6359 -9.4514 Q21.629 -9.4514 20.7748 -8.9167 Q19.9276 -8.3819 19.4206 -7.4722 Q18.9206 -6.5694 18.9206 -5.5278 Q18.9206 -4.4583 19.4206 -3.5486 Q19.9276 -2.6458 20.7748 -2.1111 Q21.629 -1.5764 22.6359 -1.5764 ZM35.5214 -11.2847 Q37.695 -11.2847 38.9103 -10.0278 Q40.1256 -8.7708 40.1256 -6.6806 L40.1256 0 L38.0561 0 L38.0561 -1.5139 Q37.4589 -0.6806 36.445 -0.2083 Q35.4381 0.2569 34.3894 0.2569 Q32.5978 0.2569 31.4519 -0.7014 Q30.3131 -1.6667 30.3131 -3.2639 Q30.3131 -4.3333 30.8964 -5.1736 Q31.4867 -6.0139 32.5006 -6.4722 Q33.5144 -6.9306 34.7297 -6.9306 Q36.3061 -6.9306 38.0561 -6.3333 L38.0561 -6.6806 Q38.0561 -7.8958 37.3964 -8.7153 Q36.7367 -9.5347 35.2228 -9.5347 Q33.8964 -9.5347 32.1047 -8.6181 L31.3408 -10.1736 Q33.5561 -11.2847 35.5214 -11.2847 ZM34.7922 -1.4097 Q35.9033 -1.4097 36.8547 -1.9514 Q37.8061 -2.4931 38.0561 -3.4583 L38.0561 -4.9306 Q36.6742 -5.3542 35.0492 -5.3542 Q33.9172 -5.3542 33.1256 -4.7778 Q32.3408 -4.2014 32.3408 -3.3264 Q32.3408 -2.4514 33.0353 -1.9306 Q33.7297 -1.4097 34.7922 -1.4097 ZM43.1775 -14.9097 L45.2677 -14.9097 L45.2677 0 L43.1775 0 L43.1775 -14.9097 ZM52.3332 0.2569 Q51.0901 0.2569 49.8401 -0.1667 Q48.5971 -0.5972 47.6179 -1.3889 L48.6179 -2.9028 Q50.4721 -1.5556 52.354 -1.5556 Q53.2915 -1.5556 53.8679 -1.9514 Q54.4443 -2.3472 54.4443 -2.9861 Q54.4443 -3.6667 53.8471 -4.0069 Q53.2499 -4.3542 51.9443 -4.7153 Q49.9235 -5.2708 49.0346 -5.9722 Q48.1526 -6.6806 48.1526 -7.9792 Q48.1526 -9.4722 49.2707 -10.375 Q50.3888 -11.2847 52.1596 -11.2847 Q53.2082 -11.2847 54.2638 -10.9444 Q55.3193 -10.6042 56.236 -10.0069 L55.2985 -8.4514 Q53.6526 -9.4722 52.1596 -9.4722 Q51.3054 -9.4722 50.7638 -9.1181 Q50.2221 -8.7708 50.2221 -8.1736 Q50.2221 -7.7431 50.4651 -7.4861 Q50.7082 -7.2292 51.1943 -7.0139 Q51.6874 -6.8056 52.7568 -6.4861 Q53.9513 -6.125 54.7082 -5.7917 Q55.4651 -5.4583 55.986 -4.8194 Q56.5138 -4.1806 56.5138 -3.1597 Q56.5138 -1.6181 55.3401 -0.6806 Q54.1665 0.2569 52.3332 0.2569 Z"
+                                 stroke="none"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </g>
+         </g>
+         <g k9-contains="none"
+            k9-texture="background"
+            style="--kite9-direction: right;"
+            k9-info="link: ['id_4' 'id_6']; direction: right; painter: direct-svg; "
+            id="id_5"
+            k9-format="link-basic"
+            k9-ui="delete link cascade drop stroke direction"
+            k9-elem="link">
+            <g class="k9-shape" k9-highlight="bar stroke">
+               <g k9-elem="link-grab"
+                  k9-highlight="bar stroke"
+                  k9-texture="none"
+                  k9-info="painter: direct-svg; ">
+                  <path pp:d="$path" k9-animate="link" d="M184 139 L223 139 "/>
+               </g>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="label"
+                  transform="translate(173.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [173.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_5; terminates-at: id_4; end: from; direction: left; painter: direct-svg; "
+                  reference="id_4"
+                  k9-ui="drag label direction"
+                  k9-elem="from"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="label"
+                  transform="translate(234.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [234.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_5; terminates-at: id_6; end: to; direction: right; painter: direct-svg; "
+                  reference="id_6"
+                  k9-ui="drag label direction"
+                  k9-elem="to"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-info="painter: direct-svg; " k9-elem="link-body">
+                  <path marker-start="url(#-start-marker)"
+                        marker-end="url(#-end-marker)"
+                        d="M184 139 L223 139 "
+                        pp:d="$path"
+                        k9-animate="link"/>
+               </g>
+            </g>
+         </g>
+         <g k9-contains="none"
+            k9-texture="background"
+            style="--kite9-direction: right;"
+            k9-info="link: ['id_6' 'id_8']; direction: right; painter: direct-svg; "
+            id="id_7"
+            k9-format="link-basic"
+            k9-ui="delete link cascade drop stroke direction"
+            k9-elem="link">
+            <g class="k9-shape" k9-highlight="bar stroke">
+               <g k9-elem="link-grab"
+                  k9-highlight="bar stroke"
+                  k9-texture="none"
+                  k9-info="painter: direct-svg; ">
+                  <path pp:d="$path" k9-animate="link" d="M345 139 L384 139 "/>
+               </g>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="label"
+                  transform="translate(334.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [334.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_7; terminates-at: id_6; end: from; direction: left; painter: direct-svg; "
+                  reference="id_6"
+                  k9-ui="drag label direction"
+                  k9-elem="from"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="label"
+                  transform="translate(395.0,139.0)"
+                  shape="arrow"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [395.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_7; terminates-at: id_8; end: to; direction: right; painter: direct-svg; "
+                  reference="id_8"
+                  k9-ui="drag label direction"
+                  k9-elem="to"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-info="painter: direct-svg; " k9-elem="link-body">
+                  <path marker-start="url(#-start-marker)"
+                        marker-end="url(#arrow-end-marker)"
+                        d="M345 139 L384 139 "
+                        pp:d="$path"
+                        k9-animate="link"/>
+               </g>
+            </g>
+         </g>
+         <g k9-contains="none"
+            k9-texture="background"
+            style="--kite9-direction: right;"
+            k9-info="link: ['id_8' 'id_9']; direction: right; painter: direct-svg; "
+            id="id_15"
+            k9-format="link-basic"
+            k9-ui="delete link cascade drop stroke direction"
+            k9-elem="link">
+            <g class="k9-shape" k9-highlight="bar stroke">
+               <g k9-elem="link-grab"
+                  k9-highlight="bar stroke"
+                  k9-texture="none"
+                  k9-info="painter: direct-svg; ">
+                  <path pp:d="$path" k9-animate="link" d="M599 139 L638 139 "/>
+               </g>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="label"
+                  transform="translate(588.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [588.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_15; terminates-at: id_8; end: from; direction: left; painter: direct-svg; "
+                  reference="id_8"
+                  k9-ui="drag label direction"
+                  k9-elem="from"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="label"
+                  transform="translate(649.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [649.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_15; terminates-at: id_9; end: to; direction: right; painter: direct-svg; "
+                  reference="id_9"
+                  k9-ui="drag label direction"
+                  k9-elem="to"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-info="painter: direct-svg; " k9-elem="link-body">
+                  <path marker-start="url(#-start-marker)"
+                        marker-end="url(#-end-marker)"
+                        d="M599 139 L638 139 "
+                        pp:d="$path"
+                        k9-animate="link"/>
+               </g>
+            </g>
+         </g>
+         <g k9-contains="none"
+            k9-texture="background"
+            style="--kite9-direction: right;"
+            k9-info="link: ['id_9' 'id_10']; direction: right; painter: direct-svg; "
+            id="id_17"
+            k9-format="link-basic"
+            k9-ui="delete link cascade drop stroke direction"
+            k9-elem="link">
+            <g class="k9-shape" k9-highlight="bar stroke">
+               <g k9-elem="link-grab"
+                  k9-highlight="bar stroke"
+                  k9-texture="none"
+                  k9-info="painter: direct-svg; ">
+                  <path pp:d="$path" k9-animate="link" d="M831 139 L870 139 "/>
+               </g>
+            </g>
+            <g class="k9-content">
+               <g k9-contains="label"
+                  transform="translate(820.0,139.0)"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [820.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_17; terminates-at: id_9; end: from; direction: left; painter: direct-svg; "
+                  reference="id_9"
+                  k9-ui="drag label direction"
+                  k9-elem="from"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-contains="label"
+                  transform="translate(881.0,139.0)"
+                  shape="arrow"
+                  k9-texture="none"
+                  k9-info="margin: [0.0 0.0 0.0 0.0]; padding: [10.666666984558105 10.666666984558105 10.666666984558105 10.666666984558105]; min-size: [0.0 0.0]; sizing: [minimize minimize]; rectangular: terminator; rect-pos: [881.0, 139.0]; rect-size: [0.0, 0.0]; position: none; terminates: id_17; terminates-at: id_10; end: to; direction: right; painter: direct-svg; "
+                  reference="id_10"
+                  k9-ui="drag label direction"
+                  k9-elem="to"
+                  k9-type="terminator">
+                  <g k9-highlight="fill">
+                     <ellipse rx="8" ry="8" cx="0" cy="0"/>
+                  </g>
+               </g>
+               <g k9-info="painter: direct-svg; " k9-elem="link-body">
+                  <path marker-start="url(#-start-marker)"
+                        marker-end="url(#arrow-end-marker)"
+                        d="M831 139 L870 139 "
+                        pp:d="$path"
+                        k9-animate="link"/>
+               </g>
+            </g>
+         </g>
+      </g>
+   </g>
+   <defs>
+      <script xlink:actuate="onLoad"
+              xlink:type="simple"
+              xlink:show="other"
+              type="module">
+     import '/public/templates/risk-first/risk-first.js?v=v0.15'
+  </script>
+   </defs>
+</svg>
