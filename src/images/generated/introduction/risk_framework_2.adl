@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<diagram
+	xslt:template="/public/templates/risk-first/risk-first-template.xsl"
+	xmlns="http://www.kite9.org/schema/adl"
+	xmlns:xslt="http://www.kite9.org/schema/xslt" id="dia">
+
+    <image-artifact id="id_0" imgsrc="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg">Risk
+    Frameworks</image-artifact>
+
+    <arrow id="id_2">
+      employ
+    </arrow>
+
+    <group id="id_4" style="--kite9-padding: 10pt; ">
+      <action>Practices
+      
+      (actions 
+      you can take)</action>
+    </group>
+
+    <arrow id="id_6">
+      address
+    </arrow>
+
+    <risk id="id_8" class="attendant">
+      Risks
+    </risk>
+
+    <arrow id="id_9">
+      which obstruct
+    </arrow>
+
+    <risk class="goal" id="id_10">
+      Goals
+    </risk>
+
+    <link id="id_1"  style="--kite9-direction: right;">
+      <from reference="id_0" />
+      <to reference="id_2" />
+    </link>
+
+    <link id="id_3"  style="--kite9-direction: right;">
+      <from reference="id_2" />
+      <to reference="id_4" shape="arrow" />
+    </link>
+
+    <link id="id_5"  style="--kite9-direction: right;">
+      <from reference="id_4" />
+      <to reference="id_6" />
+    </link>
+
+    <link id="id_7"  style="--kite9-direction: right;">
+      <from reference="id_6" />
+      <to reference="id_8" shape="arrow" />
+    </link>
+
+    <link id="id_15"  style="--kite9-direction: right;">
+
+      <from reference="id_8" />
+      <to reference="id_9" />
+
+
+    </link>
+    <link id="id_17"  style="--kite9-direction: right;">
+
+      <from reference="id_9" />
+      <to reference="id_10" shape="arrow" />
+
+
+    </link>
+
+  </diagram>

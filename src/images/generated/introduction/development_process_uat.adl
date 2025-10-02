@@ -3,43 +3,16 @@
 	style="--kite9-layout: right; --kite9-min-width: 600pt;"
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
 	<group id="x1" style="--kite9-layout: down">
-		<container bordered="true" id="c">
-			<risk class="goal" id="id_0">Feature X</risk>
-			<label id="id_16">
-				Internal Model
-				<symbols />
-			</label>
-		</container>
-		<group id="reality" style="--kite9-layout: right">
-			<artifact>Product To Test</artifact>
-			<users>Users</users>
-		</group>
+		<risk class="goal" id="id_0">Deliver Feature X</risk>
 	</group>
 	<action id="inte">User Acceptance</action>
 	<group id="x2"
-		style="--kite9-layout: down; --kite9-vertical-sizing: maximize; ">
-		<container id="d" style="--kite9-vertical-align: top; ">
-			<hidden>
-				<risk class="attendant" id="x">Difficulty
-					Finding Feature
-				</risk>
-			</hidden>
-			<risk class="attendant" id="y">Schedule Risks</risk>
-			<label id="4">
-				Internal Model
-				<symbols />
-			</label>
-		</container>
-		<group id="b">
-			<artifact>Test Results</artifact>
-		</group>
+		style="--kite9-layout: right; --kite9-vertical-sizing: maximize; ">
+		<hidden>
+			<risk class="attendant" id="x">Difficulty
+				Finding Feature
+			</risk>
+		</hidden>
+		<risk class="attendant" id="y">Schedule Risks</risk>
 	</group>
-	<align id="2-0" style="--kite9-direction: right; ">
-		<from id="2-0-0" reference="c" />
-		<to id="2-0-1" reference="inte" />
-	</align>
-	<align id="2-1" style="--kite9-direction: right; ">
-		<from id="2-1-0" reference="inte" />
-		<to id="2-1-1" reference="d" />
-	</align>
 </diagram>

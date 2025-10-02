@@ -3,40 +3,14 @@
 	style="--kite9-min-width: 600pt;"
 	xslt:template="/public/templates/risk-first/risk-first-template.xsl">
 	<group style="--kite9-layout: down">
-		<container bordered="true" id="c">
-			<risk class="goal" id="id_0">Feature X</risk>
-			<label id="id_16">
-				Internal Model
-			</label>
-		</container>
-		<group id="v" style="--kite9-layout: right">
-			<artifact>Specification</artifact>
-			<artifact>Existing Code</artifact>
-		</group>
+		<risk class="goal" id="id_0">Deliver Feature X</risk>
 	</group>
 	<action id="cat">Code and Unit Test</action>
 	<group style="--kite9-layout: down">
-		<container id="d">
-			<hidden>
-				<risk class="attendant">Development
-					Difficulties
-				</risk>
-			</hidden>
-			<label id="4">
-				Internal Model
-
-			</label>
-		</container>
-		<group id="ic" style="--kite9-layout: right">
-			<artifact>New Code</artifact>
-		</group>
+		<hidden>
+			<risk class="attendant">Development
+				Difficulties
+			</risk>
+		</hidden>
 	</group>
-	<align id="2-0" style="--kite9-direction: right; ">
-		<from id="2-0-0" reference="c" />
-		<to id="2-0-1" reference="cat" />
-	</align>
-	<align id="2-1" style="--kite9-direction: right; ">
-		<from id="2-1-0" reference="cat" />
-		<to id="2-1-1" reference="d" />
-	</align>
 </diagram>
