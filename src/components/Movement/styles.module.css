@@ -82,6 +82,14 @@
     justify-content: center;
     margin: 3rem 0;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.shareWidget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
 }
 
 .shareButton {
@@ -94,6 +102,10 @@
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    display: inline-block;
 }
 
 .shareButton:hover {

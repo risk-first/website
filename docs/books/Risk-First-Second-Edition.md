@@ -10,9 +10,13 @@ tags:
 sidebar_position: 1
 ---
 
-I'm pleased to announce that the second edition of Risk-First Software Development is [now available in Beta](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)!
+I'm pleased to announce that the second edition of Risk-First Software Development is [now available in Beta](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)! Read on to find out how to get a free copy.
 
 [![Risk-First Software Development Second Edition](/img/Cover_Image_Second_Edition.jpg)](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)
+
+## Get Involved!
+
+<Movement />
 
 ## About Risk-First Software Development - Second Edition
 
@@ -50,9 +54,7 @@ Once the book is declared "finished", it'll get published proper and you'll get 
 
 </BoxOut>
 
-## Please Help!
-
-<Movement />
+## Join Us On GitHub!
 
 <BoxOut title="Join The Risk-First GitHub Organisation">
 

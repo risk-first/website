@@ -66,11 +66,7 @@ const config = {
 				blog: false,
 				theme: {
 					customCss: './src/css/custom.css',
-				},
-				gtag: {
-					trackingID: 'G-TN9XHX17P8',
-					anonymizeIP: true,
-				},
+				}
 			}),
 		],
 	],

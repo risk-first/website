@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import styles from './styles.module.css';
+
+const PAGE_URL = 'https://riskfirst.org/Risk-First-Second-Edition';
 
 export default function Movement() {
     const [formData, setFormData] = useState({
@@ -8,6 +10,63 @@ export default function Movement() {
         socialLink: '',
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [linkedInLoaded, setLinkedInLoaded] = useState(false);
+
+    // Load platform SDKs
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Load LinkedIn SDK
+            if (!window.IN) {
+                const linkedInScript = document.createElement('script');
+                linkedInScript.src = 'https://platform.linkedin.com/in.js';
+                linkedInScript.type = 'text/javascript';
+                linkedInScript.innerHTML = 'lang: en_US';
+                linkedInScript.onload = () => {
+                    setLinkedInLoaded(true);
+                };
+                document.head.appendChild(linkedInScript);
+            } else {
+                setLinkedInLoaded(true);
+            }
+
+            // Load Twitter SDK
+            if (!window.twttr) {
+                const twitterScript = document.createElement('script');
+                twitterScript.src = 'https://platform.twitter.com/widgets.js';
+                twitterScript.async = true;
+                document.head.appendChild(twitterScript);
+            }
+
+            // Load Facebook SDK
+            if (!window.FB) {
+                const facebookScript = document.createElement('script');
+                facebookScript.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0';
+                facebookScript.async = true;
+                document.head.appendChild(facebookScript);
+            }
+        }
+    }, []);
+
+    // Reinitialize widgets when SDKs load
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Reinitialize Twitter widgets
+            if (window.twttr && window.twttr.widgets) {
+                window.twttr.widgets.load();
+            }
+
+            // Reinitialize Facebook widgets
+            if (window.FB && window.FB.XFBML) {
+                window.FB.XFBML.parse();
+            }
+
+            // Reinitialize LinkedIn widgets
+            if (window.IN && window.IN.parse) {
+                window.IN.parse();
+            }
+        }
+    }, [linkedInLoaded]);
+
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -27,7 +86,7 @@ export default function Movement() {
             console.log('Current hostname:', window.location.hostname);
 
             // Use HTTPS through Cloudflare
-            const response = await fetch('https://automation.riskfirst.org:8080/api/movement/submit', {
+            const response = await fetch('https://automation.riskfirst.org/api/movement/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -79,60 +138,66 @@ export default function Movement() {
         <section className={styles.movementSection}>
             <BrowserOnly>
                 {() => {
-                    const shareLinks = {
-                        linkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href),
-                        twitter: 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent('Check out Risk-First Software Development - a new way of thinking about how software really gets built!'),
-                        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)
-                    };
-
                     return (
                         <div className={styles.container}>
                             <div className={styles.content}>
-                                <h2 className={styles.title}>Let's Create a Movement 🚀</h2>
+                                <h2 className={styles.title}>Read It For Free 🚀</h2>
                                 <div className={styles.text}>
                                     <p>
                                         Risk-First is more than just a book — it's a different way to think about how software really gets built.
-                                        And movements only grow when people share them.
+                                        And movements only grow when people talk about them.
                                     </p>
                                     <p>
-                                        If you want in on the ground floor of a new movement, please help spread the word and get rewarded:
+                                        If you want in on the ground floor of a new movement, please help spread the word and get rewarded with a free copy.
                                     </p>
-                                    <ol className={styles.steps}>
-                                        <li>Share this page on LinkedIn, X (Twitter), or your favorite platform.</li>
-                                        <li>Fill out this quick form with your email address and a link to your post.</li>
-                                        <li>Get rewarded — I'll send you a special discount code to grab a <strong>free</strong> digital copy of Risk-First Software Development, Second Edition (Beta).</li>
-                                    </ol>
                                 </div>
 
-                                <div className={styles.shareButtons}>
-                                    <a
-                                        href={shareLinks.linkedin}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.shareButton}
-                                    >
-                                        Share on LinkedIn
-                                    </a>
-                                    <a
-                                        href={shareLinks.twitter}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.shareButton}
-                                    >
-                                        Share on X (Twitter)
-                                    </a>
-                                    <a
-                                        href={shareLinks.facebook}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.shareButton}
-                                    >
-                                        Share on Facebook
-                                    </a>
+                                <div className={styles.form}>
+                                    <h3 className={styles.formTitle}>👉 Step 1: Share the Page</h3>
+
+                                    <p>Share this page on LinkedIn, X (Twitter), or your favorite platform</p>
+
+                                    {/* LinkedIn Share Button */}
+
+                                    <div className={styles.shareButtons}>
+                                        <div className={styles.shareWidget}>
+                                            <script
+                                                type="IN/Share"
+                                                data-url={PAGE_URL}
+                                                dangerouslySetInnerHTML={{ __html: '' }}
+                                            ></script>
+                                        </div>
+
+                                        {/* Twitter Share Button */}
+                                        <div className={styles.shareWidget}>
+                                            <a
+                                                href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                                                className="twitter-share-button"
+                                                data-url={PAGE_URL}
+                                                data-text="Check out Risk-First Software Development - a new way of thinking about how software really gets built!"
+                                                data-show-count="false"
+                                            >
+                                                Tweet
+                                            </a>
+                                        </div>
+
+                                        {/* Facebook Share Button */}
+                                        <div className={styles.shareWidget}>
+                                            <div
+                                                className="fb-share-button"
+                                                data-href={PAGE_URL}
+                                                data-layout="button"
+                                                data-size="large"
+                                            >
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <form className={styles.form} onSubmit={handleSubmit}>
-                                    <h3 className={styles.formTitle}>👉 Share the Page & Claim Your Free Copy</h3>
+                                    <h3 className={styles.formTitle}>👉 Step 2: Claim Your Free Copy</h3>
+
+                                    <p>"Please send me a 109% discount code to get a free copy of Risk-First Software Development, Second Edition."</p>
 
                                     <div className={styles.formGroup}>
                                         <label htmlFor="email" className={styles.label}>
