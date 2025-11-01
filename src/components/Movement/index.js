@@ -197,7 +197,7 @@ export default function Movement() {
                                 <form className={styles.form} onSubmit={handleSubmit}>
                                     <h3 className={styles.formTitle}>👉 Step 2: Claim Your Free Copy</h3>
 
-                                    <p>"Please send me a 109% discount code to get a free copy of Risk-First Software Development, Second Edition."</p>
+                                    <p>"Please send me a 100% discount code to get a free copy of Risk-First Software Development, Second Edition."</p>
 
                                     <div className={styles.formGroup}>
                                         <label htmlFor="email" className={styles.label}>
