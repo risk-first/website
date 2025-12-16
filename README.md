@@ -19,16 +19,8 @@ The **Risk-First** perspective is that all of these practices and methodologies 
 
 [Continue Reading at RiskFirst.org](https://riskfirst.org)
 
-## About _The Menagerie_
+## Risk-First Software Development - Second Edition! 
 
-This book is volume one of the **Risk-First** series, introducing the  case for viewing _all_ of the activities on a software project as attempting to _managing risk_.  It introduces the menagerie of different risks you're likely to meet on a software project, naming and classifying them so that we can try to understand them better.
+The second edition of the Risk-First book is being published by the Pragmatic Bookshelf!  You can currently get it for free!  Click here for more details:  https://riskfirst.org/Risk-First-Second-Edition. 
 
-The book aims to develop a _Pattern Language_ for understanding software risk, and develop a practical framework for discussing how the activities we take on a project change the balance of the risks we are exposed to.
-
-![Cover Image](https://riskfirst.org/img/Cover_Book_image.jpg)
-
-<!-- markdown-link-check-disable -->
-
-- [Print and Kindle Edition on Amazon](https://a.co/d/hmpmYl2)
-
-<!-- markdown-link-check-enable -->
+![Cover Image](https://github.com/risk-first/website/blob/master/static/img/Cover_Image_Second_Edition.jpeg?raw=true)
