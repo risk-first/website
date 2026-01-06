@@ -9,7 +9,6 @@ export default function Movement() {
         email: '',
         socialLink: '',
     });
-    const [isSubmitted, setIsSubmitted] = useState(false);
     const [linkedInLoaded, setLinkedInLoaded] = useState(false);
 
     // Load platform SDKs
@@ -100,7 +99,8 @@ export default function Movement() {
             if (response.ok) {
                 const result = await response.text();
                 console.log('Response body:', result);
-                setIsSubmitted(true);
+                // Redirect to thank you page
+                window.location.href = '/books/Movement-Thank-You';
             } else {
                 const errorText = await response.text();
                 console.error('Form submission failed:', response.status, errorText);
@@ -111,28 +111,6 @@ export default function Movement() {
             alert('There was an error submitting the form. Please try again.');
         }
     };
-
-
-    if (isSubmitted) {
-        return (
-            <section className={styles.movementSection}>
-                <div className={styles.container}>
-                    <div className={styles.content}>
-                        <h2 className={styles.title}>Thank You! 🎉</h2>
-                        <p className={styles.message}>
-                            Thanks for helping spread the Risk-First movement! Your discount code will be with you shortly.
-                        </p>
-                        <button
-                            className={styles.button}
-                            onClick={() => setIsSubmitted(false)}
-                        >
-                            Share Again
-                        </button>
-                    </div>
-                </div>
-            </section>
-        );
-    }
 
     return (
         <section className={styles.movementSection}>
