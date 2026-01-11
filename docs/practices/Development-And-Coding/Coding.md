@@ -1,34 +1,34 @@
 ---
 title: Coding
 description: Writing software to meet a required feature.
-tags: 
+tags:
   - Coding
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Code</action>'
+  element: "<action>Code</action>"
 practice:
-  aka: 
-   - "Programming"
-   - "Development"
-   - "Software Engineering"
+  aka:
+    - "Programming"
+    - "Development"
+    - "Software Engineering"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Build or improve some features which our clients will find useful."
-   - tag: Process Risk
-     reason: Problems and edge cases with software processes can be fixed by adding code.
+    - tag: Feature Fit Risk
+      reason: "Build or improve some features which our clients will find useful."
+    - tag: Process Risk
+      reason: Problems and edge cases with software processes can be fixed by adding code.
   attendant:
-   - tag: Implementation Risk
-     reason: "Changes in code can introduce new bugs and regressions."
-   - tag: Complexity Risk
-     reason: "Writing new code adds complexity to a project."
+    - tag: Implementation Risk
+      reason: "Changes in code can introduce new bugs and regressions."
+    - tag: Complexity Risk
+      reason: "Writing new code adds complexity to a project."
   related:
-   - ../Planning-and-Management/Requirements-Capture
-   - ../Testing-and-Quality-Assurance/Integration-Testing
-   - ../Development-and-Coding/Code-Reviews
+    - ../Planning-and-Management/Requirements-Capture
+    - ../Testing-and-Quality-Assurance/Integration-Testing
+    - ../Development-and-Coding/Code-Reviews
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -38,9 +38,8 @@ Coding is a core activity in software development, involving the translation of 
 
 See:
 
- - [Time/Reality Tradeoff](/thinking/Cadence#time--reality-trade-off)
+- [Time/Reality Tradeoff](/thinking/Cadence#time--reality-trade-off)
 
+## Used By
 
-## See Also
-
-<TagList tag="Coding" />
+<MethodList tag="Coding" />

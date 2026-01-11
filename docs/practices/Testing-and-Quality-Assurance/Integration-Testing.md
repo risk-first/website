@@ -1,34 +1,34 @@
 ---
 title: Integration Testing
 description: Testing combined parts of the software to ensure they work together.
-tags: 
-  - Practice 
+tags:
+  - Practice
   - Integration Testing
-featured: 
+featured:
   class: c
-  element: '<action>Integration Test</action>'
+  element: "<action>Integration Test</action>"
 practice:
-  aka: 
-   - "System Testing"
-   - "End-to-End Testing"
-   - "Continuous Integration"
+  aka:
+    - "System Testing"
+    - "End-to-End Testing"
+    - "Continuous Integration"
   mitigates:
-   - tag: Reliability Risk
-     reason: "Ensures that integrated components work together as expected."
-   - tag: Implementation Risk
-     reason: "Validates that the implementation meets requirements and detects regressions early in the integration phase."
+    - tag: Reliability Risk
+      reason: "Ensures that integrated components work together as expected."
+    - tag: Implementation Risk
+      reason: "Validates that the implementation meets requirements and detects regressions early in the integration phase."
   attendant:
-   - tag: Schedule Risk
-     reason: "Can be time-consuming, leading to delays in the project timeline."
-   - tag: Reliability Risk
-     reason: "Adds dependencies on test environments and their availability."
+    - tag: Schedule Risk
+      reason: "Can be time-consuming, leading to delays in the project timeline."
+    - tag: Reliability Risk
+      reason: "Adds dependencies on test environments and their availability."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Development-and-Coding/Unit-Testing
-   - ../Deployment-and-Operations/Configuration-Management
+    - ../Planning-and-Management/Change-Management
+    - ../Development-and-Coding/Unit-Testing
+    - ../Deployment-and-Operations/Configuration-Management
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -36,10 +36,11 @@ practice:
 
 Integration Testing involves testing combined parts of the software to ensure they work together correctly. This practice helps in identifying and fixing issues that arise when individual components interact, ensuring that the overall system functions as intended.
 
-See: 
-- [Development Process](/thinking/Development-Process#a-toy-process)_
+See:
+
+- [Development Process](/thinking/Development-Process#a-toy-process)\_
 - [Production (Cadence)](/thinking/Cadence#production)
 
-## See Also
+## Used By
 
-<TagList tag="Integration Testing" />
+<MethodList tag="Integration Testing" />

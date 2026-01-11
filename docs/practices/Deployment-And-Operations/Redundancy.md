@@ -39,6 +39,15 @@ practice:
 
 Redundancy in engineering is a key practice to ensure that systems remain operational in the event of component failures. It involves creating multiple instances of critical components so that if one fails, the others can take over seamlessly. This practice is essential in systems where reliability and availability are critical, such as in data centers, aerospace, and power systems. Implementing redundancy helps in maintaining service quality and availability, thereby reducing the risk of operational disruptions.
 
-## See Also
+## Variations
 
-<TagList tag="Redundancy" />
+| **Redundancy Type**         | **Description**                                                                         | **Reference**                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Active-Passive Failover** | A standby system takes over when the primary system fails.                              | [Failover, Wikipedia](https://en.wikipedia.org/wiki/Failover)                                   |
+| **Active-Active**           | Multiple systems share the load simultaneously, providing both redundancy and capacity. | [High Availability Cluster, Wikipedia](https://en.wikipedia.org/wiki/High-availability_cluster) |
+| **Geographic Redundancy**   | Distributing systems across multiple physical locations to survive regional failures.   | [Disaster Recovery, Wikipedia](https://en.wikipedia.org/wiki/Disaster_recovery)                 |
+| **Data Replication**        | Maintaining copies of data across multiple storage systems or locations.                | [Replication, Wikipedia](<https://en.wikipedia.org/wiki/Replication_(computing)>)               |
+
+## Used By
+
+<MethodList tag="Redundancy" />

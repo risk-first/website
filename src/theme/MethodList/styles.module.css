@@ -1,0 +1,70 @@
+:root {
+    --docusaurus-method-list-border: var(--ifm-color-emphasis-300);
+}
+
+.methodList {
+    margin: 1rem 0;
+}
+
+.methodItem {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.columns {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.left {
+    flex-basis: 8rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.left img {
+    padding: 0;
+    display: block;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.right {
+    flex: 1;
+    padding: 0;
+}
+
+.right h3 {
+    font-family: Geomanist, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+}
+
+.description {
+    color: var(--ifm-color-emphasis-600);
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.reason {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.uses {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.uses ul {
+    margin: 0.25rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.uses li {
+    margin: 0.15rem 0;
+}

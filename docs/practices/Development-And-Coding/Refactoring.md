@@ -1,41 +1,41 @@
 ---
 title: Refactoring
 description: Revising code to improve its structure without changing its behavior.
-tags: 
+tags:
   - Refactoring
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Refactor</action>'
+  element: "<action>Refactor</action>"
 practice:
-  aka: 
-   - "Code Cleanup"
-   - "Code Optimization"
-   - "Technical Debt Management"
-   - "Factoring"
-   - "Separation of Concerns"
-   - "Modularisation"
-   - "Creating Abstractions"
+  aka:
+    - "Code Cleanup"
+    - "Code Optimization"
+    - "Technical Debt Management"
+    - "Factoring"
+    - "Separation of Concerns"
+    - "Modularisation"
+    - "Creating Abstractions"
   mitigates:
-   - tag: Complexity Risk
-     reason: "Refactoring is aimed at making code more orthogonal, less duplicative and clearer to understand"
-   - tag: Implementation Risk
-     reason: "Enhances code quality and maintainability."
-   - tag: Communication Risk
-     reason: "Well-factored code should be easier to understand."
+    - tag: Complexity Risk
+      reason: "Refactoring is aimed at making code more orthogonal, less duplicative and clearer to understand"
+    - tag: Implementation Risk
+      reason: "Enhances code quality and maintainability."
+    - tag: Communication Risk
+      reason: "Well-factored code should be easier to understand."
   attendant:
-   - tag: Schedule Risk
-     reason: "Refactoring can be time-consuming and delay project timelines."
-   - tag: Implementation Risk
-     reason: "Done carelessly, refactoring can introduce new issues into the codebase"
+    - tag: Schedule Risk
+      reason: "Refactoring can be time-consuming and delay project timelines."
+    - tag: Implementation Risk
+      reason: "Done carelessly, refactoring can introduce new issues into the codebase"
   related:
-   - ../Development-and-Coding/Coding
-   - ../Testing-and-Quality-Assurance/Regression-Testing
-   - ../Planning-and-Management/Change-Management
-   - ../Planning-And-Management/Design
+    - ../Development-and-Coding/Coding
+    - ../Testing-and-Quality-Assurance/Regression-Testing
+    - ../Planning-and-Management/Change-Management
+    - ../Planning-And-Management/Design
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -45,22 +45,20 @@ Refactoring involves revising and restructuring existing code to improve its rea
 
 ## Abstractions
 
-Refactoring is all about ensuring you have the right abstractions.  
+Refactoring is all about ensuring you have the right abstractions.
 
 > "An abstraction" is the outcome of this process—a concept that acts as a common noun for all subordinate concepts and connects any related concepts as a group, field, or category.
 
-See: 
+See:
 
- - [Refactoring](/risks/Kolmogorov-Complexity#refactoring)
- - [Hierarchies and Modularisation](/risks/Connectivity#hierarchies-and-modularisation)
- 
+- [Refactoring](/risks/Kolmogorov-Complexity#refactoring)
+- [Hierarchies and Modularisation](/risks/Connectivity#hierarchies-and-modularisation)
 
 ## External References
 
 - [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) Wikipedia Page.
 - [Refactoring](https://martinfowler.com/books/refactoring.html) Book by Martin Fowler.
 
+## Used By
 
-## See Also
-
-<TagList tag="Refactoring" />
+<MethodList tag="Refactoring" />

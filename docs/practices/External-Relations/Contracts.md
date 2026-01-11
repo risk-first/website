@@ -1,42 +1,42 @@
 ---
 title: Contracts
 description: Defining contractual obligations and agreements.
-tags: 
+tags:
   - Contracts
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Contract</action>'
+  element: "<action>Contract</action>"
 practice:
-  aka: 
-   - "Agreement"
-   - "Terms"
-   - "Service Agreement"
+  aka:
+    - "Agreement"
+    - "Terms"
+    - "Service Agreement"
   mitigates:
-   - tag: Agency Risk
-     reason: "Clearly defines roles, responsibilities, and expectations, reducing dependency issues."
-   - tag: Funding Risk
-     reason: "Outlines cost structures and helps manage budget expectations."
-   - tag: Schedule Risk
-     reason: "Establishes timelines and milestones to keep the project on track."
-   - tag: Legal Risk
-     reason: "A well-written contract establishes the terms under which software is provided or used."
+    - tag: Agency Risk
+      reason: "Clearly defines roles, responsibilities, and expectations, reducing dependency issues."
+    - tag: Funding Risk
+      reason: "Outlines cost structures and helps manage budget expectations."
+    - tag: Schedule Risk
+      reason: "Establishes timelines and milestones to keep the project on track."
+    - tag: Legal Risk
+      reason: "A well-written contract establishes the terms under which software is provided or used."
   attendant:
-   - tag: Lock-In Risk
-     reason: "Contracts can create rigid boundaries that limit flexibility."
-   - tag: Coordination Risk
-     reason: "Contracting work can often involve setting careful terms to minimise coordination risks."
-   - tag: Process Risk
-     reason: "The process of drafting, negotiating, and managing contracts is a process with significant risk."
-   - tag: Deadline Risk
-     reason: "Contracts often stipulate certain conditions must be met at certain times."
+    - tag: Lock-In Risk
+      reason: "Contracts can create rigid boundaries that limit flexibility."
+    - tag: Coordination Risk
+      reason: "Contracting work can often involve setting careful terms to minimise coordination risks."
+    - tag: Process Risk
+      reason: "The process of drafting, negotiating, and managing contracts is a process with significant risk."
+    - tag: Deadline Risk
+      reason: "Contracts often stipulate certain conditions must be met at certain times."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Development-and-Coding/Coding
-   - ../Deployment-and-Operations/Incident-Management
+    - ../Planning-and-Management/Change-Management
+    - ../Development-and-Coding/Coding
+    - ../Deployment-and-Operations/Incident-Management
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -44,6 +44,6 @@ practice:
 
 Contracts in software development define the terms and conditions under which services are provided. They outline roles, responsibilities, timelines, costs, and deliverables, helping to manage expectations and reduce risks. Effective contract management is crucial for ensuring that all parties adhere to agreed-upon terms and that the project runs smoothly.
 
-## See Also
+## Used By
 
-<TagList tag="Contracts" />
+<MethodList tag="Contracts" />

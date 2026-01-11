@@ -30,7 +30,7 @@ method:
       use:
         - Monitoring and Logging
         - Observability
-    - tag: Prototyping
+    - tag: Release
       reason: "Canary releases and blue-green deployments are used to test new features in a controlled manner."
       use:
         - Canary Releases

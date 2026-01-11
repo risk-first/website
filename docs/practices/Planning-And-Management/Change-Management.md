@@ -1,36 +1,36 @@
 ---
 title: Change Management
 description: Managing changes to systems and organisations in a systematic way.
-tags: 
+tags:
   - Practice
   - Change Management
-featured: 
+featured:
   class: c
-  element: '<action>Change Mgmt</action>'
+  element: "<action>Change Mgmt</action>"
 practice:
-  aka: 
-   - "Change Control"
-   - "Change Handling"
-   - "Change Administration"
+  aka:
+    - "Change Control"
+    - "Change Handling"
+    - "Change Administration"
   mitigates:
-   - tag: Operational Risk
-     reason: "Ensures changes are implemented smoothly and systematically."
-   - tag: Implementation Risk
-     reason: "Avoid bugs from creeping into the system."
-   - tag: Coordination Risk
-     reason: "Specifically addresses coordinating change in a structured way."
+    - tag: Operational Risk
+      reason: "Ensures changes are implemented smoothly and systematically."
+    - tag: Implementation Risk
+      reason: "Avoid bugs from creeping into the system."
+    - tag: Coordination Risk
+      reason: "Specifically addresses coordinating change in a structured way."
   attendant:
-   - tag: Schedule Risk
-     reason: "Managing changes systematically can introduce delays."
-   - tag: Process Risk
-     reason: "Change control is a process, and therefore is a source of process risk. "
+    - tag: Schedule Risk
+      reason: "Managing changes systematically can introduce delays."
+    - tag: Process Risk
+      reason: "Change control is a process, and therefore is a source of process risk. "
   related:
-   - ../Development-and-Coding/Coding
-   - ../Testing-and-Quality-Assurance/Integration-Testing
-   - ../Deployment-and-Operations/Release-Delivery
+    - ../Development-and-Coding/Coding
+    - ../Testing-and-Quality-Assurance/Integration-Testing
+    - ../Deployment-and-Operations/Release-Delivery
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -38,6 +38,6 @@ practice:
 
 Change Management in software development involves managing changes to the software in a systematic way. This includes planning, implementing, and monitoring changes to ensure they are executed smoothly and do not negatively impact the project's goals and timelines. Effective change management helps in minimizing disruptions and maintaining the quality and stability of the software.
 
-## See Also
+## Used By
 
-<TagList tag="Change Management" />
+<MethodList tag="Change Management" />

@@ -1,35 +1,35 @@
 ---
 title: Terms Of Reference
 description: Defining the scope and objectives of the project.
-tags: 
+tags:
   - Practice
   - Terms Of Reference
-featured: 
+featured:
   class: c
-  element: '<action>Terms of Reference</action>'
+  element: "<action>Terms of Reference</action>"
 practice:
-  aka: 
-   - "Project Charter"
-   - "Scope Definition"
-   - "Project Scope Statement"
+  aka:
+    - "Project Charter"
+    - "Scope Definition"
+    - "Project Scope Statement"
   mitigates:
-   - tag: Contextual Risk
-     reason: "Ensures that the project aligns with legal, social, and economic contexts."
-   - tag: Coordination Risk
-     reason: "Provides a clear framework for coordination among team members and stakeholders."
+    - tag: Contextual Risk
+      reason: "Ensures that the project aligns with legal, social, and economic contexts."
+    - tag: Coordination Risk
+      reason: "Provides a clear framework for coordination among team members and stakeholders."
   attendant:
-   - tag: Coordination Risk
-     reason: "Requires alignment and coordination among all parties to agree to the terms."
-   - tag: Schedule Risk
-     reason: "Can take time from the schedule to build."
+    - tag: Coordination Risk
+      reason: "Requires alignment and coordination among all parties to agree to the terms."
+    - tag: Schedule Risk
+      reason: "Can take time from the schedule to build."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Development-and-Coding/Coding
-   - ../Communication-and-Collaboration/Documentation
-   - Stakeholder-Management
+    - ../Planning-and-Management/Change-Management
+    - ../Development-and-Coding/Coding
+    - ../Communication-and-Collaboration/Documentation
+    - Stakeholder-Management
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -37,6 +37,6 @@ practice:
 
 Terms of Reference in software development define the scope, objectives, and deliverables of a project. They serve as a foundational document that guides the project team and stakeholders, ensuring that everyone has a clear understanding of what the project aims to achieve and how it will be executed.
 
-## See Also
+## Used By
 
-<TagList tag="Terms Of Reference" />
+<MethodList tag="Terms Of Reference" />

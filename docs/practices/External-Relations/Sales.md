@@ -1,38 +1,38 @@
 ---
 title: Sales
 description: Managing the sales strategy to drive software adoption and revenue generation.
-tags: 
+tags:
   - Sales
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Sales</action>'
+  element: "<action>Sales</action>"
 practice:
-  aka: 
-   - "Selling"
-   - "Revenue Generation"
-   - "Client Acquisition"
+  aka:
+    - "Selling"
+    - "Revenue Generation"
+    - "Client Acquisition"
   mitigates:
-   - tag: Funding Risk
-     reason: "Generates revenue by converting potential leads into customers."
-   - tag: Market Risk
-     reason: "Increases market penetration and customer base."
-   - tag: Communication Risk
-     reason: "Facilitates direct communication with potential customers to understand their needs."
+    - tag: Funding Risk
+      reason: "Generates revenue by converting potential leads into customers."
+    - tag: Market Risk
+      reason: "Increases market penetration and customer base."
+    - tag: Communication Risk
+      reason: "Facilitates direct communication with potential customers to understand their needs."
   attendant:
-   - tag: Agency Risk
-     reason: "Probably requires a dedicated sales team and resources."
-   - tag: Funding Risk
-     reason: "Sales activities can incur significant costs."
-   - tag: Deadline Risk
-     reason: "Sales cycles need to align with product availability and readiness."
+    - tag: Agency Risk
+      reason: "Probably requires a dedicated sales team and resources."
+    - tag: Funding Risk
+      reason: "Sales activities can incur significant costs."
+    - tag: Deadline Risk
+      reason: "Sales cycles need to align with product availability and readiness."
   related:
-   - ../External-Relations/Marketing
-   - ../Planning-and-Management/Stakeholder-Management
-   - ../Deployment-and-Operations/Release-Delivery
+    - ../External-Relations/Marketing
+    - ../Planning-and-Management/Stakeholder-Management
+    - ../Deployment-and-Operations/Release-Delivery
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -40,6 +40,6 @@ practice:
 
 Sales in software development involve activities aimed at selling the software product to customers. This includes identifying potential leads, understanding customer needs, presenting the product, negotiating terms, and closing deals. Effective sales strategies help in generating revenue, expanding the customer base, and achieving business growth.
 
-## See Also
+## Used By
 
-<TagList tag="Sales" />
+<MethodList tag="Sales" />

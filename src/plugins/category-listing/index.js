@@ -29,7 +29,7 @@ module.exports = async function myPlugin(context, options) {
                 const isRisk = allTags.includes("Risks") 
                 const isAIThreat = allTags.includes("AI Risks")
                 const isPractice = allTags.includes("Practice")
-                const isMethod  = allTags.includes("Method")
+                const isMethod  = allTags.includes("Risk Frameworks")
                 
                 if (!allTags.includes(title)) {
 					if (isRisk || isPractice || isMethod || isAIThreat) {

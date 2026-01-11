@@ -1,34 +1,34 @@
 ---
 title: Requirements Capture
 description: Gathering and documenting the requirements for the software.
-tags: 
+tags:
   - Practice
   - Requirements Capture
-featured: 
+featured:
   class: c
-  element: '<action>Capture Requirements</action>'
+  element: "<action>Capture Requirements</action>"
 practice:
-  aka: 
-   - "Requirement Gathering"
-   - "Needs Analysis"
-   - "Requirement Elicitation"
+  aka:
+    - "Requirement Gathering"
+    - "Needs Analysis"
+    - "Requirement Elicitation"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Ensures that features align with client needs and expectations."
-   - tag: Coordination Risk
-     reason: "Reduces coordination risks around deciding what should be built."
-   - tag: Communication Risk
-     reason: "Helps in explaining exactly what should be built."
+    - tag: Feature Fit Risk
+      reason: "Ensures that features align with client needs and expectations."
+    - tag: Coordination Risk
+      reason: "Reduces coordination risks around deciding what should be built."
+    - tag: Communication Risk
+      reason: "Helps in explaining exactly what should be built."
   attendant:
-   - tag: Schedule Risk
-     reason: "Thorough requirements capture can be time-consuming."
+    - tag: Schedule Risk
+      reason: "Thorough requirements capture can be time-consuming."
   related:
-   - ../Planning-and-Management/Prioritising
-   - ../Testing-and-Quality-Assurance/Integration-Testing
-   - ../Development-and-Coding/Unit-Testing
+    - ../Planning-and-Management/Prioritising
+    - ../Testing-and-Quality-Assurance/Integration-Testing
+    - ../Development-and-Coding/Unit-Testing
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -36,6 +36,6 @@ practice:
 
 Requirements Capture involves gathering and documenting the requirements for the software. This process ensures that the development team has a clear and comprehensive understanding of what needs to be built, helping to align the final product with client expectations and reducing the risk of costly changes later in the project.
 
-## See Also
+## Used By
 
-<TagList tag="Requirements Capture" />
+<MethodList tag="Requirements Capture" />

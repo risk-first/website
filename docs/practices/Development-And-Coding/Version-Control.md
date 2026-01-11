@@ -1,32 +1,32 @@
 ---
 title: Version Control
 description: Using version control systems to manage changes to the codebase.
-tags: 
+tags:
   - Version Control
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Version Control</action>'
+  element: "<action>Version Control</action>"
 practice:
   aka:
-   - "Source Control"
-   - "Revision Control"
-   - "SCM"
+    - "Source Control"
+    - "Revision Control"
+    - "SCM"
   mitigates:
-   - tag: Implementation Risk
-     reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
-   - tag: Coordination Risk
-     reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
+    - tag: Implementation Risk
+      reason: "Maintains a history of changes, allowing rollback to previous versions if needed."
+    - tag: Coordination Risk
+      reason: "Facilitates collaboration by allowing multiple developers to work on the codebase simultaneously."
   attendant:
-   - tag: Communication Risk
-     reason: "Poor version management can be chaotic and leave lots of work in progress."
+    - tag: Communication Risk
+      reason: "Poor version management can be chaotic and leave lots of work in progress."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Development-and-Coding/Coding
-   - ../Deployment-and-Operations/Release-Delivery
+    - ../Planning-and-Management/Change-Management
+    - ../Development-and-Coding/Coding
+    - ../Deployment-and-Operations/Release-Delivery
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -34,6 +34,6 @@ practice:
 
 Version Control in software development involves using systems that track changes to the codebase over time. This practice allows developers to manage versions, collaborate on code, and revert to previous states if necessary. Version control is essential for maintaining the integrity and history of the project.
 
-## See Also
+## Used By
 
-<TagList tag="Version Control" />
+<MethodList tag="Version Control" />

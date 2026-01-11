@@ -1,36 +1,36 @@
 ---
 title: Configuration Management
 description: Managing and maintaining configuration settings of the software.
-tags: 
+tags:
   - Configuration Management
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Configuration Mgmt</action>'
+  element: "<action>Configuration Mgmt</action>"
 practice:
-  aka: 
-   - "CM"
-   - "SCM"
-   - "Software Configuration Management"
-   - "Feature Toggle"
-   - "Feature Flag"
+  aka:
+    - "CM"
+    - "SCM"
+    - "Software Configuration Management"
+    - "Feature Toggle"
+    - "Feature Flag"
   mitigates:
-   - tag: Implementation Risk
-     reason: "Establishes and maintains consistency in the software product's performance and attributes."
-   - tag: Operational Risk
-     reason: "Ensures that changes are systematically evaluated and implemented to minimize disruptions."
-   - tag: Complexity Risk
-     reason: "Reduces complexity by managing system changes in a controlled and documented manner."
+    - tag: Implementation Risk
+      reason: "Establishes and maintains consistency in the software product's performance and attributes."
+    - tag: Operational Risk
+      reason: "Ensures that changes are systematically evaluated and implemented to minimize disruptions."
+    - tag: Complexity Risk
+      reason: "Reduces complexity by managing system changes in a controlled and documented manner."
   attendant:
-   - tag: Reliability Risk
-     reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
+    - tag: Reliability Risk
+      reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Tools-and-Standards/Version-Control
-   - ../Tools-and-Standards/Tool-Adoption
+    - ../Planning-and-Management/Change-Management
+    - ../Tools-and-Standards/Version-Control
+    - ../Tools-and-Standards/Tool-Adoption
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -38,10 +38,16 @@ practice:
 
 Configuration Management (CM) involves systematically handling changes to ensure the system maintains its integrity over time. It includes practices and tools for managing changes, tracking their status, and maintaining an inventory of system and support documents. CM is critical in software engineering to handle changes efficiently, reduce risks, and ensure the system performs as intended throughout its lifecycle.
 
-See:
+## Variations
 
- - [Consider Payoff](/thinking/Consider-Payoff)
- 
-## See Also
+| **Configuration Type**        | **Description**                                                                            | **Reference**                                                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| **Environment Configuration** | Managing settings that differ between development, staging, and production environments.   | [Deployment Environment, Wikipedia](https://en.wikipedia.org/wiki/Deployment_environment) |
+| **Feature Flags**             | Runtime configuration allowing features to be enabled or disabled without code changes.    | [Feature Toggle, Wikipedia](https://en.wikipedia.org/wiki/Feature_toggle)                 |
+| **Secrets Management**        | Secure storage and access control for sensitive configuration like API keys and passwords. | [Secrets Management, Wikipedia](https://en.wikipedia.org/wiki/Key_management)             |
 
-<TagList tag="Configuration Management" />
+See also: [Consider Payoff](/thinking/Consider-Payoff)
+
+## Used By
+
+<MethodList tag="Configuration Management" />

@@ -1,38 +1,38 @@
 ---
 title: Stakeholder Management
-description: Managing relationships and communications with stakeholders. 
-tags: 
+description: Managing relationships and communications with stakeholders.
+tags:
   - Practice
   - Stakeholder Management
-featured: 
+featured:
   class: c
-  element: '<action>Stakeholder Mgmt</action>'
+  element: "<action>Stakeholder Mgmt</action>"
 practice:
-  aka: 
-   - "Stakeholder Engagement"
-   - "Stakeholder Coordination"
-   - "Stakeholder Communication"
+  aka:
+    - "Stakeholder Engagement"
+    - "Stakeholder Coordination"
+    - "Stakeholder Communication"
   mitigates:
-   - tag: Agency Risk
-     reason: "Aligns the goals and expectations of various stakeholders, reducing conflicts."
-   - tag: Coordination Risk
-     reason: "Allows stakeholders to coordinate on their demands."
-   - tag: Communication Risk
-     reason: "Facilitates clear and consistent communication between stakeholders."  
-   - tag: Internal Model Risk
-     reason: "Talking to stakeholders helps to share and socialise Internal Models." 
-      
+    - tag: Agency Risk
+      reason: "Aligns the goals and expectations of various stakeholders, reducing conflicts."
+    - tag: Coordination Risk
+      reason: "Allows stakeholders to coordinate on their demands."
+    - tag: Communication Risk
+      reason: "Facilitates clear and consistent communication between stakeholders."
+    - tag: Internal Model Risk
+      reason: "Talking to stakeholders helps to share and socialise Internal Models."
+
   attendant:
-   - tag: Communication Risk
-     reason: "Misaligned communication strategies can lead to misunderstandings and conflicts."
+    - tag: Communication Risk
+      reason: "Misaligned communication strategies can lead to misunderstandings and conflicts."
   related:
-   - ../Planning-and-Management/Change-Management
-   - ../Communication-and-Collaboration/Documentation
-   - ../External-Relations/Contract
-   - Terms-Of-Reference
+    - ../Planning-and-Management/Change-Management
+    - ../Communication-and-Collaboration/Documentation
+    - ../External-Relations/Contract
+    - Terms-Of-Reference
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -40,6 +40,6 @@ practice:
 
 Stakeholder Management in software development involves identifying, engaging, and managing relationships with all parties who have an interest in the project. Effective stakeholder management ensures that their needs and expectations are understood and met, reducing conflicts and facilitating smoother project execution.
 
-## See Also
+## Used By
 
-<TagList tag="Stakeholder Management" />
+<MethodList tag="Stakeholder Management" />
