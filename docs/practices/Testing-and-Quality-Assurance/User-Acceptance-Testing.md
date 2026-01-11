@@ -45,13 +45,15 @@ practice:
 
 User Acceptance Testing (UAT) involves having end users test the software to ensure it meets their requirements and expectations. This practice helps in identifying any issues that may not have been caught during previous testing phases and ensures that the final product is user-friendly and functional.
 
-See:
+## Variations
 
-- [Consider Payoff](/thinking/Consider-Payoff)
-- [Development Process](/thinking/Development-Process#a-toy-process)\_
-- [User Acceptance Testing (Meeting Reality)](/thinking/Meeting-Reality#example-user-acceptance-testing-uat)
-- [Manual Testing](/thinking/Cadence#development-cycle-time)
-- [Waterfall (One Size Fits No One)](/thinking/One-Size-Fits-No-One)
+| **UAT Type**      | **Description**                                                  | **Reference**                                                                                 |
+| ----------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Alpha Testing** | Internal testing by employees before external release.           | [Alpha Testing, Wikipedia](https://en.wikipedia.org/wiki/Software_testing#Alpha_testing)      |
+| **Beta Testing**  | Testing by a limited external audience before general release.   | [Beta Testing, Wikipedia](https://en.wikipedia.org/wiki/Software_testing#Beta_testing)        |
+| **Dogfooding**    | Using your own product internally to test it in real conditions. | [Eating Your Own Dog Food, Wikipedia](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) |
+
+See also: [Consider Payoff](/thinking/Consider-Payoff), [Development Process](/thinking/Development-Process#a-toy-process), [User Acceptance Testing (Meeting Reality)](/thinking/Meeting-Reality#example-user-acceptance-testing-uat), [Manual Testing](/thinking/Cadence#development-cycle-time), [Waterfall (One Size Fits No One)](/thinking/One-Size-Fits-No-One)
 
 ## Used By
 

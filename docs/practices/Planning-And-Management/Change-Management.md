@@ -38,6 +38,14 @@ practice:
 
 Change Management in software development involves managing changes to the software in a systematic way. This includes planning, implementing, and monitoring changes to ensure they are executed smoothly and do not negatively impact the project's goals and timelines. Effective change management helps in minimizing disruptions and maintaining the quality and stability of the software.
 
+## Variations
+
+| **Change Management Type** | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Change Advisory Board** | A formal body that reviews and approves significant changes.                                     | [Change Advisory Board, Wikipedia](https://en.wikipedia.org/wiki/Change_advisory_board) |
+| **Emergency Change**      | Expedited process for urgent changes that can't wait for normal approval cycles.                 | [ITIL Change Management](https://en.wikipedia.org/wiki/ITIL#Change_management) |
+| **Standard Change**       | Pre-approved, low-risk changes that follow a documented procedure.                               | [ITIL, Wikipedia](https://en.wikipedia.org/wiki/ITIL) |
+
 ## Used By
 
 <MethodList tag="Change Management" />

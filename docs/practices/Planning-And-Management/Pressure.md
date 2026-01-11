@@ -38,6 +38,14 @@ practice:
 
 Applying pressure involves exerting influence on team members to ensure tasks are completed on time and to a high standard. This practice is often used in high-stakes projects where meeting deadlines and maintaining quality is critical. While it can be effective in ensuring timely completion of tasks, it must be applied judiciously to avoid negative consequences such as burnout, decreased quality, and reduced morale.
 
+## Variations
+
+| **Pressure Type**       | **Description**                                             | **Reference**                                                                           |
+| ----------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Deadline Setting**    | Establishing firm deadlines to create urgency and focus.    | [Time Management, Wikipedia](https://en.wikipedia.org/wiki/Time_management)             |
+| **Performance Reviews** | Using regular evaluations to drive performance improvement. | [Performance Appraisal, Wikipedia](https://en.wikipedia.org/wiki/Performance_appraisal) |
+| **Incentives**          | Offering rewards or recognition for meeting targets.        | [Incentive, Wikipedia](https://en.wikipedia.org/wiki/Incentive)                         |
+
 ## Used By
 
 <MethodList tag="Pressure" />

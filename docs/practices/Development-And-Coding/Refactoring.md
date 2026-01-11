@@ -43,21 +43,12 @@ practice:
 
 Refactoring involves revising and restructuring existing code to improve its readability, maintainability, and performance without changing its external behavior. This practice helps in reducing technical debt, enhancing code quality, and making the codebase easier to understand and modify.
 
-## Abstractions
-
-Refactoring is all about ensuring you have the right abstractions.
-
-> "An abstraction" is the outcome of this process—a concept that acts as a common noun for all subordinate concepts and connects any related concepts as a group, field, or category.
-
-See:
+## See Also:
 
 - [Refactoring](/risks/Kolmogorov-Complexity#refactoring)
 - [Hierarchies and Modularisation](/risks/Connectivity#hierarchies-and-modularisation)
-
-## External References
-
-- [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) Wikipedia Page.
-- [Refactoring](https://martinfowler.com/books/refactoring.html) Book by Martin Fowler.
+- [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+- [Refactoring Book](https://martinfowler.com/books/refactoring.html)
 
 ## Used By
 

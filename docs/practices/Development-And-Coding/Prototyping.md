@@ -38,6 +38,14 @@ practice:
 
 Prototyping in software development involves creating early models or mockups of the software to test concepts and gather feedback. This practice helps in validating design choices, identifying potential issues, and ensuring that the final product meets the users' needs and expectations.
 
+## Variations
+
+| **Prototype Type**         | **Description**                                                                   | **Reference**                                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Throwaway Prototype**    | A quick model built to explore ideas, then discarded once requirements are clear. | [Throwaway Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Software_prototyping#Throwaway_prototyping)       |
+| **Evolutionary Prototype** | A working model that is refined iteratively into the final product.               | [Evolutionary Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Software_prototyping#Evolutionary_prototyping) |
+| **Wireframe/Mockup**       | Low-fidelity visual representations of the UI without functionality.              | [Wireframe, Wikipedia](https://en.wikipedia.org/wiki/Website_wireframe)                                            |
+
 ## Used By
 
 <MethodList tag="Prototyping" />

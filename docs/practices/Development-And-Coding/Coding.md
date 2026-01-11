@@ -36,9 +36,15 @@ practice:
 
 Coding is a core activity in software development, involving the translation of requirements and designs into functional code. High-quality coding practices are essential for creating reliable, maintainable, and efficient software. This involves writing clear, well-structured, and documented code that adheres to established standards and best practices.
 
-See:
+## Variations
 
-- [Time/Reality Tradeoff](/thinking/Cadence#time--reality-trade-off)
+| **Coding Style**          | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Test-Driven Development** | Writing tests before code to guide implementation and ensure coverage.                          | [Test-Driven Development, Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development) |
+| **Behaviour-Driven Development** | Writing code based on expected behaviour described in natural language.                     | [Behaviour-Driven Development, Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development) |
+| **Literate Programming**  | Embedding code within documentation to explain logic alongside implementation.                   | [Literate Programming, Wikipedia](https://en.wikipedia.org/wiki/Literate_programming) |
+
+See also: [Time/Reality Tradeoff](/thinking/Cadence#time--reality-trade-off)
 
 ## Used By
 

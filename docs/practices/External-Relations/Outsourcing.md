@@ -42,21 +42,15 @@ practice:
 
 > "Outsourcing is an agreement in which one company hires another company to be responsible for a planned or existing activity that is or could be done internally, and sometimes involves transferring employees and assets from one firm to another." - [Outsourcing, _Wikipedia_](https://en.wikipedia.org/wiki/Outsourcing)
 
-Outsourcing in software development involves hiring external vendors or service providers to handle specific tasks or projects. This practice can help access specialized skills, reduce costs, and accelerate project timelines. However, it also introduces risks related to dependency, communication, and security that need to be managed effectively.
+Outsourcing involves hiring external vendors to handle specific tasks or projects. It can provide access to specialised skills, reduce costs, and accelerate timelines. However, distributed teams face [Coordination Risk](/tags/Coordination-Risk) and reduced [communication bandwidth](/tags/Communication-Risk)—mitigations include video chat, periodic face-time, regular demos, and modularising work along team boundaries ([Conway's Law](https://en.wikipedia.org/wiki/Conways_law)). Additionally, outsourcers have their own [Agency Risk](/tags/Agency-Risk): they're more interested in staying solvent than solving your problems.
 
-## Discussion
+## Variations
 
-**Pairing** and **Mobbing** as mitigations to [Coordination Risk](/tags/Coordination-Risk) are easiest when developers are together in the same room. But it doesn't always work out like this. Teams spread in different locations and timezones naturally don't have the same [communication bandwidth](/tags/Communication-Risk) and you _will_ have more issues with [Coordination Risk](/tags/Coordination-Risk).
-
-In the extreme, I've seen situations where the team at one location has decided to "suck up" the extra development effort themselves rather than spend time trying to bring a new remote team up-to-speed. More common is for one location to do the development, while another gets the [Support](../Planning-And-Management/Issue-Management) duties.
-
-When this happens, it's because somehow the team feel that [Coordination Risk](/tags/Coordination-Risk) is more unmanageable than [Schedule Risk](/tags/Schedule-Risk).
-
-There are some mitigations here: video-chat, moving staff from location-to-location for face-time, frequent [show-and-tell](/tags/Review), or simply modularizing across geographic boundaries, in respect of [Conway's Law](/tags/Coordination-Risk):
-
-> "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." - *[M. Conway](https://en.wikipedia.org/wiki/Conways_law)*
-
-When we add **Outsourcing** into the mix, we also have to consider [Agency Risk](/tags/Agency-Risk): the consultancy you've hired is _definitely_ more interested in keeping themselves solvent than solving your business problems.
+| **Outsourcing Type**      | **Description**                                                        | **Reference**                                                                         |
+| ------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Offshore Outsourcing**  | Contracting work to companies in different countries for cost savings. | [Offshore Outsourcing, Wikipedia](https://en.wikipedia.org/wiki/Offshore_outsourcing) |
+| **Nearshore Outsourcing** | Contracting to nearby countries for better timezone alignment.         | [Nearshoring, Wikipedia](https://en.wikipedia.org/wiki/Nearshoring)                   |
+| **Staff Augmentation**    | Adding external contractors to work alongside internal teams.          | [Staff Augmentation, Wikipedia](https://en.wikipedia.org/wiki/Staff_augmentation)     |
 
 ## Used By
 

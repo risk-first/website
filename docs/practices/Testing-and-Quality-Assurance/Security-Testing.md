@@ -49,9 +49,13 @@ practice:
 
 Security Testing involves assessing the security of software applications to identify vulnerabilities and ensure they are protected against threats and attacks. This practice is essential for maintaining the integrity, confidentiality, and availability of software systems.
 
-- [Red Teaming](https://en.wikipedia.org/wiki/Red_team) is more effective for high-level behavioural risks, like deception, exploitation, and adversarial misuse.
+## Variations
 
-- [Penetration Testing](https://en.wikipedia.org/wiki/Penetration_test) is more effective for technical security risks, like vulnerabilities in APIs, data injection flaws, and adversarial attacks on AI safety mechanisms.
+| **Security Test Type**     | **Description**                                                                       | **Reference**                                                                           |
+| -------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Penetration Testing**    | Simulating attacks to find exploitable vulnerabilities in systems.                    | [Penetration Testing, Wikipedia](https://en.wikipedia.org/wiki/Penetration_test)        |
+| **Red Teaming**            | Simulating adversarial attacks to test defences, especially for AI behavioural risks. | [Red Team, Wikipedia](https://en.wikipedia.org/wiki/Red_team)                           |
+| **Vulnerability Scanning** | Automated tools to identify known security weaknesses.                                | [Vulnerability Scanner, Wikipedia](https://en.wikipedia.org/wiki/Vulnerability_scanner) |
 
 ## Used By
 

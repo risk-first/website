@@ -49,6 +49,14 @@ Analysis in software development involves examining and breaking down the requir
 
 Analysis is also important as a tool to understand the environment that your software will run in. See [Environmental Risks](/tags/Environmental-Risks).
 
+## Variations
+
+| **Analysis Type**        | **Description**                                                              | **Reference**                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Business Analysis**    | Understanding business needs and translating them into requirements.         | [Business Analysis, Wikipedia](https://en.wikipedia.org/wiki/Business_analysis)     |
+| **Systems Analysis**     | Examining technical systems to understand their components and interactions. | [Systems Analysis, Wikipedia](https://en.wikipedia.org/wiki/Systems_analysis)       |
+| **Competitive Analysis** | Studying competitors to understand market positioning and opportunities.     | [Competitor Analysis, Wikipedia](https://en.wikipedia.org/wiki/Competitor_analysis) |
+
 ## Used By
 
 <MethodList tag="Analysis" />

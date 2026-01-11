@@ -40,6 +40,14 @@ practice:
 
 Sales in software development involve activities aimed at selling the software product to customers. This includes identifying potential leads, understanding customer needs, presenting the product, negotiating terms, and closing deals. Effective sales strategies help in generating revenue, expanding the customer base, and achieving business growth.
 
+## Variations
+
+| **Sales Model**   | **Description**                                                                  | **Reference**                                                               |
+| ----------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **Direct Sales**  | Selling directly to customers through a dedicated sales team.                    | [Direct Selling, Wikipedia](https://en.wikipedia.org/wiki/Direct_selling)   |
+| **Self-Service**  | Customers purchase through a website without sales interaction (common in SaaS). | [Self-Service, Wikipedia](https://en.wikipedia.org/wiki/Self-service)       |
+| **Channel Sales** | Selling through partners, resellers, or distributors.                            | [Channel Partner, Wikipedia](https://en.wikipedia.org/wiki/Channel_partner) |
+
 ## Used By
 
 <MethodList tag="Sales" />

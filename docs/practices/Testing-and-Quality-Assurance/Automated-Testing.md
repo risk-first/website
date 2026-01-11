@@ -39,10 +39,15 @@ practice:
 
 Unit testing involves writing and running tests for individual units or components of the software to ensure they function as expected. This practice helps in identifying and fixing issues early in the development process, making the codebase more reliable and maintainable.
 
-See:
+## Variations
 
-- [Development Process](/thinking/Development-Process#a-toy-process)
-- [Unit Testing (Meeting Reality)](/thinking/Meeting-Reality#example-automation)
+| **Test Type**         | **Description**                                               | **Reference**                                                                                              |
+| --------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Unit Testing**      | Testing individual functions or methods in isolation.         | [Unit Testing, Wikipedia](https://en.wikipedia.org/wiki/Unit_testing)                                      |
+| **Component Testing** | Testing larger components that may include multiple units.    | [Component Testing, Wikipedia](https://en.wikipedia.org/wiki/Component-based_software_engineering#Testing) |
+| **Snapshot Testing**  | Comparing output against a stored snapshot to detect changes. | [Snapshot Testing, Jest](https://jestjs.io/docs/snapshot-testing)                                          |
+
+See also: [Development Process](/thinking/Development-Process#a-toy-process), [Unit Testing (Meeting Reality)](/thinking/Meeting-Reality#example-automation)
 
 ## Used By
 

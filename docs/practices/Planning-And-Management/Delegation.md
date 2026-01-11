@@ -40,10 +40,15 @@ practice:
 
 Delegation involves assigning responsibility and authority to others to carry out specific activities or tasks. Effective delegation requires clear communication and proper accountability to ensure tasks are executed correctly and objectives are met.
 
-See:
+## Variations
 
-- [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment)
-- [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
+| **Delegation Type**       | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Task Delegation**       | Assigning specific tasks while retaining overall responsibility.                                 | [Delegation, Wikipedia](https://en.wikipedia.org/wiki/Delegation) |
+| **Authority Delegation**  | Granting decision-making power along with responsibility.                                        | [Empowerment, Wikipedia](https://en.wikipedia.org/wiki/Empowerment) |
+| **Self-Organising Teams** | Teams that collectively decide how to distribute work among themselves.                          | [Self-Management, Wikipedia](https://en.wikipedia.org/wiki/Self-management_(organizational)) |
+
+See also: [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment), [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
 
 ## Used By
 

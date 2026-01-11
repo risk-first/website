@@ -42,6 +42,14 @@ practice:
 
 Approval / Sign Off in software development involves getting formal approval from stakeholders at various stages of the project. This practice ensures that the work meets the required standards and specifications before progressing to the next phase, providing a formal communication of acceptance and readiness.
 
+## Variations
+
+| **Approval Type**         | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Quality Gate**          | Checkpoint where deliverables must meet defined criteria before proceeding.                      | [Quality Gate, Wikipedia](https://en.wikipedia.org/wiki/Quality_gate) |
+| **Peer Approval**         | Review and sign-off by colleagues at the same level.                                             | [Peer Review, Wikipedia](https://en.wikipedia.org/wiki/Peer_review) |
+| **Executive Sign-Off**    | Formal approval from senior leadership for major decisions or releases.                          | [Project Governance, Wikipedia](https://en.wikipedia.org/wiki/Project_governance) |
+
 ## Used By
 
 <MethodList tag="Approvals" />

@@ -43,7 +43,15 @@ practice:
 
 Standardisation involves creating, implementing, and enforcing standards and guidelines to ensure consistency, compatibility, and quality across software projects. This practice helps in maintaining uniformity, reducing complexity, and improving communication among team members and stakeholders.
 
-See:
+## Variations
+
+| **Standard Type**      | **Description**                                                           | **Reference**                                                                     |
+| ---------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Coding Standards**   | Guidelines for code style, naming conventions, and best practices.        | [Coding Conventions, Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions) |
+| **API Standards**      | Specifications for how APIs should be designed and documented.            | [OpenAPI, Wikipedia](https://en.wikipedia.org/wiki/OpenAPI_Specification)         |
+| **Industry Standards** | External standards like ISO, W3C, or IETF that software must comply with. | [Technical Standard, Wikipedia](https://en.wikipedia.org/wiki/Technical_standard) |
+
+## See Also
 
 - [Unwritten Software (On Software Dependencies)](/risks/On-Software-Dependencies#unwritten-software)
 

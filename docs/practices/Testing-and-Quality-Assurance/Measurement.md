@@ -42,6 +42,14 @@ practice:
 
 Measurement in software development involves collecting and analyzing data to evaluate various aspects of the software or development process. This practice helps in making informed decisions, identifying areas for improvement, and ensuring that the project meets its goals and objectives.
 
+## Variations
+
+| **Measurement Type**      | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Code Coverage**         | Measuring the percentage of code exercised by tests.                                             | [Code Coverage, Wikipedia](https://en.wikipedia.org/wiki/Code_coverage) |
+| **Velocity**              | Measuring the amount of work completed per iteration.                                            | [Velocity, Wikipedia](https://en.wikipedia.org/wiki/Velocity_(software_development)) |
+| **Cycle Time**            | Measuring the time from work starting to completion.                                             | [Cycle Time, Wikipedia](https://en.wikipedia.org/wiki/Cycle_time) |
+
 ## Used By
 
 <MethodList tag="Measurement" />

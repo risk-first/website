@@ -36,6 +36,14 @@ practice:
 
 Requirements Capture involves gathering and documenting the requirements for the software. This process ensures that the development team has a clear and comprehensive understanding of what needs to be built, helping to align the final product with client expectations and reducing the risk of costly changes later in the project.
 
+## Variations
+
+| **Requirements Type**     | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **User Stories**          | Short descriptions of functionality from the user's perspective.                                | [User Story, Wikipedia](https://en.wikipedia.org/wiki/User_story) |
+| **Use Cases**             | Detailed descriptions of system interactions for specific goals.                                 | [Use Case, Wikipedia](https://en.wikipedia.org/wiki/Use_case) |
+| **Functional Specification** | Formal document detailing system behaviour and requirements.                                   | [Functional Specification, Wikipedia](https://en.wikipedia.org/wiki/Functional_specification) |
+
 ## Used By
 
 <MethodList tag="Requirements Capture" />

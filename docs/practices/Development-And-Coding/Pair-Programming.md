@@ -44,9 +44,15 @@ practice:
 
 Pair Programming involves two developers working together on the same code. One developer writes the code while the other reviews each line in real-time, providing instant feedback and suggestions. This practice not only improves code quality but also facilitates knowledge sharing and collaboration between team members.
 
-See:
+## Variations
 
-- [Crisis Mode](/thinking/Crisis-Mode)
+| **Pairing Style**     | **Description**                                                                    | **Reference**                                                                                         |
+| --------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Driver-Navigator**  | One developer writes code (driver) while the other reviews and guides (navigator). | [Pair Programming, Wikipedia](https://en.wikipedia.org/wiki/Pair_programming)                         |
+| **Ping-Pong Pairing** | Developers alternate writing tests and implementation code in a TDD style.         | [Ping Pong Pair Programming](https://anthonysciamanna.com/2015/04/18/ping-pong-pair-programming.html) |
+| **Mob Programming**   | The entire team works together on a single task at one computer.                   | [Mob Programming, Wikipedia](https://en.wikipedia.org/wiki/Mob_programming)                           |
+
+See also: [Crisis Mode](/thinking/Crisis-Mode)
 
 ## Used By
 

@@ -44,6 +44,14 @@ practice:
 
 Contracts in software development define the terms and conditions under which services are provided. They outline roles, responsibilities, timelines, costs, and deliverables, helping to manage expectations and reduce risks. Effective contract management is crucial for ensuring that all parties adhere to agreed-upon terms and that the project runs smoothly.
 
+## Variations
+
+| **Contract Type**         | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Fixed-Price Contract**  | Agreed total cost for defined deliverables, shifting risk to the vendor.                         | [Fixed-Price Contract, Wikipedia](https://en.wikipedia.org/wiki/Fixed-price_contract) |
+| **Time and Materials**    | Payment based on actual time and resources used, shifting risk to the client.                    | [Time and Materials, Wikipedia](https://en.wikipedia.org/wiki/Time_and_materials) |
+| **Service Level Agreement** | Defines expected service quality and remedies for failures.                                     | [Service-Level Agreement, Wikipedia](https://en.wikipedia.org/wiki/Service-level_agreement) |
+
 ## Used By
 
 <MethodList tag="Contracts" />

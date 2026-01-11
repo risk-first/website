@@ -40,6 +40,14 @@ practice:
 
 Stakeholder Management in software development involves identifying, engaging, and managing relationships with all parties who have an interest in the project. Effective stakeholder management ensures that their needs and expectations are understood and met, reducing conflicts and facilitating smoother project execution.
 
+## Variations
+
+| **Stakeholder Type**      | **Description**                                                 | **Reference**                                                                         |
+| ------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Internal Stakeholders** | Team members, managers, and executives within the organisation. | [Stakeholder, Wikipedia](<https://en.wikipedia.org/wiki/Stakeholder_(corporate)>)     |
+| **External Stakeholders** | Customers, partners, regulators, and other outside parties.     | [Stakeholder Analysis, Wikipedia](https://en.wikipedia.org/wiki/Stakeholder_analysis) |
+| **End Users**             | The people who will ultimately use the software product.        | [End User, Wikipedia](https://en.wikipedia.org/wiki/End_user)                         |
+
 ## Used By
 
 <MethodList tag="Stakeholder Management" />

@@ -36,10 +36,15 @@ practice:
 
 Integration Testing involves testing combined parts of the software to ensure they work together correctly. This practice helps in identifying and fixing issues that arise when individual components interact, ensuring that the overall system functions as intended.
 
-See:
+## Variations
 
-- [Development Process](/thinking/Development-Process#a-toy-process)\_
-- [Production (Cadence)](/thinking/Cadence#production)
+| **Integration Type**      | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Big Bang Integration**  | All components are integrated simultaneously and tested together.                                | [Integration Testing, Wikipedia](https://en.wikipedia.org/wiki/Integration_testing) |
+| **Incremental Integration** | Components are integrated and tested one at a time.                                            | [Integration Testing, Wikipedia](https://en.wikipedia.org/wiki/Integration_testing) |
+| **End-to-End Testing**    | Testing the complete flow from start to finish as a user would experience it.                   | [System Testing, Wikipedia](https://en.wikipedia.org/wiki/System_testing) |
+
+See also: [Development Process](/thinking/Development-Process#a-toy-process), [Production (Cadence)](/thinking/Cadence#production)
 
 ## Used By
 

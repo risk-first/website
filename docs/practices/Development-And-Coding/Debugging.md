@@ -36,6 +36,13 @@ practice:
 
 Debugging in software development involves identifying, analyzing, and fixing defects or issues within the software. This practice is crucial for ensuring that the software operates correctly and efficiently, improving its reliability and stability. Effective debugging helps in maintaining the overall quality of the software and minimizing the risk of operational failures.
 
+## Variations
+
+| **Debugging Approach**    | **Description**                                                                 | **Reference**                                                              |
+| ------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Print Debugging**       | Inserting print statements to trace program execution and variable values.      | [Debugging, Wikipedia](https://en.wikipedia.org/wiki/Debugging#Techniques) |
+| **Interactive Debugging** | Using a debugger tool to step through code, set breakpoints, and inspect state. | [Debugger, Wikipedia](https://en.wikipedia.org/wiki/Debugger)              |
+
 ## Used By
 
 <MethodList tag="Debugging" />

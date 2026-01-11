@@ -40,6 +40,14 @@ practice:
 
 Estimation in software development involves predicting the time, effort, and resources needed to complete tasks or projects. Accurate estimation is crucial for planning, budgeting, and managing the development process, helping to set realistic expectations and reduce the risk of overruns.
 
+## Variations
+
+| **Estimation Technique**  | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Story Points**          | Relative sizing of work items based on complexity and effort.                                    | [Story Points, Mountain Goat](https://www.mountaingoatsoftware.com/blog/what-are-story-points) |
+| **Planning Poker**        | Collaborative estimation technique using cards to reach consensus.                               | [Planning Poker, Wikipedia](https://en.wikipedia.org/wiki/Planning_poker) |
+| **T-Shirt Sizing**        | Quick estimation using sizes (XS, S, M, L, XL) for rough categorisation.                        | [Agile Estimation, Wikipedia](https://en.wikipedia.org/wiki/Agile_software_development#Estimation) |
+
 ## Used By
 
 <MethodList tag="Estimation" />

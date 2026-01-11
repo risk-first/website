@@ -40,6 +40,14 @@ practice:
 
 Performance Testing involves evaluating the performance of software applications under various conditions to ensure they meet required standards for speed, scalability, and stability. This practice helps in identifying and mitigating performance issues before they impact end users.
 
+## Variations
+
+| **Performance Test Type** | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Load Testing**          | Testing system behaviour under expected user loads.                                              | [Load Testing, Wikipedia](https://en.wikipedia.org/wiki/Load_testing) |
+| **Stress Testing**        | Testing system behaviour under extreme conditions beyond normal capacity.                        | [Stress Testing, Wikipedia](https://en.wikipedia.org/wiki/Stress_testing_(software)) |
+| **Soak Testing**          | Testing system stability over an extended period under normal load.                              | [Soak Testing, Wikipedia](https://en.wikipedia.org/wiki/Soak_testing) |
+
 ## Used By
 
 <MethodList tag="Performance Testing" />

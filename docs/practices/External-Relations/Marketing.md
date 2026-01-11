@@ -41,6 +41,14 @@ practice:
 
 Marketing in software development involves promoting the software product to potential customers through various channels and strategies. Effective marketing helps in reaching the target audience, creating awareness, and driving sales. It also involves understanding market needs, positioning the product, and communicating its value proposition.
 
+## Variations
+
+| **Marketing Type**        | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Content Marketing**     | Creating valuable content to attract and engage target audiences.                                | [Content Marketing, Wikipedia](https://en.wikipedia.org/wiki/Content_marketing) |
+| **Product Marketing**     | Positioning and messaging to drive adoption of a specific product.                               | [Product Marketing, Wikipedia](https://en.wikipedia.org/wiki/Product_marketing) |
+| **Developer Marketing**   | Targeting developers through documentation, APIs, and developer experience.                      | [Developer Relations, Wikipedia](https://en.wikipedia.org/wiki/Developer_relations) |
+
 ## Used By
 
 <MethodList tag="Marketing" />

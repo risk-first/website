@@ -38,6 +38,14 @@ practice:
 
 Meetings are useful for team collaboration and communication. Regular meetings help in maintaining transparency and keeping everyone informed about the project's status and any changes.
 
+## Variations
+
+| **Meeting Type**          | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Stand-up Meeting**      | Brief daily meeting where team members share progress and blockers.                              | [Stand-up Meeting, Wikipedia](https://en.wikipedia.org/wiki/Stand-up_meeting) |
+| **Sprint Planning**       | Meeting to plan work for an upcoming sprint or iteration.                                        | [Scrum, Wikipedia](https://en.wikipedia.org/wiki/Scrum_(software_development)#Sprint_planning) |
+| **One-on-One**            | Regular meeting between a manager and team member for feedback and support.                      | [One-on-One Meeting, Wikipedia](https://en.wikipedia.org/wiki/One-on-one_meeting) |
+
 ## Used By
 
 <MethodList tag="Meeting" />

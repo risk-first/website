@@ -34,6 +34,14 @@ practice:
 
 Version Control in software development involves using systems that track changes to the codebase over time. This practice allows developers to manage versions, collaborate on code, and revert to previous states if necessary. Version control is essential for maintaining the integrity and history of the project.
 
+## Variations
+
+| **Version Control Type**  | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Distributed VCS**       | Every developer has a full copy of the repository (e.g., Git, Mercurial).                        | [Distributed Version Control, Wikipedia](https://en.wikipedia.org/wiki/Distributed_version_control) |
+| **Centralised VCS**       | A single central repository that developers commit to (e.g., SVN, CVS).                          | [Version Control, Wikipedia](https://en.wikipedia.org/wiki/Version_control#Centralized_version_control) |
+| **Trunk-Based Development** | All developers work on a single branch with frequent small commits.                             | [Trunk-Based Development](https://trunkbaseddevelopment.com/) |
+
 ## Used By
 
 <MethodList tag="Version Control" />

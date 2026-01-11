@@ -40,9 +40,15 @@ practice:
 
 Fundraising involves engaging with venture capitalists, angel investors, internal budget-holders or other funding sources to secure the necessary financial resources.
 
-See:
+## Variations
 
-- [Funding Risk](/tags/Funding-Risk)
+| **Funding Type**          | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Seed Funding**          | Early-stage capital to develop a concept or prototype.                                           | [Seed Money, Wikipedia](https://en.wikipedia.org/wiki/Seed_money) |
+| **Venture Capital**       | Investment from firms specialising in high-growth startups.                                      | [Venture Capital, Wikipedia](https://en.wikipedia.org/wiki/Venture_capital) |
+| **Internal Budget**       | Securing funding from within an organisation's existing budget allocations.                      | [Capital Budgeting, Wikipedia](https://en.wikipedia.org/wiki/Capital_budgeting) |
+
+See also: [Funding Risk](/tags/Funding-Risk)
 
 ## Used By
 
