@@ -46,7 +46,7 @@ No methodology is "right" in the abstract. Each addresses specific risks while i
 
 > "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_. Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
 
-**Read more:** [Risk Frameworkss](/methods/Start)
+**Read more:** [Risk Frameworks](/methods/Start)
 
 ## 3. You Can Build a Vocabulary for Risk
 
@@ -108,4 +108,8 @@ You'll gain:
 
 ## Next Steps
 
-[Tracks](Tracks) explains how the material on this site is structured.
+<a href="/Risk-First-Second-Edition"><img src="/img/Cover_Image_Second_Edition.jpeg" alt="Risk-First Software Development: Second Edition" style={{float: 'left', width: '150px', marginRight: '1rem', marginBottom: '1rem', border: '1px solid black' }} /></a>
+
+Want to go deeper? [**Risk-First Software Development: Second Edition**](/Risk-First-Second-Edition) brings together all of this material in a structured, comprehensive guide. Available now from Pragmatic Bookshelf.
+
+Or continue on this website: [Tracks](Tracks) explains how the material on this site is structured.

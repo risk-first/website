@@ -14,7 +14,6 @@ tags:
   - Stake
   - Expected Value
   - Expected Return
-  - Release
 definitions:
   - name: Bet
     description: Taking a decision to move somewhere new on the Risk Landscape to try to improve your fortunes.
