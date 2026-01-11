@@ -2,7 +2,7 @@
 title: Lean Software Development
 description: An Agile software development methodology that emphasizes eliminating waste, building quality in, creating knowledge, deferring commitment, delivering fast, respecting people, and optimizing the whole.
 tags:
-  - Risk Framework
+  - Risk Frameworks
   - Agile
   - Lean Software Development
 featured:

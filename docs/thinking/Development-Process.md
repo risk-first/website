@@ -10,7 +10,7 @@ tags:
   - Attendant Risk
   - Meeting Reality
   - Hidden Risk
-  - Risk Framework
+  - Risk Frameworks
 redirect_from:
   - /Development-Process
 tweet: yes
@@ -163,10 +163,10 @@ What does this Risk-First analysis tell us about _development processes in gener
 
 5. Really, _all this work is risk management_. All work is testing ideas against reality.
 
-6. The dinner party example was a one-off event. But the development process is _ongoing_—designed to deal with risks repeatedly over time. This makes it a [Risk Framework](/tags/Risk-Framework): a structured way of identifying, categorising, and addressing risks within a domain.
+6. The dinner party example was a one-off event. But the development process is _ongoing_—designed to deal with risks repeatedly over time. This makes it a [Risk Framework](/tags/Risk-Frameworks): a structured way of identifying, categorising, and addressing risks within a domain.
 
 ## Risk Frameworks
 
-A [Risk Framework](/tags/Risk-Framework) combines a breakdown of risks with actions to address them—sometimes including monitoring and control processes too. Software methodologies like Scrum, XP, or DevOps are all examples of risk frameworks. We'll explore this further in [Risk Frameworks](/methods/Start).
+A [Risk Frameworks](/tags/Risk-Frameworks) combines a breakdown of risks with actions to address them—sometimes including monitoring and control processes too. Software methodologies like Scrum, XP, or DevOps are all examples of risk frameworks. We'll explore this further in [Risk Frameworks](/methods/Start).
 
 In the next section, we're going to look at the concept of [Meeting Reality](Meeting-Reality) in more depth.

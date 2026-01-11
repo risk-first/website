@@ -46,7 +46,7 @@ No methodology is "right" in the abstract. Each addresses specific risks while i
 
 > "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_. Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
 
-**Read more:** [Risk Frameworks](/methods/Start)
+**Read more:** [Risk Frameworkss](/methods/Start)
 
 ## 3. You Can Build a Vocabulary for Risk
 
@@ -72,7 +72,7 @@ Once you accept that all work is risk management, you can analyse _any_ practice
 
 ![Reducing Complexity via refactoring, but endangering the schedule.](/img/generated/risks/posters/schedule-risk1.svg)
 
-**[Refactoring](tags/Refactoring)** can help manage complexity and ensure features match the customer's requirements, but can put your schedule at risk.
+**[Refactoring](/tags/Refactoring)** can help manage complexity and ensure features match the customer's requirements, but can put your schedule at risk.
 
 **Different tools manage different risks.** The art is matching the right practice to the risks that matter most.
 

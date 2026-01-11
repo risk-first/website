@@ -2,7 +2,7 @@
 title: Waterfall Development
 description: A traditional linear and sequential development methodology where each phase must be completed before moving on to the next.
 tags: 
-  - Risk Framework
+  - Risk Frameworks
   - Traditional
   - Waterfall Development
 featured: 

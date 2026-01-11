@@ -1,5 +1,5 @@
 ---
-title: Risk Framework
+title: Risk Frameworks
 description: A description of the Risk Framework concept and a list of Risk Frameworks mapped by Risk-First.
 
 featured:
@@ -10,7 +10,7 @@ cat: Complexity
 tags:
   - Front
   - Read All About It
-  - Risk Framework
+  - Risk Frameworks
 sidebar_position: 5
 tweet: yes
 ---
@@ -19,7 +19,7 @@ tweet: yes
 
 A **Risk Framework** is a structured way of identifying, categorising, and addressing risks within a domain. It typically combines a breakdown of risks with recommended actions to manage them.
 
-![Risk Framework](/img/generated/introduction/risk_framework_2.svg)
+![Risk Frameworks](/img/generated/introduction/risk_framework_2.svg)
 
 As the diagram shows, a risk framework employs **practices** (actions you can take) that address **risks** which obstruct your **goals**. The framework's value lies in having already identified which risks matter and which practices are effective against them.
 
@@ -33,4 +33,4 @@ There's value in adopting a framework: it reduces cognitive load and provides ba
 
 The frameworks below are mapped by the risks they address and the practices they recommend.
 
-<TagList tag="Risk Framework" filter="methods"/>
+<TagList tag="Risk Frameworks" filter="methods"/>

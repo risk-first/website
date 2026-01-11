@@ -2,7 +2,7 @@
 title: Scrum
 description: An Agile framework for managing and completing complex projects.
 tags:
-  - Risk Framework
+  - Risk Frameworks
   - Agile
   - Scrum
 featured:

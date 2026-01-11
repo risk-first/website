@@ -2,7 +2,7 @@
 title: DevOps
 description: A set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and provide continuous delivery with high software quality.
 tags:
-  - Risk Framework
+  - Risk Frameworks
   - Agile
   - DevOps
 featured:

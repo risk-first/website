@@ -2,7 +2,7 @@
 title: Extreme Programming
 description: An Agile software development methodology that emphasizes customer satisfaction, teamwork, and frequent delivery of small, functional software increments.
 tags:
-  - Risk Framework
+  - Risk Frameworks
   - Agile
   - Extreme Programming
 featured:
