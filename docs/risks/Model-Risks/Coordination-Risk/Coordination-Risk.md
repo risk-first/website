@@ -11,6 +11,7 @@ sidebar_position: 13
 tags:
  - Risks
  - Coordination Risk
+ - Model Risks
 tweet: yes
 part_of: Operational Risk
 ---
