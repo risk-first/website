@@ -1,21 +1,21 @@
 ---
-title: Methods
+title: Software Development Risk Frameworks
 description: Some rough groupings of practices by development method.
 
-featured: 
+featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/artifacts/methodology_v2.svg">Methods</image-artifact>'
 layout: categories
 cat: Complexity
 tags:
- - Front
- - Read All About It
+  - Front
+  - Read All About It
 sidebar_position: 5
 tweet: yes
 ---
 
-This is a categorisation of practice by methodology.  
+This is a categorisation of practice by risk framework (or methodology).
 
-Consider this to be incomplete but may be useful to get a sense of which risks different methodologies focus on.
+Consider this to be incomplete but may be useful to get a sense of which risks different risk frameworks focus on.
 
-<TagList tag="Method" />
+<TagList tag="Risk Framework" />

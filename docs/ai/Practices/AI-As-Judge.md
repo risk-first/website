@@ -6,7 +6,7 @@ featured:
   element: '<action>AI-As-Judge</action>'
 tags: 
   - AI As Judge
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Emergent Behaviour

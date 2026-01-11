@@ -22,7 +22,9 @@ tweet: yes
 
 # Risk-First Diagrams Explained
 
-Throughout [A Simple Scenario](A-Simple-Scenario) we used diagrams to explain the risks we faced and the choices we were making.  These are called "Risk-First Diagrams".  Here, we're going to look at what is going on in these diagrams so that when we come to apply them to _software development_, they're not totally confusing.
+In [A Simple Scenario](A-Simple-Scenario) we used diagrams to show the risks we faced and the choices available. These are "Risk-First Diagrams"—a visual way of capturing trade-offs. The purpose is to make explicit that these trade-offs are fundamentally about managing risk.
+
+Let's break down how to read them.
 
 ![Goal In Mind and Attendant Risks](/img/generated/introduction/goal_in_mind.svg)
 
@@ -60,30 +62,31 @@ Hosting a dinner party opens you up to attendant risks like "Not Enough to Eat".
 
 ## Thinking About Risk-First Diagrams
 
-It's worth pointing out that sometimes _the cure is worse than the disease_.  
+**Risk-First diagrams show trade-offs.** Whether you choose to take an action depends on whether the trade-off seems worthwhile. In our dinner party example, "buying snacks" trades the risk of "Not Enough to Eat" for the risks of "Too Many Leftovers" and "Guests Are Unimpressed."
 
-By [Taking Action](/tags/Take-Action) you might end up in a worse predicament than you started.  For example, cutting your legs off _would definitely cure your in-growing toenail_.  We have to use our judgement to decide on the right course of action!
+This might seem obvious for dinner parties, but in software development these trade-offs matter enormously. Adding a new feature might trade off customer dissatisfaction against introducing security vulnerabilities. The diagram makes both sides visible.
+
+### Sometimes The Cure Is Worse Than The Disease
+
+By [Taking Action](/tags/Take-Action) you might end up worse off than you started. Cutting your legs off would definitely cure your ingrown toenail—but that's not a sensible trade. We have to use judgement.
 
 ### A Balance of Risk
 
-So Risk-First diagrams represent a [balance of risk](/tags/Balance-Of-Risk): whether or not you choose to take the action will depend on your evaluation of this balance.  Are the things on the left worse or better than the things on the right?  
+Risk-First diagrams represent a [balance of risk](/tags/Balance-Of-Risk). Whether you take the action depends on your evaluation of this balance: are the risks on the left worse than the risks on the right?  
 
 ### Cause and Effect
 
 ![Stimulus, Response, Outcome](/img/generated/introduction/stimulus-response-outcome.svg)
 
-You can think about a Risk-First diagram in a sense as a way of visualising _cause and effect_.  In _biological terms_ this is called the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), or sometimes, as shown in the diagram above, Stimulus-Response-Outcome.   The items on the left of the diagram are the _stimulus_ part: they're the thing that makes us [Take Action](/tags/Take-Action) in the world.  The middle part (the action) is the response and the right side is the outcome.  
+Risk-First diagrams visualise _cause and effect_. In biological terms, this is the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model)—or Stimulus-Response-Outcome, as shown above. The left side is the _stimulus_ (what makes us act), the middle is the _response_ (the action), and the right is the _outcome_.
 
-There are [all kinds of risks](/risks/Risk-Landscape) we face in life and we attach different value or _criticality_ to them.  Most people will want to take action against the worst risks they face in their lives and maybe put up with some of the lesser ones.  Equally, we should also try and achieve our _most critical_ goals and let the lesser ones slide (at least, from a rational standpoint). 
+We face [many kinds of risks](/risks/Risk-Landscape) and attach different importance to them. Rationally, we should tackle the worst risks first and let lesser ones slide. The same applies to goals: pursue the most critical ones and accept that some won't get attention.
 
 ### Functions
 
 ![Input, Function, Output](/img/generated/introduction/input-function-output.svg)
 
-
-As well as considering Risk-First diagrams to be like the [Stimulus-Response Model](https://en.wikipedia.org/wiki/Stimulus–response_model), you could also think in terms of [functional programming](https://en.wikipedia.org/wiki/Functional_programming), which might be more familiar to us as software developers.  
-
-We are _transforming_ an input condition (on the left) into an _output_ condition (on the right) by way of a function (the action we take, in the middle).  
+If you're a developer, you might prefer to think in terms of [functional programming](https://en.wikipedia.org/wiki/Functional_programming). We're _transforming_ an input condition (left) into an output condition (right) by way of a function (the action in the middle).  
 
 ## Other Elements
 
@@ -121,17 +124,17 @@ Finally, we might sometimes wish to show that one risk is correlated or caused b
 
 ## Summary
 
-Let's quickly summarise again what's happening in these diagrams:
-
-| Part     | Where Is It?  | Consists of..                                    |
+| Part     | Position      | Contains                                         |
 |----------|---------------|--------------------------------------------------|
-| Stimulus | On the left   | Risks and Goals (in Internal Models), Artifacts  |
-| Response | In the middle | Actions being taken                              |
-| Outcome  | On the right  | New Attendant Risks, New Artifacts, Hidden Risks |
+| Stimulus | Left          | Risks, Goals (in Internal Models), Artifacts     |
+| Response | Middle        | Actions being taken                              |
+| Outcome  | Right         | New Attendant Risks, Hidden Risks, New Artifacts |
+
+The key insight: every action is a trade-off. Risk-First diagrams make that trade-off visible and help us reason about whether it's worth making.
 
 ## Next
 
-Risk-First is about understanding risk in software development, so next let's examine the scenario of a new software project.  Instead of a single person organising a dinner party, we are likely to have a team, and our [Internal Model](/tags/Internal-Model) will not just exist in our heads, but in the code we write.  
+Now let's apply these ideas to software. Instead of one person organising a dinner party, we'll have a team. Our [Internal Model](/tags/Internal-Model) won't just exist in our heads—it'll be spread across code, documents, tickets, and conversations.
 
 On to [Development Process](Development-Process)...
 

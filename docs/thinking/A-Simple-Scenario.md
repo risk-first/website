@@ -37,39 +37,41 @@ tweet: yes
 
 # A Simple Scenario
 
-I'm going to introduce some terms for thinking about risk.
+We manage risk all the time without realising it. Every decision—from what to have for lunch to whether to change jobs—involves weighing up what might go wrong. Software development works the same way: we're used to thinking of design as balancing trade-offs, but those trade-offs are fundamentally about risk, even if we don't use that word.
 
-For a moment, forget about software completely and think about _any endeavour at all_ in life.  It could be passing a test, mowing the lawn or going on holiday.  Choose something now.   I'll discuss from the point of view of "organising a dinner party" but you can play along with your own example.  
+This section introduces some terms for thinking about risk. Before diving into software, let's consider a simpler example: organising a dinner party. It sounds harmless enough, but there's plenty that can go wrong—which makes it perfect for exploring how we think about risk.  
 
 ## Goal In Mind
 
-Now, in this endeavour, we want to be successful.  That is to say, we have a **[Goal](/tags/Goal)** in mind:  we want our friends to go home satisfied after a decent meal and not to feel hungry.   As a bonus, we might also want to spend time talking with them before and during the meal.  So, now to achieve our [Goal](/tags/Goal) we *probably* have to do some tasks.  
+We want our dinner party to succeed. That means we have a **[Goal](/tags/Goal)** in mind: friends leaving happy after good food and conversation. Achieving that goal requires preparation.
 
-Since our goal only exists _in our head_, we can say it is part of our **[Internal Model](/tags/Internal-Model)** of the world.  That is, the model we have of reality.  This model extends to _predicting what will happen_.
+This goal exists only _in our heads_—it's part of our **[Internal Model](/tags/Internal-Model)** of reality. We all carry mental models that help us predict what will happen, and we act based on those predictions. These models are incomplete (the world is complex), but they're useful. We'll look at Internal Models more closely in [Meeting Reality](Meeting-Reality).
 
-If we do nothing, our friends will turn up and maybe there's nothing in the house for them to eat.   Or maybe, the thing that you're going to cook is going to take hours and they'll have to sit around and wait for you to cook it and they'll leave before it's ready.  Maybe you'll be some ingredients short, or maybe you're not confident of the steps to prepare the meal and you're worried about messing it all up.  
+Without preparation, things could go wrong. Perhaps there's nothing in the house to eat. Perhaps the dish takes longer than expected and guests leave hungry. Perhaps you're missing ingredients, or you're unsure how to cook what you've planned.  
 
 ## Attendant Risks
 
-These _nagging doubts_ that are going through your head are what I'll call the [Attendant Risks](/tags/Attendant-Risk):  they're the ones that will occur to you as you start to think about what will happen. 
+These _nagging doubts_ are what we call [Attendant Risks](/tags/Attendant-Risk): the risks that come to mind when you think through what might happen.
 
 ![Goal, with the risks you know about](/img/generated/introduction/goal_in_mind.svg)
 
-When we go about preparing for this wonderful evening, we can choose to deal with these risks:  shop for the ingredients in advance, prepare parts of the meal and maybe practice the cooking in advance.  Or, we can wing it and sometimes we'll get lucky.
+We can choose to address these risks: shop early, prep ingredients ahead of time, or do a practice run. Or we can wing it and hope for the best.
 
-How much effort we expend on these [Attendant Risks](/tags/Attendant-Risk) depends on how big we think they are.  For example, if you know there's a 24-hour shop, you'll probably not worry too much about getting the ingredients well in advance (although, the shop _could still be closed_).
+How much effort we put into managing [Attendant Risks](/tags/Attendant-Risk) depends on how serious we think they are. If there's a 24-hour shop nearby, getting ingredients early feels less urgent (though the shop _could still be closed_).
+
+Other examples: when you exchange currency before travelling, you know exchange rates might shift against you. If you're holidaying in Japan, you're aware earthquakes are possible. These are attendant risks—you know they exist, even if you can't predict them precisely.
 
 ## Hidden Risks
 
-[Attendant Risks](/tags/Attendant-Risk) are risks you are aware of.  You may not be able to exactly _quantify_ them, but you know they exist.  But there are also **[Hidden Risks](/tags/Attendant-Risk)** that you _don't_ know about: if you're poaching eggs for dinner, perhaps you didn't know that fresh eggs poach best.  Donald Rumsfeld famously called these kinds of risks "Unknown Unknowns":
+[Attendant Risks](/tags/Attendant-Risk) are risks you're aware of. You may not be able to _quantify_ them exactly, but you know they exist. **[Hidden Risks](/tags/Hidden-Risk)** are different: these are risks you _don't_ know about. If you're poaching eggs for dinner, perhaps you didn't know that fresh eggs poach best. Donald Rumsfeld famously called these "unknown unknowns":
 
 > "Reports that say that something hasn't happened are always interesting to me, because as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns—the ones we don't know we don't know. And if one looks throughout the history of our country and other free countries, it is the latter category that tend to be the difficult ones." - [Donald Rumsfeld, _Wikipedia_](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
 ![Goal, the risks you know about and the ones you don't](/img/generated/introduction/hidden_risks.svg)
 
-Different people evaluate risks differently and they'll also _know_ about different risks.  What is an [Attendant Risk](/tags/Attendant-Risk) for one person is a [Hidden Risk](/tags/Attendant-Risk) for another.     
+Different people know about different risks. What's an [Attendant Risk](/tags/Attendant-Risk) for one person might be a [Hidden Risk](/tags/Hidden-Risk) for another. Which risks we're aware of depends on our **knowledge** and **experience**—and that varies from person to person (or team to team).
 
-Which risks we know about depends on our **knowledge** and **experience**, then. <!-- tweet-end --> And that varies from person to person (or team to team).  
+Hidden risks become attendant all the time. For instance, the health risks from microplastics were largely unknown a decade ago; now they're widely discussed. Your dinner party might reveal that a guest is vegetarian—something you didn't think to check.  
 
 ## Taking Action and Meeting Reality
 
@@ -83,21 +85,24 @@ In Risk-First, whenever we try to _do something_ about a risk, it is called [Tak
 
 If we had a good [Internal Model](/tags/Internal-Model) and [took the right actions](/tags/Take-Action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
-## Why The New Terms?
+## A Note on Terminology
 
-I know that as a reader it's annoying to have to pick up new terminology.  So you'll be pleased to learn that there are just three de novo terms to learn in the whole [Thinking](Start) part of Risk First: 
+Strictly speaking, "risk" refers to things we can measure, while "uncertainty" covers things we can't. Risk-First uses "risk" throughout because we'll talk about specific risk types (like [Complexity Risk](/tags/Complexity-Risk) or [Schedule Risk](/tags/Schedule-Risk)), and calling them "uncertainties" would be awkward. Besides, terms like "Operational Risk" and "Reputational Risk" are already standard in banking, even though they're not precisely measurable either.
 
- - [Internal Model](/tags/Internal-Model): actually a term from financial risk management, which we'll be employing widely.  I'll expand on this in more detail in [Meeting Reality](Meeting-Reality).
- - [Meeting Reality](/tags/Meeting-Reality), which is the process of improving your [Internal Model](/tags/Internal-Model).  This is a totally new term.
- - [Taking Action](/tags/Take-Action) which we'll use as a general term to cover a whole range of specific techniques for dealing with risks.  We'll expand on this in [Derisking](De-Risking).
+## Recap
 
-## On To Software?
+So what happened here?
 
-Here, we've introduced some new terms that we're going to use a lot and, we've applied them in a simple scenario.
+1. We started with a **goal** and thought about what might get in the way.
+2. We used our **internal model** to identify which **risks** needed attention.
+3. We **took action** to address those risks—which sometimes created new ones.
+4. As the event approached, our internal model met reality. Some worries didn't materialise; others turned out to be bigger than expected. **Hidden risks** surfaced. We adjusted and repeated.
+
+This cycle—goal, risks, action, feedback—applies to software projects just as much as dinner parties.
 
 <BoxOut title="New Terms" link="/thinking/Glossary" linkText="View Glossary">
-Risk-First tries as far as possible to use pre-existing terminology from the world of risk management, however sometimes new terms are necessary.  This box summarises the terms introduced in this chapter and  where it's a term Risk-First introduces, I've added a label to alert you to this novelty.  
+Risk-First uses existing terminology where possible, but introduces a few new terms. This box summarises what we've covered. Terms marked as Risk-First originals are flagged.
 <TermList details={frontMatter} /> 
 </BoxOut>
 
-Clearly, what we really want to get to is talking about software development, but first I want to dig a bit deeper into the visual language used here to show risks, using [Risk-First Diagrams](Risk-First-Diagrams).
+Before we apply these ideas to software development, let's look at the visual language we'll use to show risks and trade-offs: [Risk-First Diagrams](Risk-First-Diagrams).

@@ -6,7 +6,7 @@ featured:
   element: '<action>Replication Control</action>'
 tags: 
   - Replication Control
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Loss Of Human Control

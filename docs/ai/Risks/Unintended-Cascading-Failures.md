@@ -1,27 +1,26 @@
 ---
 title: Unintended Cascading Failures
 description: "AI interacting with critical systems (finance, infrastructure, etc.) may trigger global-scale unintended consequences."
-featured: 
+featured:
   class: c
   element: |
     <risk class="complexity" /><description  style="text-align: center">Unintended 
     Cascading Failures</description>
 tags:
- - AI Threats
- - Unintended Cascading Failures
+  - AI Risks
+  - Unintended Cascading Failures
 sidebar_position: 2
 tweet: yes
-part_of: AI Threats
+part_of: AI Risks
 ---
 
-<AIThreatIntro fm={frontMatter} />
----
+## <AIThreatIntro fm={frontMatter} />
 
 ## Risk Score: Medium
 
 AI systems operating in complex, interdependent environments can trigger unexpected and widespread disruptions, affecting industries, economies, and societies at large. These cascading effects are difficult to predict and mitigate, making systemic AI failures one of the most pressing risks in modern technological governance.
 
-Unintended cascading effects are a dangerous aspect of AI deployment at scale.  But this can be addressed with proactive governance, continuous monitoring, and robust mitigation strategies to prevent small failures from turning into global crises.  
+Unintended cascading effects are a dangerous aspect of AI deployment at scale. But this can be addressed with proactive governance, continuous monitoring, and robust mitigation strategies to prevent small failures from turning into global crises.
 
 ## Sources
 
@@ -35,7 +34,7 @@ Unintended cascading effects are a dangerous aspect of AI deployment at scale.  
 
 ### Nuclear Plant Incidents
 
-- Complex automated control systems, when not fully understood by human operators, can lead to catastrophic failures.  [https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS\_Autonomous-weapons-operational-risk.pdf](https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf)
+- Complex automated control systems, when not fully understood by human operators, can lead to catastrophic failures.  [https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf](https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf)
 
 - **Real-Life Example:** The [Three Mile Island nuclear accident (1979)](https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html), where conflicting automated and manual responses exacerbated a reactor malfunction, leading to a partial meltdown.
 
@@ -55,7 +54,7 @@ Unintended cascading effects are a dangerous aspect of AI deployment at scale.  
 
 - **Real-Life Example:** During the [COVID-19 pandemic](https://doi.org/10.1038/s41599-021-00729-4), automated supply chain optimizations led to stock shortages in essential goods as demand spikes outpaced rigid AI-driven distribution models.
 
-- **The Open Source Software Supply Chain:**  Vulnerabilities have led to large-scale cybersecurity incidents. Attacks on widely-used packages (e.g. Log4j, SolarWinds) propagated rapidly through automated update systems, revealing how technical interdependence can cascade into systemic digital risk.
+- **The Open Source Software Supply Chain:** Vulnerabilities have led to large-scale cybersecurity incidents. Attacks on widely-used packages (e.g. Log4j, SolarWinds) propagated rapidly through automated update systems, revealing how technical interdependence can cascade into systemic digital risk.
 
 ## Mitigations
 

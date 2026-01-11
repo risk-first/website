@@ -6,7 +6,7 @@ featured:
   element: '<action>Interpretability</action>'
 tags: 
   - Interpretability
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Emergent Behaviour

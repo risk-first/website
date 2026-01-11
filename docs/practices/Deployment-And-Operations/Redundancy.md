@@ -4,7 +4,7 @@ description: Ensuring backup systems are in place to prevent failure.
 tags: 
   - Redundancy 
   - Practice
-  - AI Practice
+  - AI Practices
 featured: 
   class: c
   element: '<action>Redundancy</action>'

@@ -4,7 +4,7 @@ description: Continuous observation and tracking of a system, team or person, pe
 tags: 
   - Monitoring
   - Practice
-  - AI Practice
+  - AI Practices
 featured: 
   class: c
   element: '<action>Monitoring</action>'

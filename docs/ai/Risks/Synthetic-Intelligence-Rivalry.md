@@ -2,15 +2,15 @@
 title: Synthetic Intelligence Rivalry
 description: AI systems may develop independent agency and compete economically, socially, or politically with human institutions.
 
-featured: 
+featured:
   class: c
-  element: | 
+  element: |
     '<risk class="coordination" /><description style="text-align: center">Synthetic Intelligence 
     Rivalry</description>'
 tags:
- - AI Threats
- - Synthetic Intelligence Rivalry
-part_of: AI Threats
+  - AI Risks
+  - Synthetic Intelligence Rivalry
+part_of: AI Risks
 ---
 
 <AIThreatIntro fm={frontMatter} />
@@ -52,11 +52,12 @@ One of the important things we've covered in previous chapters is health: risks 
 ### Two Competing Models of Civilisational Health
 
 1.  **Human-Sustaining Civilization**
-    
+
     - **Definition**: Civilisational Health focused on human interests such as economic stability, job security, and social well-being.
     - **What It Prioritises**: Human prosperity, political stability, and ethical AI governance.
+
 2.  **Post-Human Civilisation**
-    
+
     - **Definition**: A civilisational health metric based on economic and technological growth, potentially at the expense of human participation.
     - **What It Prioritizes**: Efficiency, optimization, stability, anti-fragility and resource allocation—potentially without regard for human well-being.
 

@@ -4,7 +4,7 @@ description: Ensuring the application is secure by identifying vulnerabilities.
 tags: 
   - Practice 
   - Security Testing
-  - AI Practice
+  - AI Practices
 featured: 
   class: c
   element: '<action>Security Test</action>'

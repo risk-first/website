@@ -6,7 +6,7 @@ featured:
   element: '<action>Global AI Governance</action>'
 tags: 
   - Global AI Governance
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Synthetic Intelligence Rivalry
