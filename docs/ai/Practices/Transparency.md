@@ -6,7 +6,7 @@ featured:
   element: '<action>Transparency</action>'
 tags: 
   - Transparency
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Loss Of Diversity

@@ -1,50 +1,55 @@
 ---
 title: Delegation
 description: The practice of assigning responsibility and authority to others to carry out specific activities or tasks.
-tags: 
+tags:
   - Practice
   - Delegation
-featured: 
+featured:
   class: c
-  element: '<action>Delegation</action>'
+  element: "<action>Delegation</action>"
 practice:
-  aka: 
-   - "Task Assignment"
-   - "Empowerment"
-   - "Hierarchy"
-   - "Authority Delegation"
-   - "Responsibility Allocation"
+  aka:
+    - "Task Assignment"
+    - "Empowerment"
+    - "Hierarchy"
+    - "Authority Delegation"
+    - "Responsibility Allocation"
   mitigates:
-   - tag: Schedule Risk
-     reason: "Distributes workload effectively, helping to meet deadlines."
+    - tag: Schedule Risk
+      reason: "Distributes workload effectively, helping to meet deadlines."
   attendant:
-   - tag: Security Risk
-     reason: "Delegating responsibility can introduce new security risks."
-   - tag: Coordination Risk
-     reason: "Increases the number of entities involved in project coordination."
-   - tag: Agency Risk
-     reason: "Can lead to a loss of control over task execution and quality."
-   - tag: Communication Risk
-     reason: "Requires clear communication to ensure tasks are understood and executed properly."
+    - tag: Security Risk
+      reason: "Delegating responsibility can introduce new security risks."
+    - tag: Coordination Risk
+      reason: "Increases the number of entities involved in project coordination."
+    - tag: Agency Risk
+      reason: "Can lead to a loss of control over task execution and quality."
+    - tag: Communication Risk
+      reason: "Requires clear communication to ensure tasks are understood and executed properly."
   related:
-   - ../Planning-And-Management/Prioritising
-   - ../Collaboration-And-Communication/Stakeholder-Management
-   - ../External-Relations/Outsourcing
+    - ../Planning-And-Management/Prioritising
+    - ../Collaboration-And-Communication/Stakeholder-Management
+    - ../External-Relations/Outsourcing
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
 > "Delegation is the assignment of any responsibility or authority to another person to carry out specific activities. It is one of the core concepts of management leadership." - [Delegation, _Wikipedia_](https://en.wikipedia.org/wiki/Delegation)
 
-Delegation involves assigning responsibility and authority to others to carry out specific activities or tasks.  Effective delegation requires clear communication and proper accountability to ensure tasks are executed correctly and objectives are met.
+Delegation involves assigning responsibility and authority to others to carry out specific activities or tasks. Effective delegation requires clear communication and proper accountability to ensure tasks are executed correctly and objectives are met.
 
-See:
- 
- - [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment)
- - [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
+## Variations
 
-## See Also
+| **Delegation Type**       | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Task Delegation**       | Assigning specific tasks while retaining overall responsibility.                                 | [Delegation, Wikipedia](https://en.wikipedia.org/wiki/Delegation) |
+| **Authority Delegation**  | Granting decision-making power along with responsibility.                                        | [Empowerment, Wikipedia](https://en.wikipedia.org/wiki/Empowerment) |
+| **Self-Organising Teams** | Teams that collectively decide how to distribute work among themselves.                          | [Self-Management, Wikipedia](https://en.wikipedia.org/wiki/Self-management_(organizational)) |
 
-<TagList tag="Delegation" />
+See also: [Goal Alignment](/risks/Reducing-Agency-Risk#1-goal-alignment), [Risk-First Diagrams](/thinking/Risk-First-Diagrams#example-blaming-others)
+
+## Used By
+
+<MethodList tag="Delegation" />

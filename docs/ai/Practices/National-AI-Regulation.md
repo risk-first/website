@@ -6,7 +6,7 @@ featured:
   element: '<action>National AI Regulation</action>'
 tags: 
   - National AI Regulation
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Synthetic Intelligence Rivalry

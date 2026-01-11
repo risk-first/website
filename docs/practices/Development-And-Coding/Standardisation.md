@@ -1,41 +1,41 @@
 ---
 title: Standardisation
 description: The practice of establishing and adhering to standards to ensure consistency, compatibility, and quality in software development.
-tags: 
+tags:
   - Practice
   - Standardisation
-featured: 
+featured:
   class: c
-  element: '<action>Standardisation</action>'
+  element: "<action>Standardisation</action>"
 practice:
-  aka: 
-   - "Standardization"
-   - "Normalization"
-   - "Uniformity"
-   - "Consistency"
-   - "Re-Use"
+  aka:
+    - "Standardization"
+    - "Normalization"
+    - "Uniformity"
+    - "Consistency"
+    - "Re-Use"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Ensures that the features conform to predefined standards, reducing variability and potentially widening accessibility."
-   - tag: Operational Risk
-     reason: "Reduces operational errors by providing clear guidelines and protocols."
-   - tag: Communication Risk
-     reason: "Improves communication by using a common language and standardized terms."
-   - tag: Lock-In Risk
-     reason: "Using software that adheres to standards allows for swapping out components and promotes competition amongst dependencies."
+    - tag: Feature Fit Risk
+      reason: "Ensures that the features conform to predefined standards, reducing variability and potentially widening accessibility."
+    - tag: Operational Risk
+      reason: "Reduces operational errors by providing clear guidelines and protocols."
+    - tag: Communication Risk
+      reason: "Improves communication by using a common language and standardized terms."
+    - tag: Lock-In Risk
+      reason: "Using software that adheres to standards allows for swapping out components and promotes competition amongst dependencies."
   attendant:
-   - tag: Inflexibility Risk
-     reason: "May limit creativity and flexibility by enforcing strict adherence to standards."
-   - tag: Schedule Risk
-     reason: "Adhering to standards can introduce scope creep during the implementation phase."
-   - tag: Compliance Risk
-     reason: "Ensuring continuous compliance with evolving standards can be challenging."
+    - tag: Lock-In Risk
+      reason: "May limit creativity and flexibility by enforcing strict adherence to standards."
+    - tag: Schedule Risk
+      reason: "Adhering to standards can introduce scope creep during the implementation phase."
+    - tag: Legal Risk
+      reason: "Ensuring continuous compliance with evolving standards can be challenging."
   related:
-   - ../Development-And-Coding/Coding
-   - ../Tools-And-Standards/Configuration-Management
+    - ../Development-And-Coding/Coding
+    - ../Tools-And-Standards/Configuration-Management
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -43,10 +43,18 @@ practice:
 
 Standardisation involves creating, implementing, and enforcing standards and guidelines to ensure consistency, compatibility, and quality across software projects. This practice helps in maintaining uniformity, reducing complexity, and improving communication among team members and stakeholders.
 
-See:
-- [Unwritten Software (On Software Dependencies)](/risks/On-Software-Dependencies#unwritten-software)
+## Variations
 
+| **Standard Type**      | **Description**                                                           | **Reference**                                                                     |
+| ---------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Coding Standards**   | Guidelines for code style, naming conventions, and best practices.        | [Coding Conventions, Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions) |
+| **API Standards**      | Specifications for how APIs should be designed and documented.            | [OpenAPI, Wikipedia](https://en.wikipedia.org/wiki/OpenAPI_Specification)         |
+| **Industry Standards** | External standards like ISO, W3C, or IETF that software must comply with. | [Technical Standard, Wikipedia](https://en.wikipedia.org/wiki/Technical_standard) |
 
 ## See Also
 
-<TagList tag="Standardisation" />
+- [Unwritten Software (On Software Dependencies)](/risks/On-Software-Dependencies#unwritten-software)
+
+## Used By
+
+<MethodList tag="Standardisation" />

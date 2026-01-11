@@ -1,35 +1,35 @@
 ---
 title: Training
 description: Providing guidance on how to use the software to users or developers.
-tags: 
+tags:
   - Training
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Training</action>'
+  element: "<action>Training</action>"
 practice:
-  aka: 
-   - "Education"
-   - "Instruction"
-   - "Skill Development"
+  aka:
+    - "Education"
+    - "Instruction"
+    - "Skill Development"
   mitigates:
-   - tag: Internal Model Risk
-     reason: "Provides necessary education to help team members get up to speed."
-   - tag: Operational Risk
-     reason: "Ensures that staff are well-trained in operational procedures and best practices."
-   - tag: Security Risk
-     reason: "Educates team members on security protocols and practices."
-   - tag: Legal Risk
-     reason: "Sometimes, training is required to demonstrate that an organisation complies with certain legal obligations."
+    - tag: Internal Model Risk
+      reason: "Provides necessary education to help team members get up to speed."
+    - tag: Operational Risk
+      reason: "Ensures that staff are well-trained in operational procedures and best practices."
+    - tag: Security Risk
+      reason: "Educates team members on security protocols and practices."
+    - tag: Legal Risk
+      reason: "Sometimes, training is required to demonstrate that an organisation complies with certain legal obligations."
   attendant:
-   - tag: Schedule Risk
-     reason: "Training sessions can take time away from development, impacting schedules."
+    - tag: Schedule Risk
+      reason: "Training sessions can take time away from development, impacting schedules."
   related:
-   - ../Documentation
-   - ../Development-and-Coding/Pair-Programming
+    - ../Documentation
+    - ../Development-and-Coding/Pair-Programming
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -37,8 +37,16 @@ practice:
 
 Training in software development involves providing education and skill development for team members. This can include onboarding new employees, ongoing professional development, and specialized training in tools, technologies, and methodologies. Effective training ensures that team members are equipped with the knowledge and skills they need to perform their roles effectively.
 
-Training can take various forms, including workshops, online courses, mentoring, and hands-on practice. It is crucial for keeping the team updated with the latest industry trends, tools, and best practices, thus enhancing overall productivity and performance.
+## Variations
 
-## See Also
+| **Training Type**  | **Description**                                                                                      | **Reference**                                                                                     |
+| ------------------ | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Onboarding**     | Structured introduction for new team members covering tools, processes, and codebase orientation.    | [Onboarding, Wikipedia](https://en.wikipedia.org/wiki/Onboarding)                                 |
+| **Workshops**      | Interactive sessions focused on specific skills or technologies, often with hands-on exercises.      | [Workshop, Wikipedia](https://en.wikipedia.org/wiki/Workshop)                                     |
+| **Mentoring**      | One-on-one guidance from experienced developers to help less experienced team members grow.          | [Mentorship, Wikipedia](https://en.wikipedia.org/wiki/Mentorship)                                 |
+| **Online Courses** | Self-paced learning through platforms like Coursera, Udemy, or internal learning management systems. | [E-learning, Wikipedia](https://en.wikipedia.org/wiki/E-learning)                                 |
+| **Certifications** | Formal training programmes leading to industry-recognised credentials in specific technologies.      | [Professional Certification, Wikipedia](https://en.wikipedia.org/wiki/Professional_certification) |
 
-<TagList tag="Training" />
+## Used By
+
+<MethodList tag="Training" />

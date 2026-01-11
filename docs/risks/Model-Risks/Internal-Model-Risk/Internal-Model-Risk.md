@@ -11,6 +11,7 @@ tweet: yes
 tags: 
  - Risks
  - Internal Model Risk
+ - Model Risks
 part_of: Operational Risk
 ---
 

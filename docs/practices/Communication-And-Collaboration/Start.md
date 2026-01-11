@@ -1,7 +1,7 @@
 ---
 title: "Communication and Collaboration"
 description: "Software development practices involving communication and collaboration."
-featured: 
+featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/communications.svg">Communications</image-artifact>'
 tags:
@@ -13,5 +13,4 @@ layout: categories
 
 Here are a selection of software development practices aimed at improving communication and collaboration within or around a software project.
 
- 
 <TagList tag="Practice" filter="Communication-And-Collaboration" />

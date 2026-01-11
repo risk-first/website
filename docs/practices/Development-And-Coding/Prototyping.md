@@ -1,36 +1,36 @@
 ---
 title: Prototyping
 description: Creating early models of the software to test concepts and ideas.
-tags: 
+tags:
   - Prototyping
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Prototype</action>'
+  element: "<action>Prototype</action>"
 practice:
-  aka: 
-   - "Mockups"
-   - "Pilot Models"
-   - "Early Models"
+  aka:
+    - "Mockups"
+    - "Pilot Models"
+    - "Early Models"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Allows early validation of features and design with stakeholders."
-   - tag: Communication Risk
-     reason: "Facilitates clear communication of concepts and requirements."
-   - tag: Implementation Risk
-     reason: "Helps identify potential issues before full-scale development."
+    - tag: Feature Fit Risk
+      reason: "Allows early validation of features and design with stakeholders."
+    - tag: Communication Risk
+      reason: "Facilitates clear communication of concepts and requirements."
+    - tag: Implementation Risk
+      reason: "Helps identify potential issues before full-scale development."
   attendant:
-   - tag: Schedule Risk
-     reason: "Prototyping can be time-consuming and delay the project timeline."
-   - tag: Funding Risk
-     reason: "Creating prototypes can incur additional costs."
+    - tag: Schedule Risk
+      reason: "Prototyping can be time-consuming and delay the project timeline."
+    - tag: Funding Risk
+      reason: "Creating prototypes can incur additional costs."
   related:
-   - ../Testing-and-Quality-Assurance/User-Acceptance-Testing-(UAT)
-   - ../Communication-and-Collaboration/Demo
-   - ../Planning-And-Management/Prioritising
+    - ../Testing-and-Quality-Assurance/User-Acceptance-Testing-(UAT)
+    - ../Communication-and-Collaboration/Demo
+    - ../Planning-And-Management/Prioritising
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -38,10 +38,14 @@ practice:
 
 Prototyping in software development involves creating early models or mockups of the software to test concepts and gather feedback. This practice helps in validating design choices, identifying potential issues, and ensuring that the final product meets the users' needs and expectations.
 
-See:
- - [Spike Solution (Coding Bets)](/bets/Coding-Bets#spike-solutions-a-new-technology-bet)
+## Variations
 
+| **Prototype Type**         | **Description**                                                                   | **Reference**                                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Throwaway Prototype**    | A quick model built to explore ideas, then discarded once requirements are clear. | [Throwaway Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Software_prototyping#Throwaway_prototyping)       |
+| **Evolutionary Prototype** | A working model that is refined iteratively into the final product.               | [Evolutionary Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Software_prototyping#Evolutionary_prototyping) |
+| **Wireframe/Mockup**       | Low-fidelity visual representations of the UI without functionality.              | [Wireframe, Wikipedia](https://en.wikipedia.org/wiki/Website_wireframe)                                            |
 
-## See Also
+## Used By
 
-<TagList tag="Prototyping" />
+<MethodList tag="Prototyping" />

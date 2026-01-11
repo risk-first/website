@@ -2,6 +2,7 @@
 title: Systemic Threats
 description: Internal Model Risk threats caused by broken systems.
 
+slug: /risks/Systemic-Threats
 sidebar_position: 1
 tweet: yes
 tags: 

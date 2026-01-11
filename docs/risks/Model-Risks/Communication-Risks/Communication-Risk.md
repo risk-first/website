@@ -11,6 +11,7 @@ tags:
  - Communication Risk
  - Risks
  - Internal Model Risk
+ - Model Risks
 tweet: yes
 part_of: Operational Risk
 ---

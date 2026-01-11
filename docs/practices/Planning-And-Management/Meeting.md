@@ -1,43 +1,51 @@
 ---
 title: Meeting
 description: "The practice of gathering team members to discuss project progress, address issues, and make decisions."
-tags: 
+tags:
   - Meeting
   - Practice
-featured: 
+featured:
   class: c
-  element: '<action>Meeting</action>'
+  element: "<action>Meeting</action>"
 practice:
-  aka: 
-   - "Team Meeting"
-   - "Stand-up Meeting"
-   - "Status Meeting"
-   - "Sprint Planning"
+  aka:
+    - "Team Meeting"
+    - "Stand-up Meeting"
+    - "Status Meeting"
+    - "Sprint Planning"
   mitigates:
-   - tag: Communication Risk
-     reason: "Facilitates clear and direct communication among team members."
-   - tag: Coordination Risk
-     reason: "Ensures everyone is on the same page regarding project goals and progress."
+    - tag: Communication Risk
+      reason: "Facilitates clear and direct communication among team members."
+    - tag: Coordination Risk
+      reason: "Ensures everyone is on the same page regarding project goals and progress."
   attendant:
-   - tag: Schedule Risk
-     reason: "Can consume a significant amount of time if not managed effectively."
-   - tag: Coordination Risk
-     reason: "Meetings usually happen at a particular time so involve coordinating schedules."
-   - tag: Process Risk
-     reason: "Decisions may be delayed if consensus is not reached during the meeting."
+    - tag: Schedule Risk
+      reason: "Can consume a significant amount of time if not managed effectively."
+    - tag: Coordination Risk
+      reason: "Meetings usually happen at a particular time so involve coordinating schedules."
+    - tag: Process Risk
+      reason: "Decisions may be delayed if consensus is not reached during the meeting."
   related:
-   - ../Planning-And-Management/Stakeholder-Management
-   - ../Planning-And-Management/Prioritising
+    - ../Planning-And-Management/Stakeholder-Management
+    - ../Planning-And-Management/Prioritising
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
 > "A meeting is an assembly of people for a particular purpose, especially for formal discussion." - [Meeting, _Wikipedia_](https://en.wikipedia.org/wiki/Meeting)
 
-Meetings are useful for team collaboration and communication.  Regular meetings help in maintaining transparency and keeping everyone informed about the project's status and any changes.
+Meetings are useful for team collaboration and communication. Regular meetings help in maintaining transparency and keeping everyone informed about the project's status and any changes.
 
-## See Also
+## Variations
 
-<TagList tag="Meeting" />
+| **Meeting Type**          | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Stand-up Meeting**      | Brief daily meeting where team members share progress and blockers.                              | [Stand-up Meeting, Wikipedia](https://en.wikipedia.org/wiki/Stand-up_meeting) |
+| **Sprint Planning**       | Meeting to plan work for an upcoming sprint or iteration.                                        | [Scrum, Wikipedia](https://en.wikipedia.org/wiki/Scrum_(software_development)#Sprint_planning) |
+| **One-on-One**            | Regular meeting between a manager and team member for feedback and support.                      | [One-on-One Meeting, Wikipedia](https://en.wikipedia.org/wiki/One-on-one_meeting) |
+
+## Used By
+
+<MethodList tag="Meeting" />

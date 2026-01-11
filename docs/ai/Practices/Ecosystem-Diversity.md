@@ -6,7 +6,7 @@ featured:
   element: '<action>Ecosystem Diversity</action>'
 tags: 
   - Ecosystem Diversity
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Loss Of Diversity

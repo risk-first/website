@@ -12,11 +12,8 @@ const navLinks = [{ to: '/overview/Start', label: 'Overview', position: 'left' }
 { to: '/thinking/Start', label: 'Thinking', position: 'left' },
 { to: '/risks/Start', label: 'Risks', position: 'left' },
 { to: '/practices/Start', label: 'Practices', position: 'left' },
-{ to: '/methods/Start', label: 'Methods', position: 'left' },
+{ to: '/methods/Start', label: 'Risk Frameworks', position: 'left' },
 { to: '/books/Start', label: 'Books', position: 'left' },
-{ to: '/bets/Start', label: 'Bets', position: 'left' },
-{ to: '/estimating/Start', label: 'Estimating', position: 'left' },
-{ to: '/presentations/Start', label: 'Presentations', position: 'left' },
 { to: '/ai/Start', label: 'AI', position: 'left' },
 ]
 
@@ -115,24 +112,37 @@ const config = {
 						items: navLinks,
 					},
 					{
-						title: 'Further Info',
+						title: 'Want To Go Deeper?',
 						items: [
 							{
-								label: 'RiskFirst GitHub Team (News)',
-								href: 'https://github.com/orgs/risk-first/teams/risk-first-team',
-							},
-							{
-								label: 'GitHub',
-								href: 'https://github.com/risk-first/website',
-							},
-							{
-								label: 'Rob On LinkedIn',
-								href: 'https://www.linkedin.com/in/robmoffat/',
+								html: `
+									<div style="display: flex; gap: 16px; align-items: flex-start;">
+										<a href="/Risk-First-Second-Edition" style="flex-shrink: 0;">
+											<img 
+												src="/img/Cover_Image_Second_Edition.jpg" 
+												alt="Risk-First Software Development Second Edition" 
+												style="width: 100px; border-radius: 4px;"
+											/>
+										</a>
+										<div>
+											<p style="color: #ccc; margin: 0 0 8px 0;">
+												The second edition of Risk-First Software Development dives into 
+												all the topics from this website in much more depth.
+											</p>
+											<a 
+												href="/Risk-First-Second-Edition" 
+												style="color: #fff; text-decoration: underline;"
+											>
+												Check out how to get hold of it here
+											</a>
+										</div>
+									</div>
+								`,
 							},
 						],
 					},
 					{
-						title: 'GitHub',
+						title: 'Further Info',
 						items: [
 							{
 								html: '<a href="https://github.com/risk-first/website/stargazers"><img src="https://img.shields.io/github/stars/risk-first/website" alt="GitHub Stars"/></a>',
@@ -143,6 +153,16 @@ const config = {
 							{
 								html: '<a href="https://github.com/risk-first/website/watchers"><img src="https://img.shields.io/github/watchers/risk-first/website" alt="GitHub Watchers"/></a>',
 							},
+							{
+								label: 'Rob On LinkedIn',
+								href: 'https://www.linkedin.com/in/robmoffat/',
+							},
+							{
+								label: 'RiskFirst GitHub Team (News)',
+								href: 'https://github.com/orgs/risk-first/teams/risk-first-team',
+							},
+
+
 						],
 					},
 				],

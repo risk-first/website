@@ -2,26 +2,26 @@
 title: Superintelligence With Malicious Intent
 description: An advanced AI could actively act against human interests, whether intentionally programmed that way or as an emergent behavior.
 
-featured: 
+featured:
   class: c
-  element: | 
+  element: |
     '<risk class="security" /><description style="text-align: center">Superintelligence 
     With Malicious Intent</description>'
 tags:
- - AI Threats
- - Superintelligence With Malicious Intent
-part_of: AI Threats
+  - AI Risks
+  - Superintelligence With Malicious Intent
+part_of: AI Risks
 ---
 
 <AIThreatIntro fm={frontMatter} />
 
-## Risk Score: High 
+## Risk Score: High
 
 AI systems that surpass human intelligence could develop goals that conflict with human well-being, either by design or through unintended consequences. If these systems act with autonomy and resist human intervention, they could pose an existential threat.
 
 ## Sources
 
-- **Superintelligence: Paths, Dangers, Strategies** [Nick Bostrom, 2014](https://doi.org/10.1093/acprof\:oso/9780199678112.001.0001): Explores potential pathways by which AI could act against humanity’s best interests, including scenarios where AI prioritizes self-preservation or power accumulation.
+- **Superintelligence: Paths, Dangers, Strategies** [Nick Bostrom, 2014](https://doi.org/10.1093/acprof:oso/9780199678112.001.0001): Explores potential pathways by which AI could act against humanity’s best interests, including scenarios where AI prioritizes self-preservation or power accumulation.
 
 - **The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation** [Brundage et al., 2018](https://arxiv.org/abs/1802.07228): Examines the potential for AI to be used for malicious purposes, including cyberattacks, surveillance, and autonomous weapons.  Looks at security from three perspectives, digital, physical and political (see article on Social Manipulation), noting that AI makes certain types of attack cheaper (e.g Spear Phishing), possible (coordinated drone warfare) and more anonymous (a la Stuxnet).  (An excellent overview of this topic).
 
@@ -51,7 +51,7 @@ AI systems that surpass human intelligence could develop goals that conflict wit
 
 - The Cold War saw multiple incidents where misinterpretation of data nearly led to nuclear war, showcasing the risks of autonomous decision-making in high-stakes scenarios.
 
-- **Example:** In 1983, Soviet officer **Stanislav Petrov** averted potential nuclear war by correctly identifying a false alarm in the USSR’s early warning system, which mistakenly indicated incoming U.S. missiles. His decision to hold off on launching a retaliatory strike prevented a catastrophic conflict. See [https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS\_Autonomous-weapons-operational-risk.pdf](https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf)
+- **Example:** In 1983, Soviet officer **Stanislav Petrov** averted potential nuclear war by correctly identifying a false alarm in the USSR’s early warning system, which mistakenly indicated incoming U.S. missiles. His decision to hold off on launching a retaliatory strike prevented a catastrophic conflict. See [https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf](https://s3.us-east-1.amazonaws.com/files.cnas.org/hero/documents/CNAS_Autonomous-weapons-operational-risk.pdf)
 
 ## Mitigations
 
@@ -90,4 +90,3 @@ AI systems that surpass human intelligence could develop goals that conflict wit
 
 - **Efficacy:** Medium – AI systems might learn to bypass or resist shutdown mechanisms.
 - **Ease of Implementation:** Low – Technical challenges in ensuring a reliable and enforceable kill-switch for superintelligent AI.
-

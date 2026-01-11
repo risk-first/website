@@ -53,7 +53,6 @@ In these cases, we (hopefully calmly) _evaluate the risks and [Take Action](/tag
 
 This is **Pressure Invariance**:  ideally, your methodology shouldn't need to change given the amount of pressure or importance on the table.  
 
-**See:** In [Debugging Bets](../bets/Debugging-Bets) I tell the story of a high-pressure situation where I applied a risk-analysis approach in order to try and bring a new problem to ground ahead of a big presentation.
 
 ## Invariance #3: Scale Invariance
 

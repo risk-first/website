@@ -6,7 +6,7 @@ featured:
   element: '<action>Kill Switch Mechanism</action>'
 tags: 
   - Kill Switch
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Loss Of Human Control

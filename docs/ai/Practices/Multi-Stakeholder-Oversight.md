@@ -6,7 +6,7 @@ featured:
   element: '<action>Multi-Stakeholder Oversight</action>'
 tags: 
   - Multi-Stakeholder Oversight
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Synthetic Intelligence Rivalry

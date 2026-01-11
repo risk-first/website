@@ -47,5 +47,12 @@ practice:
 
 Issue Management / Issue Logging in software development involves recording and tracking issues, bugs, and tasks. This practice helps in managing and resolving defects systematically, ensuring that all problems are addressed in a timely manner and improving the overall quality of the software.
 
+## Variations
+
+| **Issue Type**            | **Description**                                                                                   | **Reference** |
+|---------------------------|---------------------------------------------------------------------------------------------------|---------------|
+| **Bug Tracking**          | Recording and managing software defects through to resolution.                                   | [Bug Tracking, Wikipedia](https://en.wikipedia.org/wiki/Bug_tracking_system) |
+| **Feature Requests**      | Capturing and prioritising requests for new functionality.                                       | [Issue Tracking, Wikipedia](https://en.wikipedia.org/wiki/Issue_tracking_system) |
+| **Support Tickets**       | Managing user-reported problems and service requests.                                            | [Help Desk, Wikipedia](https://en.wikipedia.org/wiki/Help_desk) |
 
 > "Issue

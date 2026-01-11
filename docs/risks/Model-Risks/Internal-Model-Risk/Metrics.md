@@ -2,6 +2,7 @@
 title: Metrics
 description: The use of metrics as a cause of Internal Model Risk
 
+slug: /risks/Metrics
 sidebar_position: 2
 tweet: yes
 tags: 

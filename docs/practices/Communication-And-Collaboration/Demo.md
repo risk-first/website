@@ -1,37 +1,37 @@
 ---
 title: Demo
 description: Demonstrating the software to stakeholders.
-featured: 
+featured:
   class: c
-  element: '<action>Demo</action>'
-tags: 
+  element: "<action>Demo</action>"
+tags:
   - Demo
   - Practice
 practice:
-  aka: 
-   - "Technology Demonstration"
-   - "Tech Demo"
-   - "Prototype"
-   - "Spike Solution"
-   - "Proof of Concept (POC)"
+  aka:
+    - "Technology Demonstration"
+    - "Tech Demo"
+    - "Prototype"
+    - "Spike Solution"
+    - "Proof of Concept (POC)"
   mitigates:
-   - tag: Feature Fit Risk
-     reason: "Showcases the product to ensure it meets client expectations and needs."
-   - tag: Communication Risk
-     reason: "Facilitates clear communication of the product's features and benefits to stakeholders."
-   - tag: Internal Model Risk
-     reason: "Prototypes are a way of learning about a particular solution to a problem."
-   - tag: Implementation Risk
-     reason: "Demonstrations often highlight issues in implementations"   
+    - tag: Feature Fit Risk
+      reason: "Showcases the product to ensure it meets client expectations and needs."
+    - tag: Communication Risk
+      reason: "Facilitates clear communication of the product's features and benefits to stakeholders."
+    - tag: Internal Model Risk
+      reason: "Prototypes are a way of learning about a particular solution to a problem."
+    - tag: Implementation Risk
+      reason: "Demonstrations often highlight issues in implementations"
   attendant:
-   - tag: Schedule Risk
-     reason: "Demos can introduce delays if not planned and executed properly."
+    - tag: Schedule Risk
+      reason: "Demos can introduce delays if not planned and executed properly."
   related:
-   - ../Communication-and-Collaboration/Documentation
-   - ../Planning-and-Management/Stakeholder-Management
+    - ../Communication-and-Collaboration/Documentation
+    - ../Planning-and-Management/Stakeholder-Management
 ---
 
-<PracticeIntro details={frontMatter} /> 
+<PracticeIntro details={frontMatter} />
 
 ## Description
 
@@ -41,14 +41,14 @@ A demo in software development involves showcasing a working version or prototyp
 
 ## Variations
 
-| **Demo Type**            | **Description**                                                                                       | **Reference** |
-|--------------------------|-------------------------------------------------------------------------------------------------------|---------------|
-| **Proof of Concept (PoC)** | Demonstrates the feasibility of a new concept or technology before full-scale development.             | [Proof of Concept, Wikipedia](https://en.wikipedia.org/wiki/Proof_of_concept) |
-| **Prototype Demo**       | Showcases an early model of the software to gather feedback and refine design and functionality.       | [Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Prototyping) |
-| **Sales Demo**           | Tailored presentation to potential customers or clients, highlighting key features and benefits.       | [Product Demonstration, Wikipedia](https://en.wikipedia.org/wiki/Demonstration_(marketing)) |
-| **Training Demo**        | Provides a detailed walkthrough for new users or team members to teach effective software usage.       | [Training, Wikipedia](https://en.wikipedia.org/wiki/Training) |
-| **Product Launch Demo**  | Public demonstration of the final product to generate excitement and publicity at release time.        | [Product Launch, Wikipedia](https://en.wikipedia.org/wiki/Product_launch) |
+| **Demo Type**              | **Description**                                                                                  | **Reference**                                                                                 |
+| -------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| **Proof of Concept (PoC)** | Demonstrates the feasibility of a new concept or technology before full-scale development.       | [Proof of Concept, Wikipedia](https://en.wikipedia.org/wiki/Proof_of_concept)                 |
+| **Prototype Demo**         | Showcases an early model of the software to gather feedback and refine design and functionality. | [Prototyping, Wikipedia](https://en.wikipedia.org/wiki/Prototyping)                           |
+| **Sales Demo**             | Tailored presentation to potential customers or clients, highlighting key features and benefits. | [Product Demonstration, Wikipedia](<https://en.wikipedia.org/wiki/Demonstration_(marketing)>) |
+| **Training Demo**          | Provides a detailed walkthrough for new users or team members to teach effective software usage. | [Training, Wikipedia](https://en.wikipedia.org/wiki/Training)                                 |
+| **Product Launch Demo**    | Public demonstration of the final product to generate excitement and publicity at release time.  | [Product Launch, Wikipedia](https://en.wikipedia.org/wiki/Product_launch)                     |
 
-## See Also
+## Used By
 
-<TagList tag="Demo" />
+<MethodList tag="Demo" />

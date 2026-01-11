@@ -4,6 +4,7 @@ import BoxOut from '../BoxOut';
 import PracticeIntro from '../PracticeIntro'
 import RiskIntro from '../RiskIntro'
 import MethodIntro from '../MethodIntro'
+import MethodList from '../MethodList'
 import TermList from '../TermList';
 import Matrix from '../Matrix';
 import AIThreatIntro from '../AIThreatIntro'
@@ -16,6 +17,7 @@ export default {
   PracticeIntro,
   RiskIntro,
   MethodIntro,
+  MethodList,
   TermList,
   Matrix,
   AIThreatIntro,

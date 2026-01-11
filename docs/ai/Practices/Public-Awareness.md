@@ -6,7 +6,7 @@ featured:
   element: '<action>Public Awareness</action>'
 tags: 
   - Public Awareness
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Social Manipulation

@@ -10,11 +10,11 @@ export default function GetInvolved() {
 			<div className={styles.innerAside}>
 				<h2>How Does It Work?</h2>
 				<p className={styles.explanation}>Risk-First takes the view that a project's <a href="/tags/Goal">Goals</a> are
-					obstructed by <a href="/risks/Start">Risks</a>.  These risks can be managed by Software Development <a href="/risks/Start">Practices</a>, 
-					which are often packaged up as different <a href="/methods/Start">Development Methods</a>.</p>
+					obstructed by <a href="/risks/Start">Risks</a>.  These risks can be managed by Software Development <a href="/risks/Start">Practices</a>,
+					which are often packaged up as different methodologies (think Scrum, XP, Lean, DevOps), or <a href="/methods/Start">Risk Frameworks</a> as we call them here.</p>
 			</div>
 			<div className={styles.showcaseOuter}>
-				<img className={styles.showcaseImage} src="/img/generated/executive-summary/pattern_language.svg" />
+				<img className={styles.showcaseImage} src="/img/generated/introduction/risk_framework_2.svg" />
 			</div>
 			<div className={styles.explanation}>
 				<p>But in order to meet your projects' goals, you'll have to choose the right practices to tackle the most important risks.</p>

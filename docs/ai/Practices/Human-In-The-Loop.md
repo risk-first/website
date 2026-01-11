@@ -6,7 +6,7 @@ featured:
   element: '<action>Human In The Loop</action>'
 tags: 
   - Human In The Loop
-  - AI Practice
+  - AI Practices
 practice:
   mitigates:
    - tag: Loss Of Human Control
