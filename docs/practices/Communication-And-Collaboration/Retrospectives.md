@@ -17,7 +17,7 @@ practice:
       reason: "Identifies and addresses historic coordination issues through regular reviews."
     - tag: Process Risk
       reason: "Continuously improves processes and practices."
-    - tag: Feature-Drift Risk
+    - tag: Feature Fit Risk
       reason: "Captures feedback and adjusts features to meet evolving needs."
     - tag: Internal Model Risk
       reason: "Looking at what went wrong before leads to improving the internal model of risk for the future."

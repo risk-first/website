@@ -33,7 +33,7 @@ practice:
       reason: "Likely requires security experts with specialist skills."
     - tag: Emergent Behaviour
       reason: "Helps identify unintended AI behaviors before deployment by stress-testing AI in real-world scenarios."
-    - tag: Misaligned Goals
+    - tag: Agency Risk
       reason: "Red teams probe AI for loopholes where reward hacking or proxy goals emerge, ensuring AI doesn't optimise in harmful ways."
   related:
     - ../Development-and-Coding/Coding
