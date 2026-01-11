@@ -125,13 +125,13 @@ const config = {
 											/>
 										</a>
 										<div>
-											<p style="font-size: 0.85em; color: #ccc; margin: 0 0 8px 0;">
+											<p style="color: #ccc; margin: 0 0 8px 0;">
 												The second edition of Risk-First Software Development dives into 
 												all the topics from this website in much more depth.
 											</p>
 											<a 
 												href="/Risk-First-Second-Edition" 
-												style="color: #fff; text-decoration: underline; font-size: 0.9em;"
+												style="color: #fff; text-decoration: underline;"
 											>
 												Check out how to get hold of it here
 											</a>

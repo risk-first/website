@@ -2,36 +2,36 @@
 title: A Simple Scenario
 description: What is the one thing every project needs to control to be successful?
 
-tags: 
- - Take Action
- - Internal Model
- - Goal
- - Attendant Risk
- - Hidden Risk
- - Meeting Reality
- - Risk
- - Upside Risk
+tags:
+  - Take Action
+  - Internal Model
+  - Goal
+  - Attendant Risk
+  - Hidden Risk
+  - Meeting Reality
+  - Risk
+  - Upside Risk
 
 definitions:
- - name: Attendant Risk
-   description:  A Risk you expect to face as the result of Taking Action.
-   anchor: attendant-risks
-   own_term: true
-   part_of: Risk
- - name: Hidden Risk
-   description: Risks you aren't aware of when you consider Taking Action. i.e. an unknown unknown.
-   anchor: hidden-risks
-   own_term: true
-   part_of: Risk
- - name: Goal
-   description: A picture of the future that an individual or team carries within their Internal Model; An imagined destination on the Risk Landscape. A specific Upside Risk we'd like to nurture and realize.
-   anchor: goal-in-mind
-featured: 
+  - name: Attendant Risk
+    description: A Risk you expect to face as the result of Taking Action.
+    anchor: attendant-risks
+    own_term: true
+    part_of: Risk
+  - name: Hidden Risk
+    description: Risks you aren't aware of when you consider Taking Action. i.e. an unknown unknown.
+    anchor: hidden-risks
+    own_term: true
+    part_of: Risk
+  - name: Goal
+    description: A picture of the future that an individual or team carries within their Internal Model; An imagined destination on the Risk Landscape. A specific Upside Risk we'd like to nurture and realize.
+    anchor: goal-in-mind
+featured:
   class: bg3
   element: '<image-artifact imgsrc="/public/templates/risk-first/redesign/risks/goal.svg">A Simple Scenario</image-artifact>'
 sidebar_position: 1
-redirect_from: 
- - /A-Simple-Scenario
+redirect_from:
+  - /A-Simple-Scenario
 tweet: yes
 ---
 
@@ -39,15 +39,23 @@ tweet: yes
 
 We manage risk all the time without realising it. Every decision—from what to have for lunch to whether to change jobs—involves weighing up what might go wrong. Software development works the same way: we're used to thinking of design as balancing trade-offs, but those trade-offs are fundamentally about risk, even if we don't use that word.
 
-This section introduces some terms for thinking about risk. Before diving into software, let's consider a simpler example: organising a dinner party. It sounds harmless enough, but there's plenty that can go wrong—which makes it perfect for exploring how we think about risk.  
+This section introduces some terms for thinking about risk. Before diving into software, let's consider a simpler example: organising a dinner party. It sounds harmless enough, but there's plenty that can go wrong—which makes it perfect for exploring how we think about risk.
 
 ## Goal In Mind
 
 We want our dinner party to succeed. That means we have a **[Goal](/tags/Goal)** in mind: friends leaving happy after good food and conversation. Achieving that goal requires preparation.
 
-This goal exists only _in our heads_—it's part of our **[Internal Model](/tags/Internal-Model)** of reality. We all carry mental models that help us predict what will happen, and we act based on those predictions. These models are incomplete (the world is complex), but they're useful. We'll look at Internal Models more closely in [Meeting Reality](Meeting-Reality).
+This goal exists only _in our heads_—it's part of our **[Internal Model](/tags/Internal-Model)** of reality. We all carry mental models that help us predict what will happen, and we act based on those predictions. These models are incomplete (the world is complex), but they're useful.
 
-Without preparation, things could go wrong. Perhaps there's nothing in the house to eat. Perhaps the dish takes longer than expected and guests leave hungry. Perhaps you're missing ingredients, or you're unsure how to cook what you've planned.  
+:::info What Does Internal Model Mean?
+Risk-First borrows the term "Internal Model" from the finance industry, where it was used in the [2004 Basel II capital requirements rules](https://en.wikipedia.org/wiki/Basel_II) (i.e. rules to say how much money (or capital) banks needed to keep handy for any crises that might arise). In Basel II there was an "Internal Model Method", where a bank could create _its own_ model for how much capital it needed to store. The catch was, the bank would have to demonstrate via simulations that this would have been adequate for any crisis occurring in the previous ten years.
+
+Sadly, the financial crisis of 2007 demonstrated very quickly that just looking at the last ten years probably wasn't enough.
+
+Interestingly, the term was previously used in [Cybernetics Theory](https://en.wikipedia.org/wiki/Cybernetics) which looked at concepts of feedback and control in dynamically evolving systems, which is exactly what we're looking at here too.
+:::
+
+Without preparation, things could go wrong. Perhaps there's nothing in the house to eat. Perhaps the dish takes longer than expected and guests leave hungry. Perhaps you're missing ingredients, or you're unsure how to cook what you've planned.
 
 ## Attendant Risks
 
@@ -71,23 +79,19 @@ Other examples: when you exchange currency before travelling, you know exchange 
 
 Different people know about different risks. What's an [Attendant Risk](/tags/Attendant-Risk) for one person might be a [Hidden Risk](/tags/Hidden-Risk) for another. Which risks we're aware of depends on our **knowledge** and **experience**—and that varies from person to person (or team to team).
 
-Hidden risks become attendant all the time. For instance, the health risks from microplastics were largely unknown a decade ago; now they're widely discussed. Your dinner party might reveal that a guest is vegetarian—something you didn't think to check.  
+Hidden risks become attendant all the time. For instance, the health risks from microplastics were largely unknown a decade ago; now they're widely discussed. Your dinner party might reveal that a guest is vegetarian—something you didn't think to check.
 
 ## Taking Action and Meeting Reality
 
-As the dinner party gets closer, we make our preparations and the inadequacies of the [Internal Model](/tags/Internal-Model) become apparent.  We learn what we didn't know and the [Hidden Risks](/tags/Hidden-Risk) reveal themselves.  Other things we were worried about don't materialise.  Things we thought would be minor risks turn out to be greater.   
+As the dinner party gets closer, we make our preparations and the inadequacies of the [Internal Model](/tags/Internal-Model) become apparent. We learn what we didn't know and the [Hidden Risks](/tags/Hidden-Risk) reveal themselves. Other things we were worried about don't materialise. Things we thought would be minor risks turn out to be greater.
 
 ![How Taking Action affects Reality, and also changes your Internal Model](/img/generated/introduction/model_vs_reality.svg)
 
-Our model is forced to [Meet Reality](/tags/Meeting-Reality), and the model changes,  forcing us to deal with these risks, as shown in the diagram above.  
+Our model is forced to [Meet Reality](/tags/Meeting-Reality), and the model changes, forcing us to deal with these risks, as shown in the diagram above.
 
-In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](/tags/Take-Action).  [Taking Action](/tags/Take-Action) _changes_ reality, and with it your [Internal Model](/tags/Internal-Model) of the risks you're facing.  That's because it's only by interacting with the world that we add knowledge to our [Internal Model](/tags/Internal-Model) about what works and what doesn't.  Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](/tags/Internal-Model) of the world.
+In Risk-First, whenever we try to _do something_ about a risk, it is called [Taking Action](/tags/Take-Action). [Taking Action](/tags/Take-Action) _changes_ reality, and with it your [Internal Model](/tags/Internal-Model) of the risks you're facing. That's because it's only by interacting with the world that we add knowledge to our [Internal Model](/tags/Internal-Model) about what works and what doesn't. Even something as passive as _checking the shop opening times_ is an action, and it improves on our [Internal Model](/tags/Internal-Model) of the world.
 
-If we had a good [Internal Model](/tags/Internal-Model) and [took the right actions](/tags/Take-Action), we should see positive outcomes.  If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
-
-## A Note on Terminology
-
-Strictly speaking, "risk" refers to things we can measure, while "uncertainty" covers things we can't. Risk-First uses "risk" throughout because we'll talk about specific risk types (like [Complexity Risk](/tags/Complexity-Risk) or [Schedule Risk](/tags/Schedule-Risk)), and calling them "uncertainties" would be awkward. Besides, terms like "Operational Risk" and "Reputational Risk" are already standard in banking, even though they're not precisely measurable either.
+If we had a good [Internal Model](/tags/Internal-Model) and [took the right actions](/tags/Take-Action), we should see positive outcomes. If we failed to manage the risks, or took inappropriate actions, we'll probably see negative outcomes.
 
 ## Recap
 
