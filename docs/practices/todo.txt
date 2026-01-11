@@ -1,3 +1,78 @@
+================================================================================
+HOW TO WRITE A PRACTICE PAGE
+================================================================================
+
+Each practice page follows this structure:
+
+## 1. FRONTMATTER
+
+```yaml
+---
+title: Practice Name
+description: One-sentence description of what this practice does.
+featured: 
+  class: c
+  element: '<action>Practice Name</action>'
+tags: 
+  - Practice Name    # The practice's own tag
+  - Practice         # Always include this
+practice:
+  aka:               # Alternative names (3-5 typical)
+   - "Alternative Name 1"
+   - "Alternative Name 2"
+  mitigates:         # Risks this practice helps with (include reason)
+   - tag: Risk Name
+     reason: "Why this practice mitigates this risk."
+  attendant:         # Risks this practice introduces (include reason)
+   - tag: Risk Name
+     reason: "Why this practice creates this risk."
+  related:           # Related practices (relative paths)
+   - ../Category/Other-Practice
+---
+```
+
+## 2. BODY STRUCTURE
+
+```markdown
+<PracticeIntro details={frontMatter} />
+
+## Description
+
+> "Wikipedia quote defining the practice." - [Title, _Wikipedia_](URL)
+
+One or two paragraphs explaining the practice in the context of software 
+development. Keep it concise.
+
+## Variations
+
+| **Type**     | **Description**                        | **Reference**                           |
+|--------------|----------------------------------------|-----------------------------------------|
+| **Type 1**   | Brief description of this variation.   | [Title, Wikipedia](URL)                 |
+| **Type 2**   | Brief description of this variation.   | [Title, Wikipedia](URL)                 |
+| **Type 3**   | Brief description of this variation.   | [Title, Wikipedia](URL)                 |
+
+NOTE: Only include 3-5 variations. Don't force it - if there aren't distinct
+variations, fewer is fine. Avoid duplication with other practices.
+
+## See Also
+
+<TagList tag="Practice Name" />
+```
+
+## 3. CHECKLIST
+
+- [ ] Title matches the tag name exactly
+- [ ] Description is one clear sentence
+- [ ] Wikipedia quote is properly attributed with link
+- [ ] mitigates/attendant risks use existing tags from tags.yml
+- [ ] Variations are truly distinct (no duplication)
+- [ ] Each variation has a Wikipedia or authoritative reference
+- [ ] TagList uses the practice's own tag
+
+================================================================================
+EXISTING TODOS
+================================================================================
+
 1.  Risk Hierarchies
  - Need to link risk hierarchies. DONE
  - Create a special top-of hierarchy page, which lists out the other risks in the hierarchy DONE

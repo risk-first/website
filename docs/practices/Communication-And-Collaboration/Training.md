@@ -37,7 +37,15 @@ practice:
 
 Training in software development involves providing education and skill development for team members. This can include onboarding new employees, ongoing professional development, and specialized training in tools, technologies, and methodologies. Effective training ensures that team members are equipped with the knowledge and skills they need to perform their roles effectively.
 
-Training can take various forms, including workshops, online courses, mentoring, and hands-on practice. It is crucial for keeping the team updated with the latest industry trends, tools, and best practices, thus enhancing overall productivity and performance.
+## Variations
+
+| **Training Type**          | **Description**                                                                                       | **Reference** |
+|----------------------------|-------------------------------------------------------------------------------------------------------|---------------|
+| **Onboarding**             | Structured introduction for new team members covering tools, processes, and codebase orientation.     | [Onboarding, Wikipedia](https://en.wikipedia.org/wiki/Onboarding) |
+| **Workshops**              | Interactive sessions focused on specific skills or technologies, often with hands-on exercises.       | [Workshop, Wikipedia](https://en.wikipedia.org/wiki/Workshop) |
+| **Mentoring**              | One-on-one guidance from experienced developers to help less experienced team members grow.           | [Mentorship, Wikipedia](https://en.wikipedia.org/wiki/Mentorship) |
+| **Online Courses**         | Self-paced learning through platforms like Coursera, Udemy, or internal learning management systems.  | [E-learning, Wikipedia](https://en.wikipedia.org/wiki/E-learning) |
+| **Certifications**         | Formal training programmes leading to industry-recognised credentials in specific technologies.       | [Professional Certification, Wikipedia](https://en.wikipedia.org/wiki/Professional_certification) |
 
 ## See Also
 
