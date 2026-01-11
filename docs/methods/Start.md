@@ -33,4 +33,4 @@ There's value in adopting a framework: it reduces cognitive load and provides ba
 
 The frameworks below are mapped by the risks they address and the practices they recommend.
 
-<TagList tag="Risk Framework" />
+<TagList tag="Risk Framework" filter="methods"/>

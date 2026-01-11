@@ -1,109 +1,110 @@
 ---
 title: Quick Summary
-description: A quick summary of the underlying theory behind Risk-First
+description: Why process alone doesn't guarantee success—and how Risk-First changes the game
 
 sidebar_position: 1
-featured: 
+featured:
   class: bg1
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/quick-summary.svg">Quick Summary</image-artifact>'
 tweet: yes
 tags:
- - About
+  - About
 ---
 
 # Quick Summary
 
-## 1.  There are Lots of Ways to Run Software Projects
+Software development is awash with methodologies that focus on optimizing process. But process alone doesn't guarantee success. Projects still miss deadlines, burn out teams, and fail to deliver value.
 
-There are lots of ways to look at a project in-flight.  For example, metrics such as “number of open tickets”, “story points”, “code coverage" or "release cadence" give us a numerical feel for how things are going and what needs to happen next.  We also judge the health of projects by the practices used on them, such as [Continuous Integration](/tags/Integration-Testing), [Unit Testing](/tags/Automated-Testing) or [Pair Programming](/tags/Pair-Programming).  
+**Why?** Because most methodologies ignore the underlying force that shapes every decision: _risk_.
 
-Software methodologies, then, are collections of tools and practices:  “Agile”, “Waterfall”, “Lean” or “Phased Delivery” all prescribe different approaches to running a project and are opinionated about the way they think projects should be done and the tools that should be used.    
+## 1. All Work Is Risk Management
 
-None of these is necessarily more “right” than another: they are suitable on different projects at different times.
+Here's the central insight: **every action you take on a project is managing a risk.**
 
-A key question then is: **how do we select the right tools for the job?**
+- Improving the login screen? You're reducing _the risk of users not signing up_.
+- Adding health monitoring? You're mitigating _the risk of failures going unnoticed_.
+- Implementing a new feature? You're addressing _the risk that users go elsewhere_.
 
-## 2.  We Can Look at Projects in Terms of Risks
+[Risk](/tags/Risk) isn't just something that shows up in a quarterly report. It drives _everything we do_.
 
-One way to examine the project in-flight is by looking at the [risks](/tags/Risk) it faces. 
+Once you see this, you can't unsee it: the ["Thinking"](/thinking/Start) track makes this case and attempts to give you the tools you need to make the most of this perspective on software development.
 
-Commonly, tools such as [RAID logs](https://www.projectmanager.com/blog/raid-log-use-one) and [RAG status](https://pmtips.net/blog-new/what-does-rag-status-mean) reporting are used.  These techniques should be familiar to project managers and developers everywhere.   
+**Read more:** [A Simple Scenario](/thinking/A-Simple-Scenario)
 
-However, the Risk-First view is that we can go much further:  that each item of work being done on the project is to manage a particular risk.  [Risk](/tags/Risk) isn't something that just appears in a report, it actually drives *everything we do*.  
+## 2. Methodologies Are Risk Frameworks
 
-For example:
+![Methodologies, Risks, Practices](/img/generated/introduction/risk_framework_2.svg)
 
-- A story about improving the user login screen can be seen as reducing _the risk of users not signing up_.   
-- A task about improving the health indicators could be seen as mitigating _the risk of the application failing and no-one reacting to it_. 
-- Even a task as basic as implementing a new function in the application is mitigating _the risk that users are dissatisfied and go elsewhere_.  
+Agile, Waterfall, Lean, DevOps—these aren't competing religions. They're different **risk frameworks**, each optimized for different concerns:
 
-One assertion of Risk-First is that **every action you take on a project is to manage a [risk](/tags/Risk).**
+- **Agile** prioritises the risk that requirements change and are hard to capture up front.
+- **Waterfall** guards against the risk of expensive rework by planning thoroughly.
+- **Lean** attacks the risk of wasted effort and incomplete work.
+- **DevOps** targets the risk of slow, error-prone deployments.
 
-## 3.  We Can Break Down Risks on a Project Methodically
+No methodology is "right" in the abstract. Each addresses specific risks while introducing others. The question isn't which methodology to believe in—it's which risks matter most on _your_ project.
 
-Although risk is usually complicated and messy, other industries have found value in breaking down the types of risks that affect them and addressing them individually.  
+> "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_. Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
 
-For example:
+**Read more:** [Risk Frameworks](/methods/Start)
 
-- In manufacturing, _tolerances_ allow for calculating the likelihood of defects in production.  
-- In finance, projects and teams are structured around monitoring risks like _credit risk_, _market risk_ and _liquidity risk_.
-- _Insurance_ is founded on identifying particular risks and providing financial safety-nets for when they occur, such as death, injury, accident and so on.   
+## 3. You Can Build a Vocabulary for Risk
 
-Software risks are difficult to quantify and mostly the effort involved in doing so _exactly_ would outweigh the benefit.  Nevertheless, there is value in spending time building _classifications of risk for software_.   That's what Risk-First does:   it describes a set of _risk patterns_ we see every day on software projects. 
+Other industries systematically classify their risks. Finance tracks credit risk, market risk, and liquidity risk. Insurance quantifies risks of death, injury, and accident. Manufacturing calculates defect tolerances. Software can do the same. Risk-First provides a **pattern language of software risks**—recurring risk types you'll encounter on any project.
 
-With this in place, we can:
+![Software Development Risk Breakdown](/img/generated/staging-and-classifying/periodic-horizontal.svg)
 
-- Talk about the types of risks we face on our projects, using an appropriate language.
-- Anticipate [Hidden Risks](/tags/Hidden-Risk) that we hadn't considered before.
-- Weigh the risks against each other and decide which order to tackle them.   
+With this vocabulary, you can:
 
-## 4.  We Can Analyse Tools and Techniques in Terms of how they Manage Risk
+- Name the risks you're facing, so teams can discuss them clearly.
+- Anticipate [Hidden Risks](/tags/Hidden-Risk) before they blindside you.
+- Prioritise which risks to tackle first.
 
-If we accept the assertion that _all_ the actions we take on a project are about mitigating risks, then it stands to reason that the tools and techniques available to us on a project are there for mitigating different types of risks.  
+**Read more:** [Software Development Risks](/risks/Start)
 
-For example:
+## 4. Every Practice Is a Trade-Off
 
- - If we do a [Code Review](/tags/Review), we are partly trying to minimise the risks of bugs slipping through into production and also manage the key person risk of knowledge not being widely-enough shared. 
- - If we write [Unit Tests](/tags/Automated-Testing), we’re addressing the risk of bugs going to production. We’re also mitigating against the risk of _regression_ and future changes breaking our existing functionality.   
- - If we enter into a contract with a supplier then we are mitigating the risk of the supplier vanishing and leaving us exposed.  With the contract in place we have legal recourse against this risk.
+Once you accept that all work is risk management, you can analyse _any_ practice through this lens. Here, we use [Risk-First Diagrams](/thinking/Risk-First-Diagrams) to convey the risk trade-offs you're making for any given activity. For example:
 
-From the above examples, it's clear that **different tools are appropriate for managing different types of risks.**
+![Reducing Implementation Risk Via Automated Testing](/img/generated/risks/posters/implementation-risk.svg)
 
-## 5.  Different Methodologies are for Different Risk Profiles
+**[Automated Tests](/tags/Automated-Testing)** guards against regression — but requires maintenance.
 
-In the same way that our tools and techniques are appropriate for dealing with different risks, the same is true of the methodologies we use on our projects.  We can use a Risk-First approach to examine the different methodologies and see which risks they address.  
+![Reducing Complexity via refactoring, but endangering the schedule.](/img/generated/risks/posters/schedule-risk1.svg)
 
-For example:
+**[Refactoring](tags/Refactoring)** can help manage complexity and ensure features match the customer's requirements, but can put your schedule at risk.
 
-- **Agile** methodologies prioritise the risk that requirements capture is complicated, error-prone and that requirements change easily.  
-- **Waterfall** takes the view that development effort is an expensive risk and that we should build plans up-front to avoid re-work.  
-- **Lean** takes the view that risk lies in incomplete work and wasted work and aims to minimise that.
+**Different tools manage different risks.** The art is matching the right practice to the risks that matter most.
 
-Although many developers have a methodology-of-choice, the argument here is that there are trade-offs with all of these choices.  
+**Read more:** [Practices](/practices/Start)
 
-> "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_.  Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
+## 5. Navigate the Risk Landscape
 
-## 6.  We can Drive Development With a Risk-First Perspective 
+![Goals On A Golf Course](/img/posts/anti-goals/golf.png)
 
-We have described a model of risk within software projects, looking something like this:
+You can't eliminate risk from a software project. But you can take actions that move you to a better position in the [Risk Landscape](/risks/Risk-Landscape)—a place where the risks you face are more favourable than where you started.
 
-![Methodologies, Risks, Practices](/img/generated/executive-summary/pattern_language.svg)
+Every decision involves trade-offs:
 
-How do we take this further?
+- **Sign-offs** improve coordination and quality control, but introduce bottlenecks.
+- **Redundancy** eliminates single points of failure, but creates synchronization complexity.
+- **Process** enables measurement and coordination, but risks bureaucracy.
 
-One idea explored is the _[Risk Landscape](/risks/Risk-Landscape)_:  although the software team can't remove risk from their project, they can take actions that move them to a place in the [Risk Landscape](/risks/Risk-Landscape) where the risks on the project are more favourable than where they started.  
+Risk-First gives you a framework to weigh these trade-offs explicitly, rather than relying on instinct or ideology.
 
-From there, we examine basic risk archetypes you will encounter on the software project, to build up a [vocabulary of Software Risk](/risks/Staging-And-Classifying) and look at which specific tools you can use to mitigate each kind of risk.  
+**Read more:** [The Risk Landscape](/risks/Risk-Landscape)
 
-Then, we look at software practices and how they manage various risks.  Beyond this we examine the question:  _how can a Risk-First approach inform the use of this practice?_  
+## 6. Don't Let Risk Control You
 
-For example:
+Whether you're a developer, team lead, or CTO—and regardless of your tech stack or process preference—Risk-First furnishes you with new tools to guide projects to better outcomes.
 
- - If we are introducing a **Sign-Off** in our process, we have to balance the risks it _mitigates_ (coordination of effort, quality control, information sharing) with the risks it _introduces_ (delays and process bottlenecks).  
- - If we build in **Redundancy**, this mitigates the risk of a _single point of failure_, but introduces risks around _synchronizing data_ and _communication_ between the systems. 
- - If we introduce **Process**, this may make it easier to _coordinate as a team_ and _measure performance_ but may lead to bureaucracy, focusing on the wrong goals or over-rigid interfaces to those processes.   
+You'll gain:
 
-Risk-First aims to provide a framework in which we can _analyse these actions_ and weigh up _accepting_ versus _mitigating_ risks.
+- A [vocabulary](/risks/Staging-And-Classifying) for identifying and discussing risks with developers, users, or executives.
+- Techniques for de-risking, making bets, and setting priorities.
+- The confidence to adapt when requirements change or new challenges like AI emerge.
+
+**Don't let risk control you—make it your competitive edge.**
 
 ## Next Steps
 
