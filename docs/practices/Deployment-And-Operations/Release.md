@@ -61,7 +61,3 @@ See also: [Development Process](/thinking/Development-Process#a-toy-process), [C
 ## Used By
 
 <MethodList tag="Release" />
-
-## Used By
-
-<MethodList tag="Release" />
