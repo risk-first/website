@@ -42,7 +42,7 @@ Agile, Waterfall, Lean, DevOps—these aren't competing religions. They're diffe
 - **Lean** attacks the risk of wasted effort and incomplete work.
 - **DevOps** targets the risk of slow, error-prone deployments.
 
-No methodology is "right" in the abstract. Each addresses specific risks while introducing others. The question isn't which methodology to believe in—it's which risks matter most on _your_ project.
+No methodology is "right" in the abstract. Each addresses specific risks while ignoring others. The question isn't which methodology to believe in—it's which risks matter most on _your_ project.
 
 In Risk-First, we analyse these different methodologies as _Risk Frameworks_. A Risk Framework identifies particular risks within a domain and then recommends practices to manage them.
 
