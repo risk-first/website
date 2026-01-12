@@ -35,7 +35,7 @@ Once you see this, you can't unsee it: the ["Thinking"](/thinking/Start) track m
 
 ![Methodologies, Risks, Practices](/img/generated/introduction/risk_framework_2.svg)
 
-Agile, Waterfall, Lean, DevOps—these aren't competing religions. They're different **risk frameworks**, each optimized for different concerns:
+Agile, Waterfall, Lean, DevOps—these aren't competing religions. They're different because they're each optimized for different concerns:
 
 - **Agile** prioritises the risk that requirements change and are hard to capture up front.
 - **Waterfall** guards against the risk of expensive rework by planning thoroughly.
@@ -44,7 +44,7 @@ Agile, Waterfall, Lean, DevOps—these aren't competing religions. They're diffe
 
 No methodology is "right" in the abstract. Each addresses specific risks while introducing others. The question isn't which methodology to believe in—it's which risks matter most on _your_ project.
 
-> "<!-- tweet-start -->Methodologies are like _bicycles_, rather than _religions_. Rather than simply _believing_, we can take them apart and see how they work. <!-- tweet-end -->"
+In Risk-First, we analyse these different methodologies as _Risk Frameworks_. A Risk Framework identifies particular risks within a domain and then recommends practices to manage them.
 
 **Read more:** [Risk Frameworks](/methods/Start)
 
