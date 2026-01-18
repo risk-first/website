@@ -25,9 +25,9 @@ practice:
     - tag: Reliability Risk
       reason: "Carefully managing software configuration ensures that the reliability of dependencies is also managed."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Tools-and-Standards/Version-Control
-    - ../Tools-and-Standards/Tool-Adoption
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Version-Control
+    - ../Development-And-Coding/Tool-Adoption
 ---
 
 <PracticeIntro details={frontMatter} />

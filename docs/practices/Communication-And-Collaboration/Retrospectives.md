@@ -26,8 +26,8 @@ practice:
       reason: "Requires coordination and can disrupt regular workflows."
   related:
     - Review
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Refactoring
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Refactoring
     - ../Testing-and-Quality-Assurance/Regression-Testing
 ---
 

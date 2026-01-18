@@ -23,9 +23,9 @@ practice:
     - tag: Complexity Risk
       reason: "Documentation is also a source of complexity on a project and can slow down change."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Development-and-Coding/Code-Reviews
-    - ../Deployment-and-Operations/Configuration-Management
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Communication-And-Collaboration/Review
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />

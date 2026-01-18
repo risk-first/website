@@ -66,7 +66,7 @@ A different approach to judging the health of a thing might be to take measureme
 
 - If you're in a **startup**, you could look at something like [Burn Rate](https://en.wikipedia.org/wiki/Burn_rate), which is how fast you are spending money.
 
-Metrics are difficult though. Choosing the _right_ metrics, knowing their weaknesses and being aware of what knowledge is missing is a whole other discussion which we look at in [Map And Territory Risk](https://riskfirst.org/risks/Map-And-Territory-Risk). Taking the car plant example again, what does it mean to produce a hundred cars a day? Is it good or bad? Is this directly tied into how healthy our business is? Does it matter if the cars aren't selling?
+Metrics are difficult though. Choosing the _right_ metrics, knowing their weaknesses and being aware of what knowledge is missing is a whole other discussion which we look at in [Internal Model Risk](/tags/Internal-Model-Risk). Taking the car plant example again, what does it mean to produce a hundred cars a day? Is it good or bad? Is this directly tied into how healthy our business is? Does it matter if the cars aren't selling?
 
 ![Measuring Fitness](/img/generated/introduction/health1.svg)
 
