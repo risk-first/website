@@ -25,8 +25,8 @@ practice:
     - tag: Funding Risk
       reason: "Creating prototypes can incur additional costs."
   related:
-    - ../Testing-and-Quality-Assurance/User-Acceptance-Testing-(UAT)
-    - ../Communication-and-Collaboration/Demo
+    - ../Testing-and-Quality-Assurance/User-Acceptance-Testing
+    - ../Communication-And-Collaboration/Demo
     - ../Planning-And-Management/Prioritising
 ---
 

@@ -27,9 +27,9 @@ practice:
     - tag: Internal Model Risk
       reason: "Performance testing might give a false confidence and not reflect real-world scenarios."
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Deployment-and-Operations/Monitoring
+    - ../Deployment-And-Operations/Monitoring
 ---
 
 <PracticeIntro details={frontMatter} />

@@ -34,9 +34,9 @@ practice:
     - tag: Legal Risk
       reason: Publishing or releasing code may involve licensing, Intellectual Property, Liability or other legal compliance."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Tools-and-Standards/Version-Control
-    - ../Deployment-and-Operations/Configuration-Management
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Version-Control
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />

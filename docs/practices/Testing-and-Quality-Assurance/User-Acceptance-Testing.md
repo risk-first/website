@@ -32,9 +32,9 @@ practice:
     - tag: Deadline Risk
       reason: "Can often go on longer than expected, leading to deadline issues."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Communication-and-Collaboration/Demo
-    - ../Development-and-Coding/Unit-Testing
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Communication-And-Collaboration/Demo
+    - ../Testing-and-Quality-Assurance/Automated-Testing
 ---
 
 <PracticeIntro details={frontMatter} />

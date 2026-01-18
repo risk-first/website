@@ -31,9 +31,9 @@ practice:
     - tag: Legal Risk
       reason: "Outsourcing relationships may be more legally complex than hiring staff directly."
   related:
-    - ../Planning-and-Management/Contract
-    - ../Communication-and-Collaboration/Stakeholder-Management
-    - ../Deployment-and-Operations/Configuration-Management
+    - ../External-Relations/Contracts
+    - ../Planning-And-Management/Stakeholder-Management
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />

@@ -32,10 +32,10 @@ practice:
     - tag: Deadline Risk
       reason: "Establishing an order of events often places deadlines on the earlier events completing or the later events starting."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Communication-and-Collaboration/Retrospectives
-    - ../Development-and-Coding/Refactoring
-    - ../Tools-And-Standards/Prototyping
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Communication-And-Collaboration/Retrospectives
+    - ../Development-And-Coding/Refactoring
+    - ../Development-And-Coding/Prototyping
 ---
 
 <PracticeIntro details={frontMatter} />

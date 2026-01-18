@@ -27,9 +27,9 @@ practice:
     - tag: Agency Risk
       reason: "Can put unnecessary pressure on staff to hit deadlines."
   related:
-    - ../Planning-and-Management/Prioritising
-    - ../Communication-and-Collaboration/Documentation
-    - ../Development-and-Coding/Coding
+    - ../Planning-And-Management/Prioritising
+    - ../Communication-And-Collaboration/Documentation
+    - ../Development-And-Coding/Coding
 ---
 
 <PracticeIntro details={frontMatter} />

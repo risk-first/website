@@ -27,7 +27,7 @@ practice:
       reason: "Rushed work can introduce bugs and reduce system reliability."
   related:
     - ../Deployment-And-Operations/Release
-    - ../Collaboration-And-Communication/Stakeholder-Management
+    - ../Planning-And-Management/Stakeholder-Management
 ---
 
 <PracticeIntro details={frontMatter} />

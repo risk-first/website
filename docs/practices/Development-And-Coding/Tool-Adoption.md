@@ -29,9 +29,9 @@ practice:
     - tag: Lock-In Risk
       reason: Once tools become embedded in the process, they can be hard to change.
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Coding
-    - ../Deployment-and-Operations/Automation
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Coding
+    - ../Deployment-And-Operations/Automation
 ---
 
 <PracticeIntro details={frontMatter} />

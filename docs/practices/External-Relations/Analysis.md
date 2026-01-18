@@ -34,9 +34,9 @@ practice:
     - tag: Agency Risk
       reason: "Creates dependencies on the availability and accuracy of information from stakeholders."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Development-and-Coding/Coding
-    - ../Communication-and-Collaboration/Documentation
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Development-And-Coding/Coding
+    - ../Communication-And-Collaboration/Documentation
 ---
 
 <PracticeIntro details={frontMatter} />

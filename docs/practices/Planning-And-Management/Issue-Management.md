@@ -34,9 +34,9 @@ practice:
    - tag: Schedule Risk
      reason: "Managing and resolving logged issues can impact project timelines."
   related:
-   - ../Development-and-Coding/Debugging
+   - ../Development-And-Coding/Debugging
    - ../Testing-and-Quality-Assurance/Regression-Testing
-   - ../Deployment-and-Operations/Incident-Management
+   - ../Deployment-And-Operations/Monitoring
 ---
 
 <PracticeIntro details={frontMatter} /> 

@@ -29,9 +29,9 @@ practice:
     - tag: Internal Model Risk
       reason: "Focusing on the wrong measures can blind you to what's important."
   related:
-    - ../Deployment-and-Operations/Monitoring
-    - ../Planning-and-Management/Estimation
-    - ../Development-and-Coding/Code-Reviews
+    - ../Deployment-And-Operations/Monitoring
+    - ../Planning-And-Management/Estimating
+    - ../Communication-And-Collaboration/Review
 ---
 
 <PracticeIntro details={frontMatter} />

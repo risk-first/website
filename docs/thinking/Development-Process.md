@@ -139,7 +139,7 @@ As shown in the diagram above, at this stage we might discover the [Hidden Risk]
 
 Next, User Acceptance Testing (UAT) is where our new feature meets another reality: _actual users_. I think you can see how the process works by now. We're just flushing out yet more [Hidden Risks](/tags/Hidden-Risk).
 
-![UAT - putting tame users in front of your software is be tter than real ones, where the risk is higher ](/img/generated/introduction/development_process_uat.svg)
+![UAT - putting tame users in front of your software is better than real ones, where the risk is higher](/img/generated/introduction/development_process_uat.svg)
 
 ## Observations
 

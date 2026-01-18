@@ -23,9 +23,9 @@ practice:
     - tag: Schedule Risk
       reason: "Debugging can be time-consuming, affecting project timelines."
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Deployment-and-Operations/Incident-Management
+    - ../Deployment-And-Operations/Monitoring
 ---
 
 <PracticeIntro details={frontMatter} />

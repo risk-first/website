@@ -26,9 +26,9 @@ practice:
     - tag: Communication Risk
       reason: "Misaligned communication strategies can lead to misunderstandings and conflicts."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Communication-and-Collaboration/Documentation
-    - ../External-Relations/Contract
+    - ../Planning-And-Management/Change-Management
+    - ../Communication-And-Collaboration/Documentation
+    - ../External-Relations/Contracts
     - Terms-Of-Reference
 ---
 

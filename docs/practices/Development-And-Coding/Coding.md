@@ -23,9 +23,9 @@ practice:
     - tag: Complexity Risk
       reason: "Writing new code adds complexity to a project."
   related:
-    - ../Planning-and-Management/Requirements-Capture
+    - ../Planning-And-Management/Requirements-Capture
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Development-and-Coding/Code-Reviews
+    - ../Communication-And-Collaboration/Review
 ---
 
 <PracticeIntro details={frontMatter} />

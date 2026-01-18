@@ -27,8 +27,8 @@ practice:
       reason: "Unit Testing and code coverage can give false assurances about how a system will work in the real world."
   related:
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Development-and-Coding/Coding
-    - ../Planning-and-Management/Requirements-Capture
+    - ../Development-And-Coding/Coding
+    - ../Planning-And-Management/Requirements-Capture
 ---
 
 <PracticeIntro details={frontMatter} />

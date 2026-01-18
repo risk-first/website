@@ -31,9 +31,9 @@ practice:
     - tag: Deadline Risk
       reason: "Contracts often stipulate certain conditions must be met at certain times."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Coding
-    - ../Deployment-and-Operations/Incident-Management
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Coding
+    - ../Deployment-And-Operations/Monitoring
 ---
 
 <PracticeIntro details={frontMatter} />

@@ -33,10 +33,10 @@ practice:
     - tag: Funding Risk
       reason: "Design can be an expensive bet that doesn't lead to improved software."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Development-and-Coding/Coding
-    - ../Development-and-Coding/Refactoring
-    - ../Communication-and-Collaboration/Documentation
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Development-And-Coding/Coding
+    - ../Development-And-Coding/Refactoring
+    - ../Communication-And-Collaboration/Documentation
 ---
 
 <PracticeIntro details={frontMatter} />

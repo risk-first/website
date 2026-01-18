@@ -29,9 +29,9 @@ practice:
     - tag: Funding Risk
       reason: "Can incur costs associated with adopting standards or libraries."
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Deployment-and-Operations/Configuration-Management
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />
