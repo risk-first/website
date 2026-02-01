@@ -1,6 +1,6 @@
 ---
-title: Books
-description: Books you can buy on the subject of Risk-First
+title: Risk-First Second Edition
+description: How to get hold of your copy
 
 featured: 
   class: bg1
@@ -13,6 +13,6 @@ sidebar_position: 6
 tweet: yes
 ---
 
-You can buy books about Risk-First!
+Want to get a copy of Risk-First Software Development Second Edition?  Read on...
 
 <TagList  tag="Books" />
