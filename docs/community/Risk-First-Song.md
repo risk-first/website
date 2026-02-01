@@ -9,7 +9,7 @@ tags:
 sidebar_position: 1
 ---
 
-![From Jose Coignard's Risk-First Song](/img/community/jose-song.png)
+[![From Jose Coignard's Risk-First Song](/img/community/jose-song.png)](https://app.filmora.io/#/object/d5o0sfacc84vpnavgiig)
 
 ## A Daft-Punk Inspired Tribute
 
