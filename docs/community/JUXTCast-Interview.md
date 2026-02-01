@@ -9,21 +9,11 @@ tags:
 sidebar_position: 4
 ---
 
-import ReactPlayer from 'react-player'
-
 ## JUXTCast S6E4: Risk-First Software Development
 
 A wide-ranging conversation with Henry Garner that starts with "why doesn't agile actually work?" and ends with predictions about when AI will finally match human reliability (spoiler: give it 10,000 years).
 
-<div style={{position: 'relative', paddingTop: '56.25%', marginBottom: '2rem'}}>
-  <ReactPlayer
-    url="https://www.youtube.com/watch?v=xu3_l_8YYSM"
-    width="100%"
-    height="100%"
-    style={{position: 'absolute', top: 0, left: 0}}
-    controls
-  />
-</div>
+<iframe width="100%" style={{aspectRatio: '16/9'}} src="https://www.youtube.com/embed/xu3_l_8YYSM" title="JUXTCast S6E4: Risk-First Software Development" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ### What's Covered
 

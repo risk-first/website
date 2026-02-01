@@ -9,21 +9,11 @@ tags:
 sidebar_position: 3
 ---
 
-import ReactPlayer from 'react-player'
-
 ## Risk-First at XT25
 
 The closing keynote from XT25, where Rob traces his journey from building risk systems at Deutsche Bank, RBS, and Credit Suisse to a revelatory insight: **we're not really software developers—we're risk managers**.
 
-<div style={{position: 'relative', paddingTop: '56.25%', marginBottom: '2rem'}}>
-  <ReactPlayer
-    url="https://www.youtube.com/watch?v=R7V1I-l0rrg"
-    width="100%"
-    height="100%"
-    style={{position: 'absolute', top: 0, left: 0}}
-    controls
-  />
-</div>
+<iframe width="100%" style={{aspectRatio: '16/9'}} src="https://www.youtube.com/embed/R7V1I-l0rrg" title="Risk-First at XT25" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ### What You'll Learn
 
