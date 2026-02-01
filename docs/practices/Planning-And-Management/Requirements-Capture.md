@@ -23,9 +23,9 @@ practice:
     - tag: Schedule Risk
       reason: "Thorough requirements capture can be time-consuming."
   related:
-    - ../Planning-and-Management/Prioritising
+    - ../Planning-And-Management/Prioritising
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Development-and-Coding/Unit-Testing
+    - ../Testing-and-Quality-Assurance/Automated-Testing
 ---
 
 <PracticeIntro details={frontMatter} />

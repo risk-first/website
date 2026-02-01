@@ -26,7 +26,7 @@ practice:
       reason: "Training sessions can take time away from development, impacting schedules."
   related:
     - ../Documentation
-    - ../Development-and-Coding/Pair-Programming
+    - ../Development-And-Coding/Pair-Programming
 ---
 
 <PracticeIntro details={frontMatter} />

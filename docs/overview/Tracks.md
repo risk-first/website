@@ -19,6 +19,6 @@ There is quite a lot of material on this site so to aid digestion Risk-First is 
 
 <TagList tag="Front" />
 
-## Lets Go!
+## Let's Go!
 
 If you're just starting with Risk-First, then let's head to [Thinking Risk-First](/thinking/Start) next...

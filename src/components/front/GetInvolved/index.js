@@ -21,6 +21,9 @@ export default function Parts() {
 				<ImageBullet image="/img/front/github.svg" alt="Connect Icon">
 					Join Our <a href="https://github.com/orgs/risk-first/teams/risk-first-team">GitHub Team</a> (and receive regular updates)
 				</ImageBullet>
+				<ImageBullet image="/img/front/community.svg" alt="Community Icon">
+					<a href="/community/Start">Explore Community Content</a> — talks, interviews, music & more
+				</ImageBullet>
 			</div>
 		</HomeSection>
 	);

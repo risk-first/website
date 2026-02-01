@@ -25,9 +25,9 @@ practice:
     - tag: Process Risk
       reason: "Change control is a process, and therefore is a source of process risk. "
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Deployment-and-Operations/Release-Delivery
+    - ../Deployment-And-Operations/Release
 ---
 
 <PracticeIntro details={frontMatter} />

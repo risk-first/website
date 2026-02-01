@@ -28,8 +28,8 @@ practice:
       reason: "Sales cycles need to align with product availability and readiness."
   related:
     - ../External-Relations/Marketing
-    - ../Planning-and-Management/Stakeholder-Management
-    - ../Deployment-and-Operations/Release-Delivery
+    - ../Planning-And-Management/Stakeholder-Management
+    - ../Deployment-And-Operations/Release
 ---
 
 <PracticeIntro details={frontMatter} />

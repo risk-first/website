@@ -36,9 +36,9 @@ practice:
     - tag: Funding Risk
       reason: "High-quality monitoring tools and systems can be costly."
   related:
-    - ../Deployment-and-Operations/Incident-Management
-    - ../Tools-and-Standards/Prototyping
-    - ../Communication-and-Collaboration/Documentation
+    - ../Deployment-And-Operations/Redundancy
+    - ../Development-And-Coding/Prototyping
+    - ../Communication-And-Collaboration/Documentation
     - ../External-Relations/Analysis
 ---
 

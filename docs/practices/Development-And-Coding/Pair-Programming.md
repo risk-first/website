@@ -31,9 +31,9 @@ practice:
     - tag: Agency Risk
       reason: "Staff might not like working in this arrangement."
   related:
-    - ../Development-and-Coding/Coding
-    - ../Communication-and-Collaboration/Review
-    - ../Planning-and-Management/Stakeholder-Management
+    - ../Development-And-Coding/Coding
+    - ../Communication-And-Collaboration/Review
+    - ../Planning-And-Management/Stakeholder-Management
 ---
 
 <PracticeIntro details={frontMatter} />

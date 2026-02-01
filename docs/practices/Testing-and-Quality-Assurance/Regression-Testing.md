@@ -25,9 +25,9 @@ practice:
     - tag: Complexity Risk
       reason: "Managing extensive regression tests can add complexity."
   related:
-    - ../Development-and-Coding/Refactoring
+    - ../Development-And-Coding/Refactoring
     - ../Testing-and-Quality-Assurance/Integration-Testing
-    - ../Deployment-and-Operations/Release-Delivery
+    - ../Deployment-And-Operations/Release
 ---
 
 <PracticeIntro details={frontMatter} />

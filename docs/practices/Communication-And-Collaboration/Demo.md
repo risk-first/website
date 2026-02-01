@@ -27,8 +27,8 @@ practice:
     - tag: Schedule Risk
       reason: "Demos can introduce delays if not planned and executed properly."
   related:
-    - ../Communication-and-Collaboration/Documentation
-    - ../Planning-and-Management/Stakeholder-Management
+    - ../Communication-And-Collaboration/Documentation
+    - ../Planning-And-Management/Stakeholder-Management
 ---
 
 <PracticeIntro details={frontMatter} />

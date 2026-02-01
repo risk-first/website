@@ -32,7 +32,7 @@ practice:
       reason: "Ensuring continuous compliance with evolving standards can be challenging."
   related:
     - ../Development-And-Coding/Coding
-    - ../Tools-And-Standards/Configuration-Management
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />

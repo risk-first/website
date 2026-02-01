@@ -23,9 +23,9 @@ practice:
     - tag: Schedule Risk
       reason: "Can take time from the schedule to build."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Coding
-    - ../Communication-and-Collaboration/Documentation
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Coding
+    - ../Communication-And-Collaboration/Documentation
     - Stakeholder-Management
 ---
 

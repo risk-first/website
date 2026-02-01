@@ -38,7 +38,7 @@ practice:
       reason: "Automation of reporting and statuses can lead to false confidence about a system's health."
   related:
     - ../Development-And-Coding/Coding
-    - ../Tools-And-Standards/Measurement
+    - ../Testing-and-Quality-Assurance/Measurement
 ---
 
 <PracticeIntro details={frontMatter} />

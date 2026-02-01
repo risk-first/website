@@ -27,9 +27,9 @@ practice:
     - tag: Deadline Risk
       reason: "Timing of marketing campaigns needs to align with product readiness."
   related:
-    - ../Planning-and-Management/Requirements-Capture
-    - ../Communication-and-Collaboration/Demo
-    - ../Deployment-and-Operations/Release-Delivery
+    - ../Planning-And-Management/Requirements-Capture
+    - ../Communication-And-Collaboration/Demo
+    - ../Deployment-And-Operations/Release
     - Sales
 ---
 

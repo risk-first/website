@@ -21,9 +21,9 @@ practice:
     - tag: Communication Risk
       reason: "Poor version management can be chaotic and leave lots of work in progress."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Coding
-    - ../Deployment-and-Operations/Release-Delivery
+    - ../Planning-And-Management/Change-Management
+    - ../Development-And-Coding/Coding
+    - ../Deployment-And-Operations/Release
 ---
 
 <PracticeIntro details={frontMatter} />

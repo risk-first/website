@@ -28,10 +28,9 @@ practice:
     - tag: Process Risk
       reason: "Adding approvals to a process increases the number of stakeholders involved and can impact process performance."
   related:
-    - ../Planning-and-Management/Stakeholder-Management
-    - ../Communication-and-Collaboration/Review
-    - ../Development-and-Coding/Code-Reviews
-    - ../External-Relations/Contract
+    - ../Planning-And-Management/Stakeholder-Management
+    - ../Communication-And-Collaboration/Review
+    - ../External-Relations/Contracts
 ---
 
 <PracticeIntro details={frontMatter} />

@@ -28,7 +28,7 @@ Think about your development process at work.  Maybe it involves weekly releases
 
 Can we go further?  Is it just those parts of our development process that manage risk, or is it actually _all_ of them?  
 
-Lets look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.  Then, we'll generalise from there.
+Let's look at one of the tools in the Project Manager's tool-box, the [RAID Log](http://pmtips.net/blog-new/raid-logs-introduction), and observe how risk-centric it is.  Then, we'll generalise from there.
 
 ## RAID Log
 

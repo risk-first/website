@@ -29,9 +29,9 @@ practice:
     - tag: Implementation Risk
       reason: "Done carelessly, refactoring can introduce new issues into the codebase"
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Regression-Testing
-    - ../Planning-and-Management/Change-Management
+    - ../Planning-And-Management/Change-Management
     - ../Planning-And-Management/Design
 ---
 

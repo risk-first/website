@@ -1,5 +1,5 @@
 ---
-title: "Risk-First Software Development Second Edition"
+title: "About Risk-First Software Development Second Edition"
 description: "Now available in digital format"
 slug: /Risk-First-Second-Edition
 featured:
@@ -10,13 +10,14 @@ tags:
 sidebar_position: 1
 ---
 
-I'm pleased to announce that the second edition of Risk-First Software Development is [now available in Beta](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)! Read on to find out how to get a free copy.
+<a href="https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition"><img src="/img/Cover_Image_Second_Edition.jpg" alt="Risk-First Software Development Second Edition" style={{maxWidth: '250px', float: 'right', marginLeft: '1rem', marginBottom: '1rem'}} /></a>
 
-[![Risk-First Software Development Second Edition](/img/Cover_Image_Second_Edition.jpg)](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)
+I'm pleased to announce that the second edition of Risk-First Software Development is now available!  **265 pages** that reframe software development around the force that shapes every decision: risk. 
 
-## Get Involved!
 
-<Movement />
+## How To Get It
+
+<TagList tag="Book-Option" />
 
 ## About Risk-First Software Development - Second Edition
 
@@ -42,26 +43,4 @@ It also contains two entirely new chapters dealing with technological change, re
 
 In essence, this is the post-agile, AI-aware manual for understanding and harnessing the forces of innovation in play when developing software systems.
 
-## What's A Beta?
-
-<BoxOut title="What's A Beta For A Book, Anyway?">
-
-While the book is in beta form, you can purchase it from the link below and read it digitally. Over the course of the beta period, the book will be updated many times with suggestions and improvements - just as with a software beta.
-
-Once the book is declared "finished", it'll get published proper and you'll get the finalized digital version to keep.
-
-[Access the Beta Here](https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition)
-
-</BoxOut>
-
-## Join Us On GitHub!
-
-<BoxOut title="Join The Risk-First GitHub Organisation">
-
-If you [Add Your Star on GitHub](https://github.com/risk-first/website) you'll be sent an email invite to join the [Risk-First GitHub Organisation](https://github.com/risk-first/website/discussions) and the associated discussion group!
-
-This is where I will be adding blog materials discussing the content of the new book as it comes together.
-
-[![GitHub Star](/img/github_star.png) <br /> ☝️ Click This On GitHub ](https://github.com/risk-first/website)
-
-</BoxOut>
+**[Click Here To Buy](/Buy-The-Print-Edition)**

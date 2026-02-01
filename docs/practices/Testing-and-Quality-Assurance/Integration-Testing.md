@@ -23,9 +23,9 @@ practice:
     - tag: Reliability Risk
       reason: "Adds dependencies on test environments and their availability."
   related:
-    - ../Planning-and-Management/Change-Management
-    - ../Development-and-Coding/Unit-Testing
-    - ../Deployment-and-Operations/Configuration-Management
+    - ../Planning-And-Management/Change-Management
+    - ../Testing-and-Quality-Assurance/Automated-Testing
+    - ../Deployment-And-Operations/Configuration-Management
 ---
 
 <PracticeIntro details={frontMatter} />

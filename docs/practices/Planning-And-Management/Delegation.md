@@ -28,7 +28,7 @@ practice:
       reason: "Requires clear communication to ensure tasks are understood and executed properly."
   related:
     - ../Planning-And-Management/Prioritising
-    - ../Collaboration-And-Communication/Stakeholder-Management
+    - ../Planning-And-Management/Stakeholder-Management
     - ../External-Relations/Outsourcing
 ---
 

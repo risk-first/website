@@ -75,7 +75,7 @@ method:
     - tag: Configuration Management
       reason: "Configuration management helps maintain the consistency of the product's performance in XP."
     - tag: Design
-      reason: "XP Emphasizes the simplest design that works, avoiding unnecessary complexity."
+      reason: "XP emphasizes the simplest design that works, avoiding unnecessary complexity."
       use:
         - Simple Design
         - Metaphor

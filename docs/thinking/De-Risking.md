@@ -163,7 +163,7 @@ The table above lists a set of _generic strategies_ for derisking which we'll lo
 
 - **Insurance** de-risks owning a house, going on holiday or driving a car.  Usually, the payment is small enough not to impact us too much.   For the owner, the risk hasn't gone away completely, but at least the financial loss element of it is handled by the insurance company.
 
-- **The National Health Service (NHS)** derisks health care across the UK population.  You still have the risk of illness but not the financial risk of also have to pay to get better. 
+- **The National Health Service (NHS)** derisks health care across the UK population.  You still have the risk of illness but not the financial risk of also having to pay to get better. 
 
 - **High Ladders**:  a policy of mine is to avoid working up high ladders or with unfamiliar power tools.  I just don't trust myself with this.  I employ professionals to do these jobs even though conceivably I could do them myself.
 

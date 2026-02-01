@@ -36,9 +36,9 @@ practice:
     - tag: Agency Risk
       reason: "Red teams probe AI for loopholes where reward hacking or proxy goals emerge, ensuring AI doesn't optimise in harmful ways."
   related:
-    - ../Development-and-Coding/Coding
+    - ../Development-And-Coding/Coding
     - ../Testing-and-Quality-Assurance/Performance-Testing
-    - ../Deployment-and-Operations/Monitoring
+    - ../Deployment-And-Operations/Monitoring
 ---
 
 <PracticeIntro details={frontMatter} />

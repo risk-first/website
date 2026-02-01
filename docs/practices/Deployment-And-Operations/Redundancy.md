@@ -27,8 +27,8 @@ practice:
     - tag: Funding Risk
       reason: "Implementing redundancy can be expensive."
   related:
-    - ../Deployment-and-Operations/Incident-Management
-    - ../Development-and-Coding/Pair-Programming
+    - ../Deployment-And-Operations/Monitoring
+    - ../Development-And-Coding/Pair-Programming
 ---
 
 <PracticeIntro details={frontMatter} />

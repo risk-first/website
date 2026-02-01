@@ -161,7 +161,7 @@ It's important to reflect on the fact that there are other factors at play here:
     <td>
       <ul>
         <li>Some re-work </li>
-        <li>Will reed to re-familiarise with the code</li>
+        <li>Will need to re-familiarise with the code</li>
       </ul>
     </td>
   </tr>
@@ -266,7 +266,7 @@ A second approach is to improve the payoff of the losing outcomes. Here are some
 
 - Even if my Software-as-a-Service business goes bust, ideally I'll have learnt a lot for my next business and made some important industry contacts.
 - If I take a job on a project using React, then even if the job doesn't work out, I'll have learnt React.
-- TODO - another example.
+- If I build a prototype that gets rejected, the codebase might still be reusable for a different project or client.
 
 ## Summing Up
 
