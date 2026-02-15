@@ -1,0 +1,147 @@
+.episode {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.artwork {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}
+
+.artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.season,
+.episodeNum {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #6366f1;
+}
+
+html[data-theme='dark'] .season,
+html[data-theme='dark'] .episodeNum {
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ifm-heading-color);
+}
+
+.description {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-700);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background: #1db954;
+  border-radius: 20px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Spotify */
+.link:nth-child(1) {
+  background: #1db954;
+}
+
+.link:nth-child(1):hover {
+  background: #1ed760;
+}
+
+/* Apple Podcasts - black with white text */
+.appleLink {
+  background: #000 !important;
+}
+
+.appleLink:hover {
+  background: #333 !important;
+}
+
+/* YouTube */
+.link:nth-child(3) {
+  background: #ff0000;
+}
+
+.link:nth-child(3):hover {
+  background: #ff3333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .episode {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artwork {
+    width: 200px;
+    height: 200px;
+  }
+
+  .meta {
+    justify-content: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
