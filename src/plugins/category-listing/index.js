@@ -24,16 +24,36 @@ module.exports = async function myPlugin(context, options) {
                 const partOf = doc.frontMatter.part_of ? [doc.frontMatter.part_of] : []
                 const title = doc.frontMatter.title
                 
-                const allTags = [...tagNames, ...mitigates, ...attendant, ...practices, ...partOf].filter(onlyUnique)
+                // Gemara support
+                const gemara = doc.frontMatter.gemara ?? {}
+                const gemaraFamily = gemara.family ? [gemara.family] : []
+                const gemaraCapabilities = (gemara.capabilities ?? []).map(c => c['reference-id']).filter(Boolean)
+                const gemaraThreatMappings = (gemara['threat-mappings'] ?? []).map(t => t['reference-id']).filter(Boolean)
+                const gemaraExternalMappings = (gemara['external-mappings'] ?? []).map(e => e['reference-id']).filter(Boolean)
+                
+                const allTags = [
+                    ...tagNames, 
+                    ...mitigates, 
+                    ...attendant, 
+                    ...practices, 
+                    ...partOf,
+                    ...gemaraFamily,
+                    ...gemaraCapabilities,
+                    ...gemaraThreatMappings,
+                    ...gemaraExternalMappings
+                ].filter(onlyUnique)
                 
                 const isRisk = allTags.includes("Risks") 
                 const isAIThreat = allTags.includes("AI Risks")
+                const isAgenticThreat = allTags.includes("Threat")
                 const isPractice = allTags.includes("Practice")
+                const isAgenticControl = allTags.includes("Control")
+                const isCapability = allTags.includes("Capability")
                 const isMethod  = allTags.includes("Risk Frameworks")
                 
                 if (!allTags.includes(title)) {
-					if (isRisk || isPractice || isMethod || isAIThreat) {
-						console.warn(`${doc.title} is not self-tagged risk =${isRisk} practice=${isPractice} tags=${JSON.stringify(allTags)}`)
+					if (isRisk || isPractice || isMethod || isAIThreat || isAgenticThreat || isAgenticControl || isCapability) {
+						console.warn(`${doc.title} is not self-tagged risk=${isRisk} practice=${isPractice} agenticThreat=${isAgenticThreat} agenticControl=${isAgenticControl} capability=${isCapability} tags=${JSON.stringify(allTags)}`)
 					}
 				}
 				
@@ -54,6 +74,9 @@ module.exports = async function myPlugin(context, options) {
                         isPractice,
                         isMethod,
                         isAIThreat,
+                        isAgenticThreat,
+                        isAgenticControl,
+                        isCapability,
                         frontMatter: doc.frontMatter,
                     }
 

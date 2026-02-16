@@ -21,7 +21,7 @@ export default {
   TermList,
   Matrix,
   AIThreatIntro,
-  Movement
+  Movement,
 };
 
 
