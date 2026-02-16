@@ -4,7 +4,7 @@ description: A set of organization and workflow patterns for scaling lean and ag
 tags:
   - Risk Frameworks
   - Agile
-  - SAFe
+  - Scaled Agile Framework (SAFe)
 featured:
   class: c
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/safe.svg">SAFe</image-artifact>'
