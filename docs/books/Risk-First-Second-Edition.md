@@ -1,6 +1,6 @@
 ---
-title: "About Risk-First Software Development Second Edition"
-description: "Now available in digital format"
+title: "Risk-First Software Development Second Edition"
+description: "Now available!"
 slug: /Risk-First-Second-Edition
 featured:
   class: bg1
@@ -10,10 +10,7 @@ tags:
 sidebar_position: 1
 ---
 
-<a href="https://pragprog.com/titles/rmrfsd/risk-first-software-development-second-edition"><img src="/img/Cover_Image_Second_Edition.jpg" alt="Risk-First Software Development Second Edition" style={{maxWidth: '250px', float: 'right', marginLeft: '1rem', marginBottom: '1rem'}} /></a>
-
 I'm pleased to announce that the second edition of Risk-First Software Development is now available!  **265 pages** that reframe software development around the force that shapes every decision: risk. 
-
 
 ## How To Get It
 
