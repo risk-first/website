@@ -1,10 +1,10 @@
 ---
-title: "Help Us Build!"
+title: "Free Digital Download"
 description: "Help us build the risk-first movement and get hold of a free copy of RF2E!"
 slug: /Build-The-Movement
 featured:
   class: bg1
-  element: '<big-image imgsrc="/public/templates/risk-first/posts/Cover_Image_Second_Edition.jpg" />'
+  element: '<big-image imgsrc="/public/templates/risk-first/posts/download.svg" />'
 tags:
   - Books
   - Book-Option

@@ -12,21 +12,38 @@ tweet: yes
 sidebar_position: 7
 ---
 
-A risk framework addressing societal-level risks due to Artificial Intelligence (AI). This was developed for discussion in the AI Risks chapter of the [Risk-First Software Development](/Risk-First-Second-Edition) book.
+Risk-First has developed two complementary risk frameworks for understanding and managing AI-related risks. 
 
-If you want a much more comprehensive view of what is going on in the world of risk management for AI, please take a look at the [MIT AI Risks Database](https://airisk.mit.edu) which covers hundreds of different AI Risk Frameworks. One of the reasons for such proliferation is that there are many different domains that are impacted by AI.
+## Agentic Software Development Risk Framework
 
-Here, we are narrowly considering a broad "society" level domain.
+**[agentic-software-development.riskfirst.org](https://agentic-software-development.riskfirst.org)**
 
-## Outcomes
+A framework addressing the unique threats that emerge when **AI systems autonomously write, modify, and deploy code**. Existing AI governance frameworks (NIST AI RMF, ISO/IEC 42001) focus on AI as a decision-making component — but AI is becoming the *primary producer and modifier* of software itself.
 
-- Understand the main risks we face as society nurturing AI.
-- Understand which risks can be managed (i.e. have mitigating practices), which perhaps can't.
+This shifts risk from "bad AI decision" to "unsafe evolving codebase" — a completely different class of risk.
 
-## Risks
+Covers capabilities such as:
+- **Code Generation** — AI producing source code and configurations
+- **Tool Calling** — Invoking external APIs and system commands
+- **Autonomous Planning** — Decomposing goals without human intervention
+- **Multi-Agent Orchestration** — Coordinating multiple AI agents
 
-<TagList tag="AI Risks" />
+And threats including Code Security Risks, Supply Chain Risks, Prompt Injection, and Autonomy & Control Risks.
 
-## Practices
+## Societal AI Risk Framework
 
-<TagList tag="AI Practices" />
+**[societal-ai-risk.riskfirst.org](https://societal-ai-risk.riskfirst.org)**
+
+A framework addressing **civilisation-scale risks** from advanced AI systems. This examines what happens to society as AI grows in capability and autonomy — risks that affect economies, political systems, human agency, and the balance of power between humans and machines.
+
+Covers risks such as:
+- **Emergent Behaviour** — Unforeseen capabilities arising from scaling
+- **Loss of Human Control** — AI evolving beyond human oversight  
+- **Social Manipulation** — AI-driven disinformation at scale
+- **Superintelligence With Malicious Intent** — Advanced AI acting against human interests
+
+And practices including Human-In-The-Loop, Global AI Governance, Kill Switch mechanisms, and more.
+
+## Further Reading
+
+For a comprehensive view of AI risk frameworks across all domains, see the [MIT AI Risks Database](https://airisk.mit.edu) which covers hundreds of different frameworks.
