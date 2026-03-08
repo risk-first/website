@@ -9,7 +9,7 @@ tags:
 sidebar_position: 6
 ---
 
-import PodcastEpisode from '@site/src/components/PodcastEpisode';
+import PodcastFeed from '@site/src/components/PodcastFeed';
 
 Risk-First is about understanding how to manage risk in software development.
 
@@ -23,18 +23,5 @@ Because behind every successful system, career, and company, there is someone ma
 
 If you want to excel in your chosen field, you need to understand how to manage risk well.  So who better to learn from than the stars of software?
 
-<PodcastEpisode
-  season={1}
-  episode={1}
-  title="Dom Vogel: Cybersecurity, Leadership, and the Risks We Choose Not to See"
-  description="In the very first episode of Risk-First: Stars of Software, Rob Moffat sits down with cybersecurity leader Dom Vogel to explore what risk really means beyond code, tools, and technology."
-/>
-
-<PodcastEpisode
-  season={1}
-  episode={2}
-  title="Steve Tendon: Constraints, Flow, and the Human Side of Organisational Risk"
-  description="Rob Moffat speaks with Steve Tendon—creator of the TameFlow approach and a leading thinker in systems thinking, organisational performance, and flow-based management."
-/>
-
+<PodcastFeed rssUrl="https://api.riverside.fm/hosting/BRdFe33E.rss" />
 

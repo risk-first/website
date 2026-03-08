@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "generate-podcast": "node scripts/generatePodcastData.js",
+    "prestart": "npm run generate-podcast",
+    "prebuild": "npm run generate-podcast",
+    "start": "npm run prestart && docusaurus start",
+    "build": "npm run prebuild && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -21,12 +24,14 @@
     "@mdx-js/react": "^3.0.0",
     "chart.js": "^4.4.1",
     "clsx": "^2.0.0",
+    "html-entities": "^2.6.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.0.0",
     "rehype-katex": "7",
-    "remark-math": "6"
+    "remark-math": "6",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.1.1",

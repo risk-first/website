@@ -65,11 +65,29 @@ html[data-theme='dark'] .episodeNum {
     font-size: 0.95rem;
     line-height: 1.5;
     color: var(--ifm-color-emphasis-700);
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Collapsed state – show only three lines */
+.description.collapsed {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    max-height: 4.5em; /* approx 3 lines */
 }
+
+/* Expanded state – show full text */
+.description.expanded {
+    display: block;
+    max-height: none;
+}
+
+.toggleButton:hover {
+    background: var(--ifm-link-hover-color);
+    transform: scale(1.05);
+}
+
 
 .links {
     display: flex;
@@ -91,6 +109,18 @@ html[data-theme='dark'] .episodeNum {
     transition: transform 0.15s ease, background 0.15s ease;
 }
 
+.toggleButton {
+    background: var(--ifm-link-color);
+    color: #fff;
+    border: none;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+
 .link:hover {
     transform: scale(1.05);
     text-decoration: none;
@@ -98,11 +128,11 @@ html[data-theme='dark'] .episodeNum {
 }
 
 /* Spotify */
-.link:nth-child(1) {
+.spotifyLink {
     background: #1db954;
 }
 
-.link:nth-child(1):hover {
+.spotifyLink:hover {
     background: #1ed760;
 }
 
@@ -116,11 +146,11 @@ html[data-theme='dark'] .episodeNum {
 }
 
 /* YouTube */
-.link:nth-child(3) {
+.youtubeLink {
     background: #ff0000;
 }
 
-.link:nth-child(3):hover {
+.youtubeLink:hover {
     background: #ff3333;
 }
 
