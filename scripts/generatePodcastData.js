@@ -30,7 +30,7 @@ async function generate() {
     }));
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2), 'utf-8');
-    console.log(`Podcast data written to ${OUTPUT_PATH}`);
+    console.log(`Podcast data written to ${OUTPUT_PATH} (${data.length} episodes)`);
   } catch (err) {
     console.error('Error generating podcast data:', err);
     process.exit(1);
