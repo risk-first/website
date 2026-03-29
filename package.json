@@ -5,8 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "generate-podcast": "node scripts/generatePodcastData.js",
+    "check-frontmatter": "node scripts/check-frontmatter.js",
     "prestart": "npm run generate-podcast",
-    "prebuild": "npm run generate-podcast",
+    "prebuild": "npm run generate-podcast && npm run check-frontmatter",
     "start": "npm run prestart && docusaurus start",
     "build": "npm run prebuild && docusaurus build",
     "swizzle": "docusaurus swizzle",

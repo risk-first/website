@@ -67,7 +67,7 @@ method:
       reason: "Lean uses set-based concurrent engineering to explore multiple options and narrow down to the best solution."
       use:
         - Set-Based Concurrent Engineering
-    - tag: Release Delivery
+    - tag: Release
       reason: "Lean focuses on delivering value to the customer as quickly as possible."
       use:
         - Deliver Fast

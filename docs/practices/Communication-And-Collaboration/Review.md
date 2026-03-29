@@ -33,7 +33,7 @@ practice:
       reason: "Synchronous reviews require effective coordination among team members."
   related:
     - ../Deployment-And-Operations/Monitoring
-    - Retrospective
+    - Retrospectives
 ---
 
 <PracticeIntro details={frontMatter} />

@@ -25,7 +25,7 @@ practice:
     - tag: Schedule Risk
       reason: "Training sessions can take time away from development, impacting schedules."
   related:
-    - ../Documentation
+    - Documentation
     - ../Development-And-Coding/Pair-Programming
 ---
 
