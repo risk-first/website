@@ -21,4 +21,4 @@ It's not every day that a software development framework gets its own anthem, bu
 
 ---
 
-**[Listen to the Risk-First Song on Filmora →](https://app.filmora.io/#/object/d5o0sfacc84vpnavgiig)**
+**[Listen to the Risk-First Song on Filmora →](https://www.linkedin.com/posts/jose-coignard_riskfirst-book-meetreality-activity-7420737236058681344-wKOr)**
