@@ -29,7 +29,7 @@ practice:
     - ../Planning-And-Management/Change-Management
     - ../Communication-And-Collaboration/Documentation
     - ../External-Relations/Contracts
-    - Terms-Of-Reference
+    - Terms Of Reference
 ---
 
 <PracticeIntro details={frontMatter} />

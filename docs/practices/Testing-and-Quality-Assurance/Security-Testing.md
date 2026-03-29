@@ -30,8 +30,6 @@ practice:
       reason: "Requires specialized skills and tools, adding complexity."
     - tag: Agency Risk
       reason: "Likely requires security experts with specialist skills."
-    - tag: Emergent Behaviour
-      reason: "Helps identify unintended AI behaviors before deployment by stress-testing AI in real-world scenarios."
     - tag: Agency Risk
       reason: "Red teams probe AI for loopholes where reward hacking or proxy goals emerge, ensuring AI doesn't optimise in harmful ways."
   related:
