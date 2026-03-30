@@ -222,6 +222,59 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+.suggestedPostLabel {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.suggestedPostContainer {
+    position: relative;
+    background: #f8f9fa;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.suggestedPost {
+    padding: 1.5rem;
+    padding-bottom: 4rem;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.copyButton {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: #f43d79;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(244, 61, 121, 0.2);
+}
+
+.copyButton:hover {
+    background: #e0356b;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(244, 61, 121, 0.3);
+}
+
+.copyButton:active {
+    transform: translateY(0);
+}
+
 @media (max-width: 768px) {
     .movementSection {
         padding: 3rem 0;
