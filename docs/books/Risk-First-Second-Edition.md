@@ -10,11 +10,71 @@ tags:
 sidebar_position: 1
 ---
 
+<div style={{
+  background: 'white',
+  padding: '2rem',
+  borderRadius: '.5rem',
+  border: '1px solid #f43d79',
+  boxShadow: '0 0.5rem 2rem rgba(220, 216, 218, 0.5)',
+  margin: '3rem 0',
+  position: 'relative'
+}}>
+  <div style={{display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '1rem'}}>
+    <div style={{flex: '1', minWidth: '17.5rem', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column'}}>
+      <h2>Get it for free</h2>
+      <p style={{textAlign: 'left'}}>Share the book and get a free digital copy.</p>
+      <ul style={{marginBottom: '2rem', textAlign: 'left'}}>
+        <li>👉 Post on LinkedIn or X</li>
+        <li>👉 Get your copy</li>
+      </ul>
+      <div style={{marginTop: 'auto'}}>
+        <a href="/Build-The-Movement" style={{
+          background: '#0ac186',
+          color: 'white',
+          padding: '1rem',
+          borderRadius: '1rem',
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%',
+          minHeight: '3.5rem'
+        }}>
+          Get the Book for Free
+        </a>
+      </div>
+    </div>
+    <div style={{flex: '1', minWidth: '17.5rem', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column'}}>
+      <h2>Buy it now</h2>
+      <p style={{textAlign: 'left'}}>Get instant access or order a physical copy.</p>
+      <ul style={{marginBottom: '2rem', textAlign: 'left'}}>
+        <li>👉 Kindle, paperback, or eBook</li>
+      </ul>
+      <div style={{marginTop: 'auto'}}>
+        <a href="/Buy-The-Print-Edition" style={{
+          background: '#f43d79',
+          color: 'white',
+          padding: '1rem',
+          borderRadius: '1rem',
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%',
+          minHeight: '3.5rem'
+        }}>
+          Buy On Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<img src="/img/Cover_Image_Second_Edition.jpg" alt="Risk-First Software Development Second Edition" style={{maxWidth: '15rem', float: 'right', marginLeft: '1rem', marginBottom: '1rem'}} />
+
 I'm pleased to announce that the second edition of Risk-First Software Development is now available!  **265 pages** that reframe software development around the force that shapes every decision: risk. 
-
-## How To Get It
-
-<TagList tag="Book-Option" />
 
 ## About Risk-First Software Development - Second Edition
 
@@ -39,5 +99,3 @@ It contains a fully-revised taxonomy of risks, breaking down each one systematic
 It also contains two entirely new chapters dealing with technological change, responding not just to AI but the increasing pace of innovation we see globally.
 
 In essence, this is the post-agile, AI-aware manual for understanding and harnessing the forces of innovation in play when developing software systems.
-
-**[Click Here To Buy](/Buy-The-Print-Edition)**
