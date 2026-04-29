@@ -40,7 +40,7 @@ method:
       use:
         - Load Balancing
         - Redundancy
-    - tag: Release Delivery
+    - tag: Release
       reason: "Continuous Delivery (CD), Continuous Deployment, and Blue-Green Deployment ensure smooth and frequent releases."
       use:
         - Continuous Delivery (CD)
