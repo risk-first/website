@@ -73,14 +73,12 @@ method:
         - Sprint Retrospective
     - tag: Review
       reason: "Scrum includes regular reviews in the form of sprint reviews and retrospectives."
-    - tag: Release Delivery
+    - tag: Release
       reason: "Scrum focuses on frequent releases, with potentially shippable increments delivered at the end of each sprint."
     - tag: Automated Testing
       reason: "Unit testing is part of the Definition of Done in Scrum."
       use:
         - Unit Testing
-    - tag: Code Reviews
-      reason: "Code reviews can be part of the development practices within Scrum."
     - tag: Stakeholder Management
       reason: "Stakeholder engagement is critical in Scrum, especially through the role of the Product Owner."
     - tag: Version Control

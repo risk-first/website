@@ -10,6 +10,25 @@ export default function Movement() {
         socialLink: '',
     });
     const [linkedInLoaded, setLinkedInLoaded] = useState(false);
+    const [copyStatus, setCopyStatus] = useState('');
+
+    const SUGGESTED_POST = `Software development is risk management.
+
+Just picked up "Risk-First Software Development" — a really interesting way to think about how software actually gets built.
+
+#RiskFirstSoftware`;
+
+    const handleCopyClick = async () => {
+        try {
+            await navigator.clipboard.writeText(SUGGESTED_POST);
+            setCopyStatus('Copied!');
+            setTimeout(() => setCopyStatus(''), 2000);
+        } catch (err) {
+            console.error('Failed to copy text: ', err);
+            setCopyStatus('Failed to copy');
+            setTimeout(() => setCopyStatus(''), 2000);
+        }
+    };
 
     // Load platform SDKs
     useEffect(() => {
@@ -122,18 +141,17 @@ export default function Movement() {
                                 <h2 className={styles.title}>Read It For Free 🚀</h2>
                                 <div className={styles.text}>
                                     <p>
-                                        Risk-First is more than just a book — it's a different way to think about how software really gets built.
-                                        And movements only grow when people talk about them.
+                                        Software development is risk management.  This book shows you how.
                                     </p>
                                     <p>
-                                        If you want in on the ground floor of a new movement, please help spread the word and get rewarded with a free copy.
+                                        Want a free copy?  Just share it:
                                     </p>
                                 </div>
 
                                 <div className={styles.form}>
-                                    <h3 className={styles.formTitle}>👉 Step 1: Share the Page</h3>
+                                    <h3 className={styles.formTitle}>👉 Post About It</h3>
 
-                                    <p>Share this page on LinkedIn, X (Twitter), or your favorite platform</p>
+                                    <p>Post about this page on LinkedIn, X (Twitter), or your favorite platform.</p>
 
                                     {/* LinkedIn Share Button */}
 
@@ -170,12 +188,24 @@ export default function Movement() {
                                             </div>
                                         </div>
                                     </div>
+
+                                    <p className={styles.suggestedPostLabel}>Suggested post:</p>
+                                    <div className={styles.suggestedPostContainer}>
+                                        <div className={styles.suggestedPost}>
+                                            {SUGGESTED_POST}
+                                        </div>
+                                        <button
+                                            className={styles.copyButton}
+                                            onClick={handleCopyClick}
+                                            type="button"
+                                        >
+                                            {copyStatus || 'Copy Text'}
+                                        </button>
+                                    </div>
                                 </div>
 
                                 <form className={styles.form} onSubmit={handleSubmit}>
-                                    <h3 className={styles.formTitle}>👉 Step 2: Claim Your Free Copy</h3>
-
-                                    <p>"Please send me a 100% discount code to get a free copy of Risk-First Software Development, Second Edition."</p>
+                                    <h3 className={styles.formTitle}>👉 Get Your Free Copy</h3>
 
                                     <div className={styles.formGroup}>
                                         <label htmlFor="email" className={styles.label}>
@@ -210,12 +240,12 @@ export default function Movement() {
                                     </div>
 
                                     <button type="submit" className={styles.submitButton}>
-                                        Claim My Discount Code
+                                        Send Me My Free Book
                                     </button>
                                 </form>
 
                                 <p className={styles.footerText}>
-                                    Together, we can build a community that puts risk where it belongs: at the center of how we understand software.
+                                    Help spread the word — and be part of building a better way to think about software.
                                 </p>
                             </div>
                         </div>
