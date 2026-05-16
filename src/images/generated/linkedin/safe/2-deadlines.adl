@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true" id="c">
+      <risk class="dependency" />
+      <risk class="coordination"/>
+      <label style="--kite9-text-bounds-width: 300pt;">The software you're building is being worked on by multiple teams.  Those teams depend on the outputs of each other.</label>
+   </container>
+   <group style="--kite9-layout: right;">
+      <action>Coordinate Using Deadlines</action>
+   </group>
+   <container bordered="true" id="c-zc">
+		<risk class="schedule"/>
+      <label style="--kite9-text-bounds-width: 300pt;">But deadlines can be a poor way to coordinate if multiple parties are involved as teams wait for each other.  They can also telescope development schedules as teams become more cautious about committing to work.</label>
+   </container>
+</diagram>
