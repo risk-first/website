@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram xmlns="http://www.kite9.org/schema/adl"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xslt="http://www.kite9.org/schema/xslt"
+         id="diagram-113"
+         xslt:template="/public/templates/risk-first/risk-first-template.xsl">
+   <container bordered="true" id="c">
+      <risk class="dependency"/>
+      <risk class="complexity"/>
+      <label style="--kite9-text-bounds-width: 300pt;">Without a standard set of tools, the working environment can become more complex.  You end up with specialist staff for each tool, creating dependencies on key staff.</label>
+   </container>
+   <group style="--kite9-layout: right;">
+      <action>Standardize Tools</action>
+   </group>
+   <container bordered="true" id="c-zc">
+      <risk class="feature-fit"/>
+			<risk class="schedule"/>
+      <label style="--kite9-text-bounds-width: 300pt;">But this ignores the fact that tool diversity existed for a reason. Now staff are using tools that don't exactly fit their needs and slow them down.</label>
+   </container>
+</diagram>
