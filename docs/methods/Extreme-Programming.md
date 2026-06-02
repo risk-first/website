@@ -27,7 +27,7 @@ method:
       reason: "XP encourages continuous refactoring to improve the design of existing code and maintain its quality."
     - tag: Coding
       reason: "Coding is a core activity in XP, with an emphasis on clear, simple code."
-    - tag: Release Delivery
+    - tag: Release
       reason: "XP focuses on frequent, small releases to ensure the software is always in a shippable state."
     - tag: Stakeholder Management
       reason: "XP involves customers directly in the development process to ensure the software meets their needs."

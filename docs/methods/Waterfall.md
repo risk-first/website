@@ -32,7 +32,7 @@ method:
      reason: "Waterfall involves detailed project planning and management, which includes prioritizing tasks to ensure the project progresses according to schedule and within budget."
      use:
        - Project Management and Planning
-   - tag: Release Delivery
+   - tag: Release
      reason: "The deployment phase in Waterfall involves releasing the completed software product to the production environment for end-users."
      use:
        - Deployment

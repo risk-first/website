@@ -9,7 +9,7 @@ tags:
 sidebar_position: 1
 ---
 
-[![From Jose Coignard's Risk-First Song](/img/community/jose-song.png)](https://app.filmora.io/#/object/d5o0sfacc84vpnavgiig)
+[![From Jose Coignard's Risk-First Song](/img/community/jose-song.png)](https://app.filmora.io/#/object/d5ojv8qcc84vpnavi3sg?source=%7B%22product_id%22:%227552%22,%22product_page%22:%22share_url%22,%22product_version%22:%2215.2.9.18039%22%7D)
 
 ## A Daft-Punk Inspired Tribute
 
@@ -21,4 +21,4 @@ It's not every day that a software development framework gets its own anthem, bu
 
 ---
 
-**[Listen to the Risk-First Song on Filmora →](https://app.filmora.io/#/object/d5o0sfacc84vpnavgiig)**
+**[Listen to the Risk-First Song on Filmora →](https://app.filmora.io/#/object/d5ojv8qcc84vpnavi3sg?source=%7B%22product_id%22:%227552%22,%22product_page%22:%22share_url%22,%22product_version%22:%2215.2.9.18039%22%7D)**

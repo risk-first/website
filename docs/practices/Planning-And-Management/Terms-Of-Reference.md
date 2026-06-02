@@ -26,7 +26,7 @@ practice:
     - ../Planning-And-Management/Change-Management
     - ../Development-And-Coding/Coding
     - ../Communication-And-Collaboration/Documentation
-    - Stakeholder-Management
+    - Stakeholder Management
 ---
 
 <PracticeIntro details={frontMatter} />
