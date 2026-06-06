@@ -6,9 +6,6 @@ import styles from './styles.module.css'
 
 
 function imageLinkFor(doc) {
-	if (doc.frontMatter?.homepageImage) {
-		return doc.frontMatter.homepageImage;
-	}
 	const pl = doc.permalink;
 	const stripped = pl.endsWith('/') ? pl + 'index' : pl;
 	return '/img/generated/single/' + stripped + '.svg';
