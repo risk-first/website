@@ -1,0 +1,51 @@
+section.homeSection,
+section.homeSectionAlt {
+	margin-top: 5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	clip-path: polygon(0 3rem, 100% 0, 100% 100%, 0 calc(100% - 3rem));
+	overflow: hidden;
+	color: black;
+}
+
+html[data-theme=dark] section.homeSection,
+html[data-theme=dark] section.homeSectionAlt {
+	color: white;
+}
+
+section.homeSectionAlt {
+	background-color: #0ac18655;
+}
+
+.innerStack {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 1.25rem;
+	width: 100%;
+}
+
+.sectionHeading h2 {
+	font-family: Geomanist, sans-serif;
+	font-size: 3rem;
+	font-weight: 800;
+	line-height: 1.1;
+	margin-bottom: 0.5rem;
+}
+
+.sectionHeading p {
+	font-size: 1.05rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+	opacity: 0.85;
+}
+
+.footerImage {
+	margin: 3rem auto 0;
+	width: 3rem;
+}
+
+@media (max-width: 60rem) {
+	.sectionHeading h2 {
+		font-size: 2rem;
+	}
+}

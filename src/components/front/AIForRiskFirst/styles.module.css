@@ -1,0 +1,72 @@
+.innerAside {
+	text-align: left;
+}
+
+.innerAside h2 {
+	font-weight: 800;
+	font-family: Geomanist;
+	font-size: 3rem;
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+.blurb {
+	font-size: 1.15rem;
+	line-height: 1.6;
+	max-width: 36rem;
+}
+
+.linkGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	gap: 1rem;
+	width: 100%;
+}
+
+.linkCard {
+	background: #f43d7908;
+	border: 1px solid #f43d7933;
+	border-radius: 0.5rem;
+	color: inherit;
+	display: block;
+	padding: 1.25rem;
+	text-decoration: none !important;
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.linkCard:hover {
+	background: #f43d7918;
+	border-color: #f43d79;
+	color: inherit;
+}
+
+html[data-theme=dark] .linkCard {
+	background: #ffffff08;
+	border-color: #ffffff22;
+}
+
+html[data-theme=dark] .linkCard:hover {
+	background: #ffffff14;
+	border-color: #f43d79;
+}
+
+.linkTitle {
+	color: #f43d79;
+	font-family: Geomanist, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.4rem;
+}
+
+.linkDesc {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin: 0;
+	opacity: 0.85;
+}
+
+@media (max-width: 60rem) {
+	.innerAside h2 {
+		font-size: 2rem;
+	}
+}

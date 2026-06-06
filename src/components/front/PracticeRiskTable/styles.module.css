@@ -1,0 +1,115 @@
+.innerAside {
+	text-align: left;
+}
+
+.innerAside h2 {
+	font-weight: 800;
+	font-family: Geomanist;
+	font-size: 3rem;
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+.intro {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	max-width: 36rem;
+}
+
+.tableWrap {
+	width: 100%;
+}
+
+.table {
+	border-collapse: collapse;
+	font-size: 1.05rem;
+	width: 100%;
+}
+
+.table th,
+.table td {
+	border-bottom: 1px solid #ddd;
+	padding: 0.85rem 1rem;
+	text-align: left;
+}
+
+.table th {
+	background: #f43d7911;
+	font-family: Geomanist, sans-serif;
+	font-weight: 700;
+}
+
+.table td a {
+	color: #f43d79;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.table td a:hover {
+	text-decoration: underline;
+}
+
+.mobileValue a {
+	color: #f43d79;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+html[data-theme=dark] .table th,
+html[data-theme=dark] .table td {
+	border-color: #444;
+}
+
+html[data-theme=dark] .table th {
+	background: #f43d7922;
+}
+
+.mobileCards {
+	display: none;
+}
+
+@media (max-width: 40rem) {
+	.table {
+		display: none;
+	}
+
+	.mobileCards {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.mobileCard {
+		background: #f43d7908;
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+
+	html[data-theme=dark] .mobileCard {
+		background: #ffffff08;
+	}
+
+	.mobileLabel {
+		font-size: 0.75rem;
+		font-weight: 700;
+		opacity: 0.6;
+		text-transform: uppercase;
+	}
+
+	.mobileValue {
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.mobileValue a {
+		color: #f43d79;
+		font-weight: 600;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 60rem) {
+	.innerAside h2 {
+		font-size: 2rem;
+	}
+}

@@ -1,24 +1,22 @@
 import React from 'react';
-import styles from './styles.module.css'
-import HomeSection from "../HomeSection";
-import ImageBullet from "../ImageBullet";
-import TagList from '../../../theme/TagList'
+import styles from './styles.module.css';
+import stackStyles from '../HomeSectionStack/styles.module.css';
+import HomeSectionStack from '../HomeSectionStack';
+import TagList from '../../../theme/TagList';
 
-
-export default function Books() {
+export default function Sections() {
 	return (
-		<HomeSection alt="true">
-			<div className={styles.innerAside}>
+		<HomeSectionStack alt>
+			<div className={stackStyles.sectionHeading}>
 				<h2>Risk-First Tracks</h2>
-				<p>Risk-First is split into several main tracks, dealing with different areas of Software Development</p>
+				<p>
+					Risk-First is split into several main tracks, dealing with different areas of
+					software development.
+				</p>
 			</div>
-			<>
-				<TagList tag="Read All About It" />
-			</>
-		</HomeSection>
-
-
-	)
+			<div className={styles.trackRow}>
+				<TagList tag="Read All About It" variant="cards" />
+			</div>
+		</HomeSectionStack>
+	);
 }
-
-

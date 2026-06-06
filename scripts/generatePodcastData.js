@@ -11,9 +11,20 @@ const path = require('path');
 const RSS_URL = 'https://api.riverside.fm/hosting/BRdFe33E.rss';
 // Output path – placed in the static folder so it is served at /podcast.json
 const OUTPUT_PATH = path.resolve(__dirname, '..', 'static', 'podcast.json');
+const META_PATH = path.resolve(__dirname, 'podcast-meta.json');
+
+function loadMeta() {
+  try {
+    return JSON.parse(fs.readFileSync(META_PATH, 'utf-8'));
+  } catch {
+    console.warn(`No podcast metadata found at ${META_PATH}`);
+    return {};
+  }
+}
 
 async function generate() {
   try {
+    const meta = loadMeta();
     const response = await fetch(RSS_URL);
     if (!response.ok) {
       throw new Error(`Failed to fetch RSS: ${response.status}`);
@@ -22,12 +33,19 @@ async function generate() {
     const result = await parseStringPromise(xml, { trim: true, explicitArray: false });
     const items = result.rss.channel.item;
     const episodes = Array.isArray(items) ? items : [items];
-    const data = episodes.map(item => ({
-      title: item.title || '',
-      description: decode(item.description || '').replace(/<\/?h[1-6]>/gi, tag => tag.startsWith('</') ? '</b>' : '<b>'),
-      season: item['itunes:season'] ? parseInt(item['itunes:season'], 10) : undefined,
-      episode: item['itunes:episode'] ? parseInt(item['itunes:episode'], 10) : undefined,
-    }));
+    const data = episodes.map(item => {
+      const season = item['itunes:season'] ? parseInt(item['itunes:season'], 10) : undefined;
+      const episode = item['itunes:episode'] ? parseInt(item['itunes:episode'], 10) : undefined;
+      const key = season && episode ? `${season}-${episode}` : null;
+      const overlay = key && meta[key] ? meta[key] : {};
+      return {
+        title: item.title || '',
+        description: decode(item.description || '').replace(/<\/?h[1-6]>/gi, tag => tag.startsWith('</') ? '</b>' : '<b>'),
+        season,
+        episode,
+        ...overlay,
+      };
+    });
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2), 'utf-8');
     console.log(`Podcast data written to ${OUTPUT_PATH} (${data.length} episodes)`);

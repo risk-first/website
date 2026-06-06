@@ -1,0 +1,64 @@
+.photoCol {
+	text-align: center;
+}
+
+.photo {
+	border-radius: 50%;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+	height: 14rem;
+	object-fit: cover;
+	width: 14rem;
+}
+
+.bioCol {
+	text-align: left;
+}
+
+.bioCol h2 {
+	font-weight: 800;
+	font-family: Geomanist;
+	font-size: 3rem;
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+.bio {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	margin-bottom: 1.25rem;
+}
+
+.bioList {
+	font-size: 1.05rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+	padding-left: 1.25rem;
+}
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.links a {
+	background: #f43d79;
+	border-radius: 0.35rem;
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	text-decoration: none !important;
+	transition: background 0.2s;
+}
+
+.links a:hover {
+	background: #d63266;
+	color: white;
+}
+
+@media (max-width: 60rem) {
+	.bioCol h2 {
+		font-size: 2rem;
+	}
+}

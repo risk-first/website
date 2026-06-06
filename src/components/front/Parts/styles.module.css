@@ -1,59 +1,53 @@
-.innerAside h2 {
-font-weight: 800;
-	font-family: Geomanist;
-	font-size: 8rem;
-	line-height: 1.1;
-	text-align: center;
-}
-
-@media (max-width: 60rem) {
-	.innerAside h2 {
-		font-size: 4rem;
-	}
-}
-
-.explanation,
-.innerAside p {
-	font-size: 1.5rem;
-	text-align: center;
-}
-
-.explanationLarge {
-	font-size: 2rem;	
-	text-align: center;
-}
-
 .showcaseOuter {
 	align-items: center;
 	background-color: #fff;
+	border-radius: 1rem;
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: center;
-	margin: 4rem;
+	margin-bottom: 2rem;
 	padding: 2rem;
-	border-radius: 2rem;
 }
 
-.showcaseImage img {
-	margin-bottom: 10px;
-	margin-top: 10px;
-	max-height: 420px;
-	max-width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
+html[data-theme=dark] .showcaseOuter {
+	background-color: #1b1b1d;
+}
+
+.showcaseImage {
+	max-height: 28rem;
+	max-width: 100%;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer p {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	margin-bottom: 0.75rem;
+}
+
+.tagline {
+	color: #f43d79;
+	font-family: Geomanist, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1.25rem !important;
 }
 
 .cta {
-	background: #00000044;
-	border: 1px solid #777;
-	border-radius: .5rem;
+	background: #f43d79;
+	border-radius: 0.5rem;
 	color: white;
 	display: inline-block;
-	font-size: 1rem;
-	line-height: 1.2em;
-	margin: 1rem;
-	padding: 1rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	padding: 0.75rem 1.5rem;
 	text-decoration: none !important;
-	transition: background .3s, color .3s;
-	width: 15rem;
+	transition: background 0.2s;
+}
+
+.cta:hover {
+	background: #d63266;
+	color: white;
 }

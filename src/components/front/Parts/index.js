@@ -1,27 +1,36 @@
 import React from 'react';
-import styles from './styles.module.css'
-import HomeSection2 from "../HomeSection2";
+import styles from './styles.module.css';
+import stackStyles from '../HomeSectionStack/styles.module.css';
+import HomeSectionStack from '../HomeSectionStack';
 
-
-export default function GetInvolved() {
-
+export default function Parts() {
 	return (
-		<HomeSection2>
-			<div className={styles.innerAside}>
+		<HomeSectionStack>
+			<div className={stackStyles.sectionHeading}>
 				<h2>How Does It Work?</h2>
-				<p className={styles.explanation}>Risk-First takes the view that a project's <a href="/tags/Goal">Goals</a> are
-					obstructed by <a href="/risks/Start">Risks</a>.  These risks can be managed by Software Development <a href="/risks/Start">Practices</a>,
-					which are often packaged up as different methodologies (think Scrum, XP, Lean, DevOps), or <a href="/methods/Start">Risk Frameworks</a> as we call them here.</p>
+				<p>
+					Risk-First takes the view that a project's <a href="/tags/Goal">goals</a> are
+					obstructed by <a href="/risks/Start">risks</a>. These risks can be managed by software
+					development <a href="/practices/Start">practices</a>, which are often packaged up as
+					different methodologies (think Scrum, XP, Lean, DevOps), or{' '}
+					<a href="/methods/Start">risk frameworks</a> as we call them here.
+				</p>
 			</div>
 			<div className={styles.showcaseOuter}>
-				<img className={styles.showcaseImage} src="/img/generated/introduction/risk_framework_2.svg" />
+				<img
+					className={styles.showcaseImage}
+					src="/img/generated/introduction/risk_framework_2.svg"
+					alt="Risk-First framework diagram"
+				/>
 			</div>
-			<div className={styles.explanation}>
-				<p>But in order to meet your projects' goals, you'll have to choose the right practices to tackle the most important risks.</p>
-				<p className={styles.explanationLarge}>That's Risk Management</p>
-				<p><a className={styles.cta} href="/overview/Quick-Summary">READ THE SUMMARY</a></p>
+			<div className={styles.footer}>
+				<p>
+					But in order to meet your project's goals, you'll have to choose the right practices
+					to tackle the most important risks.
+				</p>
+				<p className={styles.tagline}>That's Risk Management</p>
+				<a className={styles.cta} href="/overview/Quick-Summary">Read the Summary</a>
 			</div>
-		</HomeSection2>
+		</HomeSectionStack>
 	);
-};
-
+}

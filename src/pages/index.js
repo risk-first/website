@@ -9,26 +9,27 @@ const React = require('react');
 import Layout from "@theme/Layout";
 
 import NewSplashTop from "../components/front/NewSplashTop";
-import WhatIsIt from "../components/front/WhatIsIt";
-
-import Benefits from "../components/front/Benefits";
-import Parts from "../components/front/Parts";
+import StartHere from "../components/front/StartHere";
+import PracticeRiskTable from "../components/front/PracticeRiskTable";
 import Books from "../components/front/Books";
-import GetInvolved from "../components/front/GetInvolved";
+import AIForRiskFirst from "../components/front/AIForRiskFirst";
+import Benefits from "../components/front/Benefits";
+import CommunityContent from "../components/front/CommunityContent";
+import AboutAuthor from "../components/front/AboutAuthor";
+import Parts from "../components/front/Parts";
 import Sections from "../components/front/Sections";
-
-
 
 export default () => {
 	return (<Layout>
 		<NewSplashTop />
-		<WhatIsIt />
+		<StartHere />
+		<PracticeRiskTable />
+		<Books />
+		<AIForRiskFirst />
 		<Benefits />
+		<CommunityContent />
+		<AboutAuthor />
 		<Parts />
 		<Sections />
-		<Books />
-		<GetInvolved />
-
 	</Layout>)
 }
-

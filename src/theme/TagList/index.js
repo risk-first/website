@@ -5,17 +5,20 @@ import { useLocation } from '@docusaurus/router';
 import styles from './styles.module.css'
 
 
+function imageLinkFor(doc) {
+	const pl = doc.permalink;
+	const stripped = pl.endsWith('/') ? pl + 'index' : pl;
+	return '/img/generated/single/' + stripped + '.svg';
+}
+
 function DocItemImage({ doc }) {
-	const pl = doc.permalink
-	const stripped = pl.endsWith('/') ? pl+"index" : pl
-	const imageLink = "/img/generated/single/" + stripped + ".svg"
+	const imageLink = imageLinkFor(doc);
 
 	return (
-		
 		<article className={styles.docItem}>
 			<div className={styles.columns}>
 				<div className={styles.left}>
-					<img src={imageLink} className={styles.articleImage} />
+					<img src={imageLink} className={styles.articleImage} alt="" />
 				</div>
 				<div className={styles.right}>
 					<Link key={doc.permalink} to={doc.permalink}><h3>{doc.title}</h3></Link>
@@ -23,6 +26,21 @@ function DocItemImage({ doc }) {
 				</div>
 			</div>
 		</article>
+	);
+}
+
+function DocItemCard({ doc }) {
+	const imageLink = imageLinkFor(doc);
+
+	return (
+		<Link to={doc.permalink} className={styles.card}>
+			<img className={styles.cardPhoto} src={imageLink} alt="" />
+			<div className={styles.cardBody}>
+				<h3 className={styles.cardTitle}>{doc.title}</h3>
+				<p className={styles.cardTeaser}>{doc.description}</p>
+				<span className={styles.cardLink}>Explore →</span>
+			</div>
+		</Link>
 	);
 }
 
@@ -63,14 +81,16 @@ export default function TagList(props) {
 
 
 
+	const docs = oneTag
+		.filter(d => d.permalink.indexOf(filter) > -1)
+		.filter(d => d.permalink != location);
+
+	const Item = props.variant === 'cards' ? DocItemCard : DocItemImage;
+	const listClass = props.variant === 'cards' ? styles.tagListCards : styles.tagList;
+
 	return (
-		<div className={styles.tagList}>
-			{
-				oneTag
-					.filter(d => d.permalink.indexOf(filter) > -1)
-					.filter(d => d.permalink != location)
-					.map(d => <DocItemImage key={d.permalink} doc={d} />)
-			}
+		<div className={listClass}>
+			{docs.map(d => <Item key={d.permalink} doc={d} />)}
 		</div>
 	);
 }
