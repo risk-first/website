@@ -6,7 +6,7 @@ import TagList from '../../../theme/TagList';
 
 export default function Sections() {
 	return (
-		<HomeSectionStack alt>
+		<HomeSectionStack>
 			<div className={stackStyles.sectionHeading}>
 				<h2>Risk-First Tracks</h2>
 				<p>
@@ -15,7 +15,7 @@ export default function Sections() {
 				</p>
 			</div>
 			<div className={styles.trackRow}>
-				<TagList tag="Read All About It" variant="cards" />
+				<TagList tag="Read All About It" variant="cards" wrap muted />
 			</div>
 		</HomeSectionStack>
 	);

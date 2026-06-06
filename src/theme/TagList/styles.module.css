@@ -51,14 +51,19 @@
 	gap: 1.25rem;
 }
 
+.tagListWrap {
+	flex-wrap: wrap;
+}
+
 .card {
 	background: white;
 	border-radius: 0.5rem;
 	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
 	color: inherit;
 	display: flex;
-	flex: 0 0 16rem;
+	flex: 1 1 16rem;
 	flex-direction: column;
+	max-width: 20rem;
 	overflow: hidden;
 	scroll-snap-align: start;
 	text-decoration: none !important;
@@ -74,6 +79,22 @@
 html[data-theme=dark] .card {
 	background: #1b1b1d;
 	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.cardMuted {
+	background: #f43d7908;
+	border: 1px solid #f43d7918;
+	box-shadow: none;
+}
+
+.cardMuted:hover {
+	border-color: #f43d7944;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme=dark] .cardMuted {
+	background: #ffffff08;
+	border-color: #ffffff18;
 }
 
 .cardPhoto {

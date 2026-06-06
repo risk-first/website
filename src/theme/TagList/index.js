@@ -6,6 +6,9 @@ import styles from './styles.module.css'
 
 
 function imageLinkFor(doc) {
+	if (doc.frontMatter?.homepageImage) {
+		return doc.frontMatter.homepageImage;
+	}
 	const pl = doc.permalink;
 	const stripped = pl.endsWith('/') ? pl + 'index' : pl;
 	return '/img/generated/single/' + stripped + '.svg';
@@ -29,16 +32,17 @@ function DocItemImage({ doc }) {
 	);
 }
 
-function DocItemCard({ doc }) {
+function DocItemCard({ doc, muted, linkLabel }) {
 	const imageLink = imageLinkFor(doc);
+	const cardClass = muted ? `${styles.card} ${styles.cardMuted}` : styles.card;
 
 	return (
-		<Link to={doc.permalink} className={styles.card}>
+		<Link to={doc.permalink} className={cardClass}>
 			<img className={styles.cardPhoto} src={imageLink} alt="" />
 			<div className={styles.cardBody}>
 				<h3 className={styles.cardTitle}>{doc.title}</h3>
 				<p className={styles.cardTeaser}>{doc.description}</p>
-				<span className={styles.cardLink}>Explore →</span>
+				<span className={styles.cardLink}>{linkLabel ?? 'Explore →'}</span>
 			</div>
 		</Link>
 	);
@@ -86,11 +90,21 @@ export default function TagList(props) {
 		.filter(d => d.permalink != location);
 
 	const Item = props.variant === 'cards' ? DocItemCard : DocItemImage;
-	const listClass = props.variant === 'cards' ? styles.tagListCards : styles.tagList;
+	const listClasses = [
+		props.variant === 'cards' ? styles.tagListCards : styles.tagList,
+		props.wrap ? styles.tagListWrap : '',
+	].filter(Boolean).join(' ');
 
 	return (
-		<div className={listClass}>
-			{docs.map(d => <Item key={d.permalink} doc={d} />)}
+		<div className={listClasses}>
+			{docs.map(d => (
+				<Item
+					key={d.permalink}
+					doc={d}
+					muted={props.muted}
+					linkLabel={props.linkLabel}
+				/>
+			))}
 		</div>
 	);
 }

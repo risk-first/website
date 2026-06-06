@@ -5,7 +5,7 @@ import HomeSectionStack from '../HomeSectionStack';
 
 export default function Parts() {
 	return (
-		<HomeSectionStack>
+		<HomeSectionStack alt>
 			<div className={stackStyles.sectionHeading}>
 				<h2>How Does It Work?</h2>
 				<p>

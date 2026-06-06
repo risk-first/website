@@ -14,7 +14,8 @@ import PracticeRiskTable from "../components/front/PracticeRiskTable";
 import Books from "../components/front/Books";
 import AIForRiskFirst from "../components/front/AIForRiskFirst";
 import Benefits from "../components/front/Benefits";
-import CommunityContent from "../components/front/CommunityContent";
+import PodcastSection from "../components/front/PodcastSection";
+import FromTheCommunity from "../components/front/FromTheCommunity";
 import AboutAuthor from "../components/front/AboutAuthor";
 import Parts from "../components/front/Parts";
 import Sections from "../components/front/Sections";
@@ -27,7 +28,8 @@ export default () => {
 		<Books />
 		<AIForRiskFirst />
 		<Benefits />
-		<CommunityContent />
+		<PodcastSection />
+		<FromTheCommunity />
 		<AboutAuthor />
 		<Parts />
 		<Sections />

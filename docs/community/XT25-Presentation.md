@@ -6,7 +6,8 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/presentation.svg">XT25 Presentation</image-artifact>'
 tags:
  - Community
-sidebar_position: 3
+ - Front-Page-Community
+sidebar_position: 1
 ---
 
 ## Risk-First at XT25

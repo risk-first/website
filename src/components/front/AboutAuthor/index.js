@@ -4,7 +4,7 @@ import HomeSection from '../HomeSection';
 
 export default function AboutAuthor() {
 	return (
-		<HomeSection alt="true">
+		<HomeSection>
 			<div className={styles.photoCol}>
 				<img
 					className={styles.photo}

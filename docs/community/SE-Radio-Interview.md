@@ -6,7 +6,9 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/podcast.svg">SE Radio Interview</image-artifact>'
 tags:
  - Community
-sidebar_position: 7
+ - Front-Page-Community
+homepageImage: https://i.ytimg.com/vi/gXHjc3G08rY/hqdefault.jpg
+sidebar_position: 4
 ---
 
 ## SE Radio 721: Rob Moffat on Risk-First Software Development

@@ -6,7 +6,8 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/tameflow.svg">TameFlow &#10; Book Worm Hole</image-artifact>'
 tags:
  - Community
-sidebar_position: 5
+ - Front-Page-Community
+sidebar_position: 3
 ---
 
 ![Tameflow](/img/community/tameflow.png)
