@@ -11,6 +11,11 @@ function imageLinkFor(doc) {
 	return '/img/generated/single/' + stripped + '.svg';
 }
 
+function cardThumbnailFor(doc) {
+	const fm = doc.frontMatter ?? {};
+	return fm.homepageThumbnail ?? fm.homepageImage ?? imageLinkFor(doc);
+}
+
 function DocItemImage({ doc }) {
 	const imageLink = imageLinkFor(doc);
 
@@ -30,7 +35,7 @@ function DocItemImage({ doc }) {
 }
 
 function DocItemCard({ doc, muted, linkLabel }) {
-	const imageLink = imageLinkFor(doc);
+	const imageLink = cardThumbnailFor(doc);
 	const cardClass = muted ? `${styles.card} ${styles.cardMuted}` : styles.card;
 
 	return (

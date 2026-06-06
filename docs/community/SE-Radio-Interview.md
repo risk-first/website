@@ -7,7 +7,7 @@ featured:
 tags:
  - Community
  - Front-Page-Community
-homepageImage: https://i.ytimg.com/vi/gXHjc3G08rY/hqdefault.jpg
+homepageThumbnail: https://i.ytimg.com/vi/gXHjc3G08rY/hqdefault.jpg
 sidebar_position: 4
 ---
 

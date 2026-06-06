@@ -23,7 +23,11 @@ function PodcastCard({ href, image, title, teaser, external }) {
 	);
 }
 
+const LATEST_COUNT = 4;
+
 export default function PodcastSection() {
+	const latest = episodes.slice(0, LATEST_COUNT);
+
 	return (
 		<HomeSectionStack>
 			<div className={stackStyles.sectionHeading}>
@@ -34,7 +38,7 @@ export default function PodcastSection() {
 				</p>
 			</div>
 			<div className={styles.cardRow}>
-				{episodes.map((ep) => (
+				{latest.map((ep) => (
 					<PodcastCard
 						key={`${ep.season}-${ep.episode}`}
 						title={ep.guestName || ep.title}
@@ -47,6 +51,11 @@ export default function PodcastSection() {
 					/>
 				))}
 			</div>
+			{episodes.length > LATEST_COUNT && (
+				<p className={styles.moreLink}>
+					<a href="/community/Risk-First-Podcast">All episodes →</a>
+				</p>
+			)}
 		</HomeSectionStack>
 	);
 }

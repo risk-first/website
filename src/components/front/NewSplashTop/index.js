@@ -53,10 +53,11 @@ export default function NewSplashTop() {
 			</svg>
 
 			<h1 className={styles.siteHeader}>All Software Development Is Risk Management</h1>
-			<p className={styles.lead}>
-				Risk-First is a framework for understanding software development practices,
-				methodologies, architecture and AI through the lens of risk.
-			</p>
+			<div className={styles.lead}>
+				<p>Most software methodologies tell you what to do.</p>
+				<p>Risk-First explains why those practices exist.</p>
+				<p>Once you understand the risks, you can choose the right practices for your context.</p>
+			</div>
 		</section>
 	)
 }

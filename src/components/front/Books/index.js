@@ -18,8 +18,15 @@ export default function Books() {
 				<h2>The Book</h2>
 				<p className={styles.edition}>Second Edition · 265 pages</p>
 				<p className={styles.description}>
-					The complete Risk-First framework in a practical guide for software teams,
-					architects and engineering leaders.
+					265 pages that reframe software development around the force that shapes
+					every decision: risk. Risk-First peels back the onion — not a methodology
+					telling you what to do, but a toolbox and pattern language to help you
+					figure out what you should do, and communicate your case to others.
+				</p>
+				<p className={styles.description}>
+					Gain the vocabulary, tools, and confidence to identify, evaluate, and
+					mitigate risks before they derail your project — whether you are managing
+					a startup product, steering an enterprise system, or incorporating AI.
 				</p>
 				<div className={styles.ctaGroup}>
 					<a
