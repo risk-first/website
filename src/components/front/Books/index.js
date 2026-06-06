@@ -4,7 +4,7 @@ import HomeSection from '../HomeSection';
 
 export default function Books() {
 	return (
-		<HomeSection alt="true">
+		<HomeSection alt>
 			<>
 				<a href="/Risk-First-Second-Edition">
 					<img

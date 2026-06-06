@@ -10,8 +10,7 @@ export default function Sections() {
 			<div className={stackStyles.sectionHeading}>
 				<h2>Risk-First Tracks</h2>
 				<p>
-					Risk-First is split into several main tracks, dealing with different areas of
-					software development.
+					Readers are advised to start on the left and work right, but feel free to jump around.
 				</p>
 			</div>
 			<div className={styles.trackRow}>

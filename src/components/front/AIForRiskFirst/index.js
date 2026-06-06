@@ -15,6 +15,12 @@ const LINKS = [
 		external: true,
 	},
 	{
+		title: 'Societal AI Risk Framework',
+		description: 'Civilisation-scale risks as AI grows in capability and autonomy',
+		href: 'https://societal-ai-risk.riskfirst.org',
+		external: true,
+	},
+	{
 		title: 'AI Governance Framework',
 		description: 'FINOS open-source framework for generative AI in financial services',
 		href: 'https://github.com/finos/ai-governance-framework',
@@ -29,7 +35,7 @@ const LINKS = [
 
 export default function AIForRiskFirst() {
 	return (
-		<HomeSection>
+		<HomeSection alt>
 			<div className={styles.innerAside}>
 				<h2>Risk-First for AI</h2>
 				<p className={styles.blurb}>

@@ -6,15 +6,26 @@
 }
 
 .card {
-	background: #f43d7908;
-	border: 1px solid #f43d7918;
+	background: white;
 	border-radius: 0.5rem;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+	color: inherit;
+	display: flex;
+	flex-direction: column;
 	padding: 1.25rem;
+	text-decoration: none !important;
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+	color: inherit;
+	transform: translateY(-2px);
 }
 
 html[data-theme=dark] .card {
-	background: #ffffff08;
-	border-color: #ffffff18;
+	background: #1b1b1d;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -32,10 +43,17 @@ html[data-theme=dark] .card {
 }
 
 .cardDesc {
+	flex-grow: 1;
 	font-size: 0.9rem;
 	line-height: 1.5;
-	margin: 0;
+	margin: 0 0 0.75rem;
 	opacity: 0.85;
+}
+
+.cardLink {
+	color: #f43d79;
+	font-size: 0.85rem;
+	font-weight: 600;
 }
 
 .ctaWrap {

@@ -28,8 +28,6 @@ export default function Parts() {
 					But in order to meet your project's goals, you'll have to choose the right practices
 					to tackle the most important risks.
 				</p>
-				<p className={styles.tagline}>That's Risk Management</p>
-				<a className={styles.cta} href="/overview/Quick-Summary">Read the Summary</a>
 			</div>
 		</HomeSectionStack>
 	);

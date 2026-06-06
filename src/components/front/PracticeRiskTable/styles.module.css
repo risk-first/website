@@ -1,67 +1,88 @@
-.innerAside {
-	text-align: left;
-}
-
-.innerAside h2 {
-	font-weight: 800;
-	font-family: Geomanist;
-	font-size: 3rem;
-	line-height: 1.1;
-	margin-bottom: 1rem;
-}
-
-.intro {
-	font-size: 1.1rem;
-	line-height: 1.6;
-	max-width: 36rem;
-}
-
 .tableWrap {
 	width: 100%;
 }
 
 .table {
 	border-collapse: collapse;
-	font-size: 1.05rem;
+	font-size: 1rem;
 	width: 100%;
+}
+
+.table tr {
+	background-color: transparent;
+	border-top: none;
+}
+
+.table tr:nth-child(2n) {
+	background-color: transparent;
 }
 
 .table th,
 .table td {
 	border-bottom: 1px solid #ddd;
-	padding: 0.85rem 1rem;
+	padding: 1rem;
 	text-align: left;
+	vertical-align: top;
 }
 
 .table th {
-	background: #f43d7911;
 	font-family: Geomanist, sans-serif;
 	font-weight: 700;
+	text-align: center;
 }
 
-.table td a {
+.itemCol {
+	text-align: center;
+	width: 11rem;
+}
+
+.descCol {
+	width: 35%;
+}
+
+.itemCell {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	width: 100%;
+}
+
+.cellIcon {
+	display: block;
+	height: auto;
+	max-height: 7rem;
+	max-width: 7rem;
+	object-fit: contain;
+	width: auto;
+}
+
+.cellTitle {
 	color: #f43d79;
-	font-weight: 600;
+	display: block;
+	font-family: Geomanist, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	text-align: center;
 	text-decoration: none;
+	width: 100%;
 }
 
-.table td a:hover {
+.cellTitle:hover {
 	text-decoration: underline;
 }
 
-.mobileValue a {
-	color: #f43d79;
-	font-weight: 600;
-	text-decoration: none;
+.cellDesc {
+	font-size: 0.9rem;
+	line-height: 1.45;
+	margin: 0;
+	opacity: 0.85;
 }
 
 html[data-theme=dark] .table th,
 html[data-theme=dark] .table td {
 	border-color: #444;
-}
-
-html[data-theme=dark] .table th {
-	background: #f43d7922;
 }
 
 .mobileCards {
@@ -92,24 +113,12 @@ html[data-theme=dark] .table th {
 	.mobileLabel {
 		font-size: 0.75rem;
 		font-weight: 700;
+		margin: 0.75rem 0 0.5rem;
 		opacity: 0.6;
 		text-transform: uppercase;
 	}
 
-	.mobileValue {
-		font-size: 1rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.mobileValue a {
-		color: #f43d79;
-		font-weight: 600;
-		text-decoration: none;
-	}
-}
-
-@media (max-width: 60rem) {
-	.innerAside h2 {
-		font-size: 2rem;
+	.mobileLabel:first-child {
+		margin-top: 0;
 	}
 }
