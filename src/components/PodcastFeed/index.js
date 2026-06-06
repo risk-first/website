@@ -18,6 +18,8 @@ export default function PodcastFeed() {
           season={ep.season}
           episode={ep.episode}
           description={ep.description}
+          guestImage={ep.guestImage}
+          guestName={ep.guestName}
         />
       ))}
     </div>

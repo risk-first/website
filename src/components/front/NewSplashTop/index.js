@@ -52,8 +52,12 @@ export default function NewSplashTop() {
 				</g>
 			</svg>
 
-			<h1 className={styles.siteHeader}>Risk-First</h1>
-			<p className={styles.lead}> Exploring the risks that ruin software projects </p>
+			<h1 className={styles.siteHeader}>All Software Development Is Risk Management</h1>
+			<div className={styles.lead}>
+				<p>Most software methodologies tell you what to do.</p>
+				<p>Risk-First explains why those practices exist.</p>
+				<p>Once you understand the risks, you can choose the right practices for your context.</p>
+			</div>
 		</section>
 	)
 }

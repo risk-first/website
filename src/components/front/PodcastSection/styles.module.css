@@ -1,0 +1,86 @@
+.cardRow {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+}
+
+.card {
+	background: #f43d7908;
+	border: 1px solid #f43d7918;
+	border-radius: 0.5rem;
+	color: inherit;
+	display: flex;
+	flex: 1 1 16rem;
+	flex-direction: column;
+	max-width: 20rem;
+	overflow: hidden;
+	text-decoration: none !important;
+	transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+	border-color: #f43d7944;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
+	color: inherit;
+	transform: translateY(-2px);
+}
+
+html[data-theme=dark] .card {
+	background: #ffffff08;
+	border-color: #ffffff18;
+}
+
+html[data-theme=dark] .card:hover {
+	border-color: #f43d7944;
+}
+
+.cardPhoto {
+	height: 10rem;
+	object-fit: cover;
+	width: 100%;
+}
+
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1rem;
+}
+
+.cardTitle {
+	font-family: Geomanist, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.4rem;
+}
+
+.cardTeaser {
+	flex-grow: 1;
+	font-size: 0.85rem;
+	line-height: 1.45;
+	margin-bottom: 0.75rem;
+	opacity: 0.8;
+}
+
+.cardLink {
+	color: #f43d79;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.moreLink {
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.moreLink a {
+	color: #f43d79;
+	font-family: Geomanist, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.moreLink a:hover {
+	text-decoration: underline;
+}

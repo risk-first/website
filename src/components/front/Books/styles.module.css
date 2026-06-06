@@ -1,40 +1,76 @@
-.cta {
-	background: #00000044;
-	border: 1px solid #777;
-	border-radius: .5rem;
-	color: white;
-	display: inline-block;
-	font-size: 1rem;
-	line-height: 1.2em;
-	margin: 1rem;
-	padding: 1rem;
-	text-decoration: none !important;
-	transition: background .3s, color .3s;
-	width: 15rem;
-}
-
 .innerAside {
-	background-image: url("/img/front/reading.svg");
-	background-position: 0 0px;
-	background-size: 60%;
-	background-repeat: no-repeat;
-	height: 25rem;
+	text-align: left;
 }
 
 .innerAside h2 {
 	font-weight: 800;
 	font-family: Geomanist;
-	font-size: 8rem;
+	font-size: 3rem;
 	line-height: 1.1;
-	overflow: hidden;
+	margin-bottom: 0.5rem;
+}
+
+.edition {
+	font-size: 0.95rem;
+	font-weight: 600;
+	opacity: 0.7;
+	margin-bottom: 1rem;
+}
+
+.description {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.cover {
+	border-radius: 0.25rem;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+	max-width: 16rem;
+	width: 100%;
+}
+
+.ctaGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.ctaBuy,
+.ctaFree {
+	border-radius: 0.5rem;
+	display: inline-block;
+	font-size: 0.95rem;
+	font-weight: 600;
+	padding: 0.75rem 1.25rem;
+	text-align: center;
+	text-decoration: none !important;
+	transition: background 0.2s;
+	width: fit-content;
+}
+
+.ctaBuy {
+	background: #f43d79;
+	color: white;
+}
+
+.ctaBuy:hover {
+	background: #d63266;
+	color: white;
+}
+
+.ctaFree {
+	background: #0ac186;
+	color: white;
+}
+
+.ctaFree:hover {
+	background: #08a070;
+	color: white;
 }
 
 @media (max-width: 60rem) {
 	.innerAside h2 {
-		font-size: 4rem;
+		font-size: 2rem;
 	}
-}
-
-html[data-theme=dark] .innerAside {
-	color: white;
 }

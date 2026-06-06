@@ -23,14 +23,17 @@ export default function PodcastEpisode({
   season,
   episode,
   description,
+  guestImage,
+  guestName,
 }) {
   const [expanded, setExpanded] = React.useState(false);
   const toggle = () => setExpanded(!expanded);
   const { image, spotify, apple, youtube } = PODCAST_LINKS;
+  const artwork = guestImage || image;
   return (
-    <div className={styles.episode}>
+    <div className={styles.episode} id={`episode-${episode}`}>
       <div className={styles.artwork}>
-        {image && <img src={image} alt={title} />}
+        {artwork && <img src={artwork} alt={guestName || title} />}
       </div>
       <div className={styles.content}>
         <div className={styles.meta}>

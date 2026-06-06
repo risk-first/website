@@ -6,7 +6,9 @@ featured:
   element: '<image-artifact imgsrc="/public/templates/risk-first/posts/podcast.svg">JUXTCast Interview</image-artifact>'
 tags:
  - Community
-sidebar_position: 4
+ - Front-Page-Community
+homepageThumbnail: https://i.ytimg.com/vi/xu3_l_8YYSM/hqdefault.jpg
+sidebar_position: 2
 ---
 
 ## JUXTCast S6E4: Risk-First Software Development

@@ -1,0 +1,91 @@
+.innerAside {
+	text-align: left;
+}
+
+.innerAside h2 {
+	font-weight: 800;
+	font-family: Geomanist;
+	font-size: 3rem;
+	line-height: 1.1;
+	margin-bottom: 0.5rem;
+}
+
+.subtitle {
+	font-size: 1.1rem;
+	opacity: 0.85;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	gap: 1.5rem;
+	width: 100%;
+}
+
+.card {
+	background: white;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+html[data-theme=dark] .card {
+	background: #1b1b1d;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.stepNum {
+	background: #f43d79;
+	border-radius: 50%;
+	color: white;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Geomanist, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	height: 2rem;
+	margin-bottom: 0.75rem;
+	width: 2rem;
+}
+
+.cardTitle {
+	font-family: Geomanist, sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+	flex-grow: 1;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	opacity: 0.85;
+}
+
+.cardBtn {
+	align-self: flex-start;
+	background: #0ac186;
+	border-radius: 0.35rem;
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	text-decoration: none !important;
+	transition: background 0.2s;
+}
+
+.cardBtn:hover {
+	background: #08a070;
+	color: white;
+}
+
+@media (max-width: 60rem) {
+	.innerAside h2 {
+		font-size: 2rem;
+	}
+}
